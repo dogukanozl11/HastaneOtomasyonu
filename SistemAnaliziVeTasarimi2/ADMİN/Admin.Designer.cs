@@ -28,29 +28,29 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtid = new System.Windows.Forms.TextBox();
+            this.txtsifre = new System.Windows.Forms.TextBox();
             this.btnAdminGiris = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.btnSekreterKayitGeri = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // textBox1
+            // txtid
             // 
-            this.textBox1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.textBox1.Location = new System.Drawing.Point(98, 93);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(182, 27);
-            this.textBox1.TabIndex = 0;
+            this.txtid.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtid.Location = new System.Drawing.Point(98, 93);
+            this.txtid.Name = "txtid";
+            this.txtid.Size = new System.Drawing.Size(182, 27);
+            this.txtid.TabIndex = 0;
             // 
-            // textBox2
+            // txtsifre
             // 
-            this.textBox2.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.textBox2.Location = new System.Drawing.Point(98, 173);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(182, 27);
-            this.textBox2.TabIndex = 0;
+            this.txtsifre.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtsifre.Location = new System.Drawing.Point(98, 173);
+            this.txtsifre.Name = "txtsifre";
+            this.txtsifre.Size = new System.Drawing.Size(182, 27);
+            this.txtsifre.TabIndex = 0;
             // 
             // btnAdminGiris
             // 
@@ -102,8 +102,8 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnAdminGiris);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtsifre);
+            this.Controls.Add(this.txtid);
             this.Name = "Admin";
             this.Text = "Admin";
             this.ResumeLayout(false);
@@ -113,8 +113,8 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtid;
+        private System.Windows.Forms.TextBox txtsifre;
         private System.Windows.Forms.Button btnAdminGiris;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;

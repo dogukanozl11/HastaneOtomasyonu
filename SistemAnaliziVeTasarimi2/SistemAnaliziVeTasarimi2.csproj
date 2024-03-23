@@ -105,6 +105,9 @@
     <EmbeddedResource Include="ADMİN\Admin.resx">
       <DependentUpon>Admin.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ADMİN\AdminYöneticiPaneli.resx">
+      <DependentUpon>AdminYöneticiPaneli.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Anasayfa.resx">
       <DependentUpon>Anasayfa.cs</DependentUpon>
     </EmbeddedResource>
