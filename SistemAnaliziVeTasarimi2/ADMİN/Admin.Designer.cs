@@ -33,6 +33,7 @@
             this.btnAdminGiris = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.btnSekreterKayitGeri = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // textBox1
@@ -81,11 +82,23 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "Şifre  :";
             // 
+            // btnSekreterKayitGeri
+            // 
+            this.btnSekreterKayitGeri.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnSekreterKayitGeri.Location = new System.Drawing.Point(2, 3);
+            this.btnSekreterKayitGeri.Name = "btnSekreterKayitGeri";
+            this.btnSekreterKayitGeri.Size = new System.Drawing.Size(45, 35);
+            this.btnSekreterKayitGeri.TabIndex = 5;
+            this.btnSekreterKayitGeri.Text = "<";
+            this.btnSekreterKayitGeri.UseVisualStyleBackColor = true;
+            this.btnSekreterKayitGeri.Click += new System.EventHandler(this.btnSekreterKayitGeri_Click);
+            // 
             // Admin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(417, 308);
+            this.Controls.Add(this.btnSekreterKayitGeri);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnAdminGiris);
@@ -105,5 +118,6 @@
         private System.Windows.Forms.Button btnAdminGiris;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button btnSekreterKayitGeri;
     }
 }

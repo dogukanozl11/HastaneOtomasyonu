@@ -28,5 +28,12 @@ namespace SistemAnaliziVeTasarimi2
             ayp.Show();
             this.Hide();
         }
+
+        private void btnSekreterKayitGeri_Click(object sender, EventArgs e)
+        {
+            Anasayfa ansyf = new Anasayfa();
+            ansyf.Show();
+            this.Hide();
+        }
     }
 }

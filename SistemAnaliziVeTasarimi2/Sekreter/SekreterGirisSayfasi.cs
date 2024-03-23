@@ -30,6 +30,19 @@ namespace SistemAnaliziVeTasarimi2.Sekreter
             adm.Show();
             this.Hide();
         }
-        
+
+        private void btnSekreterSifremiUnuttun_Click(object sender, EventArgs e)
+        {
+           SekreterSifremiUnuttumSayfasi ssus = new SekreterSifremiUnuttumSayfasi();
+            ssus.Show();
+            this.Hide();
+        }
+
+        private void btnSekreterGirisYap_Click(object sender, EventArgs e)
+        {
+            SekreterProfilSayfasi sps = new SekreterProfilSayfasi();
+            sps.Show();
+            this.Hide();
+        }
     }
 }

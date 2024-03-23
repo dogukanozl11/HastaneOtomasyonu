@@ -94,6 +94,7 @@
             this.btnSekreterGirisYap.TabIndex = 4;
             this.btnSekreterGirisYap.Text = "Giriş Yap";
             this.btnSekreterGirisYap.UseVisualStyleBackColor = true;
+            this.btnSekreterGirisYap.Click += new System.EventHandler(this.btnSekreterGirisYap_Click);
             // 
             // btnSekreterKayıtOl
             // 
@@ -115,12 +116,13 @@
             this.btnSekreterSifremiUnuttun.TabIndex = 4;
             this.btnSekreterSifremiUnuttun.Text = "Şifremi Unuttum";
             this.btnSekreterSifremiUnuttun.UseVisualStyleBackColor = true;
+            this.btnSekreterSifremiUnuttun.Click += new System.EventHandler(this.btnSekreterSifremiUnuttun_Click);
             // 
             // SekreterGirisSayfasi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(499, 450);
+            this.ClientSize = new System.Drawing.Size(504, 450);
             this.Controls.Add(this.btnSekreterSifremiUnuttun);
             this.Controls.Add(this.btnSekreterKayıtOl);
             this.Controls.Add(this.btnSekreterGirisYap);
