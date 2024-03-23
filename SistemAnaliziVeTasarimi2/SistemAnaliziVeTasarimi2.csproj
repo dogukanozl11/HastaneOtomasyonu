@@ -46,6 +46,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ADMİN\Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ADMİN\Admin.Designer.cs">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ADMİN\AdminYöneticiPaneli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ADMİN\AdminYöneticiPaneli.Designer.cs">
+      <DependentUpon>AdminYöneticiPaneli.cs</DependentUpon>
+    </Compile>
     <Compile Include="Anasayfa.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -72,11 +84,23 @@
     <Compile Include="Sekreter\SekreterGirisSayfasi.Designer.cs">
       <DependentUpon>SekreterGirisSayfasi.cs</DependentUpon>
     </Compile>
+    <Compile Include="Sekreter\SekreterKayıtOlSayfasi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sekreter\SekreterKayıtOlSayfasi.Designer.cs">
+      <DependentUpon>SekreterKayıtOlSayfasi.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ADMİN\Admin.resx">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Anasayfa.resx">
       <DependentUpon>Anasayfa.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Doktor\DoktorGirisSayfasi.resx">
       <DependentUpon>DoktorGirisSayfasi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hasta\HastaGirisSayfasi.resx">
+      <DependentUpon>HastaGirisSayfasi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -87,6 +111,12 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Sekreter\SekreterGirisSayfasi.resx">
+      <DependentUpon>SekreterGirisSayfasi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sekreter\SekreterKayıtOlSayfasi.resx">
+      <DependentUpon>SekreterKayıtOlSayfasi.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

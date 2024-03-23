@@ -16,5 +16,12 @@ namespace SistemAnaliziVeTasarimi2.Hasta
         {
             InitializeComponent();
         }
+
+        private void btnGERİ_Click(object sender, EventArgs e)
+        {
+            Anasayfa ansyf = new Anasayfa();
+            ansyf.Show();
+            this.Hide();
+        }
     }
 }

@@ -35,6 +35,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
+            this.BtnGERİ = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
@@ -98,11 +99,22 @@
             this.button3.Text = "Kayıt Ol";
             this.button3.UseVisualStyleBackColor = true;
             // 
+            // BtnGERİ
+            // 
+            this.BtnGERİ.Location = new System.Drawing.Point(2, 0);
+            this.BtnGERİ.Name = "BtnGERİ";
+            this.BtnGERİ.Size = new System.Drawing.Size(53, 26);
+            this.BtnGERİ.TabIndex = 3;
+            this.BtnGERİ.Text = "GERİ";
+            this.BtnGERİ.UseVisualStyleBackColor = true;
+            this.BtnGERİ.Click += new System.EventHandler(this.BtnGERİ_Click);
+            // 
             // DoktorGirisSayfasi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(584, 361);
+            this.Controls.Add(this.BtnGERİ);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox2);
@@ -126,5 +138,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button BtnGERİ;
     }
 }

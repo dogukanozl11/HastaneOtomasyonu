@@ -16,5 +16,20 @@ namespace SistemAnaliziVeTasarimi2.Sekreter
         {
             InitializeComponent();
         }
+
+        private void btnGERİ_Click(object sender, EventArgs e)
+        {
+            Anasayfa ansyf = new Anasayfa();
+            ansyf.Show();
+            this.Hide();
+        }
+
+        private void btnSekreterKayıtOl_Click(object sender, EventArgs e)
+        {
+            Admin adm = new Admin();
+            adm.Show();
+            this.Hide();
+        }
+        
     }
 }
