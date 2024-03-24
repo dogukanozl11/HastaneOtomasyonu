@@ -51,7 +51,7 @@
             // txtSekreterİsim
             // 
             this.txtSekreterİsim.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSekreterİsim.Location = new System.Drawing.Point(121, 79);
+            this.txtSekreterİsim.Location = new System.Drawing.Point(152, 66);
             this.txtSekreterİsim.Name = "txtSekreterİsim";
             this.txtSekreterİsim.Size = new System.Drawing.Size(246, 27);
             this.txtSekreterİsim.TabIndex = 0;
@@ -59,7 +59,7 @@
             // txtSekreterSoyisim
             // 
             this.txtSekreterSoyisim.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSekreterSoyisim.Location = new System.Drawing.Point(121, 163);
+            this.txtSekreterSoyisim.Location = new System.Drawing.Point(152, 150);
             this.txtSekreterSoyisim.Name = "txtSekreterSoyisim";
             this.txtSekreterSoyisim.Size = new System.Drawing.Size(246, 27);
             this.txtSekreterSoyisim.TabIndex = 0;
@@ -67,7 +67,7 @@
             // txtSekreterTC
             // 
             this.txtSekreterTC.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSekreterTC.Location = new System.Drawing.Point(121, 236);
+            this.txtSekreterTC.Location = new System.Drawing.Point(152, 223);
             this.txtSekreterTC.Name = "txtSekreterTC";
             this.txtSekreterTC.Size = new System.Drawing.Size(246, 27);
             this.txtSekreterTC.TabIndex = 0;
@@ -75,7 +75,7 @@
             // txtSekreterYaş
             // 
             this.txtSekreterYaş.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSekreterYaş.Location = new System.Drawing.Point(121, 308);
+            this.txtSekreterYaş.Location = new System.Drawing.Point(152, 295);
             this.txtSekreterYaş.Name = "txtSekreterYaş";
             this.txtSekreterYaş.Size = new System.Drawing.Size(246, 27);
             this.txtSekreterYaş.TabIndex = 0;
@@ -83,7 +83,7 @@
             // txtSekreterMail
             // 
             this.txtSekreterMail.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSekreterMail.Location = new System.Drawing.Point(121, 523);
+            this.txtSekreterMail.Location = new System.Drawing.Point(152, 510);
             this.txtSekreterMail.Name = "txtSekreterMail";
             this.txtSekreterMail.Size = new System.Drawing.Size(246, 27);
             this.txtSekreterMail.TabIndex = 0;
@@ -91,7 +91,7 @@
             // txtSekreterSifre
             // 
             this.txtSekreterSifre.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSekreterSifre.Location = new System.Drawing.Point(121, 592);
+            this.txtSekreterSifre.Location = new System.Drawing.Point(152, 579);
             this.txtSekreterSifre.Name = "txtSekreterSifre";
             this.txtSekreterSifre.Size = new System.Drawing.Size(246, 27);
             this.txtSekreterSifre.TabIndex = 0;
@@ -103,7 +103,7 @@
             this.CmbSekreterCinsiyet.Items.AddRange(new object[] {
             "ERKEK",
             "KADIN"});
-            this.CmbSekreterCinsiyet.Location = new System.Drawing.Point(121, 387);
+            this.CmbSekreterCinsiyet.Location = new System.Drawing.Point(152, 374);
             this.CmbSekreterCinsiyet.Name = "CmbSekreterCinsiyet";
             this.CmbSekreterCinsiyet.Size = new System.Drawing.Size(246, 27);
             this.CmbSekreterCinsiyet.TabIndex = 1;
@@ -112,7 +112,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(125, 51);
+            this.label1.Location = new System.Drawing.Point(156, 38);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(58, 25);
             this.label1.TabIndex = 2;
@@ -122,7 +122,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label2.Location = new System.Drawing.Point(125, 135);
+            this.label2.Location = new System.Drawing.Point(156, 122);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(92, 25);
             this.label2.TabIndex = 2;
@@ -132,7 +132,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label3.Location = new System.Drawing.Point(125, 208);
+            this.label3.Location = new System.Drawing.Point(156, 195);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(143, 25);
             this.label3.TabIndex = 2;
@@ -142,7 +142,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label4.Location = new System.Drawing.Point(125, 280);
+            this.label4.Location = new System.Drawing.Point(156, 267);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(57, 25);
             this.label4.TabIndex = 2;
@@ -152,7 +152,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label5.Location = new System.Drawing.Point(125, 350);
+            this.label5.Location = new System.Drawing.Point(156, 337);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(98, 25);
             this.label5.TabIndex = 2;
@@ -162,7 +162,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label6.Location = new System.Drawing.Point(125, 495);
+            this.label6.Location = new System.Drawing.Point(156, 482);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(79, 25);
             this.label6.TabIndex = 2;
@@ -172,7 +172,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label7.Location = new System.Drawing.Point(125, 564);
+            this.label7.Location = new System.Drawing.Point(156, 551);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(68, 25);
             this.label7.TabIndex = 2;
@@ -181,7 +181,7 @@
             // txtSekreterTel
             // 
             this.txtSekreterTel.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtSekreterTel.Location = new System.Drawing.Point(121, 454);
+            this.txtSekreterTel.Location = new System.Drawing.Point(152, 441);
             this.txtSekreterTel.Mask = "(999) 000-0000";
             this.txtSekreterTel.Name = "txtSekreterTel";
             this.txtSekreterTel.Size = new System.Drawing.Size(246, 27);
@@ -191,7 +191,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label8.Location = new System.Drawing.Point(125, 426);
+            this.label8.Location = new System.Drawing.Point(156, 413);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(124, 25);
             this.label8.TabIndex = 2;
@@ -210,9 +210,9 @@
             // 
             // btnSekreterKayıtYap
             // 
-            this.btnSekreterKayıtYap.Location = new System.Drawing.Point(391, 659);
+            this.btnSekreterKayıtYap.Location = new System.Drawing.Point(152, 639);
             this.btnSekreterKayıtYap.Name = "btnSekreterKayıtYap";
-            this.btnSekreterKayıtYap.Size = new System.Drawing.Size(155, 41);
+            this.btnSekreterKayıtYap.Size = new System.Drawing.Size(246, 65);
             this.btnSekreterKayıtYap.TabIndex = 5;
             this.btnSekreterKayıtYap.Text = "Kayıt Yap";
             this.btnSekreterKayıtYap.UseVisualStyleBackColor = true;
@@ -222,7 +222,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(558, 712);
+            this.ClientSize = new System.Drawing.Size(584, 761);
             this.Controls.Add(this.btnSekreterKayıtYap);
             this.Controls.Add(this.btnSekreterKayitGeri);
             this.Controls.Add(this.txtSekreterTel);

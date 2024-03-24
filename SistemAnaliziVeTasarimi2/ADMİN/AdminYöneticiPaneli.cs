@@ -1,4 +1,5 @@
-﻿using SistemAnaliziVeTasarimi2.Sekreter;
+﻿using SistemAnaliziVeTasarimi2.Doktor;
+using SistemAnaliziVeTasarimi2.Sekreter;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -22,6 +23,13 @@ namespace SistemAnaliziVeTasarimi2.ADMİN
         {
             SekreterKayıtOlSayfasi skos = new SekreterKayıtOlSayfasi();
             skos.Show();
+            this.Hide();
+        }
+
+        private void btnDoktorKayit_Click(object sender, EventArgs e)
+        {
+            DoktorKayıtOlSayfasi dkos = new DoktorKayıtOlSayfasi();
+            dkos.Show();
             this.Hide();
         }
     }

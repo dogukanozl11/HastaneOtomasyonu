@@ -70,6 +70,18 @@
     <Compile Include="Doktor\DoktorGirisSayfasi.Designer.cs">
       <DependentUpon>DoktorGirisSayfasi.cs</DependentUpon>
     </Compile>
+    <Compile Include="Doktor\DoktorKayıtOlSayfasi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Doktor\DoktorKayıtOlSayfasi.Designer.cs">
+      <DependentUpon>DoktorKayıtOlSayfasi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Doktor\DoktorProfilSayfasi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Doktor\DoktorProfilSayfasi.Designer.cs">
+      <DependentUpon>DoktorProfilSayfasi.cs</DependentUpon>
+    </Compile>
     <Compile Include="Hasta\HastaGirisSayfasi.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -113,6 +125,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Doktor\DoktorGirisSayfasi.resx">
       <DependentUpon>DoktorGirisSayfasi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Doktor\DoktorKayıtOlSayfasi.resx">
+      <DependentUpon>DoktorKayıtOlSayfasi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Hasta\HastaGirisSayfasi.resx">
       <DependentUpon>HastaGirisSayfasi.cs</DependentUpon>

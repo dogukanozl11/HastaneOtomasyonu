@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.btnSekreterKayit = new System.Windows.Forms.Button();
+            this.btnDoktorKayit = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnSekreterKayit
@@ -41,11 +42,22 @@
             this.btnSekreterKayit.UseVisualStyleBackColor = true;
             this.btnSekreterKayit.Click += new System.EventHandler(this.btnSekreterKayit_Click);
             // 
+            // btnDoktorKayit
+            // 
+            this.btnDoktorKayit.Location = new System.Drawing.Point(150, 242);
+            this.btnDoktorKayit.Name = "btnDoktorKayit";
+            this.btnDoktorKayit.Size = new System.Drawing.Size(131, 51);
+            this.btnDoktorKayit.TabIndex = 1;
+            this.btnDoktorKayit.Text = "Doktro Kayıt";
+            this.btnDoktorKayit.UseVisualStyleBackColor = true;
+            this.btnDoktorKayit.Click += new System.EventHandler(this.btnDoktorKayit_Click);
+            // 
             // AdminYöneticiPaneli
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnDoktorKayit);
             this.Controls.Add(this.btnSekreterKayit);
             this.Name = "AdminYöneticiPaneli";
             this.Text = "AdminYöneticiPaneli";
@@ -56,5 +68,6 @@
         #endregion
 
         private System.Windows.Forms.Button btnSekreterKayit;
+        private System.Windows.Forms.Button btnDoktorKayit;
     }
 }

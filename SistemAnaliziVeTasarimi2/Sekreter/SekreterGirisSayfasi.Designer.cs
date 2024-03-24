@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.btnGERİ = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtTC = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtsifre = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btnSekreterGirisYap = new System.Windows.Forms.Button();
             this.btnSekreterKayıtOl = new System.Windows.Forms.Button();
@@ -49,13 +49,13 @@
             this.btnGERİ.UseVisualStyleBackColor = true;
             this.btnGERİ.Click += new System.EventHandler(this.btnGERİ_Click);
             // 
-            // textBox1
+            // txtTC
             // 
-            this.textBox1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.textBox1.Location = new System.Drawing.Point(115, 165);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(240, 27);
-            this.textBox1.TabIndex = 2;
+            this.txtTC.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtTC.Location = new System.Drawing.Point(115, 165);
+            this.txtTC.Name = "txtTC";
+            this.txtTC.Size = new System.Drawing.Size(240, 27);
+            this.txtTC.TabIndex = 2;
             // 
             // label2
             // 
@@ -67,13 +67,13 @@
             this.label2.TabIndex = 3;
             this.label2.Text = "Şifre";
             // 
-            // textBox2
+            // txtsifre
             // 
-            this.textBox2.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.textBox2.Location = new System.Drawing.Point(115, 246);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(240, 27);
-            this.textBox2.TabIndex = 2;
+            this.txtsifre.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtsifre.Location = new System.Drawing.Point(115, 246);
+            this.txtsifre.Name = "txtsifre";
+            this.txtsifre.Size = new System.Drawing.Size(240, 27);
+            this.txtsifre.TabIndex = 2;
             // 
             // label1
             // 
@@ -128,8 +128,8 @@
             this.Controls.Add(this.btnSekreterGirisYap);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtsifre);
+            this.Controls.Add(this.txtTC);
             this.Controls.Add(this.btnGERİ);
             this.Name = "SekreterGirisSayfasi";
             this.Text = "SekreterGirisSayfasi";
@@ -141,9 +141,9 @@
         #endregion
 
         private System.Windows.Forms.Button btnGERİ;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtTC;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtsifre;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnSekreterGirisYap;
         private System.Windows.Forms.Button btnSekreterKayıtOl;
