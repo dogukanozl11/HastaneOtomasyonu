@@ -42,12 +42,12 @@
             this.txtDoktorSifre = new System.Windows.Forms.TextBox();
             this.txtDoktorMail = new System.Windows.Forms.TextBox();
             this.txtDoktorTC = new System.Windows.Forms.TextBox();
-            this.txtDoktorYaş = new System.Windows.Forms.TextBox();
             this.txtDoktorSoyisim = new System.Windows.Forms.TextBox();
             this.txtDoktorİsim = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.CmbDoktorBrans = new System.Windows.Forms.ComboBox();
             this.btnGeri = new System.Windows.Forms.Button();
+            this.maskedTextBoxYas = new System.Windows.Forms.MaskedTextBox();
             this.SuspendLayout();
             // 
             // btnDoktorKayıtYap
@@ -118,9 +118,9 @@
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label4.Location = new System.Drawing.Point(169, 248);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(57, 25);
+            this.label4.Size = new System.Drawing.Size(122, 25);
             this.label4.TabIndex = 15;
-            this.label4.Text = "Yaş :";
+            this.label4.Text = "Gün/Ay/Yıl : ";
             // 
             // label3
             // 
@@ -189,14 +189,6 @@
             this.txtDoktorTC.Size = new System.Drawing.Size(246, 27);
             this.txtDoktorTC.TabIndex = 8;
             // 
-            // txtDoktorYaş
-            // 
-            this.txtDoktorYaş.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDoktorYaş.Location = new System.Drawing.Point(169, 276);
-            this.txtDoktorYaş.Name = "txtDoktorYaş";
-            this.txtDoktorYaş.Size = new System.Drawing.Size(246, 27);
-            this.txtDoktorYaş.TabIndex = 7;
-            // 
             // txtDoktorSoyisim
             // 
             this.txtDoktorSoyisim.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -257,6 +249,16 @@
             this.btnGeri.UseVisualStyleBackColor = false;
             this.btnGeri.Click += new System.EventHandler(this.btnGeri_Click);
             // 
+            // maskedTextBoxYas
+            // 
+            this.maskedTextBoxYas.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.maskedTextBoxYas.Location = new System.Drawing.Point(169, 276);
+            this.maskedTextBoxYas.Mask = "00/00/0000";
+            this.maskedTextBoxYas.Name = "maskedTextBoxYas";
+            this.maskedTextBoxYas.Size = new System.Drawing.Size(246, 27);
+            this.maskedTextBoxYas.TabIndex = 21;
+            this.maskedTextBoxYas.ValidatingType = typeof(System.DateTime);
+            // 
             // DoktorKayıtOlSayfasi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -265,6 +267,7 @@
             this.ClientSize = new System.Drawing.Size(584, 761);
             this.Controls.Add(this.btnGeri);
             this.Controls.Add(this.btnDoktorKayıtYap);
+            this.Controls.Add(this.maskedTextBoxYas);
             this.Controls.Add(this.txtDoktorTel);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label8);
@@ -280,7 +283,6 @@
             this.Controls.Add(this.txtDoktorSifre);
             this.Controls.Add(this.txtDoktorMail);
             this.Controls.Add(this.txtDoktorTC);
-            this.Controls.Add(this.txtDoktorYaş);
             this.Controls.Add(this.txtDoktorSoyisim);
             this.Controls.Add(this.txtDoktorİsim);
             this.Name = "DoktorKayıtOlSayfasi";
@@ -306,11 +308,11 @@
         private System.Windows.Forms.TextBox txtDoktorSifre;
         private System.Windows.Forms.TextBox txtDoktorMail;
         private System.Windows.Forms.TextBox txtDoktorTC;
-        private System.Windows.Forms.TextBox txtDoktorYaş;
         private System.Windows.Forms.TextBox txtDoktorSoyisim;
         private System.Windows.Forms.TextBox txtDoktorİsim;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.ComboBox CmbDoktorBrans;
         private System.Windows.Forms.Button btnGeri;
+        private System.Windows.Forms.MaskedTextBox maskedTextBoxYas;
     }
 }

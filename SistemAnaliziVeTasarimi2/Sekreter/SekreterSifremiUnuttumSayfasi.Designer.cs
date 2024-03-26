@@ -44,7 +44,7 @@
             // txtTC
             // 
             this.txtTC.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtTC.Location = new System.Drawing.Point(78, 64);
+            this.txtTC.Location = new System.Drawing.Point(77, 81);
             this.txtTC.Name = "txtTC";
             this.txtTC.Size = new System.Drawing.Size(238, 27);
             this.txtTC.TabIndex = 0;
@@ -52,7 +52,7 @@
             // txtEmail
             // 
             this.txtEmail.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtEmail.Location = new System.Drawing.Point(78, 128);
+            this.txtEmail.Location = new System.Drawing.Point(77, 145);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(238, 27);
             this.txtEmail.TabIndex = 0;
@@ -60,7 +60,7 @@
             // txtYeniSifre
             // 
             this.txtYeniSifre.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtYeniSifre.Location = new System.Drawing.Point(78, 321);
+            this.txtYeniSifre.Location = new System.Drawing.Point(77, 338);
             this.txtYeniSifre.Name = "txtYeniSifre";
             this.txtYeniSifre.PasswordChar = '*';
             this.txtYeniSifre.Size = new System.Drawing.Size(238, 27);
@@ -69,7 +69,7 @@
             // txtOnayKodu
             // 
             this.txtOnayKodu.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtOnayKodu.Location = new System.Drawing.Point(78, 200);
+            this.txtOnayKodu.Location = new System.Drawing.Point(77, 217);
             this.txtOnayKodu.Name = "txtOnayKodu";
             this.txtOnayKodu.Size = new System.Drawing.Size(238, 27);
             this.txtOnayKodu.TabIndex = 0;
@@ -78,7 +78,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(74, 37);
+            this.label1.Location = new System.Drawing.Point(73, 54);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(139, 24);
             this.label1.TabIndex = 1;
@@ -88,7 +88,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label2.Location = new System.Drawing.Point(74, 101);
+            this.label2.Location = new System.Drawing.Point(73, 118);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(82, 24);
             this.label2.TabIndex = 1;
@@ -98,7 +98,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label3.Location = new System.Drawing.Point(74, 173);
+            this.label3.Location = new System.Drawing.Point(73, 190);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(115, 24);
             this.label3.TabIndex = 1;
@@ -108,7 +108,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label4.Location = new System.Drawing.Point(74, 280);
+            this.label4.Location = new System.Drawing.Point(73, 311);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(100, 24);
             this.label4.TabIndex = 1;
@@ -116,41 +116,45 @@
             // 
             // btnOnayKoduAl
             // 
-            this.btnOnayKoduAl.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnOnayKoduAl.Location = new System.Drawing.Point(228, 233);
+            this.btnOnayKoduAl.BackColor = System.Drawing.Color.Yellow;
+            this.btnOnayKoduAl.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnOnayKoduAl.Location = new System.Drawing.Point(163, 250);
             this.btnOnayKoduAl.Name = "btnOnayKoduAl";
-            this.btnOnayKoduAl.Size = new System.Drawing.Size(88, 43);
+            this.btnOnayKoduAl.Size = new System.Drawing.Size(150, 45);
             this.btnOnayKoduAl.TabIndex = 2;
             this.btnOnayKoduAl.Text = "Onay Kodu Al";
-            this.btnOnayKoduAl.UseVisualStyleBackColor = true;
+            this.btnOnayKoduAl.UseVisualStyleBackColor = false;
             this.btnOnayKoduAl.Click += new System.EventHandler(this.btnOnayKoduAl_Click);
             // 
             // btnGuncelle
             // 
-            this.btnGuncelle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnGuncelle.Location = new System.Drawing.Point(222, 368);
+            this.btnGuncelle.BackColor = System.Drawing.Color.LawnGreen;
+            this.btnGuncelle.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnGuncelle.Location = new System.Drawing.Point(77, 371);
             this.btnGuncelle.Name = "btnGuncelle";
-            this.btnGuncelle.Size = new System.Drawing.Size(94, 38);
+            this.btnGuncelle.Size = new System.Drawing.Size(238, 45);
             this.btnGuncelle.TabIndex = 2;
             this.btnGuncelle.Text = "Güncelle";
-            this.btnGuncelle.UseVisualStyleBackColor = true;
+            this.btnGuncelle.UseVisualStyleBackColor = false;
             this.btnGuncelle.Click += new System.EventHandler(this.btnGuncelle_Click);
             // 
             // btnGERİ
             // 
+            this.btnGERİ.BackColor = System.Drawing.Color.Red;
             this.btnGERİ.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnGERİ.Location = new System.Drawing.Point(3, 3);
+            this.btnGERİ.Location = new System.Drawing.Point(0, 0);
             this.btnGERİ.Name = "btnGERİ";
             this.btnGERİ.Size = new System.Drawing.Size(45, 35);
             this.btnGERİ.TabIndex = 3;
             this.btnGERİ.Text = "<";
-            this.btnGERİ.UseVisualStyleBackColor = true;
+            this.btnGERİ.UseVisualStyleBackColor = false;
             this.btnGERİ.Click += new System.EventHandler(this.btnGERİ_Click);
             // 
             // SekreterSifremiUnuttumSayfasi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(405, 450);
             this.Controls.Add(this.btnGERİ);
             this.Controls.Add(this.btnGuncelle);

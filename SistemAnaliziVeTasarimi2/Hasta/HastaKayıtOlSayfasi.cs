@@ -37,5 +37,12 @@ namespace SistemAnaliziVeTasarimi2.Hasta
             bag.Close();
             MessageBox.Show("Hasta Kayıt İşlemi Başrılı . ŞİFRENİZ : " + txtHastaSifre.Text);
         }
+
+        private void btnGeri_Click(object sender, EventArgs e)
+        {
+            HastaGirisSayfasi hgs = new HastaGirisSayfasi();
+            hgs.Show();
+            this.Hide();
+        }
     }
 }

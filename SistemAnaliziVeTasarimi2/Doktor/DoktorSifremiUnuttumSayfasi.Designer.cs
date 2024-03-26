@@ -43,31 +43,33 @@
             // 
             // btnGuncelle
             // 
-            this.btnGuncelle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnGuncelle.Location = new System.Drawing.Point(221, 385);
+            this.btnGuncelle.BackColor = System.Drawing.Color.LawnGreen;
+            this.btnGuncelle.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnGuncelle.Location = new System.Drawing.Point(77, 371);
             this.btnGuncelle.Name = "btnGuncelle";
-            this.btnGuncelle.Size = new System.Drawing.Size(94, 38);
+            this.btnGuncelle.Size = new System.Drawing.Size(238, 45);
             this.btnGuncelle.TabIndex = 11;
             this.btnGuncelle.Text = "Güncelle";
-            this.btnGuncelle.UseVisualStyleBackColor = true;
+            this.btnGuncelle.UseVisualStyleBackColor = false;
             this.btnGuncelle.Click += new System.EventHandler(this.btnGuncelle_Click);
             // 
             // btnOnayKoduAl
             // 
-            this.btnOnayKoduAl.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnOnayKoduAl.Location = new System.Drawing.Point(227, 250);
+            this.btnOnayKoduAl.BackColor = System.Drawing.Color.Yellow;
+            this.btnOnayKoduAl.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnOnayKoduAl.Location = new System.Drawing.Point(163, 250);
             this.btnOnayKoduAl.Name = "btnOnayKoduAl";
-            this.btnOnayKoduAl.Size = new System.Drawing.Size(88, 43);
+            this.btnOnayKoduAl.Size = new System.Drawing.Size(150, 45);
             this.btnOnayKoduAl.TabIndex = 12;
             this.btnOnayKoduAl.Text = "Onay Kodu Al";
-            this.btnOnayKoduAl.UseVisualStyleBackColor = true;
+            this.btnOnayKoduAl.UseVisualStyleBackColor = false;
             this.btnOnayKoduAl.Click += new System.EventHandler(this.btnOnayKoduAl_Click);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label4.Location = new System.Drawing.Point(73, 297);
+            this.label4.Location = new System.Drawing.Point(73, 311);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(100, 24);
             this.label4.TabIndex = 7;
@@ -138,19 +140,21 @@
             // 
             // btnGERİ
             // 
+            this.btnGERİ.BackColor = System.Drawing.Color.Red;
             this.btnGERİ.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnGERİ.Location = new System.Drawing.Point(3, 0);
+            this.btnGERİ.Location = new System.Drawing.Point(0, 0);
             this.btnGERİ.Name = "btnGERİ";
             this.btnGERİ.Size = new System.Drawing.Size(45, 35);
             this.btnGERİ.TabIndex = 13;
             this.btnGERİ.Text = "<";
-            this.btnGERİ.UseVisualStyleBackColor = true;
+            this.btnGERİ.UseVisualStyleBackColor = false;
             this.btnGERİ.Click += new System.EventHandler(this.btnGERİ_Click);
             // 
             // DoktorSifremiUnuttumSayfasi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(405, 450);
             this.Controls.Add(this.btnGERİ);
             this.Controls.Add(this.btnGuncelle);

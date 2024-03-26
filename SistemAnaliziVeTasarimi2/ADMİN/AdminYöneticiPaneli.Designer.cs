@@ -34,7 +34,7 @@
             // 
             // btnSekreterKayit
             // 
-            this.btnSekreterKayit.Location = new System.Drawing.Point(404, 242);
+            this.btnSekreterKayit.Location = new System.Drawing.Point(149, 387);
             this.btnSekreterKayit.Name = "btnSekreterKayit";
             this.btnSekreterKayit.Size = new System.Drawing.Size(131, 51);
             this.btnSekreterKayit.TabIndex = 0;
@@ -44,7 +44,7 @@
             // 
             // btnDoktorKayit
             // 
-            this.btnDoktorKayit.Location = new System.Drawing.Point(150, 242);
+            this.btnDoktorKayit.Location = new System.Drawing.Point(12, 387);
             this.btnDoktorKayit.Name = "btnDoktorKayit";
             this.btnDoktorKayit.Size = new System.Drawing.Size(131, 51);
             this.btnDoktorKayit.TabIndex = 1;
@@ -56,7 +56,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(305, 450);
             this.Controls.Add(this.btnDoktorKayit);
             this.Controls.Add(this.btnSekreterKayit);
             this.Name = "AdminYöneticiPaneli";

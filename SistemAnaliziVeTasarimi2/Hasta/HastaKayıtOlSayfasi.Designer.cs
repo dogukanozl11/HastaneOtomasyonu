@@ -42,10 +42,10 @@
             this.txtHastaSifre = new System.Windows.Forms.TextBox();
             this.txtHastaMail = new System.Windows.Forms.TextBox();
             this.txtHastaTC = new System.Windows.Forms.TextBox();
-            this.txtHastaYaş = new System.Windows.Forms.TextBox();
             this.txtHastaSoyisim = new System.Windows.Forms.TextBox();
             this.txtHastaİsim = new System.Windows.Forms.TextBox();
             this.btnGeri = new System.Windows.Forms.Button();
+            this.txtHastaYaş = new System.Windows.Forms.MaskedTextBox();
             this.SuspendLayout();
             // 
             // btnHastaKayıtYap
@@ -115,9 +115,9 @@
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label4.Location = new System.Drawing.Point(165, 296);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(57, 25);
+            this.label4.Size = new System.Drawing.Size(134, 25);
             this.label4.TabIndex = 15;
-            this.label4.Text = "Yaş :";
+            this.label4.Text = "GG/AA/YYYY";
             // 
             // label3
             // 
@@ -185,14 +185,6 @@
             this.txtHastaTC.Size = new System.Drawing.Size(246, 27);
             this.txtHastaTC.TabIndex = 8;
             // 
-            // txtHastaYaş
-            // 
-            this.txtHastaYaş.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtHastaYaş.Location = new System.Drawing.Point(161, 324);
-            this.txtHastaYaş.Name = "txtHastaYaş";
-            this.txtHastaYaş.Size = new System.Drawing.Size(246, 27);
-            this.txtHastaYaş.TabIndex = 7;
-            // 
             // txtHastaSoyisim
             // 
             this.txtHastaSoyisim.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -220,6 +212,17 @@
             this.btnGeri.TabIndex = 23;
             this.btnGeri.Text = "<";
             this.btnGeri.UseVisualStyleBackColor = false;
+            this.btnGeri.Click += new System.EventHandler(this.btnGeri_Click);
+            // 
+            // txtHastaYaş
+            // 
+            this.txtHastaYaş.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtHastaYaş.Location = new System.Drawing.Point(161, 324);
+            this.txtHastaYaş.Mask = "00/00/0000";
+            this.txtHastaYaş.Name = "txtHastaYaş";
+            this.txtHastaYaş.Size = new System.Drawing.Size(246, 27);
+            this.txtHastaYaş.TabIndex = 21;
+            this.txtHastaYaş.ValidatingType = typeof(System.DateTime);
             // 
             // HastaKayıtOlSayfasi
             // 
@@ -229,6 +232,7 @@
             this.ClientSize = new System.Drawing.Size(584, 761);
             this.Controls.Add(this.btnGeri);
             this.Controls.Add(this.btnHastaKayıtYap);
+            this.Controls.Add(this.txtHastaYaş);
             this.Controls.Add(this.txtHastaTel);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label8);
@@ -242,7 +246,6 @@
             this.Controls.Add(this.txtHastaSifre);
             this.Controls.Add(this.txtHastaMail);
             this.Controls.Add(this.txtHastaTC);
-            this.Controls.Add(this.txtHastaYaş);
             this.Controls.Add(this.txtHastaSoyisim);
             this.Controls.Add(this.txtHastaİsim);
             this.Name = "HastaKayıtOlSayfasi";
@@ -268,9 +271,9 @@
         private System.Windows.Forms.TextBox txtHastaSifre;
         private System.Windows.Forms.TextBox txtHastaMail;
         private System.Windows.Forms.TextBox txtHastaTC;
-        private System.Windows.Forms.TextBox txtHastaYaş;
         private System.Windows.Forms.TextBox txtHastaSoyisim;
         private System.Windows.Forms.TextBox txtHastaİsim;
         private System.Windows.Forms.Button btnGeri;
+        private System.Windows.Forms.MaskedTextBox txtHastaYaş;
     }
 }

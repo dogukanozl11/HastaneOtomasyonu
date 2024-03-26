@@ -31,7 +31,6 @@
             this.txtSekreterİsim = new System.Windows.Forms.TextBox();
             this.txtSekreterSoyisim = new System.Windows.Forms.TextBox();
             this.txtSekreterTC = new System.Windows.Forms.TextBox();
-            this.txtSekreterYaş = new System.Windows.Forms.TextBox();
             this.txtSekreterMail = new System.Windows.Forms.TextBox();
             this.txtSekreterSifre = new System.Windows.Forms.TextBox();
             this.CmbSekreterCinsiyet = new System.Windows.Forms.ComboBox();
@@ -46,6 +45,7 @@
             this.label8 = new System.Windows.Forms.Label();
             this.btnSekreterKayitGeri = new System.Windows.Forms.Button();
             this.btnSekreterKayıtYap = new System.Windows.Forms.Button();
+            this.txtSekreterYaş = new System.Windows.Forms.MaskedTextBox();
             this.SuspendLayout();
             // 
             // txtSekreterİsim
@@ -68,17 +68,10 @@
             // 
             this.txtSekreterTC.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSekreterTC.Location = new System.Drawing.Point(150, 255);
+            this.txtSekreterTC.MaxLength = 11;
             this.txtSekreterTC.Name = "txtSekreterTC";
             this.txtSekreterTC.Size = new System.Drawing.Size(246, 27);
             this.txtSekreterTC.TabIndex = 3;
-            // 
-            // txtSekreterYaş
-            // 
-            this.txtSekreterYaş.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSekreterYaş.Location = new System.Drawing.Point(150, 327);
-            this.txtSekreterYaş.Name = "txtSekreterYaş";
-            this.txtSekreterYaş.Size = new System.Drawing.Size(246, 27);
-            this.txtSekreterYaş.TabIndex = 4;
             // 
             // txtSekreterMail
             // 
@@ -144,9 +137,9 @@
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label4.Location = new System.Drawing.Point(154, 299);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(57, 25);
+            this.label4.Size = new System.Drawing.Size(134, 25);
             this.label4.TabIndex = 2;
-            this.label4.Text = "Yaş :";
+            this.label4.Text = "GG/AA/YYYY";
             // 
             // label5
             // 
@@ -222,6 +215,16 @@
             this.btnSekreterKayıtYap.UseVisualStyleBackColor = false;
             this.btnSekreterKayıtYap.Click += new System.EventHandler(this.btnSekreterKayıtYap_Click);
             // 
+            // txtSekreterYaş
+            // 
+            this.txtSekreterYaş.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtSekreterYaş.Location = new System.Drawing.Point(150, 327);
+            this.txtSekreterYaş.Mask = "00/00/0000";
+            this.txtSekreterYaş.Name = "txtSekreterYaş";
+            this.txtSekreterYaş.Size = new System.Drawing.Size(246, 27);
+            this.txtSekreterYaş.TabIndex = 6;
+            this.txtSekreterYaş.ValidatingType = typeof(System.DateTime);
+            // 
             // SekreterKayıtOlSayfasi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -230,6 +233,7 @@
             this.ClientSize = new System.Drawing.Size(584, 761);
             this.Controls.Add(this.btnSekreterKayıtYap);
             this.Controls.Add(this.btnSekreterKayitGeri);
+            this.Controls.Add(this.txtSekreterYaş);
             this.Controls.Add(this.txtSekreterTel);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label8);
@@ -243,7 +247,6 @@
             this.Controls.Add(this.txtSekreterSifre);
             this.Controls.Add(this.txtSekreterMail);
             this.Controls.Add(this.txtSekreterTC);
-            this.Controls.Add(this.txtSekreterYaş);
             this.Controls.Add(this.txtSekreterSoyisim);
             this.Controls.Add(this.txtSekreterİsim);
             this.Name = "SekreterKayıtOlSayfasi";
@@ -258,7 +261,6 @@
         private System.Windows.Forms.TextBox txtSekreterİsim;
         private System.Windows.Forms.TextBox txtSekreterSoyisim;
         private System.Windows.Forms.TextBox txtSekreterTC;
-        private System.Windows.Forms.TextBox txtSekreterYaş;
         private System.Windows.Forms.TextBox txtSekreterMail;
         private System.Windows.Forms.TextBox txtSekreterSifre;
         private System.Windows.Forms.ComboBox CmbSekreterCinsiyet;
@@ -273,5 +275,6 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button btnSekreterKayitGeri;
         private System.Windows.Forms.Button btnSekreterKayıtYap;
+        private System.Windows.Forms.MaskedTextBox txtSekreterYaş;
     }
 }
