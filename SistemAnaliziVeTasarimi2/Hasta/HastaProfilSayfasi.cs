@@ -8,19 +8,19 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace SistemAnaliziVeTasarimi2.Doktor
+namespace SistemAnaliziVeTasarimi2.Hasta
 {
-    public partial class DoktorProfilSayfasi : Form
+    public partial class HastaProfilSayfasi : Form
     {
-        public DoktorProfilSayfasi()
+        public HastaProfilSayfasi()
         {
             InitializeComponent();
         }
 
         private void btnGERİ_Click(object sender, EventArgs e)
         {
-            DoktorGirisSayfasi dgs = new DoktorGirisSayfasi();
-            dgs.Show();
+            HastaGirisSayfasi hgs = new HastaGirisSayfasi();
+            hgs.Show();
             this.Hide();
         }
     }

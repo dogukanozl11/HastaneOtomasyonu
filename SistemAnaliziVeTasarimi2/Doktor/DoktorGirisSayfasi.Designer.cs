@@ -40,83 +40,98 @@
             // 
             // btnGirisYap
             // 
-            this.btnGirisYap.Location = new System.Drawing.Point(146, 212);
+            this.btnGirisYap.BackColor = System.Drawing.Color.LawnGreen;
+            this.btnGirisYap.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnGirisYap.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnGirisYap.Location = new System.Drawing.Point(115, 289);
             this.btnGirisYap.Name = "btnGirisYap";
-            this.btnGirisYap.Size = new System.Drawing.Size(282, 42);
-            this.btnGirisYap.TabIndex = 0;
+            this.btnGirisYap.Size = new System.Drawing.Size(240, 60);
+            this.btnGirisYap.TabIndex = 3;
             this.btnGirisYap.Text = "Giriş Yap";
-            this.btnGirisYap.UseVisualStyleBackColor = true;
+            this.btnGirisYap.UseVisualStyleBackColor = false;
             this.btnGirisYap.Click += new System.EventHandler(this.btnGirisYap_Click);
             // 
             // txtTC
             // 
             this.txtTC.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtTC.Location = new System.Drawing.Point(143, 108);
+            this.txtTC.Location = new System.Drawing.Point(115, 165);
             this.txtTC.Name = "txtTC";
-            this.txtTC.Size = new System.Drawing.Size(285, 27);
+            this.txtTC.Size = new System.Drawing.Size(240, 27);
             this.txtTC.TabIndex = 1;
             // 
             // txtSifre
             // 
             this.txtSifre.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtSifre.Location = new System.Drawing.Point(143, 169);
+            this.txtSifre.Location = new System.Drawing.Point(115, 246);
             this.txtSifre.Name = "txtSifre";
-            this.txtSifre.Size = new System.Drawing.Size(285, 27);
-            this.txtSifre.TabIndex = 1;
+            this.txtSifre.Size = new System.Drawing.Size(240, 27);
+            this.txtSifre.TabIndex = 2;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(143, 92);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label1.Location = new System.Drawing.Point(110, 126);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(71, 13);
+            this.label1.Size = new System.Drawing.Size(132, 25);
             this.label1.TabIndex = 2;
             this.label1.Text = "T.C Kimlik No";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(143, 153);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label2.Location = new System.Drawing.Point(110, 207);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(28, 13);
+            this.label2.Size = new System.Drawing.Size(52, 25);
             this.label2.TabIndex = 2;
             this.label2.Text = "Şifre";
             // 
             // btnSifremiUnuttum
             // 
-            this.btnSifremiUnuttum.Location = new System.Drawing.Point(446, 320);
+            this.btnSifremiUnuttum.BackColor = System.Drawing.Color.Red;
+            this.btnSifremiUnuttum.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnSifremiUnuttum.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnSifremiUnuttum.Location = new System.Drawing.Point(235, 353);
             this.btnSifremiUnuttum.Name = "btnSifremiUnuttum";
-            this.btnSifremiUnuttum.Size = new System.Drawing.Size(136, 29);
-            this.btnSifremiUnuttum.TabIndex = 0;
+            this.btnSifremiUnuttum.Size = new System.Drawing.Size(120, 60);
+            this.btnSifremiUnuttum.TabIndex = 5;
             this.btnSifremiUnuttum.Text = "Şifremi Unuttum";
-            this.btnSifremiUnuttum.UseVisualStyleBackColor = true;
+            this.btnSifremiUnuttum.UseVisualStyleBackColor = false;
             this.btnSifremiUnuttum.Click += new System.EventHandler(this.btnSifremiUnuttum_Click);
             // 
             // BtnKayıtOl
             // 
-            this.BtnKayıtOl.Location = new System.Drawing.Point(146, 260);
+            this.BtnKayıtOl.BackColor = System.Drawing.Color.Yellow;
+            this.BtnKayıtOl.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.BtnKayıtOl.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.BtnKayıtOl.Location = new System.Drawing.Point(115, 353);
             this.BtnKayıtOl.Name = "BtnKayıtOl";
-            this.BtnKayıtOl.Size = new System.Drawing.Size(282, 42);
-            this.BtnKayıtOl.TabIndex = 0;
+            this.BtnKayıtOl.Size = new System.Drawing.Size(120, 60);
+            this.BtnKayıtOl.TabIndex = 4;
             this.BtnKayıtOl.Text = "Kayıt Ol";
-            this.BtnKayıtOl.UseVisualStyleBackColor = true;
+            this.BtnKayıtOl.UseVisualStyleBackColor = false;
             this.BtnKayıtOl.Click += new System.EventHandler(this.BtnKayıtOl_Click);
             // 
             // BtnGERİ
             // 
-            this.BtnGERİ.Location = new System.Drawing.Point(2, 0);
+            this.BtnGERİ.BackColor = System.Drawing.Color.Red;
+            this.BtnGERİ.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.BtnGERİ.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.BtnGERİ.Location = new System.Drawing.Point(1, 1);
             this.BtnGERİ.Name = "BtnGERİ";
-            this.BtnGERİ.Size = new System.Drawing.Size(53, 26);
-            this.BtnGERİ.TabIndex = 3;
-            this.BtnGERİ.Text = "GERİ";
-            this.BtnGERİ.UseVisualStyleBackColor = true;
+            this.BtnGERİ.Size = new System.Drawing.Size(45, 35);
+            this.BtnGERİ.TabIndex = 6;
+            this.BtnGERİ.Text = "<";
+            this.BtnGERİ.UseVisualStyleBackColor = false;
             this.BtnGERİ.Click += new System.EventHandler(this.BtnGERİ_Click);
             // 
             // DoktorGirisSayfasi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(584, 361);
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.ClientSize = new System.Drawing.Size(504, 461);
             this.Controls.Add(this.BtnGERİ);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);

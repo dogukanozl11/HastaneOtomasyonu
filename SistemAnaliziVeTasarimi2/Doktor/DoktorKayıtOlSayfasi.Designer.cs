@@ -47,16 +47,20 @@
             this.txtDoktorİsim = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.CmbDoktorBrans = new System.Windows.Forms.ComboBox();
+            this.btnGeri = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnDoktorKayıtYap
             // 
+            this.btnDoktorKayıtYap.BackColor = System.Drawing.Color.LawnGreen;
+            this.btnDoktorKayıtYap.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnDoktorKayıtYap.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnDoktorKayıtYap.Location = new System.Drawing.Point(169, 681);
             this.btnDoktorKayıtYap.Name = "btnDoktorKayıtYap";
-            this.btnDoktorKayıtYap.Size = new System.Drawing.Size(246, 55);
+            this.btnDoktorKayıtYap.Size = new System.Drawing.Size(246, 65);
             this.btnDoktorKayıtYap.TabIndex = 22;
             this.btnDoktorKayıtYap.Text = "Kayıt Yap";
-            this.btnDoktorKayıtYap.UseVisualStyleBackColor = true;
+            this.btnDoktorKayıtYap.UseVisualStyleBackColor = false;
             this.btnDoktorKayıtYap.Click += new System.EventHandler(this.btnDoktorKayıtYap_Click);
             // 
             // txtDoktorTel
@@ -170,6 +174,7 @@
             // 
             // txtDoktorMail
             // 
+            this.txtDoktorMail.BackColor = System.Drawing.SystemColors.Window;
             this.txtDoktorMail.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDoktorMail.Location = new System.Drawing.Point(169, 491);
             this.txtDoktorMail.Name = "txtDoktorMail";
@@ -202,6 +207,7 @@
             // 
             // txtDoktorİsim
             // 
+            this.txtDoktorİsim.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.txtDoktorİsim.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDoktorİsim.Location = new System.Drawing.Point(169, 47);
             this.txtDoktorİsim.Name = "txtDoktorİsim";
@@ -238,11 +244,26 @@
             this.CmbDoktorBrans.Size = new System.Drawing.Size(246, 27);
             this.CmbDoktorBrans.TabIndex = 12;
             // 
+            // btnGeri
+            // 
+            this.btnGeri.BackColor = System.Drawing.Color.Red;
+            this.btnGeri.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnGeri.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnGeri.Location = new System.Drawing.Point(1, 1);
+            this.btnGeri.Name = "btnGeri";
+            this.btnGeri.Size = new System.Drawing.Size(45, 35);
+            this.btnGeri.TabIndex = 24;
+            this.btnGeri.Text = "<";
+            this.btnGeri.UseVisualStyleBackColor = false;
+            this.btnGeri.Click += new System.EventHandler(this.btnGeri_Click);
+            // 
             // DoktorKayıtOlSayfasi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(584, 761);
+            this.Controls.Add(this.btnGeri);
             this.Controls.Add(this.btnDoktorKayıtYap);
             this.Controls.Add(this.txtDoktorTel);
             this.Controls.Add(this.label7);
@@ -290,5 +311,6 @@
         private System.Windows.Forms.TextBox txtDoktorİsim;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.ComboBox CmbDoktorBrans;
+        private System.Windows.Forms.Button btnGeri;
     }
 }

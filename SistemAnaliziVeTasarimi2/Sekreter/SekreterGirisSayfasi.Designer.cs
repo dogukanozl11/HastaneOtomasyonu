@@ -40,13 +40,15 @@
             // 
             // btnGERİ
             // 
-            this.btnGERİ.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnGERİ.Location = new System.Drawing.Point(2, 1);
+            this.btnGERİ.BackColor = System.Drawing.Color.Red;
+            this.btnGERİ.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnGERİ.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnGERİ.Location = new System.Drawing.Point(1, 1);
             this.btnGERİ.Name = "btnGERİ";
             this.btnGERİ.Size = new System.Drawing.Size(45, 35);
-            this.btnGERİ.TabIndex = 1;
+            this.btnGERİ.TabIndex = 6;
             this.btnGERİ.Text = "<";
-            this.btnGERİ.UseVisualStyleBackColor = true;
+            this.btnGERİ.UseVisualStyleBackColor = false;
             this.btnGERİ.Click += new System.EventHandler(this.btnGERİ_Click);
             // 
             // txtTC
@@ -55,7 +57,7 @@
             this.txtTC.Location = new System.Drawing.Point(115, 165);
             this.txtTC.Name = "txtTC";
             this.txtTC.Size = new System.Drawing.Size(240, 27);
-            this.txtTC.TabIndex = 2;
+            this.txtTC.TabIndex = 1;
             // 
             // label2
             // 
@@ -87,42 +89,49 @@
             // 
             // btnSekreterGirisYap
             // 
+            this.btnSekreterGirisYap.BackColor = System.Drawing.Color.LawnGreen;
+            this.btnSekreterGirisYap.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnSekreterGirisYap.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnSekreterGirisYap.Location = new System.Drawing.Point(115, 289);
             this.btnSekreterGirisYap.Name = "btnSekreterGirisYap";
-            this.btnSekreterGirisYap.Size = new System.Drawing.Size(225, 42);
-            this.btnSekreterGirisYap.TabIndex = 4;
+            this.btnSekreterGirisYap.Size = new System.Drawing.Size(240, 60);
+            this.btnSekreterGirisYap.TabIndex = 3;
             this.btnSekreterGirisYap.Text = "Giriş Yap";
-            this.btnSekreterGirisYap.UseVisualStyleBackColor = true;
+            this.btnSekreterGirisYap.UseVisualStyleBackColor = false;
             this.btnSekreterGirisYap.Click += new System.EventHandler(this.btnSekreterGirisYap_Click);
             // 
             // btnSekreterKayıtOl
             // 
+            this.btnSekreterKayıtOl.BackColor = System.Drawing.Color.Yellow;
+            this.btnSekreterKayıtOl.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnSekreterKayıtOl.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnSekreterKayıtOl.Location = new System.Drawing.Point(115, 337);
+            this.btnSekreterKayıtOl.Location = new System.Drawing.Point(115, 353);
             this.btnSekreterKayıtOl.Name = "btnSekreterKayıtOl";
-            this.btnSekreterKayıtOl.Size = new System.Drawing.Size(107, 55);
+            this.btnSekreterKayıtOl.Size = new System.Drawing.Size(120, 60);
             this.btnSekreterKayıtOl.TabIndex = 4;
             this.btnSekreterKayıtOl.Text = "Kayıt Ol";
-            this.btnSekreterKayıtOl.UseVisualStyleBackColor = true;
+            this.btnSekreterKayıtOl.UseVisualStyleBackColor = false;
             this.btnSekreterKayıtOl.Click += new System.EventHandler(this.btnSekreterKayıtOl_Click);
             // 
             // btnSekreterSifremiUnuttun
             // 
+            this.btnSekreterSifremiUnuttun.BackColor = System.Drawing.Color.Red;
+            this.btnSekreterSifremiUnuttun.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnSekreterSifremiUnuttun.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnSekreterSifremiUnuttun.Location = new System.Drawing.Point(233, 337);
+            this.btnSekreterSifremiUnuttun.Location = new System.Drawing.Point(235, 353);
             this.btnSekreterSifremiUnuttun.Name = "btnSekreterSifremiUnuttun";
-            this.btnSekreterSifremiUnuttun.Size = new System.Drawing.Size(107, 55);
-            this.btnSekreterSifremiUnuttun.TabIndex = 4;
+            this.btnSekreterSifremiUnuttun.Size = new System.Drawing.Size(120, 60);
+            this.btnSekreterSifremiUnuttun.TabIndex = 5;
             this.btnSekreterSifremiUnuttun.Text = "Şifremi Unuttum";
-            this.btnSekreterSifremiUnuttun.UseVisualStyleBackColor = true;
+            this.btnSekreterSifremiUnuttun.UseVisualStyleBackColor = false;
             this.btnSekreterSifremiUnuttun.Click += new System.EventHandler(this.btnSekreterSifremiUnuttun_Click);
             // 
             // SekreterGirisSayfasi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(504, 450);
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.ClientSize = new System.Drawing.Size(504, 461);
             this.Controls.Add(this.btnSekreterSifremiUnuttun);
             this.Controls.Add(this.btnSekreterKayıtOl);
             this.Controls.Add(this.btnSekreterGirisYap);

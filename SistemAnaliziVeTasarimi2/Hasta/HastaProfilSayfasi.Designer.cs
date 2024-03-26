@@ -1,6 +1,6 @@
-﻿namespace SistemAnaliziVeTasarimi2.Doktor
+﻿namespace SistemAnaliziVeTasarimi2.Hasta
 {
-    partial class DoktorProfilSayfasi
+    partial class HastaProfilSayfasi
     {
         /// <summary>
         /// Required designer variable.
@@ -34,7 +34,7 @@
             // btnGERİ
             // 
             this.btnGERİ.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnGERİ.Location = new System.Drawing.Point(1, 1);
+            this.btnGERİ.Location = new System.Drawing.Point(1, 0);
             this.btnGERİ.Name = "btnGERİ";
             this.btnGERİ.Size = new System.Drawing.Size(45, 35);
             this.btnGERİ.TabIndex = 3;
@@ -42,14 +42,14 @@
             this.btnGERİ.UseVisualStyleBackColor = true;
             this.btnGERİ.Click += new System.EventHandler(this.btnGERİ_Click);
             // 
-            // DoktorProfilSayfasi
+            // HastaProfilSayfasi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnGERİ);
-            this.Name = "DoktorProfilSayfasi";
-            this.Text = "DoktorProfilSayfasi";
+            this.Name = "HastaProfilSayfasi";
+            this.Text = "HastaProfilSayfasi";
             this.ResumeLayout(false);
 
         }

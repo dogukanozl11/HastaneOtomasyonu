@@ -60,7 +60,9 @@ namespace SistemAnaliziVeTasarimi2.Doktor
 
         private void btnSifremiUnuttum_Click(object sender, EventArgs e)
         {
-
+            DoktorSifremiUnuttumSayfasi dsus = new DoktorSifremiUnuttumSayfasi();
+            dsus.Show();
+            this.Hide();
         }
     }
 }

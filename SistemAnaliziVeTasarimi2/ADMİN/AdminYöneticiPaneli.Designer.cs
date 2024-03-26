@@ -34,9 +34,9 @@
             // 
             // btnSekreterKayit
             // 
-            this.btnSekreterKayit.Location = new System.Drawing.Point(410, 233);
+            this.btnSekreterKayit.Location = new System.Drawing.Point(404, 242);
             this.btnSekreterKayit.Name = "btnSekreterKayit";
-            this.btnSekreterKayit.Size = new System.Drawing.Size(205, 79);
+            this.btnSekreterKayit.Size = new System.Drawing.Size(131, 51);
             this.btnSekreterKayit.TabIndex = 0;
             this.btnSekreterKayit.Text = "Sekreter Kayıt";
             this.btnSekreterKayit.UseVisualStyleBackColor = true;

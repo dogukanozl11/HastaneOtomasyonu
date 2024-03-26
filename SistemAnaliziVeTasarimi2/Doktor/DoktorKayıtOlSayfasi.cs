@@ -38,5 +38,12 @@ namespace SistemAnaliziVeTasarimi2.Doktor
             bag.Close();
             MessageBox.Show("Sekreter Kayıt İşlemi Başrılı . ŞİFRENİZ : " + txtDoktorSifre.Text);
         }
+
+        private void btnGeri_Click(object sender, EventArgs e)
+        {
+            DoktorGirisSayfasi dgs = new DoktorGirisSayfasi();
+            dgs.Show();
+            this.Hide();
+        }
     }
 }
