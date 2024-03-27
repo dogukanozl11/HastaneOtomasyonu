@@ -41,6 +41,7 @@ namespace SistemAnaliziVeTasarimi2.Hasta
             else if (dt.Rows.Count > 0)
             {
                 HastaProfilSayfasi hps = new HastaProfilSayfasi();
+                hps.tcno = txtTC.Text;
                 hps.Show();
                 this.Hide();
             }

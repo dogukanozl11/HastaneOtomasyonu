@@ -171,7 +171,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "DoktorSifremiUnuttumSayfasi";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "DoktorSifremiUnuttumSayfasi";
+            this.Text = "6";
             this.ResumeLayout(false);
             this.PerformLayout();
 

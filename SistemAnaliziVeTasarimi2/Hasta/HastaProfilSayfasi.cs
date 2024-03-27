@@ -30,13 +30,13 @@ namespace SistemAnaliziVeTasarimi2.Hasta
             LblTC.Text = tcno;
 
             bag.Open();
-            string sql = "select isim,soyisim from tbl_hasta where TcNo=@prm1";
+            string sql = "select isim,soyisim From tbl_hasta where TcNo=@prm1";
             SqlCommand komut = new SqlCommand(sql,bag);
             komut.Parameters.AddWithValue("@prm1", LblTC.Text);
             SqlDataReader dr = komut.ExecuteReader();
             while(dr.Read())
             {
-                LblAdSoyad.Text = dr[0] + " " + dr[1];
+                LblAdSoyad.Text = dr["isim"].ToString() + " " + dr["soyisim"].ToString();
                 LblTC.Text = tcno;
             }
             bag.Close();
