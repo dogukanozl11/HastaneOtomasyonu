@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DoktorSifremiUnuttumSayfasi));
             this.btnGuncelle = new System.Windows.Forms.Button();
             this.btnOnayKoduAl = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
@@ -167,7 +168,9 @@
             this.Controls.Add(this.txtOnayKodu);
             this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.txtTC);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "DoktorSifremiUnuttumSayfasi";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DoktorSifremiUnuttumSayfasi";
             this.ResumeLayout(false);
             this.PerformLayout();

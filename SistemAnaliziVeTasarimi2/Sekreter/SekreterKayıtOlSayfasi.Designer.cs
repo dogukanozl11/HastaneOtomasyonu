@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SekreterKayıtOlSayfasi));
             this.txtSekreterİsim = new System.Windows.Forms.TextBox();
             this.txtSekreterSoyisim = new System.Windows.Forms.TextBox();
             this.txtSekreterTC = new System.Windows.Forms.TextBox();
@@ -249,7 +250,9 @@
             this.Controls.Add(this.txtSekreterTC);
             this.Controls.Add(this.txtSekreterSoyisim);
             this.Controls.Add(this.txtSekreterİsim);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "SekreterKayıtOlSayfasi";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SekreterKayıtOlSayfasi";
             this.ResumeLayout(false);
             this.PerformLayout();

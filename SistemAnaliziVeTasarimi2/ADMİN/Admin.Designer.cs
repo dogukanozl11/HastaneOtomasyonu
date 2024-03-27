@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Admin));
             this.txtid = new System.Windows.Forms.TextBox();
             this.txtsifre = new System.Windows.Forms.TextBox();
             this.btnAdminGiris = new System.Windows.Forms.Button();
@@ -109,7 +110,9 @@
             this.Controls.Add(this.btnAdminGiris);
             this.Controls.Add(this.txtsifre);
             this.Controls.Add(this.txtid);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Admin";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Admin";
             this.ResumeLayout(false);
             this.PerformLayout();

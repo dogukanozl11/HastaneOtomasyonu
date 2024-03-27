@@ -28,13 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminYöneticiPaneli));
             this.btnSekreterKayit = new System.Windows.Forms.Button();
             this.btnDoktorKayit = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnSekreterKayit
             // 
-            this.btnSekreterKayit.Location = new System.Drawing.Point(149, 387);
+            this.btnSekreterKayit.Location = new System.Drawing.Point(737, 461);
             this.btnSekreterKayit.Name = "btnSekreterKayit";
             this.btnSekreterKayit.Size = new System.Drawing.Size(131, 51);
             this.btnSekreterKayit.TabIndex = 0;
@@ -44,7 +45,7 @@
             // 
             // btnDoktorKayit
             // 
-            this.btnDoktorKayit.Location = new System.Drawing.Point(12, 387);
+            this.btnDoktorKayit.Location = new System.Drawing.Point(62, 452);
             this.btnDoktorKayit.Name = "btnDoktorKayit";
             this.btnDoktorKayit.Size = new System.Drawing.Size(131, 51);
             this.btnDoktorKayit.TabIndex = 1;
@@ -56,10 +57,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(305, 450);
+            this.ClientSize = new System.Drawing.Size(948, 561);
             this.Controls.Add(this.btnDoktorKayit);
             this.Controls.Add(this.btnSekreterKayit);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "AdminYöneticiPaneli";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AdminYöneticiPaneli";
             this.ResumeLayout(false);
 

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SekreterSifremiUnuttumSayfasi));
             this.txtTC = new System.Windows.Forms.TextBox();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.txtYeniSifre = new System.Windows.Forms.TextBox();
@@ -167,7 +168,9 @@
             this.Controls.Add(this.txtOnayKodu);
             this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.txtTC);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "SekreterSifremiUnuttumSayfasi";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SekreterSifremiUnuttumSayfasi";
             this.ResumeLayout(false);
             this.PerformLayout();

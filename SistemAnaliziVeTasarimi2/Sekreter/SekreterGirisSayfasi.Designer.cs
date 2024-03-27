@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SekreterGirisSayfasi));
             this.btnGERİ = new System.Windows.Forms.Button();
             this.txtTC = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -140,7 +141,9 @@
             this.Controls.Add(this.txtsifre);
             this.Controls.Add(this.txtTC);
             this.Controls.Add(this.btnGERİ);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "SekreterGirisSayfasi";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SekreterGirisSayfasi";
             this.ResumeLayout(false);
             this.PerformLayout();
