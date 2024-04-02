@@ -1,6 +1,6 @@
-﻿namespace SistemAnaliziVeTasarimi2.Doktor
+﻿namespace SistemAnaliziVeTasarimi2.Laboratuvar
 {
-    partial class DoktorSifremiUnuttumSayfasi
+    partial class LaboratuvarSifremiUnuttumSayfasi
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DoktorSifremiUnuttumSayfasi));
             this.btnGuncelle = new System.Windows.Forms.Button();
             this.btnOnayKoduAl = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
@@ -48,7 +47,7 @@
             this.btnGuncelle.Location = new System.Drawing.Point(77, 371);
             this.btnGuncelle.Name = "btnGuncelle";
             this.btnGuncelle.Size = new System.Drawing.Size(238, 45);
-            this.btnGuncelle.TabIndex = 11;
+            this.btnGuncelle.TabIndex = 21;
             this.btnGuncelle.Text = "Güncelle";
             this.btnGuncelle.UseVisualStyleBackColor = false;
             this.btnGuncelle.Click += new System.EventHandler(this.btnGuncelle_Click);
@@ -60,7 +59,7 @@
             this.btnOnayKoduAl.Location = new System.Drawing.Point(163, 250);
             this.btnOnayKoduAl.Name = "btnOnayKoduAl";
             this.btnOnayKoduAl.Size = new System.Drawing.Size(150, 45);
-            this.btnOnayKoduAl.TabIndex = 12;
+            this.btnOnayKoduAl.TabIndex = 22;
             this.btnOnayKoduAl.Text = "Onay Kodu Al";
             this.btnOnayKoduAl.UseVisualStyleBackColor = false;
             this.btnOnayKoduAl.Click += new System.EventHandler(this.btnOnayKoduAl_Click);
@@ -69,10 +68,10 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label4.Location = new System.Drawing.Point(73, 311);
+            this.label4.Location = new System.Drawing.Point(72, 311);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(100, 24);
-            this.label4.TabIndex = 7;
+            this.label4.TabIndex = 17;
             this.label4.Text = "Yeni Şifre :";
             // 
             // label3
@@ -82,7 +81,7 @@
             this.label3.Location = new System.Drawing.Point(73, 190);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(115, 24);
-            this.label3.TabIndex = 8;
+            this.label3.TabIndex = 18;
             this.label3.Text = "Onay Kodu :";
             // 
             // label2
@@ -92,7 +91,7 @@
             this.label2.Location = new System.Drawing.Point(73, 118);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(82, 24);
-            this.label2.TabIndex = 9;
+            this.label2.TabIndex = 19;
             this.label2.Text = "E-MAİL :";
             // 
             // label1
@@ -102,7 +101,7 @@
             this.label1.Location = new System.Drawing.Point(73, 54);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(139, 24);
-            this.label1.TabIndex = 10;
+            this.label1.TabIndex = 20;
             this.label1.Text = "T.C Kimlik No : ";
             // 
             // txtYeniSifre
@@ -112,7 +111,7 @@
             this.txtYeniSifre.Name = "txtYeniSifre";
             this.txtYeniSifre.PasswordChar = '*';
             this.txtYeniSifre.Size = new System.Drawing.Size(238, 27);
-            this.txtYeniSifre.TabIndex = 3;
+            this.txtYeniSifre.TabIndex = 13;
             // 
             // txtOnayKodu
             // 
@@ -120,7 +119,7 @@
             this.txtOnayKodu.Location = new System.Drawing.Point(77, 217);
             this.txtOnayKodu.Name = "txtOnayKodu";
             this.txtOnayKodu.Size = new System.Drawing.Size(238, 27);
-            this.txtOnayKodu.TabIndex = 4;
+            this.txtOnayKodu.TabIndex = 14;
             // 
             // txtEmail
             // 
@@ -128,7 +127,7 @@
             this.txtEmail.Location = new System.Drawing.Point(77, 145);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(238, 27);
-            this.txtEmail.TabIndex = 5;
+            this.txtEmail.TabIndex = 15;
             // 
             // txtTC
             // 
@@ -136,9 +135,9 @@
             this.txtTC.Location = new System.Drawing.Point(77, 81);
             this.txtTC.Name = "txtTC";
             this.txtTC.Size = new System.Drawing.Size(238, 27);
-            this.txtTC.TabIndex = 6;
+            this.txtTC.TabIndex = 16;
             // 
-            // DoktorSifremiUnuttumSayfasi
+            // LaboratuvarSifremiUnuttumSayfasi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -154,10 +153,9 @@
             this.Controls.Add(this.txtOnayKodu);
             this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.txtTC);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "DoktorSifremiUnuttumSayfasi";
+            this.Name = "LaboratuvarSifremiUnuttumSayfasi";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Doktor Sifremi Unuttum";
+            this.Text = "LaboratuvarSifremiUnuttumSayfasi";
             this.ResumeLayout(false);
             this.PerformLayout();
 

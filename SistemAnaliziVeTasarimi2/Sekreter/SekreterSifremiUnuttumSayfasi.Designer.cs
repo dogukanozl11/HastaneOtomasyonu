@@ -39,7 +39,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.btnOnayKoduAl = new System.Windows.Forms.Button();
             this.btnGuncelle = new System.Windows.Forms.Button();
-            this.btnGERİ = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtTC
@@ -139,25 +138,12 @@
             this.btnGuncelle.UseVisualStyleBackColor = false;
             this.btnGuncelle.Click += new System.EventHandler(this.btnGuncelle_Click);
             // 
-            // btnGERİ
-            // 
-            this.btnGERİ.BackColor = System.Drawing.Color.Red;
-            this.btnGERİ.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnGERİ.Location = new System.Drawing.Point(0, 0);
-            this.btnGERİ.Name = "btnGERİ";
-            this.btnGERİ.Size = new System.Drawing.Size(45, 35);
-            this.btnGERİ.TabIndex = 3;
-            this.btnGERİ.Text = "<";
-            this.btnGERİ.UseVisualStyleBackColor = false;
-            this.btnGERİ.Click += new System.EventHandler(this.btnGERİ_Click);
-            // 
             // SekreterSifremiUnuttumSayfasi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(405, 450);
-            this.Controls.Add(this.btnGERİ);
             this.Controls.Add(this.btnGuncelle);
             this.Controls.Add(this.btnOnayKoduAl);
             this.Controls.Add(this.label4);
@@ -189,6 +175,5 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button btnOnayKoduAl;
         private System.Windows.Forms.Button btnGuncelle;
-        private System.Windows.Forms.Button btnGERİ;
     }
 }

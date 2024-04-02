@@ -45,7 +45,6 @@
             this.txtHastaTC = new System.Windows.Forms.TextBox();
             this.txtHastaSoyisim = new System.Windows.Forms.TextBox();
             this.txtHastaİsim = new System.Windows.Forms.TextBox();
-            this.btnGeri = new System.Windows.Forms.Button();
             this.txtHastaYaş = new System.Windows.Forms.MaskedTextBox();
             this.SuspendLayout();
             // 
@@ -202,19 +201,6 @@
             this.txtHastaİsim.Size = new System.Drawing.Size(246, 27);
             this.txtHastaİsim.TabIndex = 6;
             // 
-            // btnGeri
-            // 
-            this.btnGeri.BackColor = System.Drawing.Color.Red;
-            this.btnGeri.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnGeri.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnGeri.Location = new System.Drawing.Point(1, 1);
-            this.btnGeri.Name = "btnGeri";
-            this.btnGeri.Size = new System.Drawing.Size(45, 35);
-            this.btnGeri.TabIndex = 23;
-            this.btnGeri.Text = "<";
-            this.btnGeri.UseVisualStyleBackColor = false;
-            this.btnGeri.Click += new System.EventHandler(this.btnGeri_Click);
-            // 
             // txtHastaYaş
             // 
             this.txtHastaYaş.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
@@ -231,7 +217,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(584, 761);
-            this.Controls.Add(this.btnGeri);
             this.Controls.Add(this.btnHastaKayıtYap);
             this.Controls.Add(this.txtHastaYaş);
             this.Controls.Add(this.txtHastaTel);
@@ -276,7 +261,6 @@
         private System.Windows.Forms.TextBox txtHastaTC;
         private System.Windows.Forms.TextBox txtHastaSoyisim;
         private System.Windows.Forms.TextBox txtHastaİsim;
-        private System.Windows.Forms.Button btnGeri;
         private System.Windows.Forms.MaskedTextBox txtHastaYaş;
     }
 }

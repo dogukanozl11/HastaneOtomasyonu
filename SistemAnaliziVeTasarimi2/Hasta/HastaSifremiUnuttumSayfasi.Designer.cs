@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HastaSifremiUnuttumSayfasi));
-            this.btnGERİ = new System.Windows.Forms.Button();
             this.btnGuncelle = new System.Windows.Forms.Button();
             this.btnOnayKoduAl = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
@@ -41,18 +40,6 @@
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.txtTC = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
-            // 
-            // btnGERİ
-            // 
-            this.btnGERİ.BackColor = System.Drawing.Color.Red;
-            this.btnGERİ.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnGERİ.Location = new System.Drawing.Point(0, 0);
-            this.btnGERİ.Name = "btnGERİ";
-            this.btnGERİ.Size = new System.Drawing.Size(45, 35);
-            this.btnGERİ.TabIndex = 14;
-            this.btnGERİ.Text = "<";
-            this.btnGERİ.UseVisualStyleBackColor = false;
-            this.btnGERİ.Click += new System.EventHandler(this.btnGERİ_Click);
             // 
             // btnGuncelle
             // 
@@ -167,7 +154,6 @@
             this.Controls.Add(this.txtOnayKodu);
             this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.txtTC);
-            this.Controls.Add(this.btnGERİ);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "HastaSifremiUnuttumSayfasi";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -178,8 +164,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button btnGERİ;
         private System.Windows.Forms.Button btnGuncelle;
         private System.Windows.Forms.Button btnOnayKoduAl;
         private System.Windows.Forms.Label label4;
