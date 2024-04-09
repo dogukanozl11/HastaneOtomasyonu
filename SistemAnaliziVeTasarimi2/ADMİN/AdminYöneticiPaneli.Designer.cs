@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminYöneticiPaneli));
             this.btnSekreterKayit = new System.Windows.Forms.Button();
             this.btnDoktorKayit = new System.Windows.Forms.Button();
+            this.btnLabPKayit = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnSekreterKayit
@@ -53,11 +54,22 @@
             this.btnDoktorKayit.UseVisualStyleBackColor = true;
             this.btnDoktorKayit.Click += new System.EventHandler(this.btnDoktorKayit_Click);
             // 
+            // btnLabPKayit
+            // 
+            this.btnLabPKayit.Location = new System.Drawing.Point(361, 430);
+            this.btnLabPKayit.Name = "btnLabPKayit";
+            this.btnLabPKayit.Size = new System.Drawing.Size(131, 51);
+            this.btnLabPKayit.TabIndex = 2;
+            this.btnLabPKayit.Text = "lab p";
+            this.btnLabPKayit.UseVisualStyleBackColor = true;
+            this.btnLabPKayit.Click += new System.EventHandler(this.btnLabPKayit_Click);
+            // 
             // AdminYöneticiPaneli
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(948, 561);
+            this.Controls.Add(this.btnLabPKayit);
             this.Controls.Add(this.btnDoktorKayit);
             this.Controls.Add(this.btnSekreterKayit);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -72,5 +84,6 @@
 
         private System.Windows.Forms.Button btnSekreterKayit;
         private System.Windows.Forms.Button btnDoktorKayit;
+        private System.Windows.Forms.Button btnLabPKayit;
     }
 }

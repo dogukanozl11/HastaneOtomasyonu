@@ -38,47 +38,47 @@
             this.btnHastaKayıtol = new System.Windows.Forms.Button();
             this.btniletisim = new System.Windows.Forms.Button();
             this.GirisPaneli = new System.Windows.Forms.Panel();
-            this.AdmingroupBox = new System.Windows.Forms.GroupBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.txtAdminSifre = new System.Windows.Forms.TextBox();
-            this.txtAdminID = new System.Windows.Forms.TextBox();
-            this.btnAdminGiris = new System.Windows.Forms.Button();
-            this.hastaGroupBox = new System.Windows.Forms.GroupBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.txtHastaSifre = new System.Windows.Forms.TextBox();
-            this.txthastaTC = new System.Windows.Forms.TextBox();
-            this.hastagirisbtn = new System.Windows.Forms.Button();
+            this.LaboratuvargroupBox = new System.Windows.Forms.GroupBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.txtLabPSifre = new System.Windows.Forms.TextBox();
+            this.txtLabPTC = new System.Windows.Forms.TextBox();
+            this.btnLabSifremiUnuttum = new System.Windows.Forms.Button();
+            this.btnLabPGiris = new System.Windows.Forms.Button();
             this.HastaKabulGroupBox = new System.Windows.Forms.GroupBox();
+            this.btnHastaKabulSifremiUnuttum = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.txtHastakabulSifre = new System.Windows.Forms.TextBox();
             this.txthastakabultc = new System.Windows.Forms.TextBox();
             this.BtnHastaKabulGiris = new System.Windows.Forms.Button();
             this.DoktorGroupBox = new System.Windows.Forms.GroupBox();
+            this.btnDoktorSifremiUnuttum = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.txtSifre = new System.Windows.Forms.TextBox();
             this.txtTC = new System.Windows.Forms.TextBox();
             this.btnDoktorGirisYap = new System.Windows.Forms.Button();
-            this.btnAdmin = new System.Windows.Forms.Button();
-            this.LaboratuvargroupBox = new System.Windows.Forms.GroupBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.btnLabSifremiUnuttum = new System.Windows.Forms.Button();
-            this.btnDoktorSifremiUnuttum = new System.Windows.Forms.Button();
+            this.hastaGroupBox = new System.Windows.Forms.GroupBox();
             this.btnHastaSifremiUnuttum = new System.Windows.Forms.Button();
-            this.btnHastaKabulSifremiUnuttum = new System.Windows.Forms.Button();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.txtHastaSifre = new System.Windows.Forms.TextBox();
+            this.txthastaTC = new System.Windows.Forms.TextBox();
+            this.hastagirisbtn = new System.Windows.Forms.Button();
+            this.AdmingroupBox = new System.Windows.Forms.GroupBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.txtAdminSifre = new System.Windows.Forms.TextBox();
+            this.txtAdminID = new System.Windows.Forms.TextBox();
+            this.btnAdminGiris = new System.Windows.Forms.Button();
+            this.btnAdmin = new System.Windows.Forms.Button();
             this.GirisPaneli.SuspendLayout();
-            this.AdmingroupBox.SuspendLayout();
-            this.hastaGroupBox.SuspendLayout();
+            this.LaboratuvargroupBox.SuspendLayout();
             this.HastaKabulGroupBox.SuspendLayout();
             this.DoktorGroupBox.SuspendLayout();
-            this.LaboratuvargroupBox.SuspendLayout();
+            this.hastaGroupBox.SuspendLayout();
+            this.AdmingroupBox.SuspendLayout();
             this.SuspendLayout();
             // 
             // BtnHastaGiris
@@ -199,138 +199,85 @@
             this.GirisPaneli.Size = new System.Drawing.Size(552, 366);
             this.GirisPaneli.TabIndex = 6;
             // 
-            // AdmingroupBox
+            // LaboratuvargroupBox
             // 
-            this.AdmingroupBox.Controls.Add(this.label9);
-            this.AdmingroupBox.Controls.Add(this.label10);
-            this.AdmingroupBox.Controls.Add(this.txtAdminSifre);
-            this.AdmingroupBox.Controls.Add(this.txtAdminID);
-            this.AdmingroupBox.Controls.Add(this.btnAdminGiris);
-            this.AdmingroupBox.Location = new System.Drawing.Point(132, 26);
-            this.AdmingroupBox.Margin = new System.Windows.Forms.Padding(2);
-            this.AdmingroupBox.Name = "AdmingroupBox";
-            this.AdmingroupBox.Padding = new System.Windows.Forms.Padding(2);
-            this.AdmingroupBox.Size = new System.Drawing.Size(300, 300);
-            this.AdmingroupBox.TabIndex = 13;
-            this.AdmingroupBox.TabStop = false;
-            this.AdmingroupBox.Text = "Admin Giriş";
-            this.AdmingroupBox.Visible = false;
+            this.LaboratuvargroupBox.Controls.Add(this.label11);
+            this.LaboratuvargroupBox.Controls.Add(this.label12);
+            this.LaboratuvargroupBox.Controls.Add(this.txtLabPSifre);
+            this.LaboratuvargroupBox.Controls.Add(this.txtLabPTC);
+            this.LaboratuvargroupBox.Controls.Add(this.btnLabSifremiUnuttum);
+            this.LaboratuvargroupBox.Controls.Add(this.btnLabPGiris);
+            this.LaboratuvargroupBox.Location = new System.Drawing.Point(132, 26);
+            this.LaboratuvargroupBox.Margin = new System.Windows.Forms.Padding(2);
+            this.LaboratuvargroupBox.Name = "LaboratuvargroupBox";
+            this.LaboratuvargroupBox.Padding = new System.Windows.Forms.Padding(2);
+            this.LaboratuvargroupBox.Size = new System.Drawing.Size(300, 332);
+            this.LaboratuvargroupBox.TabIndex = 14;
+            this.LaboratuvargroupBox.TabStop = false;
+            this.LaboratuvargroupBox.Text = "Laboratuvar Giriş";
+            this.LaboratuvargroupBox.Visible = false;
             // 
-            // label9
+            // label11
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label9.Location = new System.Drawing.Point(19, 111);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(57, 25);
-            this.label9.TabIndex = 5;
-            this.label9.Text = "Şifre ";
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label11.Location = new System.Drawing.Point(19, 111);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(57, 25);
+            this.label11.TabIndex = 5;
+            this.label11.Text = "Şifre ";
             // 
-            // label10
+            // label12
             // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label10.Location = new System.Drawing.Point(19, 30);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(114, 25);
-            this.label10.TabIndex = 6;
-            this.label10.Text = "Kullanıcı ID ";
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label12.Location = new System.Drawing.Point(19, 30);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(132, 25);
+            this.label12.TabIndex = 6;
+            this.label12.Text = "T.C Kimlik No";
             // 
-            // txtAdminSifre
+            // txtLabPSifre
             // 
-            this.txtAdminSifre.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtAdminSifre.Location = new System.Drawing.Point(24, 150);
-            this.txtAdminSifre.Name = "txtAdminSifre";
-            this.txtAdminSifre.Size = new System.Drawing.Size(240, 27);
-            this.txtAdminSifre.TabIndex = 7;
+            this.txtLabPSifre.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtLabPSifre.Location = new System.Drawing.Point(24, 150);
+            this.txtLabPSifre.Name = "txtLabPSifre";
+            this.txtLabPSifre.Size = new System.Drawing.Size(240, 27);
+            this.txtLabPSifre.TabIndex = 7;
             // 
-            // txtAdminID
+            // txtLabPTC
             // 
-            this.txtAdminID.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtAdminID.Location = new System.Drawing.Point(24, 69);
-            this.txtAdminID.Name = "txtAdminID";
-            this.txtAdminID.Size = new System.Drawing.Size(240, 27);
-            this.txtAdminID.TabIndex = 4;
+            this.txtLabPTC.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtLabPTC.Location = new System.Drawing.Point(24, 69);
+            this.txtLabPTC.Name = "txtLabPTC";
+            this.txtLabPTC.Size = new System.Drawing.Size(240, 27);
+            this.txtLabPTC.TabIndex = 4;
             // 
-            // btnAdminGiris
+            // btnLabSifremiUnuttum
             // 
-            this.btnAdminGiris.BackColor = System.Drawing.Color.LawnGreen;
-            this.btnAdminGiris.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnAdminGiris.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnAdminGiris.Location = new System.Drawing.Point(24, 193);
-            this.btnAdminGiris.Name = "btnAdminGiris";
-            this.btnAdminGiris.Size = new System.Drawing.Size(240, 60);
-            this.btnAdminGiris.TabIndex = 8;
-            this.btnAdminGiris.Text = "Giriş Yap";
-            this.btnAdminGiris.UseVisualStyleBackColor = false;
-            this.btnAdminGiris.Click += new System.EventHandler(this.btnAdminGiris_Click);
+            this.btnLabSifremiUnuttum.BackColor = System.Drawing.Color.Red;
+            this.btnLabSifremiUnuttum.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnLabSifremiUnuttum.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnLabSifremiUnuttum.Location = new System.Drawing.Point(24, 259);
+            this.btnLabSifremiUnuttum.Name = "btnLabSifremiUnuttum";
+            this.btnLabSifremiUnuttum.Size = new System.Drawing.Size(240, 60);
+            this.btnLabSifremiUnuttum.TabIndex = 15;
+            this.btnLabSifremiUnuttum.Text = "Şifremi Unuttum";
+            this.btnLabSifremiUnuttum.UseVisualStyleBackColor = false;
+            this.btnLabSifremiUnuttum.Click += new System.EventHandler(this.btnLabSifremiUnuttum_Click);
             // 
-            // hastaGroupBox
+            // btnLabPGiris
             // 
-            this.hastaGroupBox.Controls.Add(this.btnHastaSifremiUnuttum);
-            this.hastaGroupBox.Controls.Add(this.label7);
-            this.hastaGroupBox.Controls.Add(this.label8);
-            this.hastaGroupBox.Controls.Add(this.txtHastaSifre);
-            this.hastaGroupBox.Controls.Add(this.txthastaTC);
-            this.hastaGroupBox.Controls.Add(this.hastagirisbtn);
-            this.hastaGroupBox.Location = new System.Drawing.Point(132, 26);
-            this.hastaGroupBox.Margin = new System.Windows.Forms.Padding(2);
-            this.hastaGroupBox.Name = "hastaGroupBox";
-            this.hastaGroupBox.Padding = new System.Windows.Forms.Padding(2);
-            this.hastaGroupBox.Size = new System.Drawing.Size(300, 332);
-            this.hastaGroupBox.TabIndex = 12;
-            this.hastaGroupBox.TabStop = false;
-            this.hastaGroupBox.Text = "Hasta Giriş";
-            this.hastaGroupBox.Visible = false;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label7.Location = new System.Drawing.Point(19, 111);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(52, 25);
-            this.label7.TabIndex = 5;
-            this.label7.Text = "Şifre";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label8.Location = new System.Drawing.Point(19, 30);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(132, 25);
-            this.label8.TabIndex = 6;
-            this.label8.Text = "T.C Kimlik No";
-            // 
-            // txtHastaSifre
-            // 
-            this.txtHastaSifre.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtHastaSifre.Location = new System.Drawing.Point(24, 150);
-            this.txtHastaSifre.Name = "txtHastaSifre";
-            this.txtHastaSifre.Size = new System.Drawing.Size(240, 27);
-            this.txtHastaSifre.TabIndex = 7;
-            // 
-            // txthastaTC
-            // 
-            this.txthastaTC.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txthastaTC.Location = new System.Drawing.Point(24, 69);
-            this.txthastaTC.Name = "txthastaTC";
-            this.txthastaTC.Size = new System.Drawing.Size(240, 27);
-            this.txthastaTC.TabIndex = 4;
-            // 
-            // hastagirisbtn
-            // 
-            this.hastagirisbtn.BackColor = System.Drawing.Color.LawnGreen;
-            this.hastagirisbtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.hastagirisbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.hastagirisbtn.Location = new System.Drawing.Point(24, 193);
-            this.hastagirisbtn.Name = "hastagirisbtn";
-            this.hastagirisbtn.Size = new System.Drawing.Size(240, 60);
-            this.hastagirisbtn.TabIndex = 8;
-            this.hastagirisbtn.Text = "Giriş Yap";
-            this.hastagirisbtn.UseVisualStyleBackColor = false;
-            this.hastagirisbtn.Click += new System.EventHandler(this.hastagirisbtn_Click);
+            this.btnLabPGiris.BackColor = System.Drawing.Color.LawnGreen;
+            this.btnLabPGiris.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnLabPGiris.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnLabPGiris.Location = new System.Drawing.Point(24, 193);
+            this.btnLabPGiris.Name = "btnLabPGiris";
+            this.btnLabPGiris.Size = new System.Drawing.Size(240, 60);
+            this.btnLabPGiris.TabIndex = 8;
+            this.btnLabPGiris.Text = "Giriş Yap";
+            this.btnLabPGiris.UseVisualStyleBackColor = false;
+            this.btnLabPGiris.Click += new System.EventHandler(this.btnLabPGiris_Click);
             // 
             // HastaKabulGroupBox
             // 
@@ -349,6 +296,19 @@
             this.HastaKabulGroupBox.TabStop = false;
             this.HastaKabulGroupBox.Text = "Hasta Kabul Giriş";
             this.HastaKabulGroupBox.Visible = false;
+            // 
+            // btnHastaKabulSifremiUnuttum
+            // 
+            this.btnHastaKabulSifremiUnuttum.BackColor = System.Drawing.Color.Red;
+            this.btnHastaKabulSifremiUnuttum.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnHastaKabulSifremiUnuttum.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnHastaKabulSifremiUnuttum.Location = new System.Drawing.Point(24, 259);
+            this.btnHastaKabulSifremiUnuttum.Name = "btnHastaKabulSifremiUnuttum";
+            this.btnHastaKabulSifremiUnuttum.Size = new System.Drawing.Size(240, 60);
+            this.btnHastaKabulSifremiUnuttum.TabIndex = 16;
+            this.btnHastaKabulSifremiUnuttum.Text = "Şifremi Unuttum";
+            this.btnHastaKabulSifremiUnuttum.UseVisualStyleBackColor = false;
+            this.btnHastaKabulSifremiUnuttum.Click += new System.EventHandler(this.btnHastaKabulSifremiUnuttum_Click);
             // 
             // label5
             // 
@@ -417,6 +377,19 @@
             this.DoktorGroupBox.Text = "Doktor Giriş";
             this.DoktorGroupBox.Visible = false;
             // 
+            // btnDoktorSifremiUnuttum
+            // 
+            this.btnDoktorSifremiUnuttum.BackColor = System.Drawing.Color.Red;
+            this.btnDoktorSifremiUnuttum.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnDoktorSifremiUnuttum.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnDoktorSifremiUnuttum.Location = new System.Drawing.Point(24, 259);
+            this.btnDoktorSifremiUnuttum.Name = "btnDoktorSifremiUnuttum";
+            this.btnDoktorSifremiUnuttum.Size = new System.Drawing.Size(240, 60);
+            this.btnDoktorSifremiUnuttum.TabIndex = 16;
+            this.btnDoktorSifremiUnuttum.Text = "Şifremi Unuttum";
+            this.btnDoktorSifremiUnuttum.UseVisualStyleBackColor = false;
+            this.btnDoktorSifremiUnuttum.Click += new System.EventHandler(this.btnDoktorSifremiUnuttum_Click);
+            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -466,111 +439,23 @@
             this.btnDoktorGirisYap.UseVisualStyleBackColor = false;
             this.btnDoktorGirisYap.Click += new System.EventHandler(this.btnDoktorGirisYap_Click);
             // 
-            // btnAdmin
+            // hastaGroupBox
             // 
-            this.btnAdmin.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.btnAdmin.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnAdmin.ForeColor = System.Drawing.SystemColors.Window;
-            this.btnAdmin.Location = new System.Drawing.Point(13, 117);
-            this.btnAdmin.Margin = new System.Windows.Forms.Padding(4);
-            this.btnAdmin.Name = "btnAdmin";
-            this.btnAdmin.Size = new System.Drawing.Size(112, 40);
-            this.btnAdmin.TabIndex = 7;
-            this.btnAdmin.Text = "Admin Girişi";
-            this.btnAdmin.UseVisualStyleBackColor = false;
-            this.btnAdmin.Click += new System.EventHandler(this.btnAdmin_Click);
-            // 
-            // LaboratuvargroupBox
-            // 
-            this.LaboratuvargroupBox.Controls.Add(this.label11);
-            this.LaboratuvargroupBox.Controls.Add(this.label12);
-            this.LaboratuvargroupBox.Controls.Add(this.textBox1);
-            this.LaboratuvargroupBox.Controls.Add(this.textBox2);
-            this.LaboratuvargroupBox.Controls.Add(this.btnLabSifremiUnuttum);
-            this.LaboratuvargroupBox.Controls.Add(this.button2);
-            this.LaboratuvargroupBox.Location = new System.Drawing.Point(132, 26);
-            this.LaboratuvargroupBox.Margin = new System.Windows.Forms.Padding(2);
-            this.LaboratuvargroupBox.Name = "LaboratuvargroupBox";
-            this.LaboratuvargroupBox.Padding = new System.Windows.Forms.Padding(2);
-            this.LaboratuvargroupBox.Size = new System.Drawing.Size(300, 332);
-            this.LaboratuvargroupBox.TabIndex = 14;
-            this.LaboratuvargroupBox.TabStop = false;
-            this.LaboratuvargroupBox.Text = "Laboratuvar Giriş";
-            this.LaboratuvargroupBox.Visible = false;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label11.Location = new System.Drawing.Point(19, 111);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(57, 25);
-            this.label11.TabIndex = 5;
-            this.label11.Text = "Şifre ";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label12.Location = new System.Drawing.Point(19, 30);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(132, 25);
-            this.label12.TabIndex = 6;
-            this.label12.Text = "T.C Kimlik No";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.textBox1.Location = new System.Drawing.Point(24, 150);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(240, 27);
-            this.textBox1.TabIndex = 7;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.textBox2.Location = new System.Drawing.Point(24, 69);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(240, 27);
-            this.textBox2.TabIndex = 4;
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.LawnGreen;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button2.Location = new System.Drawing.Point(24, 193);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(240, 60);
-            this.button2.TabIndex = 8;
-            this.button2.Text = "Giriş Yap";
-            this.button2.UseVisualStyleBackColor = false;
-            // 
-            // btnLabSifremiUnuttum
-            // 
-            this.btnLabSifremiUnuttum.BackColor = System.Drawing.Color.Red;
-            this.btnLabSifremiUnuttum.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnLabSifremiUnuttum.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnLabSifremiUnuttum.Location = new System.Drawing.Point(24, 259);
-            this.btnLabSifremiUnuttum.Name = "btnLabSifremiUnuttum";
-            this.btnLabSifremiUnuttum.Size = new System.Drawing.Size(240, 60);
-            this.btnLabSifremiUnuttum.TabIndex = 15;
-            this.btnLabSifremiUnuttum.Text = "Şifremi Unuttum";
-            this.btnLabSifremiUnuttum.UseVisualStyleBackColor = false;
-            this.btnLabSifremiUnuttum.Click += new System.EventHandler(this.btnLabSifremiUnuttum_Click);
-            // 
-            // btnDoktorSifremiUnuttum
-            // 
-            this.btnDoktorSifremiUnuttum.BackColor = System.Drawing.Color.Red;
-            this.btnDoktorSifremiUnuttum.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnDoktorSifremiUnuttum.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnDoktorSifremiUnuttum.Location = new System.Drawing.Point(24, 259);
-            this.btnDoktorSifremiUnuttum.Name = "btnDoktorSifremiUnuttum";
-            this.btnDoktorSifremiUnuttum.Size = new System.Drawing.Size(240, 60);
-            this.btnDoktorSifremiUnuttum.TabIndex = 16;
-            this.btnDoktorSifremiUnuttum.Text = "Şifremi Unuttum";
-            this.btnDoktorSifremiUnuttum.UseVisualStyleBackColor = false;
-            this.btnDoktorSifremiUnuttum.Click += new System.EventHandler(this.btnDoktorSifremiUnuttum_Click);
+            this.hastaGroupBox.Controls.Add(this.btnHastaSifremiUnuttum);
+            this.hastaGroupBox.Controls.Add(this.label7);
+            this.hastaGroupBox.Controls.Add(this.label8);
+            this.hastaGroupBox.Controls.Add(this.txtHastaSifre);
+            this.hastaGroupBox.Controls.Add(this.txthastaTC);
+            this.hastaGroupBox.Controls.Add(this.hastagirisbtn);
+            this.hastaGroupBox.Location = new System.Drawing.Point(132, 26);
+            this.hastaGroupBox.Margin = new System.Windows.Forms.Padding(2);
+            this.hastaGroupBox.Name = "hastaGroupBox";
+            this.hastaGroupBox.Padding = new System.Windows.Forms.Padding(2);
+            this.hastaGroupBox.Size = new System.Drawing.Size(300, 332);
+            this.hastaGroupBox.TabIndex = 12;
+            this.hastaGroupBox.TabStop = false;
+            this.hastaGroupBox.Text = "Hasta Giriş";
+            this.hastaGroupBox.Visible = false;
             // 
             // btnHastaSifremiUnuttum
             // 
@@ -585,18 +470,134 @@
             this.btnHastaSifremiUnuttum.UseVisualStyleBackColor = false;
             this.btnHastaSifremiUnuttum.Click += new System.EventHandler(this.btnHastaSifremiUnuttum_Click);
             // 
-            // btnHastaKabulSifremiUnuttum
+            // label7
             // 
-            this.btnHastaKabulSifremiUnuttum.BackColor = System.Drawing.Color.Red;
-            this.btnHastaKabulSifremiUnuttum.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnHastaKabulSifremiUnuttum.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnHastaKabulSifremiUnuttum.Location = new System.Drawing.Point(24, 259);
-            this.btnHastaKabulSifremiUnuttum.Name = "btnHastaKabulSifremiUnuttum";
-            this.btnHastaKabulSifremiUnuttum.Size = new System.Drawing.Size(240, 60);
-            this.btnHastaKabulSifremiUnuttum.TabIndex = 16;
-            this.btnHastaKabulSifremiUnuttum.Text = "Şifremi Unuttum";
-            this.btnHastaKabulSifremiUnuttum.UseVisualStyleBackColor = false;
-            this.btnHastaKabulSifremiUnuttum.Click += new System.EventHandler(this.btnHastaKabulSifremiUnuttum_Click);
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label7.Location = new System.Drawing.Point(19, 111);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(52, 25);
+            this.label7.TabIndex = 5;
+            this.label7.Text = "Şifre";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label8.Location = new System.Drawing.Point(19, 30);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(132, 25);
+            this.label8.TabIndex = 6;
+            this.label8.Text = "T.C Kimlik No";
+            // 
+            // txtHastaSifre
+            // 
+            this.txtHastaSifre.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtHastaSifre.Location = new System.Drawing.Point(24, 150);
+            this.txtHastaSifre.Name = "txtHastaSifre";
+            this.txtHastaSifre.Size = new System.Drawing.Size(240, 27);
+            this.txtHastaSifre.TabIndex = 7;
+            // 
+            // txthastaTC
+            // 
+            this.txthastaTC.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txthastaTC.Location = new System.Drawing.Point(24, 69);
+            this.txthastaTC.Name = "txthastaTC";
+            this.txthastaTC.Size = new System.Drawing.Size(240, 27);
+            this.txthastaTC.TabIndex = 4;
+            // 
+            // hastagirisbtn
+            // 
+            this.hastagirisbtn.BackColor = System.Drawing.Color.LawnGreen;
+            this.hastagirisbtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.hastagirisbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.hastagirisbtn.Location = new System.Drawing.Point(24, 193);
+            this.hastagirisbtn.Name = "hastagirisbtn";
+            this.hastagirisbtn.Size = new System.Drawing.Size(240, 60);
+            this.hastagirisbtn.TabIndex = 8;
+            this.hastagirisbtn.Text = "Giriş Yap";
+            this.hastagirisbtn.UseVisualStyleBackColor = false;
+            this.hastagirisbtn.Click += new System.EventHandler(this.hastagirisbtn_Click);
+            // 
+            // AdmingroupBox
+            // 
+            this.AdmingroupBox.Controls.Add(this.label9);
+            this.AdmingroupBox.Controls.Add(this.label10);
+            this.AdmingroupBox.Controls.Add(this.txtAdminSifre);
+            this.AdmingroupBox.Controls.Add(this.txtAdminID);
+            this.AdmingroupBox.Controls.Add(this.btnAdminGiris);
+            this.AdmingroupBox.Location = new System.Drawing.Point(132, 26);
+            this.AdmingroupBox.Margin = new System.Windows.Forms.Padding(2);
+            this.AdmingroupBox.Name = "AdmingroupBox";
+            this.AdmingroupBox.Padding = new System.Windows.Forms.Padding(2);
+            this.AdmingroupBox.Size = new System.Drawing.Size(300, 300);
+            this.AdmingroupBox.TabIndex = 13;
+            this.AdmingroupBox.TabStop = false;
+            this.AdmingroupBox.Text = "Admin Giriş";
+            this.AdmingroupBox.Visible = false;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label9.Location = new System.Drawing.Point(19, 111);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(57, 25);
+            this.label9.TabIndex = 5;
+            this.label9.Text = "Şifre ";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label10.Location = new System.Drawing.Point(19, 30);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(114, 25);
+            this.label10.TabIndex = 6;
+            this.label10.Text = "Kullanıcı ID ";
+            // 
+            // txtAdminSifre
+            // 
+            this.txtAdminSifre.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtAdminSifre.Location = new System.Drawing.Point(24, 150);
+            this.txtAdminSifre.Name = "txtAdminSifre";
+            this.txtAdminSifre.Size = new System.Drawing.Size(240, 27);
+            this.txtAdminSifre.TabIndex = 7;
+            // 
+            // txtAdminID
+            // 
+            this.txtAdminID.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtAdminID.Location = new System.Drawing.Point(24, 69);
+            this.txtAdminID.Name = "txtAdminID";
+            this.txtAdminID.Size = new System.Drawing.Size(240, 27);
+            this.txtAdminID.TabIndex = 4;
+            // 
+            // btnAdminGiris
+            // 
+            this.btnAdminGiris.BackColor = System.Drawing.Color.LawnGreen;
+            this.btnAdminGiris.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnAdminGiris.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnAdminGiris.Location = new System.Drawing.Point(24, 193);
+            this.btnAdminGiris.Name = "btnAdminGiris";
+            this.btnAdminGiris.Size = new System.Drawing.Size(240, 60);
+            this.btnAdminGiris.TabIndex = 8;
+            this.btnAdminGiris.Text = "Giriş Yap";
+            this.btnAdminGiris.UseVisualStyleBackColor = false;
+            this.btnAdminGiris.Click += new System.EventHandler(this.btnAdminGiris_Click);
+            // 
+            // btnAdmin
+            // 
+            this.btnAdmin.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnAdmin.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnAdmin.ForeColor = System.Drawing.SystemColors.Window;
+            this.btnAdmin.Location = new System.Drawing.Point(13, 117);
+            this.btnAdmin.Margin = new System.Windows.Forms.Padding(4);
+            this.btnAdmin.Name = "btnAdmin";
+            this.btnAdmin.Size = new System.Drawing.Size(112, 40);
+            this.btnAdmin.TabIndex = 7;
+            this.btnAdmin.Text = "Admin Girişi";
+            this.btnAdmin.UseVisualStyleBackColor = false;
+            this.btnAdmin.Click += new System.EventHandler(this.btnAdmin_Click);
             // 
             // Anasayfa
             // 
@@ -622,17 +623,18 @@
             this.Name = "Anasayfa";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SİSTEM HASTANESİ PORTALI";
+            this.Load += new System.EventHandler(this.Anasayfa_Load);
             this.GirisPaneli.ResumeLayout(false);
-            this.AdmingroupBox.ResumeLayout(false);
-            this.AdmingroupBox.PerformLayout();
-            this.hastaGroupBox.ResumeLayout(false);
-            this.hastaGroupBox.PerformLayout();
+            this.LaboratuvargroupBox.ResumeLayout(false);
+            this.LaboratuvargroupBox.PerformLayout();
             this.HastaKabulGroupBox.ResumeLayout(false);
             this.HastaKabulGroupBox.PerformLayout();
             this.DoktorGroupBox.ResumeLayout(false);
             this.DoktorGroupBox.PerformLayout();
-            this.LaboratuvargroupBox.ResumeLayout(false);
-            this.LaboratuvargroupBox.PerformLayout();
+            this.hastaGroupBox.ResumeLayout(false);
+            this.hastaGroupBox.PerformLayout();
+            this.AdmingroupBox.ResumeLayout(false);
+            this.AdmingroupBox.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -677,9 +679,9 @@
         private System.Windows.Forms.GroupBox LaboratuvargroupBox;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.TextBox txtLabPSifre;
+        private System.Windows.Forms.TextBox txtLabPTC;
+        private System.Windows.Forms.Button btnLabPGiris;
         private System.Windows.Forms.Button btnLabSifremiUnuttum;
         private System.Windows.Forms.Button btnDoktorSifremiUnuttum;
         private System.Windows.Forms.Button btnHastaSifremiUnuttum;

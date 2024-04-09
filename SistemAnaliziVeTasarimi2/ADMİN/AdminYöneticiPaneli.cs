@@ -1,4 +1,5 @@
 ﻿using SistemAnaliziVeTasarimi2.Doktor;
+using SistemAnaliziVeTasarimi2.Laboratuvar;
 using SistemAnaliziVeTasarimi2.Sekreter;
 using System;
 using System.Collections.Generic;
@@ -31,6 +32,12 @@ namespace SistemAnaliziVeTasarimi2.ADMİN
             DoktorKayıtOlSayfasi dkos = new DoktorKayıtOlSayfasi();
             dkos.Show();
             this.Hide();
+        }
+
+        private void btnLabPKayit_Click(object sender, EventArgs e)
+        {
+            LaboratuvarKayıtOlSayfasi lkos = new LaboratuvarKayıtOlSayfasi();
+            lkos.Show();
         }
     }
 }

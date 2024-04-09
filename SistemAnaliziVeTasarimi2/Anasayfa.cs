@@ -20,12 +20,12 @@ namespace SistemAnaliziVeTasarimi2
     {
         SqlConnection bag = new SqlConnection("Data Source=DESKTOP-MJGGV3B;Initial Catalog=sistemHastanesi;Integrated Security=True;Encrypt=False;");
 
-        public static string dkid, dsifre;
+        public static string dtc, dsifre;
         public Anasayfa()
         {
             InitializeComponent();
         }
-
+        #region Yan MENU
         void gizle()
         {
             DoktorGroupBox.Visible= false;
@@ -67,9 +67,13 @@ namespace SistemAnaliziVeTasarimi2
             LaboratuvargroupBox.Visible = true;
             GirisPaneli.Visible= true;
         }
+        #endregion
 
+        #region Giris Yap Button
         private void btnDoktorGirisYap_Click(object sender, EventArgs e)
         {
+
+
             string sql = "select * from tbl_doktor where TcNo=@prm1 and sifre=@prm2";
             SqlDataAdapter da = new SqlDataAdapter(sql, bag);
             da.SelectCommand.Parameters.AddWithValue("@prm1", txtTC.Text);
@@ -83,6 +87,8 @@ namespace SistemAnaliziVeTasarimi2
             else if (dt.Rows.Count > 0)
             {
                 DoktorProfilSayfasi dps = new DoktorProfilSayfasi();
+                dtc = txtTC.Text;
+                dsifre = txtSifre.Text;
                 dps.Show();
                 this.Hide();
             }
@@ -136,43 +142,6 @@ namespace SistemAnaliziVeTasarimi2
                 MessageBox.Show("Kullanıcı Adı veya Şifre Hatalı");
             }
         }
-
-        private void btnHastaKayıtol_Click(object sender, EventArgs e)
-        {
-            HastaKayıtOlSayfasi hkos = new HastaKayıtOlSayfasi();
-            hkos.Show();
-        }
-
-        private void btniletisim_Click(object sender, EventArgs e)
-        {
-            iletisim iltsm = new iletisim();
-            iltsm.Show();
-        }
-
-        private void btnDoktorSifremiUnuttum_Click(object sender, EventArgs e)
-        {
-            DoktorSifremiUnuttumSayfasi dsus = new DoktorSifremiUnuttumSayfasi();
-            dsus.Show();
-        }
-
-        private void btnHastaSifremiUnuttum_Click(object sender, EventArgs e)
-        {
-            HastaSifremiUnuttumSayfasi hsus = new HastaSifremiUnuttumSayfasi();
-            hsus.Show();
-        }
-
-        private void btnHastaKabulSifremiUnuttum_Click(object sender, EventArgs e)
-        {
-            SekreterSifremiUnuttumSayfasi ssus = new SekreterSifremiUnuttumSayfasi();
-            ssus.Show();
-        }
-
-        private void btnLabSifremiUnuttum_Click(object sender, EventArgs e)
-        {
-            LaboratuvarSifremiUnuttumSayfasi lsus = new LaboratuvarSifremiUnuttumSayfasi();
-            lsus.Show();
-        }
-
         private void BtnHastaKabulGiris_Click(object sender, EventArgs e)
         {
             string sql = "select * from tbl_sekreter where tcNo=@prm1 and sifre=@prm2";
@@ -196,7 +165,82 @@ namespace SistemAnaliziVeTasarimi2
                 MessageBox.Show("Kullanıcı Adı veya Şifre Hatalı");
             }
         }
+        private void btnLabPGiris_Click(object sender, EventArgs e)
+        {
+            string sql = "Select * from tbl_labpersonel where labp_TcNo=@prm1 and labp_sifre=@prm2";
+            SqlDataAdapter da = new SqlDataAdapter(sql,bag);
+            da.SelectCommand.Parameters.AddWithValue("@prm1",txtLabPTC.Text);
+            da.SelectCommand.Parameters.AddWithValue("@prm2",txtLabPSifre.Text);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            if (txtLabPTC.Text == "" || txtLabPSifre.Text == "")
+            {
+                MessageBox.Show("Kullanıcı Adı veya Şifre Boş Bırakılamaz");
+            }
+            else if (dt.Rows.Count > 0)
+            {
+                SekreterProfilSayfasi sps = new SekreterProfilSayfasi();
+                sps.Show();
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("Kullanıcı Adı veya Şifre Hatalı");
+            }
+        }
+        #endregion
 
-       
+        #region Sİfremi Unutum
+        private void btnDoktorSifremiUnuttum_Click(object sender, EventArgs e)
+        {
+            DoktorSifremiUnuttumSayfasi dsus = new DoktorSifremiUnuttumSayfasi();
+            dsus.Show();
+        }
+
+        private void btnHastaSifremiUnuttum_Click(object sender, EventArgs e)
+        {
+            HastaSifremiUnuttumSayfasi hsus = new HastaSifremiUnuttumSayfasi();
+            hsus.Show();
+        }
+
+        private void btnHastaKabulSifremiUnuttum_Click(object sender, EventArgs e)
+        {
+            SekreterSifremiUnuttumSayfasi ssus = new SekreterSifremiUnuttumSayfasi();
+            ssus.Show();
+        }
+
+        private void btnLabSifremiUnuttum_Click(object sender, EventArgs e)
+        {
+            LaboratuvarSifremiUnuttumSayfasi lsus = new LaboratuvarSifremiUnuttumSayfasi();
+            lsus.Show();
+        }
+        #endregion
+
+        private void btnHastaKayıtol_Click(object sender, EventArgs e)
+        {
+            HastaKayıtOlSayfasi hkos = new HastaKayıtOlSayfasi();
+            hkos.Show();
+        }
+
+        private void Anasayfa_Load(object sender, EventArgs e)
+        {
+            txtAdminSifre.PasswordChar = '*';
+            txtSifre.PasswordChar = '*';
+            txtHastakabulSifre.PasswordChar = '*';
+            txtLabPSifre.PasswordChar = '*';
+            txtHastaSifre.PasswordChar = '*';
+        }
+
+        private void btniletisim_Click(object sender, EventArgs e)
+        {
+            iletisim iltsm = new iletisim();
+            iltsm.Show();
+        }
+      
+
+
+
+
+
     }
 }

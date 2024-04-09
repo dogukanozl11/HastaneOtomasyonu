@@ -25,25 +25,34 @@ namespace SistemAnaliziVeTasarimi2.Laboratuvar
         string onayKodu;
         private void btnOnayKoduAl_Click(object sender, EventArgs e)
         {
-            if (txtEmail.Text != "")
+            try
             {
-                onayKodu = rnd.Next(100000, 999999).ToString();
-                MailMessage sms = new MailMessage();
-                SmtpClient smtpClient = new SmtpClient();
-                smtpClient.Credentials = new System.Net.NetworkCredential("sistem.hastanesi@hotmail.com", "12345678C#+");
-                smtpClient.Port = 587;
-                smtpClient.Host = "smtp.outlook.com";
-                smtpClient.EnableSsl = true;
-                sms.To.Add(txtEmail.Text);
-                sms.From = new MailAddress("sistem.hastanesi@hotmail.com");
-                sms.Subject = "Şifre Onay Kodu.";
-                sms.Body = onayKodu;
-                smtpClient.Send(sms);
-                MessageBox.Show("Onay Kodu Gönderilmiştir.");
+
+
+                if (txtEmail.Text != "")
+                {
+                    onayKodu = rnd.Next(100000, 999999).ToString();
+                    MailMessage sms = new MailMessage();
+                    SmtpClient smtpClient = new SmtpClient();
+                    smtpClient.Credentials = new System.Net.NetworkCredential("sistem.hastanesi@hotmail.com", "12345678C#+");
+                    smtpClient.Port = 587;
+                    smtpClient.Host = "smtp.outlook.com";
+                    smtpClient.EnableSsl = true;
+                    sms.To.Add(txtEmail.Text);
+                    sms.From = new MailAddress("sistem.hastanesi@hotmail.com");
+                    sms.Subject = "Şifre Onay Kodu.";
+                    sms.Body = onayKodu;
+                    smtpClient.Send(sms);
+                    MessageBox.Show("Onay Kodu Gönderilmiştir.");
+                }
+                else
+                {
+                    MessageBox.Show("E-MAİL Boş Bırakılamaz.");
+                }
             }
-            else
+            catch
             {
-                MessageBox.Show("E-MAİL Boş Bırakılamaz.");
+                MessageBox.Show("Geçersiz E-MAİL Adresi.");
             }
         }
 
@@ -57,7 +66,7 @@ namespace SistemAnaliziVeTasarimi2.Laboratuvar
             else if (txtOnayKodu.Text == onayKodu)
             {
                 bag.Open();
-                SqlCommand komut = new SqlCommand("update tbl_doktor set TcNo='" + txtTC.Text + "',sifre='" + txtYeniSifre.Text + "' where TcNo='" + txtTC.Text + "'", bag);
+                SqlCommand komut = new SqlCommand("update tbl_labpersonel set TcNo='" + txtTC.Text + "',sifre='" + txtYeniSifre.Text + "' where TcNo='" + txtTC.Text + "'", bag);
                 komut.ExecuteNonQuery();
                 MessageBox.Show("Şifre Güncellendi...");
                 DoktorGirisSayfasi dgs = new DoktorGirisSayfasi();
