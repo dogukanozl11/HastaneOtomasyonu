@@ -27,19 +27,13 @@ namespace SistemAnaliziVeTasarimi2.Hasta
         public string tcno;
         private void HastaProfilSayfasi_Load(object sender, EventArgs e)
         {
-            LblTC.Text = tcno;
 
-            bag.Open();
-            string sql = "select isim,soyisim From tbl_hasta where TcNo=@prm1";
-            SqlCommand komut = new SqlCommand(sql,bag);
-            komut.Parameters.AddWithValue("@prm1", LblTC.Text);
-            SqlDataReader dr = komut.ExecuteReader();
-            while(dr.Read())
-            {
-                LblAdSoyad.Text = dr["isim"].ToString() + " " + dr["soyisim"].ToString();
-                LblTC.Text = tcno;
-            }
-            bag.Close();
+        }
+
+        private void btnRandevuAl_Click(object sender, EventArgs e)
+        {
+            HastaRandevuAl HRAL = new HastaRandevuAl();
+            HRAL.Show();
         }
     }
 }
