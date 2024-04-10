@@ -32,10 +32,10 @@
             this.btnGERİ = new System.Windows.Forms.Button();
             this.lblSoyisim = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.lblKlinik = new System.Windows.Forms.Label();
+            this.lblEmail = new System.Windows.Forms.Label();
             this.lblTc = new System.Windows.Forms.Label();
             this.lblisim = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.lblMail = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.button5 = new System.Windows.Forms.Button();
@@ -81,16 +81,16 @@
             this.label4.Text = "Soyisim :";
             this.label4.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
-            // lblKlinik
+            // lblEmail
             // 
-            this.lblKlinik.AutoSize = true;
-            this.lblKlinik.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblKlinik.Location = new System.Drawing.Point(283, 98);
-            this.lblKlinik.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblKlinik.Name = "lblKlinik";
-            this.lblKlinik.Size = new System.Drawing.Size(21, 20);
-            this.lblKlinik.TabIndex = 93;
-            this.lblKlinik.Text = "id";
+            this.lblEmail.AutoSize = true;
+            this.lblEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblEmail.Location = new System.Drawing.Point(283, 98);
+            this.lblEmail.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblEmail.Name = "lblEmail";
+            this.lblEmail.Size = new System.Drawing.Size(21, 20);
+            this.lblEmail.TabIndex = 93;
+            this.lblEmail.Text = "id";
             // 
             // lblTc
             // 
@@ -114,17 +114,17 @@
             this.lblisim.TabIndex = 91;
             this.lblisim.Text = "id";
             // 
-            // label5
+            // lblMail
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label5.Location = new System.Drawing.Point(191, 98);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(49, 20);
-            this.label5.TabIndex = 90;
-            this.label5.Text = "Klinik:";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.lblMail.AutoSize = true;
+            this.lblMail.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblMail.Location = new System.Drawing.Point(191, 98);
+            this.lblMail.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblMail.Name = "lblMail";
+            this.lblMail.Size = new System.Drawing.Size(65, 20);
+            this.lblMail.TabIndex = 90;
+            this.lblMail.Text = "E-Mail : ";
+            this.lblMail.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // label3
             // 
@@ -261,10 +261,10 @@
             this.Controls.Add(this.btnRandevuAl);
             this.Controls.Add(this.lblSoyisim);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.lblKlinik);
+            this.Controls.Add(this.lblEmail);
             this.Controls.Add(this.lblTc);
             this.Controls.Add(this.lblisim);
-            this.Controls.Add(this.label5);
+            this.Controls.Add(this.lblMail);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btnGERİ);
@@ -283,10 +283,10 @@
         private System.Windows.Forms.Button btnGERİ;
         private System.Windows.Forms.Label lblSoyisim;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label lblKlinik;
+        private System.Windows.Forms.Label lblEmail;
         private System.Windows.Forms.Label lblTc;
         private System.Windows.Forms.Label lblisim;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label lblMail;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button5;

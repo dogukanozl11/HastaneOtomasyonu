@@ -21,6 +21,7 @@ namespace SistemAnaliziVeTasarimi2
         SqlConnection bag = new SqlConnection("Data Source=DESKTOP-MJGGV3B;Initial Catalog=sistemHastanesi;Integrated Security=True;Encrypt=False;");
 
         public static string dtc, dsifre;
+        public static string htc, hsifre;
         public Anasayfa()
         {
             InitializeComponent();
@@ -114,6 +115,7 @@ namespace SistemAnaliziVeTasarimi2
             {
                 HastaProfilSayfasi hps = new HastaProfilSayfasi();
                 hps.tcno = txtTC.Text;
+                htc = txthastaTC.Text;
                 hps.Show();
                 this.Hide();
             }
