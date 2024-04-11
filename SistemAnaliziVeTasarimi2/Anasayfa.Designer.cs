@@ -126,6 +126,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 41F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label1.Location = new System.Drawing.Point(187, 9);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -137,6 +138,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label2.Location = new System.Drawing.Point(377, 71);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -189,6 +191,7 @@
             // 
             // GirisPaneli
             // 
+            this.GirisPaneli.BackColor = System.Drawing.Color.Transparent;
             this.GirisPaneli.Controls.Add(this.LaboratuvargroupBox);
             this.GirisPaneli.Controls.Add(this.HastaKabulGroupBox);
             this.GirisPaneli.Controls.Add(this.DoktorGroupBox);
@@ -201,6 +204,7 @@
             // 
             // LaboratuvargroupBox
             // 
+            this.LaboratuvargroupBox.BackColor = System.Drawing.Color.Transparent;
             this.LaboratuvargroupBox.Controls.Add(this.label11);
             this.LaboratuvargroupBox.Controls.Add(this.label12);
             this.LaboratuvargroupBox.Controls.Add(this.txtLabPSifre);
@@ -220,6 +224,7 @@
             // label11
             // 
             this.label11.AutoSize = true;
+            this.label11.BackColor = System.Drawing.Color.Transparent;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label11.Location = new System.Drawing.Point(19, 111);
             this.label11.Name = "label11";
@@ -230,6 +235,7 @@
             // label12
             // 
             this.label12.AutoSize = true;
+            this.label12.BackColor = System.Drawing.Color.Transparent;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label12.Location = new System.Drawing.Point(19, 30);
             this.label12.Name = "label12";
@@ -604,6 +610,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(884, 561);
             this.Controls.Add(this.BtnDoktorGiris);
             this.Controls.Add(this.btnAdmin);

@@ -231,6 +231,12 @@ namespace SistemAnaliziVeTasarimi2
             txtHastakabulSifre.PasswordChar = '*';
             txtLabPSifre.PasswordChar = '*';
             txtHastaSifre.PasswordChar = '*';
+            DoktorGroupBox.BackColor = Color.AliceBlue;
+            AdmingroupBox.BackColor = Color.AliceBlue;
+            hastaGroupBox.BackColor = Color.AliceBlue;
+            HastaKabulGroupBox.BackColor = Color.AliceBlue;
+            LaboratuvargroupBox.BackColor = Color.AliceBlue;
+
         }
 
         private void btniletisim_Click(object sender, EventArgs e)
@@ -238,6 +244,7 @@ namespace SistemAnaliziVeTasarimi2
             iletisim iltsm = new iletisim();
             iltsm.Show();
         }
+        
       
 
 

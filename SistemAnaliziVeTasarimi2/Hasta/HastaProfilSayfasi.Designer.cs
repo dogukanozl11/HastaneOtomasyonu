@@ -42,7 +42,7 @@
             this.button2 = new System.Windows.Forms.Button();
             this.btnRandevularım = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
+            this.btnHastaBilgileri = new System.Windows.Forms.Button();
             this.btnRandevuAl = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -61,22 +61,24 @@
             // lblSoyisim
             // 
             this.lblSoyisim.AutoSize = true;
-            this.lblSoyisim.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblSoyisim.Location = new System.Drawing.Point(283, 68);
+            this.lblSoyisim.BackColor = System.Drawing.Color.Transparent;
+            this.lblSoyisim.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblSoyisim.Location = new System.Drawing.Point(216, 64);
             this.lblSoyisim.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblSoyisim.Name = "lblSoyisim";
-            this.lblSoyisim.Size = new System.Drawing.Size(21, 20);
+            this.lblSoyisim.Size = new System.Drawing.Size(29, 25);
             this.lblSoyisim.TabIndex = 95;
             this.lblSoyisim.Text = "id";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label4.Location = new System.Drawing.Point(191, 68);
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label4.Location = new System.Drawing.Point(124, 64);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(71, 20);
+            this.label4.Size = new System.Drawing.Size(101, 25);
             this.label4.TabIndex = 94;
             this.label4.Text = "Soyisim :";
             this.label4.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -84,44 +86,48 @@
             // lblEmail
             // 
             this.lblEmail.AutoSize = true;
-            this.lblEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblEmail.Location = new System.Drawing.Point(283, 98);
+            this.lblEmail.BackColor = System.Drawing.Color.Transparent;
+            this.lblEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblEmail.Location = new System.Drawing.Point(216, 94);
             this.lblEmail.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblEmail.Name = "lblEmail";
-            this.lblEmail.Size = new System.Drawing.Size(21, 20);
+            this.lblEmail.Size = new System.Drawing.Size(29, 25);
             this.lblEmail.TabIndex = 93;
             this.lblEmail.Text = "id";
             // 
             // lblTc
             // 
             this.lblTc.AutoSize = true;
-            this.lblTc.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblTc.Location = new System.Drawing.Point(283, 11);
+            this.lblTc.BackColor = System.Drawing.Color.Transparent;
+            this.lblTc.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblTc.Location = new System.Drawing.Point(216, 7);
             this.lblTc.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTc.Name = "lblTc";
-            this.lblTc.Size = new System.Drawing.Size(21, 20);
+            this.lblTc.Size = new System.Drawing.Size(29, 25);
             this.lblTc.TabIndex = 92;
             this.lblTc.Text = "id";
             // 
             // lblisim
             // 
             this.lblisim.AutoSize = true;
-            this.lblisim.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblisim.Location = new System.Drawing.Point(283, 39);
+            this.lblisim.BackColor = System.Drawing.Color.Transparent;
+            this.lblisim.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblisim.Location = new System.Drawing.Point(216, 35);
             this.lblisim.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblisim.Name = "lblisim";
-            this.lblisim.Size = new System.Drawing.Size(21, 20);
+            this.lblisim.Size = new System.Drawing.Size(29, 25);
             this.lblisim.TabIndex = 91;
             this.lblisim.Text = "id";
             // 
             // lblMail
             // 
             this.lblMail.AutoSize = true;
-            this.lblMail.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblMail.Location = new System.Drawing.Point(191, 98);
+            this.lblMail.BackColor = System.Drawing.Color.Transparent;
+            this.lblMail.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblMail.Location = new System.Drawing.Point(124, 94);
             this.lblMail.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblMail.Name = "lblMail";
-            this.lblMail.Size = new System.Drawing.Size(65, 20);
+            this.lblMail.Size = new System.Drawing.Size(93, 25);
             this.lblMail.TabIndex = 90;
             this.lblMail.Text = "E-Mail : ";
             this.lblMail.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -129,11 +135,12 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label3.Location = new System.Drawing.Point(191, 11);
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label3.Location = new System.Drawing.Point(124, 7);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(33, 20);
+            this.label3.Size = new System.Drawing.Size(49, 25);
             this.label3.TabIndex = 89;
             this.label3.Text = "TC:";
             this.label3.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -141,11 +148,12 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label2.Location = new System.Drawing.Point(191, 39);
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label2.Location = new System.Drawing.Point(124, 35);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(46, 20);
+            this.label2.Size = new System.Drawing.Size(64, 25);
             this.label2.TabIndex = 88;
             this.label2.Text = "İsim :";
             this.label2.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -215,21 +223,22 @@
             this.button4.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button4.UseVisualStyleBackColor = false;
             // 
-            // button7
+            // btnHastaBilgileri
             // 
-            this.button7.BackColor = System.Drawing.Color.Transparent;
-            this.button7.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button7.Image = ((System.Drawing.Image)(resources.GetObject("button7.Image")));
-            this.button7.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button7.Location = new System.Drawing.Point(10, 142);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(110, 47);
-            this.button7.TabIndex = 97;
-            this.button7.Text = "Kullanıcı ";
-            this.button7.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button7.UseVisualStyleBackColor = false;
+            this.btnHastaBilgileri.BackColor = System.Drawing.Color.Transparent;
+            this.btnHastaBilgileri.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnHastaBilgileri.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHastaBilgileri.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnHastaBilgileri.Image = ((System.Drawing.Image)(resources.GetObject("btnHastaBilgileri.Image")));
+            this.btnHastaBilgileri.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnHastaBilgileri.Location = new System.Drawing.Point(10, 142);
+            this.btnHastaBilgileri.Name = "btnHastaBilgileri";
+            this.btnHastaBilgileri.Size = new System.Drawing.Size(110, 47);
+            this.btnHastaBilgileri.TabIndex = 97;
+            this.btnHastaBilgileri.Text = "Kullanıcı ";
+            this.btnHastaBilgileri.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnHastaBilgileri.UseVisualStyleBackColor = false;
+            this.btnHastaBilgileri.Click += new System.EventHandler(this.btnHastaBilgileri_Click);
             // 
             // btnRandevuAl
             // 
@@ -253,12 +262,13 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(884, 561);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.btnRandevularım);
             this.Controls.Add(this.button4);
-            this.Controls.Add(this.button7);
+            this.Controls.Add(this.btnHastaBilgileri);
             this.Controls.Add(this.btnRandevuAl);
             this.Controls.Add(this.lblSoyisim);
             this.Controls.Add(this.label4);
@@ -294,7 +304,7 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button btnRandevularım;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button btnHastaBilgileri;
         private System.Windows.Forms.Button btnRandevuAl;
     }
 }

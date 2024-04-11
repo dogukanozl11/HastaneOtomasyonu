@@ -66,5 +66,11 @@ namespace SistemAnaliziVeTasarimi2.Hasta
             HastaRandevularım HR = new HastaRandevularım();
             HR.Show();
         }
+
+        private void btnHastaBilgileri_Click(object sender, EventArgs e)
+        {
+            HastaBilgileri HB = new HastaBilgileri();
+            HB.Show();
+        }
     }
 }

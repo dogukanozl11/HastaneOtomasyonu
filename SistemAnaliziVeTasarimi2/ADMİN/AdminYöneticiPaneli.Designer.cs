@@ -36,7 +36,7 @@
             // 
             // btnSekreterKayit
             // 
-            this.btnSekreterKayit.Location = new System.Drawing.Point(737, 461);
+            this.btnSekreterKayit.Location = new System.Drawing.Point(293, 12);
             this.btnSekreterKayit.Name = "btnSekreterKayit";
             this.btnSekreterKayit.Size = new System.Drawing.Size(131, 51);
             this.btnSekreterKayit.TabIndex = 0;
@@ -46,7 +46,7 @@
             // 
             // btnDoktorKayit
             // 
-            this.btnDoktorKayit.Location = new System.Drawing.Point(62, 452);
+            this.btnDoktorKayit.Location = new System.Drawing.Point(19, 12);
             this.btnDoktorKayit.Name = "btnDoktorKayit";
             this.btnDoktorKayit.Size = new System.Drawing.Size(131, 51);
             this.btnDoktorKayit.TabIndex = 1;
@@ -56,7 +56,7 @@
             // 
             // btnLabPKayit
             // 
-            this.btnLabPKayit.Location = new System.Drawing.Point(361, 430);
+            this.btnLabPKayit.Location = new System.Drawing.Point(156, 12);
             this.btnLabPKayit.Name = "btnLabPKayit";
             this.btnLabPKayit.Size = new System.Drawing.Size(131, 51);
             this.btnLabPKayit.TabIndex = 2;
@@ -68,7 +68,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(948, 561);
+            this.ClientSize = new System.Drawing.Size(482, 95);
             this.Controls.Add(this.btnLabPKayit);
             this.Controls.Add(this.btnDoktorKayit);
             this.Controls.Add(this.btnSekreterKayit);
