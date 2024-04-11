@@ -13,6 +13,7 @@ namespace SistemAnaliziVeTasarimi2.Hasta
 {
     public partial class HastaProfilSayfasi : Form
     {
+        public static string idx;
         public HastaProfilSayfasi()
         {
             InitializeComponent();
@@ -43,6 +44,8 @@ namespace SistemAnaliziVeTasarimi2.Hasta
                     lblSoyisim.Text = oku[2].ToString();
                     lblEmail.Text = oku[7].ToString();
                 }
+                bag.Close();
+                idx = lblTc.Text;
 
             }
             catch
@@ -56,6 +59,12 @@ namespace SistemAnaliziVeTasarimi2.Hasta
         {
             HastaRandevuAl HRAL = new HastaRandevuAl();
             HRAL.Show();
+        }
+
+        private void btnRandevularım_Click(object sender, EventArgs e)
+        {
+            HastaRandevularım HR = new HastaRandevularım();
+            HR.Show();
         }
     }
 }

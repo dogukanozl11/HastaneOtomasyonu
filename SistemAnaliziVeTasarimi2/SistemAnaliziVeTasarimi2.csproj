@@ -193,6 +193,12 @@
     <Compile Include="Hasta\HastaRandevuAl.Designer.cs">
       <DependentUpon>HastaRandevuAl.cs</DependentUpon>
     </Compile>
+    <Compile Include="Hasta\HastaRandevularım.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hasta\HastaRandevularım.Designer.cs">
+      <DependentUpon>HastaRandevularım.cs</DependentUpon>
+    </Compile>
     <Compile Include="Hasta\HastaSifremiUnuttumSayfasi.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -276,6 +282,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Hasta\HastaRandevuAl.resx">
       <DependentUpon>HastaRandevuAl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hasta\HastaRandevularım.resx">
+      <DependentUpon>HastaRandevularım.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Hasta\HastaSifremiUnuttumSayfasi.resx">
       <DependentUpon>HastaSifremiUnuttumSayfasi.cs</DependentUpon>

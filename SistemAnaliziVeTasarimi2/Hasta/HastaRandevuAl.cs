@@ -126,7 +126,8 @@ namespace SistemAnaliziVeTasarimi2.Hasta
         {
             try
             {
-                
+                if (bag.State == ConnectionState.Open)
+                    bag.Close();
                 bag.Open();
                 if (cmbKlinik.SelectedIndex != 0 && cmbDoktor.SelectedIndex != 0 && btn.BackColor != Color.Red && randevualabilir == true)
                 {

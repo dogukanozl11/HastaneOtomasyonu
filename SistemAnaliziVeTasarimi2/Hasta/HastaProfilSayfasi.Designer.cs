@@ -197,6 +197,7 @@
             this.btnRandevularım.Text = "Randevularım";
             this.btnRandevularım.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnRandevularım.UseVisualStyleBackColor = false;
+            this.btnRandevularım.Click += new System.EventHandler(this.btnRandevularım_Click);
             // 
             // button4
             // 
