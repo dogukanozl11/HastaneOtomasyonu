@@ -69,8 +69,7 @@ namespace SistemAnaliziVeTasarimi2.Laboratuvar
                 SqlCommand komut = new SqlCommand("update tbl_labpersonel set TcNo='" + txtTC.Text + "',sifre='" + txtYeniSifre.Text + "' where TcNo='" + txtTC.Text + "'", bag);
                 komut.ExecuteNonQuery();
                 MessageBox.Show("Şifre Güncellendi...");
-                DoktorGirisSayfasi dgs = new DoktorGirisSayfasi();
-                dgs.Show();
+                
                 this.Hide();
 
                 bag.Close();

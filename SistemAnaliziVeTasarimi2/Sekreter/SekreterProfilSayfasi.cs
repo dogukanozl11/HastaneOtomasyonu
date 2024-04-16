@@ -23,5 +23,10 @@ namespace SistemAnaliziVeTasarimi2.Sekreter
             sgs.Show();
             this.Hide();
         }
+
+        private void SekreterProfilSayfasi_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

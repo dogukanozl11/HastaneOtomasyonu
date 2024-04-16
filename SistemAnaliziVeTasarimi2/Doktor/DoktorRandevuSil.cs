@@ -38,6 +38,14 @@ namespace SistemAnaliziVeTasarimi2.Doktor
                 da.Fill(dt);
                 dataGridView1.DataSource = dt;
                 bag.Close();
+                dataGridView1.Columns[0].HeaderCell.Value = "Randevu ID";
+                dataGridView1.Columns[1].HeaderCell.Value = "Klinik Adı";
+                dataGridView1.Columns[2].HeaderCell.Value = "Randevu Tarihi";
+                dataGridView1.Columns[3].HeaderCell.Value = "Randevu Saat";
+                dataGridView1.Columns[4].HeaderCell.Value = "Hasta ID";
+                dataGridView1.Columns[5].HeaderCell.Value = "TC No";
+                dataGridView1.Columns[6].HeaderCell.Value = "İsim";
+                dataGridView1.Columns[7].HeaderCell.Value = "Soysim";
             }
             catch
             {

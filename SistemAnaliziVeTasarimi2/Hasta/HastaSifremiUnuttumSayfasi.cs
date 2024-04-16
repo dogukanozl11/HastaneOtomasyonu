@@ -74,8 +74,7 @@ namespace SistemAnaliziVeTasarimi2.Hasta
                 SqlCommand komut = new SqlCommand("update tbl_doktor set TcNo='" + txtTC.Text + "',sifre='" + txtYeniSifre.Text + "' where TcNo='" + txtTC.Text + "'", bag);
                 komut.ExecuteNonQuery();
                 MessageBox.Show("Şifre Güncellendi...");
-                DoktorGirisSayfasi dgs = new DoktorGirisSayfasi();
-                dgs.Show();
+                
                 this.Hide();
 
                 bag.Close();

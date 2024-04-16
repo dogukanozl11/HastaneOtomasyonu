@@ -41,9 +41,7 @@ namespace SistemAnaliziVeTasarimi2.Doktor
 
         private void btnGeri_Click(object sender, EventArgs e)
         {
-            DoktorGirisSayfasi dgs = new DoktorGirisSayfasi();
-            dgs.Show();
-            this.Hide();
+           
         }
     }
 }

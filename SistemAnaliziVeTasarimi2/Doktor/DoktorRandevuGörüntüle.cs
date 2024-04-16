@@ -41,6 +41,14 @@ namespace SistemAnaliziVeTasarimi2.Doktor
                 da.Fill(dt);
                 dataGridView1.DataSource = dt;
                 bag.Close();
+                dataGridView1.Columns[0].HeaderCell.Value = "Randevu ID";
+                dataGridView1.Columns[1].HeaderCell.Value = "Klinik Adı";
+                dataGridView1.Columns[2].HeaderCell.Value = "Randevu Tarihi";
+                dataGridView1.Columns[3].HeaderCell.Value = "Randevu Saat";
+                dataGridView1.Columns[4].HeaderCell.Value = "Hasta ID";
+                dataGridView1.Columns[5].HeaderCell.Value = "TC No";
+                dataGridView1.Columns[6].HeaderCell.Value = "İsim";
+                dataGridView1.Columns[7].HeaderCell.Value = "Soysim";
             }
             catch
             {
@@ -67,8 +75,7 @@ namespace SistemAnaliziVeTasarimi2.Doktor
             try
             {
                 label1.Text = Anasayfa.dtc;
-                if (bag.State == ConnectionState.Open)
-                    bag.Close();
+ 
                 bag.Open();
                 SqlCommand c = new SqlCommand("select * from tbl_randevular where randevuhastaid=@id", bag);
                 c.Parameters.AddWithValue("@id", dataGridView1.CurrentRow.Cells[4].Value.ToString());

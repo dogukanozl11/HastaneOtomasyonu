@@ -22,9 +22,7 @@ namespace SistemAnaliziVeTasarimi2.Doktor
         SqlConnection bag = new SqlConnection("Data Source=DESKTOP-MJGGV3B;Initial Catalog=sistemHastanesi;Integrated Security=True;Encrypt=False;");
         private void btnGERİ_Click(object sender, EventArgs e)
         {
-            DoktorGirisSayfasi dgs = new DoktorGirisSayfasi();
-            dgs.Show();
-            this.Hide();
+           
         }
         Random rnd = new Random();
         string onayKodu;
@@ -74,8 +72,7 @@ namespace SistemAnaliziVeTasarimi2.Doktor
                 SqlCommand komut = new SqlCommand("update tbl_doktor set TcNo='" + txtTC.Text + "',sifre='" + txtYeniSifre.Text + "' where TcNo='" + txtTC.Text + "'", bag);
                 komut.ExecuteNonQuery();
                 MessageBox.Show("Şifre Güncellendi...");
-                DoktorGirisSayfasi dgs = new DoktorGirisSayfasi();
-                dgs.Show();
+                
                 this.Hide();
 
                 bag.Close();
