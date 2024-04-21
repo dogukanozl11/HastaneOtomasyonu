@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DoktorTahlilSonuçları));
             this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.panel5 = new System.Windows.Forms.Panel();
             this.button11 = new System.Windows.Forms.Button();
@@ -77,7 +76,6 @@
             this.listBox2 = new System.Windows.Forms.ListBox();
             this.label21 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -90,7 +88,6 @@
             this.panel4.SuspendLayout();
             this.panel1.SuspendLayout();
             this.ÜstPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -564,7 +561,6 @@
             this.ÜstPanel.Controls.Add(this.listBox2);
             this.ÜstPanel.Controls.Add(this.label21);
             this.ÜstPanel.Controls.Add(this.label1);
-            this.ÜstPanel.Controls.Add(this.pictureBox1);
             this.ÜstPanel.Location = new System.Drawing.Point(0, 3);
             this.ÜstPanel.Margin = new System.Windows.Forms.Padding(2);
             this.ÜstPanel.Name = "ÜstPanel";
@@ -636,17 +632,6 @@
             this.label1.Size = new System.Drawing.Size(269, 47);
             this.label1.TabIndex = 35;
             this.label1.Text = "Tahlil Sonuçları";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(2, 0);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(82, 84);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 6;
-            this.pictureBox1.TabStop = false;
             // 
             // button1
             // 
@@ -738,7 +723,6 @@
             this.panel1.PerformLayout();
             this.ÜstPanel.ResumeLayout(false);
             this.ÜstPanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -795,7 +779,6 @@
         private System.Windows.Forms.ListBox listBox2;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label3;

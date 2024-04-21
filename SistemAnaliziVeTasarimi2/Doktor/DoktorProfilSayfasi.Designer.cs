@@ -45,6 +45,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.lblSoyisim = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.LBLKlinikid = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnGERİ
@@ -277,6 +278,14 @@
             this.label4.Text = "Soyisim :";
             this.label4.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
+            // LBLKlinikid
+            // 
+            this.LBLKlinikid.AutoSize = true;
+            this.LBLKlinikid.Location = new System.Drawing.Point(32, 75);
+            this.LBLKlinikid.Name = "LBLKlinikid";
+            this.LBLKlinikid.Size = new System.Drawing.Size(0, 13);
+            this.LBLKlinikid.TabIndex = 88;
+            // 
             // DoktorProfilSayfasi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -284,6 +293,7 @@
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(884, 561);
+            this.Controls.Add(this.LBLKlinikid);
             this.Controls.Add(this.lblSoyisim);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.lblKlinik);
@@ -328,5 +338,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lblSoyisim;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label LBLKlinikid;
     }
 }

@@ -141,10 +141,10 @@ namespace SistemAnaliziVeTasarimi2.Doktor
 
         private void DoktorTahlilSonuçları_Load(object sender, EventArgs e)
         {
-            try
+            /*try
             {
                 textBox3.Text = label10.Text;
-                textBox4.Text = Doktor.dkidd;
+                textBox4.Text = DoktorProfilSayfasi.dtcc;
                 klinkgetir();
                 klinikgetir2();
                 ilac();
@@ -174,7 +174,7 @@ namespace SistemAnaliziVeTasarimi2.Doktor
             {
                 MessageBox.Show("Hata!! Daha Sonra Tekrar Deneyiniz");
 
-            }
+            }*/
 
 
 
@@ -205,12 +205,12 @@ namespace SistemAnaliziVeTasarimi2.Doktor
         {
             try
             {
-                if (textBox1.Text != "" && Doktor.klinikid != "16" && Doktor.klinikid != "17" && Doktor.klinikid != "18")
+                if (textBox1.Text != "" && DoktorProfilSayfasi.klinikid != "16" && DoktorProfilSayfasi.klinikid != "17" && DoktorProfilSayfasi.klinikid != "18")
                 {
                     panel1.Enabled = true;
                     panel2.Enabled = false;
                     panel3.Enabled = false;
-                    if (Doktor.klinikid == "16" || Doktor.klinikid == "17" || Doktor.klinikid == "18")
+                    if (DoktorProfilSayfasi.klinikid == "16" || DoktorProfilSayfasi.klinikid == "17" || DoktorProfilSayfasi.klinikid == "18")
                         MessageBox.Show("Acil doktorları paylaşım yapamaz. Nakil Sekmesini Kullanınız.");
                 }
                 else
@@ -233,7 +233,7 @@ namespace SistemAnaliziVeTasarimi2.Doktor
                 {
                     
                     bag.Open();
-                    SqlCommand komutdoktor = new SqlCommand("SELECT klinikler.klinik_id,doktorlar.doktor_id,doktorlar.doktor_adi_soyadi FROM doktorlar INNER JOIN klinikler ON doktorlar.doktor_klinik_id=klinikler.klinik_id WHERE doktorlar.doktor_klinik_id=@kid", baglanti);
+                    SqlCommand komutdoktor = new SqlCommand("SELECT klinikler.klinik_id,doktorlar.doktor_id,doktorlar.doktor_adi_soyadi FROM doktorlar INNER JOIN klinikler ON doktorlar.doktor_klinik_id=klinikler.klinik_id WHERE doktorlar.doktor_klinik_id=@kid", bag);
                     komutdoktor.Parameters.AddWithValue("@kid", comboBox3.SelectedValue.ToString());
                     qq.combo(komutdoktor, "doktor_id", "doktor_adi_soyadi", comboBox5);
 
@@ -255,7 +255,7 @@ namespace SistemAnaliziVeTasarimi2.Doktor
             {
 
                 bag.Open();
-                SqlCommand a = new SqlCommand("select * from tahliller where tahlil_doktor_id=@id", baglanti);
+                SqlCommand a = new SqlCommand("select * from tahliller where tahlil_doktor_id=@id", bag);
                 a.Parameters.AddWithValue("@id", Convert.ToInt32(comboBox5.SelectedValue));
                 SqlDataReader oku = a.ExecuteReader();
                 while (oku.Read())
@@ -266,7 +266,7 @@ namespace SistemAnaliziVeTasarimi2.Doktor
                 bag.Close();
 
                 bag.Open();
-                SqlCommand nakil = new SqlCommand("insert into lab(lab_tahlil_id,lab_test_id,lab_tarih,lab_aciklama)values(@tahlilid,@testid,@tarih,@aciklama)", baglanti);
+                SqlCommand nakil = new SqlCommand("insert into lab(lab_tahlil_id,lab_test_id,lab_tarih,lab_aciklama)values(@tahlilid,@testid,@tarih,@aciklama)", bag);
                 nakil.Parameters.AddWithValue("@tahlilid", label17.Text);
                 nakil.Parameters.AddWithValue("@testid", label7.Text);
                 nakil.Parameters.AddWithValue("@aciklama", label9.Text);
@@ -340,7 +340,7 @@ namespace SistemAnaliziVeTasarimi2.Doktor
                 {
                    
                     bag.Open();
-                    SqlCommand komutdoktor = new SqlCommand("SELECT klinikler.klinik_id,doktorlar.doktor_id,doktorlar.doktor_adi_soyadi FROM doktorlar INNER JOIN klinikler ON doktorlar.doktor_klinik_id=klinikler.klinik_id WHERE doktorlar.doktor_klinik_id=@kid", baglanti);
+                    SqlCommand komutdoktor = new SqlCommand("SELECT klinikler.klinik_id,doktorlar.doktor_id,doktorlar.doktor_adi_soyadi FROM doktorlar INNER JOIN klinikler ON doktorlar.doktor_klinik_id=klinikler.klinik_id WHERE doktorlar.doktor_klinik_id=@kid", bag);
                     komutdoktor.Parameters.AddWithValue("@kid", comboBox2.SelectedValue.ToString());
                     qq.combo(komutdoktor, "doktor_id", "doktor_adi_soyadi", comboBox1);
 
@@ -360,7 +360,7 @@ namespace SistemAnaliziVeTasarimi2.Doktor
         {
             try
             {
-                if (Doktor.klinikid == "16" || Doktor.klinikid == "17" || Doktor.klinikid == "18")
+                if (DoktorProfilSayfasi.klinikid == "16" || DoktorProfilSayfasi.klinikid == "17" || DoktorProfilSayfasi.klinikid == "18")
                 {
 
 

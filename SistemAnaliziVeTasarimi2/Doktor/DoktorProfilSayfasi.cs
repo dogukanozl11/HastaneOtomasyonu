@@ -5,6 +5,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
+using System.Reflection.Emit;
 using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
@@ -19,6 +20,8 @@ namespace SistemAnaliziVeTasarimi2.Doktor
             InitializeComponent();
         }
         SqlConnection bag = new SqlConnection("Data Source=DESKTOP-MJGGV3B;Initial Catalog=sistemHastanesi;Integrated Security=True;Encrypt=False;");
+        public static string dtcc;
+        public static string klinikid;
         private void btnGERİ_Click(object sender, EventArgs e)
         {
             //Anasayfa dgs = new Anasayfa();
@@ -54,6 +57,29 @@ namespace SistemAnaliziVeTasarimi2.Doktor
                     lblSoyisim.Text = oku[2].ToString();
                     lblKlinik.Text = oku[9].ToString(); 
                 }
+                dtcc = this.lblTc.Text;
+                this.lblTc.Text = dtcc;
+
+                /*bag.Open();
+                SqlCommand acil = new SqlCommand("SELECT tbl_klinikler.klinik_id,tbl_klinikler.klinik_adi,tbl_doktor.doktor_id FROM tbl_doktor INNER JOIN tbl_klinikler ON tbl_doktor.doktor_klinik_id=tbl_klinikler.klinik_id WHERE tbl_doktor.doktor_klinik_id=@kid", bag);
+                acil.Parameters.AddWithValue("@kid", this.lblKlinik.Text);
+                SqlDataReader ok = acil.ExecuteReader();
+                while (ok.Read())
+                {
+                    LBLKlinikid.Text= ok[0].ToString();
+                    lblKlinik.Text = ok[1].ToString();
+
+                    klinikid = LBLKlinikid.Text;
+                }
+                bag.Close();
+                if (LBLKlinikid.Text == "16" || LBLKlinikid.Text == "17" || LBLKlinikid.Text == "18")
+                {
+                    btnRandevularım.Enabled = false;
+                    btnRandevuSil.Enabled = false;
+                    btnBekleyenHasta.Enabled = false;
+                }
+                else
+                    btnAcil.Enabled = false;*/
 
             }
             catch 
