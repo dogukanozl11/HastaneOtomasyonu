@@ -71,7 +71,10 @@
             this.Controls.Add(this.btniptal);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "DoktorRandevuSil";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DoktorRandevuSil";
             this.Load += new System.EventHandler(this.DoktorRandevuSil_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

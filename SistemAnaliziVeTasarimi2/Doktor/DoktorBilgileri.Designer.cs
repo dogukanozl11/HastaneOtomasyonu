@@ -299,7 +299,9 @@
             this.Controls.Add(this.label11);
             this.Controls.Add(this.txtİsim);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "DoktorBilgileri";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DoktorBilgileri";
             this.Load += new System.EventHandler(this.DoktorBilgileri_Load);
             this.ResumeLayout(false);

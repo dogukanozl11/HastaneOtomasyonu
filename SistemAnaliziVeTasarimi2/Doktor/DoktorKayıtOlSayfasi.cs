@@ -21,18 +21,19 @@ namespace SistemAnaliziVeTasarimi2.Doktor
 
         private void btnDoktorKayıtYap_Click(object sender, EventArgs e)
         {
-            string sql = "INSERT INTO tbl_doktor(isim,soyisim,tcNo,yaş,cinsiyet,telno,eMail,sifre,Branş) VALUES (@doktorİsim,@doktorSoyİsim,@doktorTCNo,@doktorYas,@doktorCinsiyet,@doktorTelefon,@doktorMail,@doktorSifre,@doktorBrans)";
+            string sql = "INSERT INTO tbl_doktor(isim,soyisim,tcNo,yaş,cinsiyet,telno,eMail,sifre,doktor_klinik_id) VALUES (@doktorİsim,@doktorSoyİsim,@doktorTCNo,@doktorYas,@doktorCinsiyet,@doktorTelefon,@doktorMail,@doktorSifre,@doktorBrans)";
             SqlCommand komut = new SqlCommand(sql, bag);
 
             komut.Parameters.AddWithValue("@doktorİsim", txtDoktorİsim.Text);
             komut.Parameters.AddWithValue("@doktorSoyİsim", txtDoktorSoyisim.Text);
             komut.Parameters.AddWithValue("@doktorTCNo", txtDoktorTC.Text);
-            komut.Parameters.AddWithValue("@doktorrYas", maskedTextBoxYas.Text);
-            komut.Parameters.AddWithValue("@doktorrCinsiyet", CmbDoktorCinsiyet.Text);
+            komut.Parameters.AddWithValue("@doktorYas", maskedTextBoxYas.Text);
+            komut.Parameters.AddWithValue("@doktorCinsiyet", CmbDoktorCinsiyet.Text);
             komut.Parameters.AddWithValue("@doktorTelefon", txtDoktorTel.Text);
             komut.Parameters.AddWithValue("@doktorMail", txtDoktorMail.Text);
             komut.Parameters.AddWithValue("@doktorSifre", txtDoktorSifre.Text);
-            komut.Parameters.AddWithValue("@doktorBrans", CmbDoktorBrans.Text);
+            komut.Parameters.AddWithValue("@doktorBrans", CmbDoktorBrans.SelectedIndex);
+            //komut.Parameters.AddWithValue("@doktorBrans", SqlDbType.Int).Value =  Convert.ToInt32(CmbDoktorBrans.SelectedValue);
             bag.Open();
             komut.ExecuteNonQuery();
             bag.Close();

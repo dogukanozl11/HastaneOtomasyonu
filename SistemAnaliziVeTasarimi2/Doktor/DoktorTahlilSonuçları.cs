@@ -28,7 +28,7 @@ namespace SistemAnaliziVeTasarimi2.Doktor
         {
            
             bag.Open();
-            SqlCommand a = new SqlCommand("select * from klinikler where klinik_id=@id", bag);
+            SqlCommand a = new SqlCommand("select * from tbl_klinikler where klinik_id=@id", bag);
             a.Parameters.AddWithValue("@id", textBox3.Text);
             SqlDataReader oku = a.ExecuteReader();
             while (oku.Read())
@@ -38,14 +38,14 @@ namespace SistemAnaliziVeTasarimi2.Doktor
             }
             bag.Close();
             bag.Open();
-            SqlCommand ekle = new SqlCommand("update klinikler set yatan_hasta=@h where klinik_id=@id", bag);
+            SqlCommand ekle = new SqlCommand("update tbl_klinikler set yatan_hasta=@h where klinik_id=@id", bag);
             ekle.Parameters.AddWithValue("@id", textBox3.Text);
             ekle.Parameters.AddWithValue("@h", Convert.ToInt32(label24.Text) + 1);
             ekle.ExecuteNonQuery();
             bag.Close();
 
             bag.Open();
-            SqlCommand yatak = new SqlCommand("update klinikler set yatak_kapasite=@kapasite where klinik_id=@id ", bag);
+            SqlCommand yatak = new SqlCommand("update tbl_klinikler set yatak_kapasite=@kapasite where klinik_id=@id ", bag);
             yatak.Parameters.AddWithValue("@id", textBox3.Text);
             yatak.Parameters.AddWithValue("@kapasite", Convert.ToInt32(label23.Text) - 1);
             yatak.ExecuteNonQuery();
@@ -59,7 +59,7 @@ namespace SistemAnaliziVeTasarimi2.Doktor
         {
             
             bag.Open();
-            SqlCommand yatan = new SqlCommand("select yatan_hasta_id from yatan", bag);
+            SqlCommand yatan = new SqlCommand("select yatan_hasta_id from tbl_yatan", bag);
             SqlDataReader oku = yatan.ExecuteReader();
             while (oku.Read())
             {
@@ -69,17 +69,17 @@ namespace SistemAnaliziVeTasarimi2.Doktor
         }
         void klinkgetir()
         {
-            SqlCommand c = new SqlCommand("select * from klinikler where klinik_id < 14 or klinik_id > 18", bag);
+            SqlCommand c = new SqlCommand("select * from tbl_klinikler where klinik_id < 16 or klinik_id > 18", bag);
             qq.combo(c, "klinik_id", "klinik_adi", comboBox3);
         }
         void ilac()
         {
-            SqlCommand a = new SqlCommand("select * from ilaclar", bag);
+            SqlCommand a = new SqlCommand("select * from tbl_ilaclar", bag);
             qq.combo(a, "ilac_id", "ilac_adi", comboBox4);
         }
         void klinikgetir2()
         {
-            SqlCommand c = new SqlCommand("select * from klinikler where klinik_id < 14 or klinik_id > 18", bag);
+            SqlCommand c = new SqlCommand("select * from tbl_klinikler where klinik_id < 14 or klinik_id > 18", bag);
             qq.combo(c, "klinik_id", "klinik_adi", comboBox2);
         }
 
@@ -89,7 +89,7 @@ namespace SistemAnaliziVeTasarimi2.Doktor
             {
                 
                 bag.Open();
-                SqlCommand listele = new SqlCommand("select lab.lab_id,lab.lab_tahlil_id,lab_test_id,testler.test_adi,lab_aciklama,tahliller.tahlil_doktor_id,tahliller.tahlil_hasta_id,tahliller.tahlil_klinik_id,lab.lab_tarih from lab INNER JOIN tahliller on tahliller.tahlil_id=lab_tahlil_id INNER JOIN testler on testler.test_id=lab.lab_test_id where tahliller.tahlil_hasta_id=@id and tahliller.tahlil_doktor_id=@idd and lab.kontrol=2", bag);
+                SqlCommand listele = new SqlCommand("select tbl_lab.lab_id,tbl_lab.lab_tahlil_id,lab_test_id,tbl_testler.test_adi,lab_aciklama,tbl_tahliller.tahlil_doktor_id,tbl_tahliller.tahlil_hasta_id,tbl_tahliller.tahlil_klinik_id,tbl_lab.lab_tarih from tbl_lab INNER JOIN tbl_tahliller on tbl_tahliller.tahlil_id=lab_tahlil_id INNER JOIN tbl_testler on tbl_testler.test_id=tbl_lab.lab_test_id where tbl_tahliller.tahlil_hasta_id=@id and tbl_tahliller.tahlil_doktor_id=@idd and tbl_lab.kontrol=2", bag);
                 listele.Parameters.AddWithValue("@idd", textBox4.Text);
                 listele.Parameters.AddWithValue("@id", textBox1.Text);
                 //  listele.Parameters.AddWithValue("@kont", label19.Text);
@@ -126,11 +126,11 @@ namespace SistemAnaliziVeTasarimi2.Doktor
                 listBox1.Items.Clear();
 
                 
-                bag.Open();
-                SqlCommand vezne = new SqlCommand("insert into vezne(hasta_id)values(@id) ", bag);
-                vezne.Parameters.AddWithValue("@id", textBox1.Text);
-                vezne.ExecuteNonQuery();
-                bag.Close();
+                //bag.Open();
+                //SqlCommand vezne = new SqlCommand("insert into vezne(hasta_id)values(@id) ", bag);
+                //vezne.Parameters.AddWithValue("@id", textBox1.Text);
+                //vezne.ExecuteNonQuery();
+                //bag.Close();
 
             }
             catch
@@ -141,25 +141,26 @@ namespace SistemAnaliziVeTasarimi2.Doktor
 
         private void DoktorTahlilSonuçları_Load(object sender, EventArgs e)
         {
-            /*try
+            try
             {
-                textBox3.Text = label10.Text;
-                textBox4.Text = DoktorProfilSayfasi.dtcc;
+                //label10.Text = "1";
+                textBox3.Text = DoktorProfilSayfasi.klinikid;
+                textBox4.Text = DoktorProfilSayfasi.doktorID;
                 klinkgetir();
                 klinikgetir2();
                 ilac();
                 yatanhasta();
-                if (YatanHasta.yatan == 1)
+                if (DoktorYatanHasta.yatan == 0)
                 {
                     panel5.Visible = false;
                     panel4.Visible = false;
                     button1.Enabled = false;
                     textBox1.Enabled = false;
                     button12.Visible = true;
-                    textBox1.Text = YatanHasta.id.ToString();
+                    textBox1.Text = DoktorYatanHasta.id.ToString();
                     
                     bag.Open();
-                    SqlCommand listele = new SqlCommand("select lab.lab_id,lab.lab_tahlil_id,lab_test_id,testler.test_adi,lab_aciklama,tahliller.tahlil_doktor_id,tahliller.tahlil_hasta_id,tahliller.tahlil_klinik_id,lab.lab_tarih from lab INNER JOIN tahliller on tahliller.tahlil_id=lab_tahlil_id INNER JOIN testler on testler.test_id=lab.lab_test_id where tahliller.tahlil_hasta_id=@id and tahliller.tahlil_doktor_id=@idd and lab.kontrol=2", baglanti);
+                    SqlCommand listele = new SqlCommand("select tbl_lab.lab_id,tbl_lab.lab_tahlil_id,lab_test_id,tbl_testler.test_adi,lab_aciklama,tbl_tahliller.tahlil_doktor_id,tbl_tahliller.tahlil_hasta_id,tbl_tahliller.tahlil_klinik_id,tbl_lab.lab_tarih from tbl_lab INNER JOIN tbl_tahliller on tbl_tahliller.tahlil_id=lab_tahlil_id INNER JOIN tbl_testler on tbl_testler.test_id=tbl_lab.lab_test_id where tbl_tahliller.tahlil_hasta_id=@id and tbl_tahliller.tahlil_doktor_id=@idd and tbl_lab.kontrol=2", bag);
                     listele.Parameters.AddWithValue("@idd", textBox4.Text);
                     listele.Parameters.AddWithValue("@id", textBox1.Text);
                     //listele.Parameters.AddWithValue("@kont", label19.Text);
@@ -174,7 +175,7 @@ namespace SistemAnaliziVeTasarimi2.Doktor
             {
                 MessageBox.Show("Hata!! Daha Sonra Tekrar Deneyiniz");
 
-            }*/
+            }
 
 
 

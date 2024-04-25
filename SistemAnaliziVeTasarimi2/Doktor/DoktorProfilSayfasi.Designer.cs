@@ -46,6 +46,7 @@
             this.lblSoyisim = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.LBLKlinikid = new System.Windows.Forms.Label();
+            this.lblID = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnGERİ
@@ -286,6 +287,19 @@
             this.LBLKlinikid.Size = new System.Drawing.Size(0, 13);
             this.LBLKlinikid.TabIndex = 88;
             // 
+            // lblID
+            // 
+            this.lblID.AutoSize = true;
+            this.lblID.BackColor = System.Drawing.Color.Transparent;
+            this.lblID.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblID.ForeColor = System.Drawing.Color.Transparent;
+            this.lblID.Location = new System.Drawing.Point(400, 11);
+            this.lblID.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblID.Name = "lblID";
+            this.lblID.Size = new System.Drawing.Size(0, 25);
+            this.lblID.TabIndex = 89;
+            this.lblID.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
             // DoktorProfilSayfasi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -293,6 +307,7 @@
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(884, 561);
+            this.Controls.Add(this.lblID);
             this.Controls.Add(this.LBLKlinikid);
             this.Controls.Add(this.lblSoyisim);
             this.Controls.Add(this.label4);
@@ -310,7 +325,9 @@
             this.Controls.Add(this.btnRandevularım);
             this.Controls.Add(this.btnKullanici);
             this.Controls.Add(this.btnGERİ);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "DoktorProfilSayfasi";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DoktorProfilSayfasi";
@@ -339,5 +356,6 @@
         private System.Windows.Forms.Label lblSoyisim;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label LBLKlinikid;
+        private System.Windows.Forms.Label lblID;
     }
 }

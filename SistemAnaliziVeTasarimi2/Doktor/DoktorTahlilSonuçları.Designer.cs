@@ -709,7 +709,10 @@
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.label2);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "DoktorTahlilSonuçları";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DoktorTahlilSonuçları";
             this.Load += new System.EventHandler(this.DoktorTahlilSonuçları_Load);
             this.panel5.ResumeLayout(false);

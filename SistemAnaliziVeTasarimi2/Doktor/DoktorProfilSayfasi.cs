@@ -22,6 +22,7 @@ namespace SistemAnaliziVeTasarimi2.Doktor
         SqlConnection bag = new SqlConnection("Data Source=DESKTOP-MJGGV3B;Initial Catalog=sistemHastanesi;Integrated Security=True;Encrypt=False;");
         public static string dtcc;
         public static string klinikid;
+        public static string doktorID;
         private void btnGERİ_Click(object sender, EventArgs e)
         {
             //Anasayfa dgs = new Anasayfa();
@@ -50,24 +51,29 @@ namespace SistemAnaliziVeTasarimi2.Doktor
                 SqlCommand tc = new SqlCommand(sql,bag);
                 tc.Parameters.AddWithValue("@prm1", lblTc.Text);
                 SqlDataReader oku = tc.ExecuteReader();
+      
                 while (oku.Read())
                 {
+                    this.lblID.Text = oku[0].ToString();
                     this.lblTc.Text = oku[3].ToString();
                     lblisim.Text = oku[1].ToString();
                     lblSoyisim.Text = oku[2].ToString();
-                    lblKlinik.Text = oku[9].ToString(); 
+                    lblKlinik.Text = oku[9].ToString();
                 }
+                bag.Close();
                 dtcc = this.lblTc.Text;
                 this.lblTc.Text = dtcc;
-
-                /*bag.Open();
+                doktorID = this.lblID.Text;
+                
+                //Acil Doktoru için//
+                bag.Open();
                 SqlCommand acil = new SqlCommand("SELECT tbl_klinikler.klinik_id,tbl_klinikler.klinik_adi,tbl_doktor.doktor_id FROM tbl_doktor INNER JOIN tbl_klinikler ON tbl_doktor.doktor_klinik_id=tbl_klinikler.klinik_id WHERE tbl_doktor.doktor_klinik_id=@kid", bag);
                 acil.Parameters.AddWithValue("@kid", this.lblKlinik.Text);
                 SqlDataReader ok = acil.ExecuteReader();
                 while (ok.Read())
                 {
                     LBLKlinikid.Text= ok[0].ToString();
-                    lblKlinik.Text = ok[1].ToString();
+                    lblKlinik.Text = ok[1].ToString();   //Klinik ID yi alıp Klinik adı verir.
 
                     klinikid = LBLKlinikid.Text;
                 }
@@ -79,7 +85,7 @@ namespace SistemAnaliziVeTasarimi2.Doktor
                     btnBekleyenHasta.Enabled = false;
                 }
                 else
-                    btnAcil.Enabled = false;*/
+                    btnAcil.Enabled = false;
 
             }
             catch 

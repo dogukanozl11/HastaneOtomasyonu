@@ -98,7 +98,10 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "DoktorRandevuGörüntüle";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DoktorRandevuGörüntüle";
             this.Load += new System.EventHandler(this.DoktorRandevuGörüntüle_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

@@ -47,7 +47,6 @@
             this.txtDoktorİsim = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.CmbDoktorBrans = new System.Windows.Forms.ComboBox();
-            this.btnGeri = new System.Windows.Forms.Button();
             this.maskedTextBoxYas = new System.Windows.Forms.MaskedTextBox();
             this.SuspendLayout();
             // 
@@ -186,6 +185,7 @@
             // 
             this.txtDoktorTC.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDoktorTC.Location = new System.Drawing.Point(169, 204);
+            this.txtDoktorTC.MaxLength = 11;
             this.txtDoktorTC.Name = "txtDoktorTC";
             this.txtDoktorTC.Size = new System.Drawing.Size(246, 27);
             this.txtDoktorTC.TabIndex = 8;
@@ -222,33 +222,29 @@
             this.CmbDoktorBrans.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.CmbDoktorBrans.FormattingEnabled = true;
             this.CmbDoktorBrans.Items.AddRange(new object[] {
-            "Acil tıp",
-            "Adli tıp",
-            "Aile hekimliği",
-            "Beyin ve sinir cerrahisi",
-            "Dahiliye",
-            "Diş",
-            "Göğüs Hastalıkları",
+            "",
+            "Çocuk Sağlığı Ve Hastalıkları",
+            "Deri Ve Zührevi Hastalıkları (Cildiye)",
+            "Enfeksiyon Hastalıkları",
+            "Fizik Tedavi Ve Rehabilitasyon",
+            "Genel Cerrahi",
+            "Göğüs Cerrahisi",
+            "İç Hastalıkları (Dahiliye)",
+            "Kadın Hastalıkları ve Doğum",
+            "Kalp ve Damar Cerrahisi",
             "Kardiyoloji",
-            "İç Hastalıkları",
-            "Üroloji"});
+            "Kulak Burun Boğaz Hastalıkları",
+            "Ortopedi Ve Travmatoloji",
+            "Ruh Sağlığı Ve Hastalıkları (Psikiyatri)",
+            "Nöroloji",
+            "Üroloji",
+            "Acil1",
+            "Acil2",
+            "Acil3"});
             this.CmbDoktorBrans.Location = new System.Drawing.Point(169, 559);
             this.CmbDoktorBrans.Name = "CmbDoktorBrans";
             this.CmbDoktorBrans.Size = new System.Drawing.Size(246, 27);
             this.CmbDoktorBrans.TabIndex = 12;
-            // 
-            // btnGeri
-            // 
-            this.btnGeri.BackColor = System.Drawing.Color.Red;
-            this.btnGeri.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnGeri.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnGeri.Location = new System.Drawing.Point(1, 1);
-            this.btnGeri.Name = "btnGeri";
-            this.btnGeri.Size = new System.Drawing.Size(45, 35);
-            this.btnGeri.TabIndex = 24;
-            this.btnGeri.Text = "<";
-            this.btnGeri.UseVisualStyleBackColor = false;
-            this.btnGeri.Click += new System.EventHandler(this.btnGeri_Click);
             // 
             // maskedTextBoxYas
             // 
@@ -266,7 +262,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(584, 761);
-            this.Controls.Add(this.btnGeri);
             this.Controls.Add(this.btnDoktorKayıtYap);
             this.Controls.Add(this.maskedTextBoxYas);
             this.Controls.Add(this.txtDoktorTel);
@@ -286,7 +281,9 @@
             this.Controls.Add(this.txtDoktorTC);
             this.Controls.Add(this.txtDoktorSoyisim);
             this.Controls.Add(this.txtDoktorİsim);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "DoktorKayıtOlSayfasi";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DoktorKayıtOlSayfasi";
@@ -315,7 +312,6 @@
         private System.Windows.Forms.TextBox txtDoktorİsim;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.ComboBox CmbDoktorBrans;
-        private System.Windows.Forms.Button btnGeri;
         private System.Windows.Forms.MaskedTextBox maskedTextBoxYas;
     }
 }

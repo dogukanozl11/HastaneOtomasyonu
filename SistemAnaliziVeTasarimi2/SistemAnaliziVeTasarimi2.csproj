@@ -289,6 +289,9 @@
     <EmbeddedResource Include="Anasayfa.resx">
       <DependentUpon>Anasayfa.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Doktor\DoktorAcil.resx">
+      <DependentUpon>DoktorAcil.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Doktor\DoktorBekleyenHasta.resx">
       <DependentUpon>DoktorBekleyenHasta.cs</DependentUpon>
     </EmbeddedResource>
@@ -312,6 +315,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Doktor\DoktorTahlilSonuçları.resx">
       <DependentUpon>DoktorTahlilSonuçları.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Doktor\DoktorYatanHasta.resx">
+      <DependentUpon>DoktorYatanHasta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Doktor\muayene.resx">
+      <DependentUpon>muayene.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Doktor\RandevuMuayene.resx">
+      <DependentUpon>RandevuMuayene.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Hasta\HastaBilgileri.resx">
       <DependentUpon>HastaBilgileri.cs</DependentUpon>

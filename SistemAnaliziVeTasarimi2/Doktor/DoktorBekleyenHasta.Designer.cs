@@ -98,7 +98,10 @@
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.dataGridView1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "DoktorBekleyenHasta";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DoktorBekleyenHasta";
             this.Load += new System.EventHandler(this.DoktorBekleyenHasta_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

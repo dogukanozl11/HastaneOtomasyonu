@@ -24,14 +24,14 @@ namespace SistemAnaliziVeTasarimi2.ADMİN
         {
             SekreterKayıtOlSayfasi skos = new SekreterKayıtOlSayfasi();
             skos.Show();
-            this.Hide();
+            
         }
 
         private void btnDoktorKayit_Click(object sender, EventArgs e)
         {
             DoktorKayıtOlSayfasi dkos = new DoktorKayıtOlSayfasi();
             dkos.Show();
-            this.Hide();
+            
         }
 
         private void btnLabPKayit_Click(object sender, EventArgs e)
