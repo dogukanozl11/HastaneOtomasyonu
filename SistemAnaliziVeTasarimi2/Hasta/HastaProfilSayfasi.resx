@@ -118,10 +118,10 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="button5.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnGeçmisSonuc.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vQAADr0BR/uQrQAAAp5JREFUSEu9lz9oE2EYhyM4WByawd2kBXUQGgtOgmQSFcVz0U0kZ0WLSHEQt1pQ
+        vAAADrwBlbxySQAAAp5JREFUSEu9lz9oE2EYhyM4WByawd2kBXUQGgtOgmQSFcVz0U0kZ0WLSHEQt1pQ
         KogcdNDJWRCkg3QuatHaQlNbqYpDRKGiQm+Jf6Cm8XmP30EvJObu2vQHD1/u/dJ78n693H3JNGbtxLWn
         MKnDIBxn4Qh4UIZv8Lu8u1Sfz5WqMMFr703ePac/SR6dtA5zYMI78F01w4dFeIXsGdKKfYAIuZK3fHBw
         m04ZL5wwFK/HZDehH7J6ayR8AIeORxhrkv/itavp9uHEjeIVaCprFcRDYffIH6r8/yBp1vGcpmMHaQHm
@@ -135,7 +135,7 @@
         03ALJuEHrCFeNRHjDKO32OuejSfMZP4Bm3sZlhqUe8oAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="button2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="BtnRecetelerim.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         /9j/4AAQSkZJRgABAQEAeAB4AAD/4QC2RXhpZgAATU0AKgAAAAgAAgESAAMAAAABAAEAAIdpAAQAAAAB
         AAAAJgAAAAAAAZKGAAcAAAB2AAAAOAAAAABDAFIARQBBAFQATwBSADoAIABnAGQALQBqAHAAZQBnACAA
@@ -184,7 +184,7 @@
         lXT4P5Df36K9jYKCX86VgHPm+sQaAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="button4.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="BtnRandevuSil.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAA+hJREFUSEut
         lV1I21cUwP/d1MGSptXEiiKVhNZZbIujrQ+t3X3yWdijeRWLA/GlqFNcVyYio7RrqcFJO6rW1I9hjTRr

@@ -104,8 +104,8 @@ namespace SistemAnaliziVeTasarimi2.Doktor
                 dataGridView1.DataSource = dt;
                 if (listBox2.Items.Contains(textBox1.Text))
                 {
-                    panel5.Visible = false;
-                    panel4.Visible = false;
+                    panel5.Visible = true;
+                    panel4.Visible = true;
                     button1.Enabled = false;
                     textBox1.Enabled = false;
                     button12.Visible = true;
@@ -149,7 +149,7 @@ namespace SistemAnaliziVeTasarimi2.Doktor
         {
             try
             {
-                textBox3.Text = label10.Text;
+                textBox3.Text = DoktorProfilSayfasi.klinikid;
                 textBox4.Text = DoktorProfilSayfasi.doktorID;
                 klinkgetir();
                 klinikgetir2();

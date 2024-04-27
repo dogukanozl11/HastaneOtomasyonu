@@ -99,6 +99,7 @@
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(194, 21);
             this.comboBox3.TabIndex = 33;
+            this.comboBox3.SelectedIndexChanged += new System.EventHandler(this.comboBox3_SelectedIndexChanged);
             // 
             // panel5
             // 
@@ -130,6 +131,7 @@
             this.button11.TabIndex = 29;
             this.button11.Text = "Yatış Ver";
             this.button11.UseVisualStyleBackColor = false;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
             // 
             // label19
             // 
@@ -240,6 +242,7 @@
             this.button9.TabIndex = 26;
             this.button9.Text = "Tanı/Reçete";
             this.button9.UseVisualStyleBackColor = false;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
             // label7
             // 
@@ -276,6 +279,7 @@
             this.button6.TabIndex = 36;
             this.button6.Text = "Gönder";
             this.button6.UseVisualStyleBackColor = false;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // comboBox1
             // 
@@ -305,6 +309,7 @@
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(194, 21);
             this.comboBox2.TabIndex = 33;
+            this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
             // 
             // label14
             // 
@@ -364,6 +369,7 @@
             this.button10.TabIndex = 14;
             this.button10.Text = "Ekle";
             this.button10.UseVisualStyleBackColor = false;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
             // 
             // comboBox4
             // 
@@ -394,6 +400,7 @@
             this.button2.TabIndex = 9;
             this.button2.Text = "Gönder";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
@@ -405,6 +412,7 @@
             this.button3.TabIndex = 12;
             this.button3.Text = "Sil";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // label4
             // 
@@ -461,6 +469,7 @@
             this.button4.TabIndex = 13;
             this.button4.Text = "Paylaş";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // panel1
             // 
@@ -487,6 +496,7 @@
             this.button8.TabIndex = 37;
             this.button8.Text = "Doktor Seç ";
             this.button8.UseVisualStyleBackColor = false;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // button5
             // 
@@ -499,6 +509,7 @@
             this.button5.TabIndex = 36;
             this.button5.Text = "Gönder";
             this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // comboBox5
             // 
@@ -530,6 +541,7 @@
             this.button7.TabIndex = 22;
             this.button7.Text = "Nakil";
             this.button7.UseVisualStyleBackColor = false;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // textBox3
             // 
@@ -551,6 +563,7 @@
             this.button12.Text = "Sil";
             this.button12.UseVisualStyleBackColor = false;
             this.button12.Visible = false;
+            this.button12.Click += new System.EventHandler(this.button12_Click);
             // 
             // ÜstPanel
             // 

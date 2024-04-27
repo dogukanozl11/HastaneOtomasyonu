@@ -14,6 +14,7 @@ namespace SistemAnaliziVeTasarimi2.Hasta
     public partial class HastaProfilSayfasi : Form
     {
         public static string idx;
+        public static string idxx;
         public HastaProfilSayfasi()
         {
             InitializeComponent();
@@ -39,13 +40,15 @@ namespace SistemAnaliziVeTasarimi2.Hasta
                 SqlDataReader oku = tc.ExecuteReader();
                 while (oku.Read())
                 {
+                    this.lblIDXX.Text = oku[0].ToString();
                     this.lblTc.Text = oku[3].ToString();
                     lblisim.Text = oku[1].ToString();
                     lblSoyisim.Text = oku[2].ToString();
-                    lblEmail.Text = oku[7].ToString();
+                    lblEmail.Text = oku[8].ToString();
                 }
                 bag.Close();
                 idx = lblTc.Text;
+                idxx = lblIDXX.Text;
 
             }
             catch
@@ -71,6 +74,22 @@ namespace SistemAnaliziVeTasarimi2.Hasta
         {
             HastaBilgileri HB = new HastaBilgileri();
             HB.Show();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtnRecetelerim_Click(object sender, EventArgs e)
+        {
+            HastaRecetelerimSayfasi HRS = new HastaRecetelerimSayfasi();
+            HRS.Show();
         }
     }
 }
