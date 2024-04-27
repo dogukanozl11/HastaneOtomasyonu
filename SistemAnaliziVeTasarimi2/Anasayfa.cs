@@ -181,8 +181,8 @@ namespace SistemAnaliziVeTasarimi2
             }
             else if (dt.Rows.Count > 0)
             {
-                SekreterProfilSayfasi sps = new SekreterProfilSayfasi();
-                sps.Show();
+                LaboratuvarSayfasi lab = new LaboratuvarSayfasi();
+                lab.Show();
                 this.Hide();
             }
             else
