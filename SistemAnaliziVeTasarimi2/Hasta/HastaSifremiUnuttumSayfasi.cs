@@ -33,6 +33,7 @@ namespace SistemAnaliziVeTasarimi2.Hasta
         {
             try
             {
+
                 if (txtEmail.Text != "")
                 {
                     onayKodu = rnd.Next(100000, 999999).ToString();

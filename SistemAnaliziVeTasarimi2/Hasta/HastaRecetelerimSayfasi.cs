@@ -119,17 +119,21 @@ namespace SistemAnaliziVeTasarimi2.Hasta
             {
                 Font font = new Font("Arial", 14);
                 SolidBrush firca = new SolidBrush(Color.Black);
+
                 ev.Graphics.DrawString($"Tarih : {DateTime.Now.ToString("dd.MM.yyyy")}",font,firca,60,25);
                 font = new Font("Arial", 20,FontStyle.Bold);
 
-                ev.Graphics.DrawString($"Doktor Bilgileri : {comboBox1.Text}",font,firca,20,70);
+                ev.Graphics.DrawString("SİSTEM HASTANESİ OTOMASYONU",font,firca,160,70);
                 font = new Font("Arial", 18);
 
-                ev.Graphics.DrawString("-----İlaç Listesi-----", font, firca, 300, 120);
+                ev.Graphics.DrawString($"Doktor Bilgileri : {comboBox1.Text}",font,firca,20, 120);
+                font = new Font("Arial", 18);
+
+                ev.Graphics.DrawString("----- İlaç Listesi -----", font, firca, 300, 220);
                 font = new Font("Arial", 14);
 
                 //ev.Graphics.DrawString($"İlaç Adı :  {ilacadi}", font, firca, 30, 150);
-                float ypozz = 150;
+                float ypozz = 300;
                 ev.Graphics.DrawString(ilacadi, font, firca, 50, ypozz);
                 
                 //foreach (var item in listBox1.Items)
@@ -250,9 +254,10 @@ namespace SistemAnaliziVeTasarimi2.Hasta
             karar = MessageBox.Show("Çıkış istediğinize emin misiniz ? ", "Uyarı", MessageBoxButtons.YesNo);
             if (karar == DialogResult.Yes)
             {
-                this.Hide();
+                
                 HastaProfilSayfasi yeni = new HastaProfilSayfasi();
                 yeni.Show();
+                this.Hide();
             }
             else if (karar == DialogResult.No)
             {
@@ -271,8 +276,9 @@ namespace SistemAnaliziVeTasarimi2.Hasta
             foreach (object x in listBox1.Items)
             {
                 //ev.Graphics.DrawString($"İlaç Adı : {a} ", font, firca, 20, 120);
-                ilacadi = ilacadi + x.ToString() + "\n";
-                
+                //ilacadi = ilacadi + x.ToString() + "\n";
+                ilacadi = ilacadi + $"İlaç Adı: {x.ToString()}\n";
+
 
             }
             myReader = new StringReader(ilacadi);

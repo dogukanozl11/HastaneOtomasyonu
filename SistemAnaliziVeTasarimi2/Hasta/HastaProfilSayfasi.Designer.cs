@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HastaProfilSayfasi));
-            this.btnGERİ = new System.Windows.Forms.Button();
             this.lblSoyisim = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.lblEmail = new System.Windows.Forms.Label();
@@ -45,19 +44,8 @@
             this.btnHastaBilgileri = new System.Windows.Forms.Button();
             this.btnRandevuAl = new System.Windows.Forms.Button();
             this.lblIDXX = new System.Windows.Forms.Label();
+            this.btnGERİ = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
-            // btnGERİ
-            // 
-            this.btnGERİ.BackColor = System.Drawing.Color.Red;
-            this.btnGERİ.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnGERİ.Location = new System.Drawing.Point(0, 0);
-            this.btnGERİ.Name = "btnGERİ";
-            this.btnGERİ.Size = new System.Drawing.Size(45, 35);
-            this.btnGERİ.TabIndex = 3;
-            this.btnGERİ.Text = "<";
-            this.btnGERİ.UseVisualStyleBackColor = false;
-            this.btnGERİ.Click += new System.EventHandler(this.btnGERİ_Click);
             // 
             // lblSoyisim
             // 
@@ -174,7 +162,7 @@
             this.btnGeçmisSonuc.Text = "Geçmiş Sonuçlar";
             this.btnGeçmisSonuc.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnGeçmisSonuc.UseVisualStyleBackColor = false;
-            this.btnGeçmisSonuc.Click += new System.EventHandler(this.button5_Click);
+            this.btnGeçmisSonuc.Click += new System.EventHandler(this.btnGeçmisSonuc_Click);
             // 
             // BtnRecetelerim
             // 
@@ -225,7 +213,7 @@
             this.BtnRandevuSil.Text = "Randevu Sil";
             this.BtnRandevuSil.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.BtnRandevuSil.UseVisualStyleBackColor = false;
-            this.BtnRandevuSil.Click += new System.EventHandler(this.button4_Click);
+            this.BtnRandevuSil.Click += new System.EventHandler(this.BtnRandevuSil_Click);
             // 
             // btnHastaBilgileri
             // 
@@ -265,13 +253,25 @@
             // 
             this.lblIDXX.AutoSize = true;
             this.lblIDXX.BackColor = System.Drawing.Color.Transparent;
-            this.lblIDXX.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblIDXX.Location = new System.Drawing.Point(432, 49);
+            this.lblIDXX.Font = new System.Drawing.Font("Microsoft Sans Serif", 0.1F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblIDXX.ForeColor = System.Drawing.Color.Transparent;
+            this.lblIDXX.Location = new System.Drawing.Point(375, 51);
             this.lblIDXX.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblIDXX.Name = "lblIDXX";
-            this.lblIDXX.Size = new System.Drawing.Size(29, 25);
+            this.lblIDXX.Size = new System.Drawing.Size(5, 2);
             this.lblIDXX.TabIndex = 102;
             this.lblIDXX.Text = "id";
+            // 
+            // btnGERİ
+            // 
+            this.btnGERİ.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnGERİ.Location = new System.Drawing.Point(0, 0);
+            this.btnGERİ.Name = "btnGERİ";
+            this.btnGERİ.Size = new System.Drawing.Size(45, 35);
+            this.btnGERİ.TabIndex = 103;
+            this.btnGERİ.Text = "<";
+            this.btnGERİ.UseVisualStyleBackColor = true;
+            this.btnGERİ.Click += new System.EventHandler(this.btnGERİ_Click);
             // 
             // HastaProfilSayfasi
             // 
@@ -280,6 +280,7 @@
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(884, 561);
+            this.Controls.Add(this.btnGERİ);
             this.Controls.Add(this.lblIDXX);
             this.Controls.Add(this.btnGeçmisSonuc);
             this.Controls.Add(this.BtnRecetelerim);
@@ -295,7 +296,6 @@
             this.Controls.Add(this.lblMail);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.btnGERİ);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "HastaProfilSayfasi";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -307,8 +307,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button btnGERİ;
         private System.Windows.Forms.Label lblSoyisim;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label lblEmail;
@@ -324,5 +322,6 @@
         private System.Windows.Forms.Button btnHastaBilgileri;
         private System.Windows.Forms.Button btnRandevuAl;
         private System.Windows.Forms.Label lblIDXX;
+        private System.Windows.Forms.Button btnGERİ;
     }
 }

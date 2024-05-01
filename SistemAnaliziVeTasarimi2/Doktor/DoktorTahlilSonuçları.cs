@@ -92,9 +92,11 @@ namespace SistemAnaliziVeTasarimi2.Doktor
                 if (baglanti.State == ConnectionState.Open)
                     baglanti.Close();
                 baglanti.Open();
-                SqlCommand listele = new SqlCommand("select tbl_lab.lab_id,tbl_lab.lab_tahlil_id,lab_test_id,tbl_testler.test_adi,lab_aciklama,tbl_tahliller.tahlil_doktor_id,tbl_tahliller.tahlil_hasta_id,tbl_tahliller.tahlil_klinik_id,tbl_lab.lab_tarih from tbl_lab " +
+                SqlCommand listele = new SqlCommand("select tbl_lab.lab_id,tbl_lab.lab_tahlil_id,lab_test_id,tbl_testler.test_adi,lab_aciklama,tbl_tahliller.tahlil_doktor_id,tbl_tahliller.tahlil_hasta_id,tbl_hasta.isim,tbl_hasta.soyisim,tbl_tahliller.tahlil_klinik_id,tbl_klinikler.klinik_adi,tbl_lab.lab_tarih from tbl_lab " +
                     "INNER JOIN tbl_tahliller on tbl_tahliller.tahlil_id=lab_tahlil_id " +
-                    "INNER JOIN tbl_testler on tbl_testler.test_id=tbl_lab.lab_test_id where tbl_tahliller.tahlil_hasta_id=@id and tbl_tahliller.tahlil_doktor_id=@idd and tbl_lab.kontrol=2", baglanti);
+                    "INNER JOIN tbl_testler on tbl_testler.test_id=tbl_lab.lab_test_id " +
+                    "INNER JOIN tbl_hasta on tbl_hasta.hasta_id=tbl_tahliller.tahlil_hasta_id " +
+                    "INNER JOIN tbl_klinikler on tbl_klinikler.klinik_id=tbl_tahliller.tahlil_klinik_id where tbl_tahliller.tahlil_hasta_id=@id and tbl_tahliller.tahlil_doktor_id=@idd and tbl_lab.kontrol=2", baglanti);
                 listele.Parameters.AddWithValue("@idd", textBox4.Text);
                 listele.Parameters.AddWithValue("@id", textBox1.Text);
                 //  listele.Parameters.AddWithValue("@kont", label19.Text);

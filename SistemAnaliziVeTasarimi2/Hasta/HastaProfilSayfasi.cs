@@ -20,12 +20,7 @@ namespace SistemAnaliziVeTasarimi2.Hasta
             InitializeComponent();
         }
         SqlConnection bag = new SqlConnection("Data Source=DESKTOP-MJGGV3B;Initial Catalog=sistemHastanesi;Integrated Security=True;Encrypt=False;");
-        private void btnGERİ_Click(object sender, EventArgs e)
-        {
-            HastaGirisSayfasi hgs = new HastaGirisSayfasi();
-            hgs.Show();
-            this.Hide();
-        }
+        
         public string tcno;
         private void HastaProfilSayfasi_Load(object sender, EventArgs e)
         {
@@ -76,20 +71,39 @@ namespace SistemAnaliziVeTasarimi2.Hasta
             HB.Show();
         }
 
-        private void button4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button5_Click(object sender, EventArgs e)
-        {
-
-        }
+       
 
         private void BtnRecetelerim_Click(object sender, EventArgs e)
         {
             HastaRecetelerimSayfasi HRS = new HastaRecetelerimSayfasi();
             HRS.Show();
+            this.Hide();
+        }
+
+        private void btnGERİ_Click(object sender, EventArgs e)
+        {
+            DialogResult karar = new DialogResult();
+            karar = MessageBox.Show("Çıkış istediğinize emin misiniz ? ", "Uyarı", MessageBoxButtons.YesNo);
+            if (karar == DialogResult.Yes)
+            {
+                this.Hide();
+                Anasayfa yeni = new Anasayfa();
+                yeni.Show();
+            }
+            else if (karar == DialogResult.No)
+            {
+                MessageBox.Show("Oturum Kapatılmadı.");
+            }
+        }
+
+        private void BtnRandevuSil_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnGeçmisSonuc_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

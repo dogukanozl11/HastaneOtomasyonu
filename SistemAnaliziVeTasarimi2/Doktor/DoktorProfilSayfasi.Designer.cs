@@ -45,8 +45,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.LBLKlinikid = new System.Windows.Forms.Label();
             this.lblID = new System.Windows.Forms.Label();
-            this.lblEMAil = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnGERİ
@@ -257,9 +255,12 @@
             // LBLKlinikid
             // 
             this.LBLKlinikid.AutoSize = true;
+            this.LBLKlinikid.BackColor = System.Drawing.Color.Transparent;
+            this.LBLKlinikid.Font = new System.Drawing.Font("Microsoft Sans Serif", 0.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.LBLKlinikid.ForeColor = System.Drawing.Color.Transparent;
             this.LBLKlinikid.Location = new System.Drawing.Point(32, 75);
             this.LBLKlinikid.Name = "LBLKlinikid";
-            this.LBLKlinikid.Size = new System.Drawing.Size(0, 13);
+            this.LBLKlinikid.Size = new System.Drawing.Size(0, 2);
             this.LBLKlinikid.TabIndex = 88;
             // 
             // lblID
@@ -275,31 +276,6 @@
             this.lblID.TabIndex = 89;
             this.lblID.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
-            // lblEMAil
-            // 
-            this.lblEMAil.AutoSize = true;
-            this.lblEMAil.BackColor = System.Drawing.Color.Transparent;
-            this.lblEMAil.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblEMAil.Location = new System.Drawing.Point(526, 9);
-            this.lblEMAil.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblEMAil.Name = "lblEMAil";
-            this.lblEMAil.Size = new System.Drawing.Size(29, 25);
-            this.lblEMAil.TabIndex = 91;
-            this.lblEMAil.Text = "id";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label4.Location = new System.Drawing.Point(429, 6);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(93, 25);
-            this.label4.TabIndex = 90;
-            this.label4.Text = "E-Mail : ";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            // 
             // DoktorProfilSayfasi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -307,8 +283,6 @@
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(884, 561);
-            this.Controls.Add(this.lblEMAil);
-            this.Controls.Add(this.label4);
             this.Controls.Add(this.lblID);
             this.Controls.Add(this.LBLKlinikid);
             this.Controls.Add(this.lblKlinik);
@@ -355,7 +329,5 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label LBLKlinikid;
         private System.Windows.Forms.Label lblID;
-        private System.Windows.Forms.Label lblEMAil;
-        private System.Windows.Forms.Label label4;
     }
 }
