@@ -55,10 +55,10 @@ namespace SistemAnaliziVeTasarimi2.Doktor
                 while (oku.Read())
                 {
                     this.lblID.Text = oku[0].ToString();
-                    this.lblTc.Text = oku[3].ToString();
+                    this.lblTc.Text = oku[2].ToString();
                     lblisim.Text = oku[1].ToString();
-                    lblSoyisim.Text = oku[2].ToString();
-                    lblKlinik.Text = oku[9].ToString();
+                    lblKlinik.Text = oku[8].ToString();
+                    lblEMAil.Text = oku[6].ToString();
                 }
                 bag.Close();
                 dtcc = this.lblTc.Text;

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SistemAnaliziVeTasarimi2.Doktor;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -18,6 +19,9 @@ namespace SistemAnaliziVeTasarimi2.Hasta
         public static SqlDataAdapter da;
         public static DataTable dt;
         public static SqlDataReader dr;
+        string ilacadi = " ";
+        string ilacadii = "";
+
         SqlConnection baglanti = new SqlConnection("Data Source=DESKTOP-MJGGV3B;Initial Catalog=sistemHastanesi;Integrated Security=True;Encrypt=False;");
         public HastaRecetelerimSayfasi()
         {
@@ -55,6 +59,7 @@ namespace SistemAnaliziVeTasarimi2.Hasta
                     label3.Text = row.Cells[4].Value.ToString();
                     richTextBox2.Text = row.Cells[3].Value.ToString();
                     label11.Text = row.Cells[1].Value.ToString();
+                    //label11.Text = label4.Text;
                     baglanti.Open();
                     SqlCommand ilac = new SqlCommand("select * from tbl_ilaclar where ilac_id=@id ", baglanti);
                     ilac.Parameters.AddWithValue("@id", label3.Text);
@@ -93,11 +98,9 @@ namespace SistemAnaliziVeTasarimi2.Hasta
                 }
                 myReader = new StringReader(a);
                 //StringReader strred = new StringReader(b);
-                printPreviewDialog1.Document = printDocument1;
-                printPreviewDialog1.ShowDialog();
-
                 if (printDialog1.ShowDialog() == DialogResult.OK)
                     this.printDocument1.Print();
+
             }
             catch
             {
@@ -106,22 +109,48 @@ namespace SistemAnaliziVeTasarimi2.Hasta
             }
 
         }
+        
 
+        //System.Drawing.Printing.PrintPageEventArgs ev;
 
-        private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs ev)
+        public void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs ev)
         {
             try
             {
+                Font font = new Font("Arial", 14);
+                SolidBrush firca = new SolidBrush(Color.Black);
+                ev.Graphics.DrawString($"Tarih : {DateTime.Now.ToString("dd.MM.yyyy")}",font,firca,60,25);
+                font = new Font("Arial", 20,FontStyle.Bold);
 
+                ev.Graphics.DrawString($"Doktor Bilgileri : {comboBox1.Text}",font,firca,20,70);
+                font = new Font("Arial", 18);
 
-                float a = 0;
+                ev.Graphics.DrawString("-----İlaç Listesi-----", font, firca, 300, 120);
+                font = new Font("Arial", 14);
+
+                //ev.Graphics.DrawString($"İlaç Adı :  {ilacadi}", font, firca, 30, 150);
+                float ypozz = 150;
+                ev.Graphics.DrawString(ilacadi, font, firca, 50, ypozz);
+                
+                //foreach (var item in listBox1.Items)
+                //{
+                //    ev.Graphics.DrawString(ilacadi, font, firca, 30, ypozz);
+                //    ypozz += 50;
+                    
+                //}
+
+                
+
+                
+
+                /*float a = 0;
                 float ypoz = 0;
                 int say = 0;
                 float sol = ev.MarginBounds.Left;
                 float tepe = ev.MarginBounds.Top;
                 string satir = null;
                 Font printFont = this.listBox1.Font;
-                SolidBrush firca = new SolidBrush(Color.Black);
+                //SolidBrush firca = new SolidBrush(Color.Black);
                 a = ev.MarginBounds.Height / printFont.GetHeight(ev.Graphics);
                 while (say < a && ((satir = myReader.ReadLine()) != null))
                 {
@@ -134,7 +163,7 @@ namespace SistemAnaliziVeTasarimi2.Hasta
                 else
                     ev.HasMorePages = false;
 
-                firca.Dispose();
+                firca.Dispose();*/
             }
             catch
             {
@@ -160,6 +189,7 @@ namespace SistemAnaliziVeTasarimi2.Hasta
                     baglanti.Close();
                 baglanti.Open();
                 SqlCommand q = new SqlCommand("select * from tbl_receteler where recete_hasta_id=@id and recete_doktor_id=@idd ", baglanti);
+                //SqlCommand q = new SqlCommand("select tbl_receteler.recete_aciklama,tbl_receteler.recete_icerik,tbl_ilaclar.ilac_adi,tbl_receteler.recete_id,tbl_doktor.doktor_id,tbl_doktor.isim,tbl_doktor.soyisim from tbl_receteler INNER JOIN tbl_ilaclar on tbl_receteler.recete_icerik=tbl_ilaclar.ilac_id INNER JOIN tbl_doktor on tbl_receteler.recete_doktor_id=tbl_doktor.doktor_id where recete_hasta_id=@id and recete_doktor_id=@idd ", baglanti);
                 q.Parameters.AddWithValue("@id", textBox2.Text);
                 q.Parameters.AddWithValue("@idd", label4.Text);
                 da = new SqlDataAdapter(q);
@@ -168,6 +198,12 @@ namespace SistemAnaliziVeTasarimi2.Hasta
                 dataGridView1.DataSource = dt;
                 button3.Enabled = true;
                 baglanti.Close();
+                //dataGridView1.Columns[0].HeaderCell.Value = "Tanı";
+                //dataGridView1.Columns[1].HeaderCell.Value = "İlaç İsmi";
+                //dataGridView1.Columns[2].HeaderCell.Value = "Reçete ID ";
+                //dataGridView1.Columns[3].HeaderCell.Value = "Doktor İsim ";
+                //dataGridView1.Columns[4].HeaderCell.Value = "Hasta İsim ";
+                //dataGridView1.Columns[5].HeaderCell.Value = "Hasta Soysim ";
             }
             catch
             {
@@ -222,6 +258,27 @@ namespace SistemAnaliziVeTasarimi2.Hasta
             {
                 MessageBox.Show("Oturum Kapatılmadı.");
             }
+        }
+
+        private void btnOnizleme_Click(object sender, EventArgs e )
+        {
+            Font font = new Font("Arial", 14);
+            SolidBrush firca = new SolidBrush(Color.Black);
+            printDialog1.Document = printDocument1;
+            
+
+
+            foreach (object x in listBox1.Items)
+            {
+                //ev.Graphics.DrawString($"İlaç Adı : {a} ", font, firca, 20, 120);
+                ilacadi = ilacadi + x.ToString() + "\n";
+                
+
+            }
+            myReader = new StringReader(ilacadi);
+            //StringReader strred = new StringReader(b);
+            printPreviewDialog1.Document = printDocument1;
+            printPreviewDialog1.ShowDialog();
         }
     }
 }

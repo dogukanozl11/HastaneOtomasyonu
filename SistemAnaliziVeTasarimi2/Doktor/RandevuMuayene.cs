@@ -70,7 +70,7 @@ namespace SistemAnaliziVeTasarimi2.Doktor
                 while (oku.Read())
                 {
                     maskedTextBox2.Text = oku[0].ToString();
-                    maskedTextBox5.Text = oku[9].ToString();
+                    maskedTextBox5.Text = oku[8].ToString();
                     maskedTextBox5.Text = DoktorProfilSayfasi.klinikid.ToString();
                 }
                 baglanti.Close();

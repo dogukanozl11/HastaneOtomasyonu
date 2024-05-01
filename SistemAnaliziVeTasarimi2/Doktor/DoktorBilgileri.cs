@@ -30,15 +30,14 @@ namespace SistemAnaliziVeTasarimi2.Doktor
                 SqlDataReader oku = komut.ExecuteReader();
                 while (oku.Read())
                 {
-                    txtTC.Text = oku[3].ToString();
+                    txtTC.Text = oku[2].ToString();
                     txtİsim.Text = oku[1].ToString();
-                    txtSoyisim.Text = oku[2].ToString();
-                    maskedTextBoxYas.Text = oku[4].ToString();
-                    CmbDoktorCinsiyet.Text = oku[5].ToString();
-                    txtTel.Text = oku[6].ToString();
-                    txtEmail.Text = oku[7].ToString();
-                    CmbDoktorBrans.Text = oku[9].ToString();
-                    txtEskiSifre.Text = oku[8].ToString();
+                    maskedTextBoxYas.Text = oku[3].ToString();
+                    CmbDoktorCinsiyet.Text = oku[4].ToString();
+                    txtTel.Text = oku[5].ToString();
+                    txtEmail.Text = oku[6].ToString();
+                    CmbDoktorBrans.Text = oku[8].ToString();
+                    txtEskiSifre.Text = oku[7].ToString();
                 }
                 bag.Close();
             }
@@ -53,7 +52,7 @@ namespace SistemAnaliziVeTasarimi2.Doktor
             try
             {
                 bag.Open();
-                string sql = "update tbl_doktor set TelNo=@prm1,eMail=@prm2,sifre=@prm3,Branş=@prm4 where TcNo=@TC";
+                string sql = "update tbl_doktor set TelNo=@prm1,eMail=@prm2,sifre=@prm3,doktor_klinik_id=@prm4 where TcNo=@TC";
                 SqlCommand guncelle = new SqlCommand(sql, bag);
                 guncelle.Parameters.AddWithValue("@TC", txtTC.Text);
                 guncelle.Parameters.AddWithValue("@prm1", txtTel.Text);
@@ -66,7 +65,7 @@ namespace SistemAnaliziVeTasarimi2.Doktor
                 {
                     guncelle.Parameters.AddWithValue("@prm3", txtEskiSifre.Text);
                 }
-                guncelle.Parameters.AddWithValue("@prm4", CmbDoktorBrans.Text);
+                guncelle.Parameters.AddWithValue("@prm4", CmbDoktorBrans.SelectedIndex);
                 guncelle.ExecuteNonQuery();
                 bag.Close();
                 MessageBox.Show("Kullanıcı Bilgileri Güncellendi,Lütfen Tekrar Giriş Yapınız.");

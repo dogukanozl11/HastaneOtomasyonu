@@ -78,7 +78,7 @@ namespace SistemAnaliziVeTasarimi2.Doktor
  
                 bag.Open();
                 SqlCommand c = new SqlCommand("select * from tbl_randevular where randevuhastaid=@id", bag);
-                c.Parameters.AddWithValue("@id", dataGridView1.CurrentRow.Cells[4].Value.ToString());
+                c.Parameters.AddWithValue("@id", dataGridView1.CurrentRow.Cells[5].Value.ToString());
                 SqlDataReader oku = c.ExecuteReader();
                 while (oku.Read())
                 {
