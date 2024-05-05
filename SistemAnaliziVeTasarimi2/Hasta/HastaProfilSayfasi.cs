@@ -98,12 +98,14 @@ namespace SistemAnaliziVeTasarimi2.Hasta
 
         private void BtnRandevuSil_Click(object sender, EventArgs e)
         {
-
+            HastaRandevuSilSayfasi HRSS = new HastaRandevuSilSayfasi();
+            HRSS.Show();
         }
 
         private void btnGeçmisSonuc_Click(object sender, EventArgs e)
         {
-
+            HastaGecmisSonuclarimSayfasi HGSS = new HastaGecmisSonuclarimSayfasi();
+            HGSS.Show();
         }
     }
 }

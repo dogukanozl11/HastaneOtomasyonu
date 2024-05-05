@@ -139,7 +139,7 @@ namespace SistemAnaliziVeTasarimi2.Hasta
                     randevuekle.Parameters.AddWithValue("@did", cmbDoktor.SelectedValue.ToString());
                     randevuekle.ExecuteNonQuery();
                     bag.Close();
-                    MessageBox.Show(txtHastaid.Text + "TC'li kişiye" + dtpTarih.Value.ToShortDateString() + " " + saat + "'ine randevu alınmıştır");
+                    MessageBox.Show(txtHastaid.Text + "TC'li kişiye " + dtpTarih.Value.ToShortDateString() + " Tarihinde  Saat" + saat + "'a randevu alınmıştır");
                     cmbKlinik.SelectedIndex = cmbDoktor.SelectedIndex = 0;
                     randevu();
                 }

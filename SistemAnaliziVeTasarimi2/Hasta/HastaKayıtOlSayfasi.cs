@@ -21,7 +21,7 @@ namespace SistemAnaliziVeTasarimi2.Hasta
         private void btnHastaKayıtYap_Click(object sender, EventArgs e)
         {
 
-            string sql = "INSERT INTO tbl_hasta(isim,soyisim,tcNo,yaş,cinsiyet,telno,eMail,sifre) VALUES (@hastaİsim,@hastaSoyİsim,@hastaTCNo,@hastaYas,@hastaCinsiyet,@hastaTelefon,@hastaMail,@hastaSifre)";
+            string sql = "INSERT INTO tbl_hasta(isim,soyisim,tcNo,yaş,cinsiyet,kan,telno,eMail,sifre) VALUES (@hastaİsim,@hastaSoyİsim,@hastaTCNo,@hastaYas,@hastaCinsiyet,@kan,@hastaTelefon,@hastaMail,@hastaSifre)";
             SqlCommand komut = new SqlCommand(sql, bag);
 
             komut.Parameters.AddWithValue("@hastaİsim", txtHastaİsim.Text);
@@ -29,6 +29,7 @@ namespace SistemAnaliziVeTasarimi2.Hasta
             komut.Parameters.AddWithValue("@hastaTCNo", txtHastaTC.Text);
             komut.Parameters.AddWithValue("@hastaYas", txtHastaYaş.Text);
             komut.Parameters.AddWithValue("@hastaCinsiyet", CmbHastaCinsiyet.Text);
+            komut.Parameters.AddWithValue("@kan", comboBoxKanGrup.Text);
             komut.Parameters.AddWithValue("@hastaTelefon", txtHastaTel.Text);
             komut.Parameters.AddWithValue("@hastaMail", txtHastaMail.Text);
             komut.Parameters.AddWithValue("@hastaSifre", txtHastaSifre.Text);

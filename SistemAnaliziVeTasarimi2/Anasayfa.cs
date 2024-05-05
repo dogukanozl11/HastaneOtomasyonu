@@ -101,6 +101,7 @@ namespace SistemAnaliziVeTasarimi2
 
         private void hastagirisbtn_Click(object sender, EventArgs e)
         {
+            
             string sql = "select * from tbl_hasta where TcNo=@prm1 and sifre=@prm2";
             SqlDataAdapter da = new SqlDataAdapter(sql, bag);
             da.SelectCommand.Parameters.AddWithValue("@prm1", txthastaTC.Text);
@@ -236,6 +237,7 @@ namespace SistemAnaliziVeTasarimi2
             hastaGroupBox.BackColor = Color.AliceBlue;
             HastaKabulGroupBox.BackColor = Color.AliceBlue;
             LaboratuvargroupBox.BackColor = Color.AliceBlue;
+            txthastaTC.MaxLength = 11;
 
         }
 

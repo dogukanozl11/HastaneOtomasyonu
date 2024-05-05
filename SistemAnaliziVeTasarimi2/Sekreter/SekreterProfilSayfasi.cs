@@ -19,7 +19,7 @@ namespace SistemAnaliziVeTasarimi2.Sekreter
 
         private void btnGERİ_Click(object sender, EventArgs e)
         {
-            SekreterGirisSayfasi sgs = new SekreterGirisSayfasi();
+            Anasayfa sgs = new Anasayfa();
             sgs.Show();
             this.Hide();
         }

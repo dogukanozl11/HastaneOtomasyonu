@@ -48,6 +48,8 @@
             this.label11 = new System.Windows.Forms.Label();
             this.txtİsim = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.comboBoxKan = new System.Windows.Forms.ComboBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // CmbDoktorCinsiyet
@@ -57,7 +59,7 @@
             this.CmbDoktorCinsiyet.Items.AddRange(new object[] {
             "ERKEK",
             "KADIN"});
-            this.CmbDoktorCinsiyet.Location = new System.Drawing.Point(141, 236);
+            this.CmbDoktorCinsiyet.Location = new System.Drawing.Point(141, 201);
             this.CmbDoktorCinsiyet.Name = "CmbDoktorCinsiyet";
             this.CmbDoktorCinsiyet.Size = new System.Drawing.Size(222, 28);
             this.CmbDoktorCinsiyet.TabIndex = 45;
@@ -65,7 +67,7 @@
             // maskedTextBoxYas
             // 
             this.maskedTextBoxYas.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.maskedTextBoxYas.Location = new System.Drawing.Point(141, 206);
+            this.maskedTextBoxYas.Location = new System.Drawing.Point(141, 171);
             this.maskedTextBoxYas.Mask = "00/00/0000";
             this.maskedTextBoxYas.Name = "maskedTextBoxYas";
             this.maskedTextBoxYas.Size = new System.Drawing.Size(222, 26);
@@ -169,7 +171,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label4.Location = new System.Drawing.Point(44, 244);
+            this.label4.Location = new System.Drawing.Point(44, 209);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(76, 20);
             this.label4.TabIndex = 30;
@@ -179,7 +181,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label3.Location = new System.Drawing.Point(10, 212);
+            this.label3.Location = new System.Drawing.Point(10, 177);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(115, 20);
             this.label3.TabIndex = 28;
@@ -188,7 +190,7 @@
             // txtSoyisim
             // 
             this.txtSoyisim.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtSoyisim.Location = new System.Drawing.Point(141, 174);
+            this.txtSoyisim.Location = new System.Drawing.Point(141, 139);
             this.txtSoyisim.Name = "txtSoyisim";
             this.txtSoyisim.Size = new System.Drawing.Size(222, 26);
             this.txtSoyisim.TabIndex = 36;
@@ -197,7 +199,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label2.Location = new System.Drawing.Point(50, 180);
+            this.label2.Location = new System.Drawing.Point(50, 145);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(75, 20);
             this.label2.TabIndex = 27;
@@ -206,7 +208,7 @@
             // txtTC
             // 
             this.txtTC.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtTC.Location = new System.Drawing.Point(141, 110);
+            this.txtTC.Location = new System.Drawing.Point(141, 75);
             this.txtTC.Name = "txtTC";
             this.txtTC.Size = new System.Drawing.Size(222, 26);
             this.txtTC.TabIndex = 35;
@@ -215,7 +217,7 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label11.Location = new System.Drawing.Point(16, 116);
+            this.label11.Location = new System.Drawing.Point(16, 81);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(109, 20);
             this.label11.TabIndex = 26;
@@ -224,7 +226,7 @@
             // txtİsim
             // 
             this.txtİsim.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtİsim.Location = new System.Drawing.Point(141, 142);
+            this.txtİsim.Location = new System.Drawing.Point(141, 107);
             this.txtİsim.Name = "txtİsim";
             this.txtİsim.Size = new System.Drawing.Size(222, 26);
             this.txtİsim.TabIndex = 38;
@@ -233,17 +235,47 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(75, 148);
+            this.label1.Location = new System.Drawing.Point(75, 113);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(50, 20);
             this.label1.TabIndex = 25;
             this.label1.Text = "İsim : ";
+            // 
+            // comboBoxKan
+            // 
+            this.comboBoxKan.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.comboBoxKan.FormattingEnabled = true;
+            this.comboBoxKan.Items.AddRange(new object[] {
+            "A   R+",
+            "A   R-",
+            "B   R+",
+            "B   R-",
+            "AB R+",
+            "AB R-",
+            "0    R+",
+            "0    R-"});
+            this.comboBoxKan.Location = new System.Drawing.Point(141, 236);
+            this.comboBoxKan.Name = "comboBoxKan";
+            this.comboBoxKan.Size = new System.Drawing.Size(222, 28);
+            this.comboBoxKan.TabIndex = 47;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label7.Location = new System.Drawing.Point(22, 244);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(98, 20);
+            this.label7.TabIndex = 46;
+            this.label7.Text = "Kan Grubu : ";
             // 
             // HastaBilgileri
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(438, 539);
+            this.Controls.Add(this.comboBoxKan);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.CmbDoktorCinsiyet);
             this.Controls.Add(this.maskedTextBoxYas);
             this.Controls.Add(this.btnGüncelle);
@@ -294,5 +326,7 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.TextBox txtİsim;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox comboBoxKan;
+        private System.Windows.Forms.Label label7;
     }
 }

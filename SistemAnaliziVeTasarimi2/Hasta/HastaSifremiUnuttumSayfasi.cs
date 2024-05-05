@@ -23,7 +23,7 @@ namespace SistemAnaliziVeTasarimi2.Hasta
         SqlConnection bag = new SqlConnection("Data Source=DESKTOP-MJGGV3B;Initial Catalog=sistemHastanesi;Integrated Security=True;Encrypt=False;");
         private void btnGERİ_Click(object sender, EventArgs e)
         {
-            HastaGirisSayfasi hgs = new HastaGirisSayfasi();
+            Anasayfa hgs = new Anasayfa();
             hgs.Show();
             this.Hide();
         }

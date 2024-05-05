@@ -20,7 +20,7 @@ namespace SistemAnaliziVeTasarimi2.Sekreter
         SqlConnection bag = new SqlConnection("Data Source=DESKTOP-MJGGV3B;Initial Catalog=sistemHastanesi;Integrated Security=True");
         private void btnSekreterKayitGeri_Click(object sender, EventArgs e)
         {
-            SekreterGirisSayfasi sgs = new SekreterGirisSayfasi();
+            Anasayfa sgs = new Anasayfa();
             sgs.Show();
             this.Hide();
         }

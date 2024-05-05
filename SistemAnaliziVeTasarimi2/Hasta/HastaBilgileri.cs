@@ -36,9 +36,10 @@ namespace SistemAnaliziVeTasarimi2.Hasta
                     txtSoyisim.Text = oku[2].ToString();
                     maskedTextBoxYas.Text = oku[4].ToString();
                     CmbDoktorCinsiyet.Text = oku[5].ToString();
-                    txtTel.Text = oku[6].ToString();
-                    txtEmail.Text = oku[7].ToString();
-                    txtEskiSifre.Text = oku[8].ToString();
+                    comboBoxKan.Text = oku[6].ToString();
+                    txtTel.Text = oku[7].ToString();
+                    txtEmail.Text = oku[8].ToString();
+                    txtEskiSifre.Text = oku[9].ToString();
                 }
                 bag.Close();
             }

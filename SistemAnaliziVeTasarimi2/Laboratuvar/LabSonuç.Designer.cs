@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.ÜstPanel = new System.Windows.Forms.Panel();
+            this.btncks = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -44,31 +44,28 @@
             this.label6 = new System.Windows.Forms.Label();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.btncks = new System.Windows.Forms.Button();
-            this.ÜstPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
-            // ÜstPanel
+            // btncks
             // 
-            this.ÜstPanel.BackColor = System.Drawing.Color.DarkTurquoise;
-            this.ÜstPanel.Controls.Add(this.btncks);
-            this.ÜstPanel.Controls.Add(this.label1);
-            this.ÜstPanel.Location = new System.Drawing.Point(2, -2);
-            this.ÜstPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.ÜstPanel.Name = "ÜstPanel";
-            this.ÜstPanel.Size = new System.Drawing.Size(598, 72);
-            this.ÜstPanel.TabIndex = 9;
+            this.btncks.Location = new System.Drawing.Point(11, 3);
+            this.btncks.Name = "btncks";
+            this.btncks.Size = new System.Drawing.Size(75, 55);
+            this.btncks.TabIndex = 4;
+            this.btncks.Text = "ÇIKIŞ";
+            this.btncks.UseVisualStyleBackColor = true;
+            this.btncks.Click += new System.EventHandler(this.btncks_Click);
             // 
             // label1
             // 
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label1.Location = new System.Drawing.Point(199, 20);
+            this.label1.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.label1.Location = new System.Drawing.Point(193, 9);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(273, 49);
+            this.label1.Size = new System.Drawing.Size(178, 49);
             this.label1.TabIndex = 3;
             this.label1.Text = "Laboratuvar";
             // 
@@ -85,7 +82,7 @@
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(90, 87);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
             this.textBox1.Size = new System.Drawing.Size(27, 20);
@@ -94,7 +91,7 @@
             // dateTimePicker1
             // 
             this.dateTimePicker1.Location = new System.Drawing.Point(418, 99);
-            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(2);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(155, 20);
             this.dateTimePicker1.TabIndex = 14;
@@ -122,7 +119,7 @@
             // textBox2
             // 
             this.textBox2.Location = new System.Drawing.Point(422, 127);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(2);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(151, 97);
@@ -132,7 +129,7 @@
             // 
             this.button1.BackColor = System.Drawing.Color.Azure;
             this.button1.Location = new System.Drawing.Point(446, 228);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(98, 40);
             this.button1.TabIndex = 18;
@@ -144,7 +141,7 @@
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(43, 110);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
@@ -155,7 +152,7 @@
             // 
             this.button2.BackColor = System.Drawing.Color.Azure;
             this.button2.Location = new System.Drawing.Point(292, 228);
-            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(48, 40);
             this.button2.TabIndex = 20;
@@ -176,7 +173,7 @@
             // textBox3
             // 
             this.textBox3.Location = new System.Drawing.Point(418, 72);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(2);
             this.textBox3.Name = "textBox3";
             this.textBox3.ReadOnly = true;
             this.textBox3.Size = new System.Drawing.Size(88, 20);
@@ -195,7 +192,7 @@
             // textBox4
             // 
             this.textBox4.Location = new System.Drawing.Point(530, 72);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox4.Margin = new System.Windows.Forms.Padding(2);
             this.textBox4.Name = "textBox4";
             this.textBox4.ReadOnly = true;
             this.textBox4.Size = new System.Drawing.Size(43, 20);
@@ -212,23 +209,15 @@
             this.label7.Text = "2";
             this.label7.Visible = false;
             // 
-            // btncks
-            // 
-            this.btncks.Location = new System.Drawing.Point(3, 3);
-            this.btncks.Name = "btncks";
-            this.btncks.Size = new System.Drawing.Size(75, 55);
-            this.btncks.TabIndex = 4;
-            this.btncks.Text = "ÇIKIŞ";
-            this.btncks.UseVisualStyleBackColor = true;
-            this.btncks.Click += new System.EventHandler(this.btncks_Click);
-            // 
             // LabSonuç
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightCyan;
             this.ClientSize = new System.Drawing.Size(598, 274);
+            this.Controls.Add(this.btncks);
             this.Controls.Add(this.label7);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.textBox3);
@@ -242,12 +231,10 @@
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.ÜstPanel);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "LabSonuç";
             this.Text = "Test Sonuç";
             this.Load += new System.EventHandler(this.LabSonuç_Load);
-            this.ÜstPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -255,8 +242,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Panel ÜstPanel;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBox1;

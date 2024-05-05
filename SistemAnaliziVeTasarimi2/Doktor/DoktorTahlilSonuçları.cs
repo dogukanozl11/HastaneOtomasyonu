@@ -108,8 +108,8 @@ namespace SistemAnaliziVeTasarimi2.Doktor
                 {
                     panel5.Visible = true;
                     panel4.Visible = true;
-                    button1.Enabled = false;
-                    textBox1.Enabled = false;
+                    //button1.Enabled = false;
+                    //textBox1.Enabled = false;
                     button12.Visible = true;
                 }
                 baglanti.Close();
@@ -247,9 +247,9 @@ namespace SistemAnaliziVeTasarimi2.Doktor
                     if (baglanti.State == ConnectionState.Open)
                         baglanti.Close();
                     baglanti.Open();
-                    SqlCommand komutdoktor = new SqlCommand("SELECT tbl_klinikler.klinik_id,tbl_doktor.doktor_id,tbl_doktor.isim,tbl_doktor.soyisim FROM tbl_doktor INNER JOIN tbl_klinikler ON tbl_doktor.doktor_klinik_id=tbl_klinikler.klinik_id WHERE tbl_doktor.doktor_klinik_id=@kid", baglanti);
+                    SqlCommand komutdoktor = new SqlCommand("SELECT tbl_klinikler.klinik_id,tbl_doktor.doktor_id,tbl_doktor.isim FROM tbl_doktor INNER JOIN tbl_klinikler ON tbl_doktor.doktor_klinik_id=tbl_klinikler.klinik_id WHERE tbl_doktor.doktor_klinik_id=@kid", baglanti);
                     komutdoktor.Parameters.AddWithValue("@kid", comboBox3.SelectedValue.ToString());
-                    qq.combo(komutdoktor, "doktor_id", "doktor_adi_soyadi", comboBox5);
+                    qq.combo(komutdoktor, "doktor_id", "isim", comboBox5);
 
                     baglanti.Close();
                 }
@@ -306,8 +306,8 @@ namespace SistemAnaliziVeTasarimi2.Doktor
                 string deger3 = dataGridView1.CurrentRow.Cells[3].Value.ToString();
                 string deger4 = dataGridView1.CurrentRow.Cells[4].Value.ToString();
                 int deger5 = Convert.ToInt32(dataGridView1.CurrentRow.Cells[6].Value);
-                int deger6 = Convert.ToInt32(dataGridView1.CurrentRow.Cells[7].Value);
-                string deger7 = dataGridView1.CurrentRow.Cells[8].Value.ToString();
+                int deger6 = Convert.ToInt32(dataGridView1.CurrentRow.Cells[9].Value);
+                string deger7 = dataGridView1.CurrentRow.Cells[10].Value.ToString();
                 int deger8 = Convert.ToInt32(dataGridView1.CurrentRow.Cells[0].Value);
                 label6.Text = deger.ToString();
                 label7.Text = deger2.ToString();
@@ -356,9 +356,9 @@ namespace SistemAnaliziVeTasarimi2.Doktor
                     if (baglanti.State == ConnectionState.Open)
                         baglanti.Close();
                     baglanti.Open();
-                    SqlCommand komutdoktor = new SqlCommand("SELECT tbl_klinikler.klinik_id,tbl_doktor.doktor_id,tbl_doktor.isim,tbl_doktor.soyisim FROM tbl_doktor INNER JOIN tbl_klinikler ON tbl_doktor.doktor_klinik_id=tbl_klinikler.klinik_id WHERE tbl_doktor.doktor_klinik_id=@kid", baglanti);
+                    SqlCommand komutdoktor = new SqlCommand("SELECT tbl_klinikler.klinik_id,tbl_doktor.doktor_id,tbl_doktor.isim FROM tbl_doktor INNER JOIN tbl_klinikler ON tbl_doktor.doktor_klinik_id=tbl_klinikler.klinik_id WHERE tbl_doktor.doktor_klinik_id=@kid", baglanti);
                     komutdoktor.Parameters.AddWithValue("@kid", comboBox2.SelectedValue.ToString());
-                    qq.combo(komutdoktor, "doktor_id", "doktor_adi_soyadi", comboBox1);
+                    qq.combo(komutdoktor, "doktor_id", "isim", comboBox1);
 
                     baglanti.Close();
                 }
@@ -542,6 +542,7 @@ namespace SistemAnaliziVeTasarimi2.Doktor
                 lab.Parameters.AddWithValue("@kont", label19.Text);
                 lab.ExecuteNonQuery();
                 baglanti.Close();
+                
             }
             catch
             {

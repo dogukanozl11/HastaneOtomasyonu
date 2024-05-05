@@ -101,7 +101,6 @@ namespace SistemAnaliziVeTasarimi2.Doktor
                         textBox2.Text = oku[2].ToString();
                         textBox6.Text = oku[5].ToString();
                         textBox7.Text = oku[6].ToString();
-                        textBox8.Text = oku[6].ToString();
                         maskedTextBox3.Text = oku[4].ToString();
                        
                         

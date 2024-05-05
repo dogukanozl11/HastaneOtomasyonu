@@ -22,7 +22,7 @@ namespace SistemAnaliziVeTasarimi2.Sekreter
         SqlConnection bag = new SqlConnection("Data Source=DESKTOP-MJGGV3B;Initial Catalog=sistemHastanesi;Integrated Security=True;Encrypt=False;");
         private void btnGERİ_Click(object sender, EventArgs e)
         {
-            SekreterGirisSayfasi sgs = new SekreterGirisSayfasi();
+            Anasayfa sgs = new Anasayfa();
             sgs.Show();
             this.Hide();
         }
@@ -75,7 +75,7 @@ namespace SistemAnaliziVeTasarimi2.Sekreter
                 SqlCommand komut = new SqlCommand("update tbl_sekreter set tcNo='" + txtTC.Text + "',sifre='" + txtYeniSifre.Text + "' where tcNo='" + txtTC.Text + "'", bag);
                 komut.ExecuteNonQuery();
                 MessageBox.Show("Şifre Güncellendi...");
-                SekreterGirisSayfasi hst = new SekreterGirisSayfasi();
+                Anasayfa hst = new Anasayfa();
                 hst.Show();
                 this.Hide();
 

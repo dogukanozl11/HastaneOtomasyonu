@@ -104,10 +104,8 @@
             // panel5
             // 
             this.panel5.Controls.Add(this.button11);
-            this.panel5.Controls.Add(this.label19);
             this.panel5.Controls.Add(this.label10);
             this.panel5.Controls.Add(this.label11);
-            this.panel5.Controls.Add(this.label18);
             this.panel5.Controls.Add(this.label9);
             this.panel5.Controls.Add(this.label12);
             this.panel5.Controls.Add(this.label6);
@@ -118,7 +116,7 @@
             this.panel5.Location = new System.Drawing.Point(5, 413);
             this.panel5.Margin = new System.Windows.Forms.Padding(2);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(157, 98);
+            this.panel5.Size = new System.Drawing.Size(157, 143);
             this.panel5.TabIndex = 45;
             // 
             // button11
@@ -136,7 +134,7 @@
             // label19
             // 
             this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(70, 27);
+            this.label19.Location = new System.Drawing.Point(234, 522);
             this.label19.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(13, 13);
@@ -169,7 +167,7 @@
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(70, 10);
+            this.label18.Location = new System.Drawing.Point(184, 522);
             this.label18.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(41, 13);
@@ -263,7 +261,7 @@
             this.panel2.Controls.Add(this.comboBox2);
             this.panel2.Controls.Add(this.label14);
             this.panel2.Enabled = false;
-            this.panel2.Location = new System.Drawing.Point(596, 28);
+            this.panel2.Location = new System.Drawing.Point(596, 8);
             this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(278, 142);
@@ -462,7 +460,7 @@
             // button4
             // 
             this.button4.BackColor = System.Drawing.Color.Azure;
-            this.button4.Location = new System.Drawing.Point(413, 175);
+            this.button4.Location = new System.Drawing.Point(417, 169);
             this.button4.Margin = new System.Windows.Forms.Padding(2);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(76, 37);
@@ -480,7 +478,7 @@
             this.panel1.Controls.Add(this.comboBox3);
             this.panel1.Controls.Add(this.label15);
             this.panel1.Enabled = false;
-            this.panel1.Location = new System.Drawing.Point(313, 28);
+            this.panel1.Location = new System.Drawing.Point(314, 8);
             this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(278, 142);
@@ -534,7 +532,7 @@
             // button7
             // 
             this.button7.BackColor = System.Drawing.Color.Azure;
-            this.button7.Location = new System.Drawing.Point(719, 175);
+            this.button7.Location = new System.Drawing.Point(696, 161);
             this.button7.Margin = new System.Windows.Forms.Padding(2);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(76, 37);
@@ -616,7 +614,7 @@
             // listBox2
             // 
             this.listBox2.FormattingEnabled = true;
-            this.listBox2.Location = new System.Drawing.Point(943, 0);
+            this.listBox2.Location = new System.Drawing.Point(938, 2);
             this.listBox2.Margin = new System.Windows.Forms.Padding(2);
             this.listBox2.Name = "listBox2";
             this.listBox2.Size = new System.Drawing.Size(91, 69);
@@ -711,11 +709,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1040, 515);
+            this.ClientSize = new System.Drawing.Size(1040, 584);
             this.Controls.Add(this.panel5);
+            this.Controls.Add(this.label19);
             this.Controls.Add(this.label20);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.label18);
             this.Controls.Add(this.button12);
             this.Controls.Add(this.ÜstPanel);
             this.Controls.Add(this.button1);
