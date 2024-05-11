@@ -34,13 +34,11 @@
             this.btnHastaSorgula = new System.Windows.Forms.Button();
             this.btnMuayene = new System.Windows.Forms.Button();
             this.btnAcil = new System.Windows.Forms.Button();
-            this.label18 = new System.Windows.Forms.Label();
-            this.txtAdres = new System.Windows.Forms.RichTextBox();
             this.btnHastaKayıt = new System.Windows.Forms.Button();
             this.txtDogumTarihi = new System.Windows.Forms.MaskedTextBox();
             this.txtKan = new System.Windows.Forms.ComboBox();
             this.label14 = new System.Windows.Forms.Label();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.groupBoxPol = new System.Windows.Forms.GroupBox();
             this.txtMuayeneHastaID = new System.Windows.Forms.TextBox();
             this.label20 = new System.Windows.Forms.Label();
             this.btnMuayeneKayıt = new System.Windows.Forms.Button();
@@ -49,7 +47,7 @@
             this.cmbMuayeneKlinik = new System.Windows.Forms.ComboBox();
             this.label15 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBoxAcil = new System.Windows.Forms.GroupBox();
             this.label19 = new System.Windows.Forms.Label();
             this.txtHastaID = new System.Windows.Forms.TextBox();
             this.cmbAcilKlinik = new System.Windows.Forms.ComboBox();
@@ -77,8 +75,8 @@
             this.label21 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.groupBox2.SuspendLayout();
-            this.groupBox1.SuspendLayout();
+            this.groupBoxPol.SuspendLayout();
+            this.groupBoxAcil.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -116,6 +114,7 @@
             this.btnHastaSorgula.TabIndex = 69;
             this.btnHastaSorgula.Text = "Sorgula";
             this.btnHastaSorgula.UseVisualStyleBackColor = false;
+            this.btnHastaSorgula.Click += new System.EventHandler(this.btnHastaSorgula_Click);
             // 
             // btnMuayene
             // 
@@ -129,6 +128,7 @@
             this.btnMuayene.TabIndex = 68;
             this.btnMuayene.Text = "Muayene";
             this.btnMuayene.UseVisualStyleBackColor = false;
+            this.btnMuayene.Click += new System.EventHandler(this.btnMuayene_Click);
             // 
             // btnAcil
             // 
@@ -142,27 +142,7 @@
             this.btnAcil.TabIndex = 67;
             this.btnAcil.Text = "Acil";
             this.btnAcil.UseVisualStyleBackColor = false;
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label18.Location = new System.Drawing.Point(28, 292);
-            this.label18.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(120, 23);
-            this.label18.TabIndex = 66;
-            this.label18.Text = "Hasta Adres :";
-            // 
-            // txtAdres
-            // 
-            this.txtAdres.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtAdres.Location = new System.Drawing.Point(170, 304);
-            this.txtAdres.Margin = new System.Windows.Forms.Padding(2);
-            this.txtAdres.Name = "txtAdres";
-            this.txtAdres.Size = new System.Drawing.Size(182, 120);
-            this.txtAdres.TabIndex = 65;
-            this.txtAdres.Text = "";
+            this.btnAcil.Click += new System.EventHandler(this.btnAcil_Click);
             // 
             // btnHastaKayıt
             // 
@@ -179,11 +159,11 @@
             // txtDogumTarihi
             // 
             this.txtDogumTarihi.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtDogumTarihi.Location = new System.Drawing.Point(222, 189);
+            this.txtDogumTarihi.Location = new System.Drawing.Point(222, 151);
             this.txtDogumTarihi.Margin = new System.Windows.Forms.Padding(2);
             this.txtDogumTarihi.Mask = "00/00/0000";
             this.txtDogumTarihi.Name = "txtDogumTarihi";
-            this.txtDogumTarihi.Size = new System.Drawing.Size(130, 26);
+            this.txtDogumTarihi.Size = new System.Drawing.Size(189, 26);
             this.txtDogumTarihi.TabIndex = 64;
             this.txtDogumTarihi.ValidatingType = typeof(System.DateTime);
             // 
@@ -200,42 +180,42 @@
             "B R+",
             "AB R-",
             "AB R+"});
-            this.txtKan.Location = new System.Drawing.Point(222, 154);
+            this.txtKan.Location = new System.Drawing.Point(222, 213);
             this.txtKan.Margin = new System.Windows.Forms.Padding(2);
             this.txtKan.Name = "txtKan";
-            this.txtKan.Size = new System.Drawing.Size(130, 28);
+            this.txtKan.Size = new System.Drawing.Size(189, 28);
             this.txtKan.TabIndex = 62;
             // 
             // label14
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label14.Location = new System.Drawing.Point(33, 159);
+            this.label14.Location = new System.Drawing.Point(33, 218);
             this.label14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(114, 23);
             this.label14.TabIndex = 61;
             this.label14.Text = "Kan Grubu :";
             // 
-            // groupBox2
+            // groupBoxPol
             // 
-            this.groupBox2.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox2.Controls.Add(this.txtMuayeneHastaID);
-            this.groupBox2.Controls.Add(this.label20);
-            this.groupBox2.Controls.Add(this.btnMuayeneKayıt);
-            this.groupBox2.Controls.Add(this.cmbMuayeneDoktor);
-            this.groupBox2.Controls.Add(this.label16);
-            this.groupBox2.Controls.Add(this.cmbMuayeneKlinik);
-            this.groupBox2.Controls.Add(this.label15);
-            this.groupBox2.Controls.Add(this.label13);
-            this.groupBox2.Enabled = false;
-            this.groupBox2.Location = new System.Drawing.Point(821, 102);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox2.Size = new System.Drawing.Size(295, 382);
-            this.groupBox2.TabIndex = 60;
-            this.groupBox2.TabStop = false;
+            this.groupBoxPol.BackColor = System.Drawing.Color.Transparent;
+            this.groupBoxPol.Controls.Add(this.txtMuayeneHastaID);
+            this.groupBoxPol.Controls.Add(this.label20);
+            this.groupBoxPol.Controls.Add(this.btnMuayeneKayıt);
+            this.groupBoxPol.Controls.Add(this.cmbMuayeneDoktor);
+            this.groupBoxPol.Controls.Add(this.label16);
+            this.groupBoxPol.Controls.Add(this.cmbMuayeneKlinik);
+            this.groupBoxPol.Controls.Add(this.label15);
+            this.groupBoxPol.Controls.Add(this.label13);
+            this.groupBoxPol.Enabled = false;
+            this.groupBoxPol.Location = new System.Drawing.Point(821, 102);
+            this.groupBoxPol.Margin = new System.Windows.Forms.Padding(2);
+            this.groupBoxPol.Name = "groupBoxPol";
+            this.groupBoxPol.Padding = new System.Windows.Forms.Padding(2);
+            this.groupBoxPol.Size = new System.Drawing.Size(295, 382);
+            this.groupBoxPol.TabIndex = 60;
+            this.groupBoxPol.TabStop = false;
             // 
             // txtMuayeneHastaID
             // 
@@ -323,29 +303,29 @@
             this.label13.TabIndex = 27;
             this.label13.Text = "MUAYENE";
             // 
-            // groupBox1
+            // groupBoxAcil
             // 
-            this.groupBox1.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox1.Controls.Add(this.label19);
-            this.groupBox1.Controls.Add(this.txtHastaID);
-            this.groupBox1.Controls.Add(this.cmbAcilKlinik);
-            this.groupBox1.Controls.Add(this.label24);
-            this.groupBox1.Controls.Add(this.label23);
-            this.groupBox1.Controls.Add(this.CmbDurum);
-            this.groupBox1.Controls.Add(this.label22);
-            this.groupBox1.Controls.Add(this.cmbDoktor);
-            this.groupBox1.Controls.Add(this.label17);
-            this.groupBox1.Controls.Add(this.richTextBoxŞikayet);
-            this.groupBox1.Controls.Add(this.btnAcilKaydet);
-            this.groupBox1.Controls.Add(this.label12);
-            this.groupBox1.Enabled = false;
-            this.groupBox1.Location = new System.Drawing.Point(527, 102);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox1.Size = new System.Drawing.Size(290, 386);
-            this.groupBox1.TabIndex = 59;
-            this.groupBox1.TabStop = false;
+            this.groupBoxAcil.BackColor = System.Drawing.Color.Transparent;
+            this.groupBoxAcil.Controls.Add(this.label19);
+            this.groupBoxAcil.Controls.Add(this.txtHastaID);
+            this.groupBoxAcil.Controls.Add(this.cmbAcilKlinik);
+            this.groupBoxAcil.Controls.Add(this.label24);
+            this.groupBoxAcil.Controls.Add(this.label23);
+            this.groupBoxAcil.Controls.Add(this.CmbDurum);
+            this.groupBoxAcil.Controls.Add(this.label22);
+            this.groupBoxAcil.Controls.Add(this.cmbDoktor);
+            this.groupBoxAcil.Controls.Add(this.label17);
+            this.groupBoxAcil.Controls.Add(this.richTextBoxŞikayet);
+            this.groupBoxAcil.Controls.Add(this.btnAcilKaydet);
+            this.groupBoxAcil.Controls.Add(this.label12);
+            this.groupBoxAcil.Enabled = false;
+            this.groupBoxAcil.Location = new System.Drawing.Point(527, 102);
+            this.groupBoxAcil.Margin = new System.Windows.Forms.Padding(2);
+            this.groupBoxAcil.Name = "groupBoxAcil";
+            this.groupBoxAcil.Padding = new System.Windows.Forms.Padding(2);
+            this.groupBoxAcil.Size = new System.Drawing.Size(290, 386);
+            this.groupBoxAcil.TabIndex = 59;
+            this.groupBoxAcil.TabStop = false;
             // 
             // label19
             // 
@@ -492,20 +472,20 @@
             // txtEmail
             // 
             this.txtEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtEmail.Location = new System.Drawing.Point(222, 253);
+            this.txtEmail.Location = new System.Drawing.Point(222, 276);
             this.txtEmail.Margin = new System.Windows.Forms.Padding(2);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(130, 26);
+            this.txtEmail.Size = new System.Drawing.Size(189, 26);
             this.txtEmail.TabIndex = 57;
             // 
             // txtTel
             // 
             this.txtTel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtTel.Location = new System.Drawing.Point(222, 222);
+            this.txtTel.Location = new System.Drawing.Point(222, 245);
             this.txtTel.Margin = new System.Windows.Forms.Padding(2);
             this.txtTel.Mask = "(999) 000-0000";
             this.txtTel.Name = "txtTel";
-            this.txtTel.Size = new System.Drawing.Size(130, 26);
+            this.txtTel.Size = new System.Drawing.Size(189, 26);
             this.txtTel.TabIndex = 56;
             // 
             // txtCinsyet
@@ -515,28 +495,28 @@
             this.txtCinsyet.Items.AddRange(new object[] {
             "Erkek",
             "Kadın"});
-            this.txtCinsyet.Location = new System.Drawing.Point(222, 122);
+            this.txtCinsyet.Location = new System.Drawing.Point(222, 181);
             this.txtCinsyet.Margin = new System.Windows.Forms.Padding(2);
             this.txtCinsyet.Name = "txtCinsyet";
-            this.txtCinsyet.Size = new System.Drawing.Size(130, 28);
+            this.txtCinsyet.Size = new System.Drawing.Size(189, 28);
             this.txtCinsyet.TabIndex = 52;
             // 
             // txtSoyad
             // 
             this.txtSoyad.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtSoyad.Location = new System.Drawing.Point(222, 91);
+            this.txtSoyad.Location = new System.Drawing.Point(222, 114);
             this.txtSoyad.Margin = new System.Windows.Forms.Padding(2);
             this.txtSoyad.Name = "txtSoyad";
-            this.txtSoyad.Size = new System.Drawing.Size(130, 26);
+            this.txtSoyad.Size = new System.Drawing.Size(189, 26);
             this.txtSoyad.TabIndex = 51;
             // 
             // txtAD
             // 
             this.txtAD.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtAD.Location = new System.Drawing.Point(222, 59);
+            this.txtAD.Location = new System.Drawing.Point(222, 82);
             this.txtAD.Margin = new System.Windows.Forms.Padding(2);
             this.txtAD.Name = "txtAD";
-            this.txtAD.Size = new System.Drawing.Size(130, 26);
+            this.txtAD.Size = new System.Drawing.Size(189, 26);
             this.txtAD.TabIndex = 50;
             // 
             // txtTC
@@ -553,7 +533,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label10.Location = new System.Drawing.Point(28, 257);
+            this.label10.Location = new System.Drawing.Point(28, 280);
             this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(139, 23);
@@ -564,7 +544,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label9.Location = new System.Drawing.Point(33, 225);
+            this.label9.Location = new System.Drawing.Point(33, 248);
             this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(185, 23);
@@ -575,7 +555,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label4.Location = new System.Drawing.Point(33, 127);
+            this.label4.Location = new System.Drawing.Point(33, 186);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(147, 23);
@@ -586,7 +566,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label3.Location = new System.Drawing.Point(33, 94);
+            this.label3.Location = new System.Drawing.Point(33, 117);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(129, 23);
@@ -597,7 +577,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label2.Location = new System.Drawing.Point(33, 66);
+            this.label2.Location = new System.Drawing.Point(33, 89);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(102, 23);
@@ -624,9 +604,7 @@
             this.groupBox3.Controls.Add(this.label2);
             this.groupBox3.Controls.Add(this.btnAcil);
             this.groupBox3.Controls.Add(this.label3);
-            this.groupBox3.Controls.Add(this.label18);
             this.groupBox3.Controls.Add(this.label4);
-            this.groupBox3.Controls.Add(this.txtAdres);
             this.groupBox3.Controls.Add(this.btnHastaKayıt);
             this.groupBox3.Controls.Add(this.label6);
             this.groupBox3.Controls.Add(this.txtDogumTarihi);
@@ -650,7 +628,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label6.Location = new System.Drawing.Point(28, 192);
+            this.label6.Location = new System.Drawing.Point(28, 152);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(190, 23);
@@ -664,8 +642,8 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1147, 611);
             this.Controls.Add(this.groupBox3);
-            this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.groupBoxPol);
+            this.Controls.Add(this.groupBoxAcil);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnGERİ);
@@ -674,10 +652,10 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SekreterProfilSayfasi";
             this.Load += new System.EventHandler(this.SekreterProfilSayfasi_Load);
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.groupBoxPol.ResumeLayout(false);
+            this.groupBoxPol.PerformLayout();
+            this.groupBoxAcil.ResumeLayout(false);
+            this.groupBoxAcil.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             this.ResumeLayout(false);
@@ -692,13 +670,11 @@
         private System.Windows.Forms.Button btnHastaSorgula;
         private System.Windows.Forms.Button btnMuayene;
         private System.Windows.Forms.Button btnAcil;
-        private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.RichTextBox txtAdres;
         private System.Windows.Forms.Button btnHastaKayıt;
         private System.Windows.Forms.MaskedTextBox txtDogumTarihi;
         private System.Windows.Forms.ComboBox txtKan;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.GroupBox groupBoxPol;
         private System.Windows.Forms.TextBox txtMuayeneHastaID;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Button btnMuayeneKayıt;
@@ -707,7 +683,7 @@
         private System.Windows.Forms.ComboBox cmbMuayeneKlinik;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox groupBoxAcil;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.TextBox txtHastaID;
         private System.Windows.Forms.ComboBox cmbAcilKlinik;

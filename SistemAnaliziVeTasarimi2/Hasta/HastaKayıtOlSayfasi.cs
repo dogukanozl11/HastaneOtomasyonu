@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Security.Cryptography;
 
 namespace SistemAnaliziVeTasarimi2.Hasta
 {
@@ -32,11 +33,28 @@ namespace SistemAnaliziVeTasarimi2.Hasta
             komut.Parameters.AddWithValue("@kan", comboBoxKanGrup.Text);
             komut.Parameters.AddWithValue("@hastaTelefon", txtHastaTel.Text);
             komut.Parameters.AddWithValue("@hastaMail", txtHastaMail.Text);
-            komut.Parameters.AddWithValue("@hastaSifre", txtHastaSifre.Text);
+            //komut.Parameters.AddWithValue("@hastaSifre", txtHastaSifre.Text);
+            string şifre = MD5sifre(txtHastaSifre.Text);
+            komut.Parameters.AddWithValue("@hastaSifre", şifre);
             bag.Open();
             komut.ExecuteNonQuery();
             bag.Close();
             MessageBox.Show("Hasta Kayıt İşlemi Başrılı . ŞİFRENİZ : " + txtHastaSifre.Text);
+        }
+        public static string MD5sifre (string sifre)
+        {
+            using (MD5 md5Hash = MD5.Create())
+            {
+                byte[] data = md5Hash.ComputeHash(Encoding.UTF8.GetBytes(sifre));
+
+                StringBuilder sb = new StringBuilder();
+
+                for (int i = 0; i < data.Length; i++)
+                {
+                    sb.Append(data[i].ToString("x2"));
+                }
+                return sb.ToString();
+            }
         }
 
     }

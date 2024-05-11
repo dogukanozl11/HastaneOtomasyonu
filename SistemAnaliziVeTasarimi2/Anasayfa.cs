@@ -29,11 +29,11 @@ namespace SistemAnaliziVeTasarimi2
         #region Yan MENU
         void gizle()
         {
-            DoktorGroupBox.Visible= false;
-            HastaKabulGroupBox.Visible= false;
-            hastaGroupBox.Visible= false;
-            AdmingroupBox.Visible= false;
-            LaboratuvargroupBox.Visible= false;
+            DoktorGroupBox.Visible = false;
+            HastaKabulGroupBox.Visible = false;
+            hastaGroupBox.Visible = false;
+            AdmingroupBox.Visible = false;
+            LaboratuvargroupBox.Visible = false;
         }
         private void btnAdmin_Click(object sender, EventArgs e)
         {
@@ -44,9 +44,9 @@ namespace SistemAnaliziVeTasarimi2
 
         private void BtnHastaGiris_Click(object sender, EventArgs e)
         {
-           gizle();
+            gizle();
             hastaGroupBox.Visible = true;
-            GirisPaneli.Visible=true;
+            GirisPaneli.Visible = true;
         }
 
         private void BtnDoktorGiris_Click(object sender, EventArgs e)
@@ -60,13 +60,13 @@ namespace SistemAnaliziVeTasarimi2
         {
             gizle();
             HastaKabulGroupBox.Visible = true;
-            GirisPaneli.Visible=true;
+            GirisPaneli.Visible = true;
         }
         private void btnLab_Click(object sender, EventArgs e)
         {
             gizle();
             LaboratuvargroupBox.Visible = true;
-            GirisPaneli.Visible= true;
+            GirisPaneli.Visible = true;
         }
         #endregion
 
@@ -101,11 +101,11 @@ namespace SistemAnaliziVeTasarimi2
 
         private void hastagirisbtn_Click(object sender, EventArgs e)
         {
-            
+
             string sql = "select * from tbl_hasta where TcNo=@prm1 and sifre=@prm2";
             SqlDataAdapter da = new SqlDataAdapter(sql, bag);
             da.SelectCommand.Parameters.AddWithValue("@prm1", txthastaTC.Text);
-            da.SelectCommand.Parameters.AddWithValue("@prm2", txtHastaSifre.Text);
+            da.SelectCommand.Parameters.AddWithValue("@prm2", HastaKayıtOlSayfasi.MD5sifre(txtHastaSifre.Text));
             DataTable dt = new DataTable();
             da.Fill(dt);
             if (txthastaTC.Text == "" || txtHastaSifre.Text == "")
@@ -171,9 +171,9 @@ namespace SistemAnaliziVeTasarimi2
         private void btnLabPGiris_Click(object sender, EventArgs e)
         {
             string sql = "Select * from tbl_labpersonel where labp_TcNo=@prm1 and labp_sifre=@prm2";
-            SqlDataAdapter da = new SqlDataAdapter(sql,bag);
-            da.SelectCommand.Parameters.AddWithValue("@prm1",txtLabPTC.Text);
-            da.SelectCommand.Parameters.AddWithValue("@prm2",txtLabPSifre.Text);
+            SqlDataAdapter da = new SqlDataAdapter(sql, bag);
+            da.SelectCommand.Parameters.AddWithValue("@prm1", txtLabPTC.Text);
+            da.SelectCommand.Parameters.AddWithValue("@prm2", txtLabPSifre.Text);
             DataTable dt = new DataTable();
             da.Fill(dt);
             if (txtLabPTC.Text == "" || txtLabPSifre.Text == "")
@@ -246,8 +246,8 @@ namespace SistemAnaliziVeTasarimi2
             iletisim iltsm = new iletisim();
             iltsm.Show();
         }
-        
-      
+
+
 
 
 
