@@ -1,4 +1,5 @@
-﻿using SistemAnaliziVeTasarimi2.Sekreter;
+﻿using SistemAnaliziVeTasarimi2.ADMİN;
+using SistemAnaliziVeTasarimi2.Sekreter;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -68,6 +69,7 @@ namespace SistemAnaliziVeTasarimi2.Doktor
             }
             else if (txtOnayKodu.Text == onayKodu)
             {
+                txtYeniSifre.Text = helper.MD5sifre(txtYeniSifre.Text);
                 bag.Open();
                 SqlCommand komut = new SqlCommand("update tbl_doktor set TcNo='" + txtTC.Text + "',sifre='" + txtYeniSifre.Text + "' where TcNo='" + txtTC.Text + "'", bag);
                 komut.ExecuteNonQuery();

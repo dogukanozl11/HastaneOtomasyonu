@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SistemAnaliziVeTasarimi2.ADMİN;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -31,6 +32,8 @@ namespace SistemAnaliziVeTasarimi2.Laboratuvar
             komut.Parameters.AddWithValue("@labPCinsiyet", CmbLabPCinsiyet.Text);
             komut.Parameters.AddWithValue("@labPTelefon", txtLabPTel.Text);
             komut.Parameters.AddWithValue("@labPeMail", txtLabPMail.Text);
+            //komut.Parameters.AddWithValue("@labPSifre", txtLabPSifre.Text); Eski Şifreleme Yöntemi.
+            string MDsifre = helper.MD5sifre(txtLabPSifre.Text);
             komut.Parameters.AddWithValue("@labPSifre", txtLabPSifre.Text);
             bag.Open();
             komut.ExecuteNonQuery();

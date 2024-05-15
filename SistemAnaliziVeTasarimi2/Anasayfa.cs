@@ -78,7 +78,7 @@ namespace SistemAnaliziVeTasarimi2
             string sql = "select * from tbl_doktor where TcNo=@prm1 and sifre=@prm2";
             SqlDataAdapter da = new SqlDataAdapter(sql, bag);
             da.SelectCommand.Parameters.AddWithValue("@prm1", txtTC.Text);
-            da.SelectCommand.Parameters.AddWithValue("@prm2", txtSifre.Text);
+            da.SelectCommand.Parameters.AddWithValue("@prm2", helper.MD5sifre(txtSifre.Text));
             DataTable dt = new DataTable();
             da.Fill(dt);
             if (txtTC.Text == "" || txtSifre.Text == "")
@@ -105,7 +105,7 @@ namespace SistemAnaliziVeTasarimi2
             string sql = "select * from tbl_hasta where TcNo=@prm1 and sifre=@prm2";
             SqlDataAdapter da = new SqlDataAdapter(sql, bag);
             da.SelectCommand.Parameters.AddWithValue("@prm1", txthastaTC.Text);
-            da.SelectCommand.Parameters.AddWithValue("@prm2", HastaKayıtOlSayfasi.MD5sifre(txtHastaSifre.Text));
+            da.SelectCommand.Parameters.AddWithValue("@prm2", helper.MD5sifre(txtHastaSifre.Text));
             DataTable dt = new DataTable();
             da.Fill(dt);
             if (txthastaTC.Text == "" || txtHastaSifre.Text == "")
@@ -150,7 +150,7 @@ namespace SistemAnaliziVeTasarimi2
             string sql = "select * from tbl_sekreter where tcNo=@prm1 and sifre=@prm2";
             SqlDataAdapter da = new SqlDataAdapter(sql, bag);
             da.SelectCommand.Parameters.AddWithValue("@prm1", txthastakabultc.Text);
-            da.SelectCommand.Parameters.AddWithValue("@prm2", txtHastakabulSifre.Text);
+            da.SelectCommand.Parameters.AddWithValue("@prm2", helper.MD5sifre(txtHastakabulSifre.Text));
             DataTable dt = new DataTable();
             da.Fill(dt);
             if (txthastakabultc.Text == "" || txtHastakabulSifre.Text == "")
@@ -173,7 +173,7 @@ namespace SistemAnaliziVeTasarimi2
             string sql = "Select * from tbl_labpersonel where labp_TcNo=@prm1 and labp_sifre=@prm2";
             SqlDataAdapter da = new SqlDataAdapter(sql, bag);
             da.SelectCommand.Parameters.AddWithValue("@prm1", txtLabPTC.Text);
-            da.SelectCommand.Parameters.AddWithValue("@prm2", txtLabPSifre.Text);
+            da.SelectCommand.Parameters.AddWithValue("@prm2", helper.MD5sifre(txtLabPSifre.Text));
             DataTable dt = new DataTable();
             da.Fill(dt);
             if (txtLabPTC.Text == "" || txtLabPSifre.Text == "")

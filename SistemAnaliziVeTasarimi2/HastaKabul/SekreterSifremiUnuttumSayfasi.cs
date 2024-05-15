@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using System.Net;
 using System.Net.Mail;
 using System.Data.SqlClient;
+using SistemAnaliziVeTasarimi2.ADMİN;
 
 namespace SistemAnaliziVeTasarimi2.Sekreter
 {
@@ -71,6 +72,7 @@ namespace SistemAnaliziVeTasarimi2.Sekreter
             }
             else if (txtOnayKodu.Text == onayKodu)
             {
+                txtYeniSifre.Text = helper.MD5sifre(txtYeniSifre.Text);
                 bag.Open();
                 SqlCommand komut = new SqlCommand("update tbl_sekreter set tcNo='" + txtTC.Text + "',sifre='" + txtYeniSifre.Text + "' where tcNo='" + txtTC.Text + "'", bag);
                 komut.ExecuteNonQuery();

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SistemAnaliziVeTasarimi2.ADMİN;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -37,6 +38,8 @@ namespace SistemAnaliziVeTasarimi2.Sekreter
             komut.Parameters.AddWithValue("@SekreterCinsiyet",CmbSekreterCinsiyet.Text);
             komut.Parameters.AddWithValue("@SekreterTelefon",txtSekreterTel.Text);
             komut.Parameters.AddWithValue("@SekreterMail",txtSekreterMail.Text);
+            komut.Parameters.AddWithValue("@SekreterSifre",txtSekreterSifre.Text);
+            string MDsifre = helper.MD5sifre(txtSekreterSifre.Text);
             komut.Parameters.AddWithValue("@SekreterSifre",txtSekreterSifre.Text);
             bag.Open();
             komut.ExecuteNonQuery();

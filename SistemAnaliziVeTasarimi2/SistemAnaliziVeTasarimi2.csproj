@@ -118,6 +118,7 @@
     <Compile Include="ADMİN\iletisim.Designer.cs">
       <DependentUpon>iletisim.cs</DependentUpon>
     </Compile>
+    <Compile Include="ADMİN\helper.cs" />
     <Compile Include="Anasayfa.cs">
       <SubType>Form</SubType>
     </Compile>

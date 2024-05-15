@@ -73,7 +73,7 @@ namespace SistemAnaliziVeTasarimi2.Hasta
             catch
             {
                 MessageBox.Show("Bu tarihte hazırda bekleyen bir randevunuz var!!");
-                this.Close();
+               
             }
         }
         void tc()
@@ -129,7 +129,7 @@ namespace SistemAnaliziVeTasarimi2.Hasta
                 if (bag.State == ConnectionState.Open)
                     bag.Close();
                 bag.Open();
-                if (cmbKlinik.SelectedIndex != 0 && cmbDoktor.SelectedIndex != 0 && btn.BackColor != Color.Red && randevualabilir == true)
+                if (cmbKlinik.SelectedIndex > 0 && cmbDoktor.SelectedIndex > 0 && btn.BackColor != Color.Red && randevualabilir == true)
                 {
                     SqlCommand randevuekle = new SqlCommand("insert into tbl_randevular(randevuhastaid,randevutarih,randevusaat,randevu_klinik_id,randevu_doktor_id)values(@id,@tarih,@saat,@kid,@did)", bag);
                     randevuekle.Parameters.AddWithValue("@id", txtHastaid.Text.ToString());

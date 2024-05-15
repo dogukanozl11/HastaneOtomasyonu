@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SistemAnaliziVeTasarimi2.ADMİN;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -31,9 +32,11 @@ namespace SistemAnaliziVeTasarimi2.Doktor
             komut.Parameters.AddWithValue("@doktorCinsiyet", CmbDoktorCinsiyet.Text);
             komut.Parameters.AddWithValue("@doktorTelefon", txtDoktorTel.Text);
             komut.Parameters.AddWithValue("@doktorMail", txtDoktorMail.Text);
-            komut.Parameters.AddWithValue("@doktorSifre", txtDoktorSifre.Text);
+            //komut.Parameters.AddWithValue("@doktorSifre", txtDoktorSifre.Text); //Eski Şifreleme Yöntemi.
             komut.Parameters.AddWithValue("@doktorBrans", CmbDoktorBrans.SelectedIndex);
             //komut.Parameters.AddWithValue("@doktorBrans", SqlDbType.Int).Value =  Convert.ToInt32(CmbDoktorBrans.SelectedValue);
+            string MDsifre = helper.MD5sifre(txtDoktorSifre.Text);
+            komut.Parameters.AddWithValue("@doktorSifre", txtDoktorSifre.Text);
             bag.Open();
             komut.ExecuteNonQuery();
             bag.Close();
