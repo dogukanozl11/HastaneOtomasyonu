@@ -651,7 +651,6 @@
             this.Name = "SekreterProfilSayfasi";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SekreterProfilSayfasi";
-            this.Load += new System.EventHandler(this.SekreterProfilSayfasi_Load);
             this.groupBoxPol.ResumeLayout(false);
             this.groupBoxPol.PerformLayout();
             this.groupBoxAcil.ResumeLayout(false);

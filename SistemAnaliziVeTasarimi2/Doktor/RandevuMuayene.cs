@@ -218,7 +218,7 @@ namespace SistemAnaliziVeTasarimi2.Doktor
                 baglanti.Close();
 
                 panel3.Enabled = true;
-                panel4.Enabled = false;
+                
                 button5.Enabled = false;
 
                 baglanti.Open();
@@ -240,7 +240,7 @@ namespace SistemAnaliziVeTasarimi2.Doktor
         private void button5_Click(object sender, EventArgs e)
         {
             panel3.Enabled = false;
-            panel4.Enabled = true;
+            
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -252,11 +252,9 @@ namespace SistemAnaliziVeTasarimi2.Doktor
                     if (baglanti.State == ConnectionState.Open)
                         baglanti.Close();
                     baglanti.Open();
-                    SqlCommand recete = new SqlCommand("insert into tbl_receteler(recete_doktor_id,recete_hasta_id,recete_aciklama,recete_icerik)values(@did,@hid,@aciklama,@recete)", baglanti);
+                    SqlCommand recete = new SqlCommand("insert into tbl_receteler(recete_doktor_id,recete_hasta_id)values(@did,@hid)", baglanti);
                     recete.Parameters.AddWithValue("@did", maskedTextBox2.Text);
                     recete.Parameters.AddWithValue("@hid", maskedTextBox4.Text);
-                    recete.Parameters.AddWithValue("@aciklama", textBox5.Text);
-                    recete.Parameters.AddWithValue("@recete", textBox9.Text);
                     recete.ExecuteNonQuery();
                     baglanti.Close();
                     MessageBox.Show("Reçete ve Tanı başarıyla kaydedilmiştir.");
@@ -266,13 +264,7 @@ namespace SistemAnaliziVeTasarimi2.Doktor
                     temizle.ExecuteNonQuery();
                     baglanti.Close();
 
-                    if (baglanti.State == ConnectionState.Open)
-                        baglanti.Close();
-                    baglanti.Open();
-                    SqlCommand vezne = new SqlCommand("insert into vezne(hasta_id)values(@id) ", baglanti);
-                    vezne.Parameters.AddWithValue("@id", maskedTextBox4.Text);
-                    vezne.ExecuteNonQuery();
-                    baglanti.Close();
+                   
                 }
 
 

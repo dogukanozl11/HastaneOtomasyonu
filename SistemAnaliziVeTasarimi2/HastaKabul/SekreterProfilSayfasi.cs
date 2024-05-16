@@ -68,10 +68,6 @@ namespace SistemAnaliziVeTasarimi2.Sekreter
             SqlCommand id = new SqlCommand("select hasta_id from hastalar",bag);
             SqlDataReader oku = id.ExecuteReader();
         }
-        private void SekreterProfilSayfasi_Load(object sender, EventArgs e)
-        {
-
-        }
 
         private void btnAcil_Click(object sender, EventArgs e)
         {

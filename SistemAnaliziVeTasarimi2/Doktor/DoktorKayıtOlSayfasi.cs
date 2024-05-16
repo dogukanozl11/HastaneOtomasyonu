@@ -45,7 +45,7 @@ namespace SistemAnaliziVeTasarimi2.Doktor
 
         private void btnGeri_Click(object sender, EventArgs e)
         {
-           
+            //7815696ecbf1c96e6894b779456d330e
         }
     }
 }

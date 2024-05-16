@@ -71,31 +71,80 @@ namespace SistemAnaliziVeTasarimi2.Doktor
         }
 
         private void btnHastaSeç_Click(object sender, EventArgs e)
-        {
+        { 
+            //Eski Seç butonu
+
+            //try
+            //{
+            //    label1.Text = Anasayfa.dtc;
+ 
+            //    bag.Open();
+            //    SqlCommand c = new SqlCommand("select * from tbl_randevular where randevuhastaid=@id", bag);
+            //    c.Parameters.AddWithValue("@id", dataGridView1.CurrentRow.Cells[5].Value.ToString());
+            //    SqlDataReader oku = c.ExecuteReader();
+            //    while (oku.Read())
+            //    {
+            //        textBox1.Text = oku[4].ToString();
+            //        // hastaid = textBox1.Text;
+            //    }
+
+            //    bag.Close();
+            //    // hastaid = textBox1.Text;
+            //    kontrolMuayene = 2;
+            //    RandevuMuayene yeni = new RandevuMuayene();
+            //    yeni.Show();
+            //    bag.Open();
+            //    SqlCommand sil = new SqlCommand("delete from tbl_randevular where randevuhastaid=@id",bag);
+            //    sil.Parameters.AddWithValue("@id", textBox1.Text);
+            //    sil.ExecuteNonQuery();
+            //    bag.Close();
+
+            //}
+            //catch
+            //{
+            //    MessageBox.Show("Hata!! Daha Sonra Tekrar Deneyiniz");
+
+            //}
             try
             {
                 label1.Text = Anasayfa.dtc;
- 
+
+                // Randevu bilgilerini getir ve textBox1'e yaz
                 bag.Open();
-                SqlCommand c = new SqlCommand("select * from tbl_randevular where randevuhastaid=@id", bag);
+                SqlCommand c = new SqlCommand("SELECT * FROM tbl_randevular WHERE randevuhastaid=@id", bag);
                 c.Parameters.AddWithValue("@id", dataGridView1.CurrentRow.Cells[5].Value.ToString());
                 SqlDataReader oku = c.ExecuteReader();
-                while (oku.Read())
+                if (oku.Read())
                 {
-                    textBox1.Text = oku[4].ToString();
-                    // hastaid = textBox1.Text;
+                    textBox1.Text = oku["randevuhastaid"].ToString(); // Doğru sütunu kontrol et
                 }
-
+                oku.Close();
                 bag.Close();
-                // hastaid = textBox1.Text;
-                kontrolMuayene = 2;
-                RandevuMuayene yeni = new RandevuMuayene();
-                yeni.Show();
-            }
-            catch
-            {
-                MessageBox.Show("Hata!! Daha Sonra Tekrar Deneyiniz");
 
+                // Randevu kaydını sil
+                bag.Open();
+                SqlCommand sil = new SqlCommand("DELETE FROM tbl_randevular WHERE randevuhastaid=@id", bag);
+                sil.Parameters.AddWithValue("@id", textBox1.Text);
+                int rowsAffected = sil.ExecuteNonQuery();
+                bag.Close();
+
+                if (rowsAffected > 0)
+                {
+                    MessageBox.Show("Randevu kaydı silindi.");
+
+                    // Yeni formu aç
+                    kontrolMuayene = 2;
+                    RandevuMuayene yeni = new RandevuMuayene();
+                    yeni.Show();
+                }
+                else
+                {
+                    MessageBox.Show("Randevu kaydı bulunamadı veya silinemedi.");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Hata!! Daha Sonra Tekrar Deneyiniz\n" + ex.Message);
             }
         }
     }

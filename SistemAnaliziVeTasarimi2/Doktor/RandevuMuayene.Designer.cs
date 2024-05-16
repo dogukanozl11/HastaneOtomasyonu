@@ -35,12 +35,6 @@
             this.label16 = new System.Windows.Forms.Label();
             this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
             this.label12 = new System.Windows.Forms.Label();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label19 = new System.Windows.Forms.Label();
             this.maskedTextBox7 = new System.Windows.Forms.MaskedTextBox();
@@ -73,7 +67,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.button6 = new System.Windows.Forms.Button();
             this.panel5.SuspendLayout();
-            this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -159,72 +152,6 @@
             this.label12.TabIndex = 97;
             this.label12.Text = "Doktor ID";
             // 
-            // panel4
-            // 
-            this.panel4.Controls.Add(this.button2);
-            this.panel4.Controls.Add(this.textBox9);
-            this.panel4.Controls.Add(this.label11);
-            this.panel4.Controls.Add(this.label10);
-            this.panel4.Controls.Add(this.textBox5);
-            this.panel4.Enabled = false;
-            this.panel4.Location = new System.Drawing.Point(393, 288);
-            this.panel4.Margin = new System.Windows.Forms.Padding(2);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(448, 188);
-            this.panel4.TabIndex = 123;
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.Azure;
-            this.button2.Location = new System.Drawing.Point(148, 149);
-            this.button2.Margin = new System.Windows.Forms.Padding(2);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(139, 35);
-            this.button2.TabIndex = 4;
-            this.button2.Text = "Gönder";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // textBox9
-            // 
-            this.textBox9.Location = new System.Drawing.Point(249, 2);
-            this.textBox9.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox9.Multiline = true;
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(127, 142);
-            this.textBox9.TabIndex = 3;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label11.Location = new System.Drawing.Point(190, 2);
-            this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(58, 19);
-            this.label11.TabIndex = 2;
-            this.label11.Text = "Reçete :";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label10.Location = new System.Drawing.Point(8, 2);
-            this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(41, 19);
-            this.label10.TabIndex = 1;
-            this.label10.Text = "Tanı :";
-            // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(59, 2);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox5.Multiline = true;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(127, 142);
-            this.textBox5.TabIndex = 0;
-            // 
             // panel3
             // 
             this.panel3.Controls.Add(this.label19);
@@ -239,14 +166,14 @@
             this.panel3.Location = new System.Drawing.Point(393, 80);
             this.panel3.Margin = new System.Windows.Forms.Padding(2);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(448, 203);
+            this.panel3.Size = new System.Drawing.Size(448, 385);
             this.panel3.TabIndex = 122;
             // 
             // label19
             // 
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label19.Location = new System.Drawing.Point(25, 98);
+            this.label19.Location = new System.Drawing.Point(27, 146);
             this.label19.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(59, 17);
@@ -255,7 +182,7 @@
             // 
             // maskedTextBox7
             // 
-            this.maskedTextBox7.Location = new System.Drawing.Point(94, 97);
+            this.maskedTextBox7.Location = new System.Drawing.Point(96, 145);
             this.maskedTextBox7.Margin = new System.Windows.Forms.Padding(2);
             this.maskedTextBox7.Mask = "00000000000";
             this.maskedTextBox7.Name = "maskedTextBox7";
@@ -267,7 +194,7 @@
             // 
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label18.Location = new System.Drawing.Point(257, 4);
+            this.label18.Location = new System.Drawing.Point(243, 7);
             this.label18.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(101, 17);
@@ -277,10 +204,10 @@
             // button3
             // 
             this.button3.BackColor = System.Drawing.Color.Azure;
-            this.button3.Location = new System.Drawing.Point(164, 163);
+            this.button3.Location = new System.Drawing.Point(153, 262);
             this.button3.Margin = new System.Windows.Forms.Padding(2);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(99, 35);
+            this.button3.Size = new System.Drawing.Size(111, 50);
             this.button3.TabIndex = 7;
             this.button3.Text = "Bitti";
             this.button3.UseVisualStyleBackColor = false;
@@ -292,7 +219,7 @@
             this.comboBox1.Location = new System.Drawing.Point(23, 32);
             this.comboBox1.Margin = new System.Windows.Forms.Padding(2);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(164, 21);
+            this.comboBox1.Size = new System.Drawing.Size(186, 21);
             this.comboBox1.TabIndex = 6;
             // 
             // listBox1
@@ -301,16 +228,16 @@
             this.listBox1.Location = new System.Drawing.Point(246, 32);
             this.listBox1.Margin = new System.Windows.Forms.Padding(2);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(125, 121);
+            this.listBox1.Size = new System.Drawing.Size(186, 173);
             this.listBox1.TabIndex = 3;
             // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.Azure;
-            this.button1.Location = new System.Drawing.Point(60, 57);
+            this.button1.Location = new System.Drawing.Point(56, 81);
             this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(76, 35);
+            this.button1.Size = new System.Drawing.Size(99, 35);
             this.button1.TabIndex = 2;
             this.button1.Text = "Test Ekle";
             this.button1.UseVisualStyleBackColor = false;
@@ -583,7 +510,6 @@
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.panel5);
-            this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
@@ -593,8 +519,6 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel1.ResumeLayout(false);
@@ -614,12 +538,6 @@
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.MaskedTextBox maskedTextBox2;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.MaskedTextBox maskedTextBox7;
