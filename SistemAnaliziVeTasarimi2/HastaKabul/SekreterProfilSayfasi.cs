@@ -65,7 +65,7 @@ namespace SistemAnaliziVeTasarimi2.Sekreter
         void id()
         {
             bag.Open();
-            SqlCommand id = new SqlCommand("select hasta_id from hastalar",bag);
+            SqlCommand id = new SqlCommand("select hasta_id from hastalar", bag);
             SqlDataReader oku = id.ExecuteReader();
         }
 
@@ -101,8 +101,8 @@ namespace SistemAnaliziVeTasarimi2.Sekreter
             if (txtTC.Text != "")
             {
                 bag.Open();
-                SqlCommand cmd = new SqlCommand("select * from tbl_hasta where TcNo=@tc ",bag);
-                cmd.Parameters.AddWithValue("@tc",txtTC.Text);
+                SqlCommand cmd = new SqlCommand("select * from tbl_hasta where TcNo=@tc ", bag);
+                cmd.Parameters.AddWithValue("@tc", txtTC.Text);
                 SqlDataReader oku = cmd.ExecuteReader();
                 if (oku.Read())
                 {
@@ -120,6 +120,42 @@ namespace SistemAnaliziVeTasarimi2.Sekreter
             {
                 MessageBox.Show("Lütfen Hasta Tc sini Giriniz. ");
             }
+        }
+
+        private void btnAcilKaydet_Click(object sender, EventArgs e)
+        {
+            //
+            if (CmbDurum.Text != "" && cmbAcilKlinik.Text != "" && cmbDoktor.Text != "" && txtHastaID.Text != "" && richTextBoxŞikayet.Text != "")
+            {
+                try
+                {
+                    bag.Open();
+                    SqlCommand acil = new SqlCommand("insert into tbl_acil(acil_doktorid,aciklama,derece,acil_klinikid,acil_hastaid) values (@p1,@p2,@p3,@p4,@p5)",bag);
+                    acil.Parameters.AddWithValue("@p1", SqlDbType.Int).Value = Convert.ToInt32(cmbDoktor.Text);
+                    acil.Parameters.AddWithValue("@p2",SqlDbType.NVarChar).Value= richTextBoxŞikayet.Text;
+                    acil.Parameters.AddWithValue("@p3",SqlDbType.NVarChar).Value = CmbDurum.Text;
+                    acil.Parameters.AddWithValue("@p4", SqlDbType.Int).Value = cmbAcilKlinik.Text;
+                    acil.Parameters.AddWithValue("@p5", SqlDbType.Int).Value = txtHastaID.Text;
+                    acil.ExecuteNonQuery();
+                    bag.Close();
+                    MessageBox.Show("Acil Hasta Kaydı Başarıyla Tamamlandı");
+                    temizle();
+                }
+                catch (Exception ex)
+                {
+
+                    MessageBox.Show(ex.Message);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Lütfen Hasta Girişi Yapınız.");
+            }
+        }
+
+        private void btnMuayeneKayıt_Click(object sender, EventArgs e)
+        {
+            //
         }
     }
 }

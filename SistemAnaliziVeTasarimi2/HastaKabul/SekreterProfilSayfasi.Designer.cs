@@ -95,10 +95,10 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label1.Location = new System.Drawing.Point(382, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(362, 33);
+            this.label1.Size = new System.Drawing.Size(427, 39);
             this.label1.TabIndex = 3;
             this.label1.Text = "HASTA KABUL SAYFASI";
             // 
@@ -249,6 +249,7 @@
             this.btnMuayeneKayıt.TabIndex = 34;
             this.btnMuayeneKayıt.Text = "Kaydet";
             this.btnMuayeneKayıt.UseVisualStyleBackColor = false;
+            this.btnMuayeneKayıt.Click += new System.EventHandler(this.btnMuayeneKayıt_Click);
             // 
             // cmbMuayeneDoktor
             // 
@@ -445,6 +446,7 @@
             this.btnAcilKaydet.TabIndex = 32;
             this.btnAcilKaydet.Text = "Kaydet";
             this.btnAcilKaydet.UseVisualStyleBackColor = false;
+            this.btnAcilKaydet.Click += new System.EventHandler(this.btnAcilKaydet_Click);
             // 
             // label12
             // 

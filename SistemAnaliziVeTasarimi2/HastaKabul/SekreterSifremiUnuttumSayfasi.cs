@@ -31,18 +31,52 @@ namespace SistemAnaliziVeTasarimi2.Sekreter
         string onayKodu;
         private void btnOnayKoduAl_Click(object sender, EventArgs e)
         {
+            //try
+            //{
+
+
+            //    if (txtEmail.Text != "")
+            //    {
+            //        onayKodu = rnd.Next(100000, 999999).ToString();
+            //        MailMessage sms = new MailMessage();
+            //        SmtpClient smtpClient = new SmtpClient();
+            //        smtpClient.Credentials = new System.Net.NetworkCredential("sistem.hastanesi@hotmail.com", "12345678C#+");
+            //        smtpClient.Port = 587;
+            //        smtpClient.Host = "smtp.outlook.com";
+            //        smtpClient.EnableSsl = true;
+            //        sms.To.Add(txtEmail.Text);
+            //        sms.From = new MailAddress("sistem.hastanesi@hotmail.com");
+            //        sms.Subject = "Şifre Onay Kodu.";
+            //        sms.Body = onayKodu;
+            //        smtpClient.Send(sms);
+            //        MessageBox.Show("Onay Kodu Gönderilmiştir.");
+            //    }
+            //    else
+            //    {
+            //        MessageBox.Show("E-MAİL Boş Bırakılamaz.");
+            //    }
+            //}
+            //catch(Exception ex)
+            //{
+            //    MessageBox.Show("Geçersiz E-MAİL Adresi." + ex.Message);
+            //}
             try
             {
-
-
                 if (txtEmail.Text != "")
                 {
+                    // E-posta adresinin yalnızca ASCII karakterler içerip içermediğini kontrol et
+                    if (txtEmail.Text.Any(c => c > 127))
+                    {
+                        MessageBox.Show("E-posta adresi yalnızca ASCII karakterler içermelidir.");
+                        return; // ASCII olmayan karakter varsa işlemi sonlandır
+                    }
+
                     onayKodu = rnd.Next(100000, 999999).ToString();
                     MailMessage sms = new MailMessage();
                     SmtpClient smtpClient = new SmtpClient();
-                    smtpClient.Credentials = new System.Net.NetworkCredential("sistem.hastanesi@hotmail.com", "12345678C#+");
+                    smtpClient.Credentials = new System.Net.NetworkCredential("sistem.hastanesi@hotmail.com", "12345678C#+"); // Uygulama şifresi kullanın
                     smtpClient.Port = 587;
-                    smtpClient.Host = "smtp.outlook.com";
+                    smtpClient.Host = "smtp.office365.com"; // Doğru SMTP sunucusu
                     smtpClient.EnableSsl = true;
                     sms.To.Add(txtEmail.Text);
                     sms.From = new MailAddress("sistem.hastanesi@hotmail.com");
@@ -56,10 +90,15 @@ namespace SistemAnaliziVeTasarimi2.Sekreter
                     MessageBox.Show("E-MAİL Boş Bırakılamaz.");
                 }
             }
-            catch
+            catch (SmtpException ex)
             {
-                MessageBox.Show("Geçersiz E-MAİL Adresi.");
+                MessageBox.Show("E-posta gönderme hatası: " + ex.Message);
             }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Geçersiz E-MAİL Adresi. Hata: " + ex.Message);
+            }
+
 
         }
 
