@@ -75,6 +75,8 @@
             this.label21 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.label6 = new System.Windows.Forms.Label();
+            this.txtSifre = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.groupBoxPol.SuspendLayout();
             this.groupBoxAcil.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -155,6 +157,7 @@
             this.btnHastaKayıt.Size = new System.Drawing.Size(79, 69);
             this.btnHastaKayıt.TabIndex = 63;
             this.btnHastaKayıt.UseVisualStyleBackColor = false;
+            this.btnHastaKayıt.Click += new System.EventHandler(this.btnHastaKayıt_Click);
             // 
             // txtDogumTarihi
             // 
@@ -281,6 +284,7 @@
             this.cmbMuayeneKlinik.Name = "cmbMuayeneKlinik";
             this.cmbMuayeneKlinik.Size = new System.Drawing.Size(194, 24);
             this.cmbMuayeneKlinik.TabIndex = 29;
+            this.cmbMuayeneKlinik.SelectedIndexChanged += new System.EventHandler(this.cmbMuayeneKlinik_SelectedIndexChanged);
             // 
             // label15
             // 
@@ -357,6 +361,7 @@
             this.cmbAcilKlinik.Name = "cmbAcilKlinik";
             this.cmbAcilKlinik.Size = new System.Drawing.Size(183, 24);
             this.cmbAcilKlinik.TabIndex = 42;
+            this.cmbAcilKlinik.SelectedIndexChanged += new System.EventHandler(this.cmbAcilKlinik_SelectedIndexChanged);
             // 
             // label24
             // 
@@ -526,7 +531,6 @@
             this.txtTC.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtTC.Location = new System.Drawing.Point(220, 27);
             this.txtTC.Margin = new System.Windows.Forms.Padding(2);
-            this.txtTC.Mask = "00000000000";
             this.txtTC.Name = "txtTC";
             this.txtTC.Size = new System.Drawing.Size(132, 26);
             this.txtTC.TabIndex = 49;
@@ -613,9 +617,11 @@
             this.groupBox3.Controls.Add(this.txtKan);
             this.groupBox3.Controls.Add(this.label14);
             this.groupBox3.Controls.Add(this.label9);
+            this.groupBox3.Controls.Add(this.label5);
             this.groupBox3.Controls.Add(this.label10);
             this.groupBox3.Controls.Add(this.txtTC);
             this.groupBox3.Controls.Add(this.txtAD);
+            this.groupBox3.Controls.Add(this.txtSifre);
             this.groupBox3.Controls.Add(this.txtEmail);
             this.groupBox3.Controls.Add(this.txtSoyad);
             this.groupBox3.Controls.Add(this.txtTel);
@@ -637,6 +643,26 @@
             this.label6.TabIndex = 44;
             this.label6.Text = "Hasta Doğum Tarihi :";
             // 
+            // txtSifre
+            // 
+            this.txtSifre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtSifre.Location = new System.Drawing.Point(222, 311);
+            this.txtSifre.Margin = new System.Windows.Forms.Padding(2);
+            this.txtSifre.Name = "txtSifre";
+            this.txtSifre.Size = new System.Drawing.Size(189, 26);
+            this.txtSifre.TabIndex = 57;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label5.Location = new System.Drawing.Point(28, 315);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(66, 23);
+            this.label5.TabIndex = 48;
+            this.label5.Text = "Şifre : ";
+            // 
             // SekreterProfilSayfasi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -653,6 +679,7 @@
             this.Name = "SekreterProfilSayfasi";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SekreterProfilSayfasi";
+            this.Load += new System.EventHandler(this.SekreterProfilSayfasi_Load);
             this.groupBoxPol.ResumeLayout(false);
             this.groupBoxPol.PerformLayout();
             this.groupBoxAcil.ResumeLayout(false);
@@ -712,5 +739,7 @@
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox txtSifre;
     }
 }

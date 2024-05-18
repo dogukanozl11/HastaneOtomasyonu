@@ -65,8 +65,35 @@ namespace SistemAnaliziVeTasarimi2.Sekreter
         void id()
         {
             bag.Open();
-            SqlCommand id = new SqlCommand("select hasta_id from hastalar", bag);
+            SqlCommand id = new SqlCommand("select hasta_id from tbl_hasta", bag);
             SqlDataReader oku = id.ExecuteReader();
+            bag.Close();
+        }
+        void idsorgulama()
+        {
+            bag.Open();
+            SqlCommand id = new SqlCommand("select hasta_id from tbl_hasta where TcNo=@tc", bag);
+            id.Parameters.AddWithValue("@tc", txtTC.Text);
+            SqlDataReader oku = id.ExecuteReader();
+            while (oku.Read())
+            {
+                txtHastaID.Text = oku[0].ToString();
+                txtMuayeneHastaID.Text = oku[0].ToString();
+            }
+            bag.Close();
+        }
+        private void SekreterProfilSayfasi_Load(object sender, EventArgs e)
+        {
+            try
+            {
+                klinkgetir();
+
+                acilklinik();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Hata!! Daha Sonra Tekrar Deneyiniz");
+            }
         }
 
         private void btnAcil_Click(object sender, EventArgs e)
@@ -98,28 +125,47 @@ namespace SistemAnaliziVeTasarimi2.Sekreter
 
         private void btnHastaSorgula_Click(object sender, EventArgs e)
         {
-            if (txtTC.Text != "")
+            try
             {
-                bag.Open();
-                SqlCommand cmd = new SqlCommand("select * from tbl_hasta where TcNo=@tc ", bag);
-                cmd.Parameters.AddWithValue("@tc", txtTC.Text);
-                SqlDataReader oku = cmd.ExecuteReader();
-                if (oku.Read())
+                if (txtTC.Text != "")
                 {
-                    txtTC.Text = oku[3].ToString();
-                    txtAD.Text = oku[1].ToString();
-                    txtSoyad.Text = oku[2].ToString();
-                    txtDogumTarihi.Text = oku[4].ToString();
-                    txtCinsyet.Text = oku[5].ToString();
-                    txtKan.Text = oku[6].ToString();
-                    txtTel.Text = oku[7].ToString();
-                    txtEmail.Text = oku[8].ToString();
+                    bag.Open();
+                    SqlCommand cmd = new SqlCommand("select * from tbl_hasta where TcNo=@tc ", bag);
+                    cmd.Parameters.AddWithValue("@tc", txtTC.Text);
+                    SqlDataReader oku = cmd.ExecuteReader();
+                    if (oku.Read())
+                    {
+                        txtTC.Text = oku[3].ToString();
+                        txtAD.Text = oku[1].ToString();
+                        txtSoyad.Text = oku[2].ToString();
+                        txtDogumTarihi.Text = oku[4].ToString();
+                        txtCinsyet.Text = oku[5].ToString();
+                        txtKan.Text = oku[6].ToString();
+                        txtTel.Text = oku[7].ToString();
+                        txtEmail.Text = oku[8].ToString();
+
+                        MessageBox.Show("ilgili Tc ye Ait Kayıtlı Hasta Bulundu.");
+                        idsorgulama();
+
+
+                    }
+                    else
+                    {
+                        MessageBox.Show("Bu Tc No ya sahip Hasta Bulunamadı.");
+                    }
+                    bag.Close();
+
+                }
+                else
+                {
+                    MessageBox.Show("Lütfen Hasta Tc sini Giriniz. ");
                 }
             }
-            else
+            catch (Exception ex)
             {
-                MessageBox.Show("Lütfen Hasta Tc sini Giriniz. ");
+                MessageBox.Show("Hata !! Daha Sonra Tekrar Deneyiniz.");
             }
+
         }
 
         private void btnAcilKaydet_Click(object sender, EventArgs e)
@@ -130,10 +176,10 @@ namespace SistemAnaliziVeTasarimi2.Sekreter
                 try
                 {
                     bag.Open();
-                    SqlCommand acil = new SqlCommand("insert into tbl_acil(acil_doktorid,aciklama,derece,acil_klinikid,acil_hastaid) values (@p1,@p2,@p3,@p4,@p5)",bag);
+                    SqlCommand acil = new SqlCommand("insert into tbl_acil(acil_doktorid,aciklama,derece,acil_klinikid,acil_hastaid) values (@p1,@p2,@p3,@p4,@p5)", bag);
                     acil.Parameters.AddWithValue("@p1", SqlDbType.Int).Value = Convert.ToInt32(cmbDoktor.Text);
-                    acil.Parameters.AddWithValue("@p2",SqlDbType.NVarChar).Value= richTextBoxŞikayet.Text;
-                    acil.Parameters.AddWithValue("@p3",SqlDbType.NVarChar).Value = CmbDurum.Text;
+                    acil.Parameters.AddWithValue("@p2", SqlDbType.NVarChar).Value = richTextBoxŞikayet.Text;
+                    acil.Parameters.AddWithValue("@p3", SqlDbType.NVarChar).Value = CmbDurum.Text;
                     acil.Parameters.AddWithValue("@p4", SqlDbType.Int).Value = cmbAcilKlinik.Text;
                     acil.Parameters.AddWithValue("@p5", SqlDbType.Int).Value = txtHastaID.Text;
                     acil.ExecuteNonQuery();
@@ -156,6 +202,100 @@ namespace SistemAnaliziVeTasarimi2.Sekreter
         private void btnMuayeneKayıt_Click(object sender, EventArgs e)
         {
             //
+            try
+            {
+                bag.Open();
+                SqlCommand muayenekayıt = new SqlCommand("insert into tbl_bekleyenHasta(bekleyen_klinikid,bekleyen_doktorid,bekleyen_hastaid)values(@p1,@p2,@p3)", bag);
+                muayenekayıt.Parameters.AddWithValue("@p1", SqlDbType.VarChar).Value = Convert.ToInt32(cmbMuayeneKlinik.Text);
+                muayenekayıt.Parameters.AddWithValue("@p1", SqlDbType.Int).Value = Convert.ToInt32(cmbMuayeneDoktor.Text);
+                muayenekayıt.Parameters.AddWithValue("@p1", SqlDbType.Int).Value = Convert.ToInt32(txtMuayeneHastaID.Text);
+                muayenekayıt.ExecuteNonQuery();
+
+                bag.Close();
+
+                MessageBox.Show("Hasta Başarıyla Muayene Sırasına Alındı");
+                temizle();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Hata !! Lütfen Daha Sonra Tekrar Deneyiniz.");
+            }
         }
+
+        private void cmbMuayeneKlinik_SelectedIndexChanged(object sender, EventArgs e)
+        {/////////////////////////////////////////
+            try
+            {
+                bag.Open();
+                SqlCommand komut = new SqlCommand("select tbl_klinikler.klinik_id,tbl_doktor.doktor_id,tbl_doktor.isim from tbl_doktor INNER JOIN tbl_klinikler on tbl_doktor.doktor_klinik_id=tbl_klinikler.klinik_id where tbl_doktor.doktor_klinik_id=@kid", bag);
+                komut.Parameters.AddWithValue("@kid", cmbMuayeneKlinik.SelectedValue.ToString());
+                qq.combo(komut, "doktor_id", "isim", cmbMuayeneDoktor);
+
+                bag.Close();
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show("Hata !! Lütfen Daha Sonra Tekrar Deneyiniz");
+            }
+        }
+
+        private void cmbAcilKlinik_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                if (cmbAcilKlinik.SelectedIndex != 0)
+                {
+                    bag.Open();
+                    SqlCommand komut = new SqlCommand("select tbl_klinikler.klinik_id,tbl_doktor.doktor_id,tbl_doktor.isim from tbl_doktor INNER JOIN tbl_klinikler ON tbl_doktor.doktor_klinik_id=tbl_klinikler.klinik_id where tbl_doktor.doktor_klinik_id=@kid and doktor_klinik_id > 15", bag);
+                    komut.Parameters.AddWithValue("@kid", cmbAcilKlinik.SelectedValue.ToString());
+                    qq.combo(komut, "doktor_id", "isim", cmbDoktor);
+
+                    bag.Close();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Hata!! Daha Sonra Tekrar Deneyiniz");
+            }
+        }
+
+        private void btnHastaKayıt_Click(object sender, EventArgs e)
+        {
+            if (txtTC.Text != "" && txtAD.Text != "" && txtSoyad.Text != "" && txtDogumTarihi.Text != "" && txtCinsyet.Text != "" && txtKan.Text != "" && txtTel.Text != "" && txtEmail.Text != "" && txtSifre.Text != "")
+            {
+                try
+                {
+                    bag.Open();
+                    SqlCommand komut = new SqlCommand("insert into tbl_hasta(TcNo,isim,soyisim,Yaş,Cinsiyet,kan,TelNo,eMail,sifre)values(@p1,@p2,@p3,@p4,@p5,@p6,@p7,@p8,@p9)", bag);
+                    komut.Parameters.AddWithValue("@p1", txtTC.Text);
+                    komut.Parameters.AddWithValue("@p2", txtAD.Text);
+                    komut.Parameters.AddWithValue("@p3", txtSoyad.Text);
+                    komut.Parameters.AddWithValue("@p4", txtDogumTarihi.Text);
+                    komut.Parameters.AddWithValue("@p5", txtCinsyet.Text);
+                    komut.Parameters.AddWithValue("@p6", txtKan.Text);
+                    komut.Parameters.AddWithValue("@p7", txtTel.Text);
+                    komut.Parameters.AddWithValue("@p8", txtEmail.Text);
+                    komut.Parameters.AddWithValue("@p9", txtSifre.Text);
+                    komut.ExecuteNonQuery();
+
+                    bag.Close();
+
+                    MessageBox.Show("Hasta Kaydı Başarılı.");
+
+                    id();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Hata! Lütfen Daha Donra Tekrar Deneyin.");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Lütfen Hasta Girişi Yapınız!!");
+            }
+        }
+
+       
     }
 }
