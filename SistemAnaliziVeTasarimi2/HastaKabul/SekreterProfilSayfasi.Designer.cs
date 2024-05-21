@@ -75,8 +75,8 @@
             this.label21 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.txtSifre = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.txtSifre = new System.Windows.Forms.TextBox();
             this.groupBoxPol.SuspendLayout();
             this.groupBoxAcil.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -390,9 +390,9 @@
             this.CmbDurum.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.CmbDurum.FormattingEnabled = true;
             this.CmbDurum.Items.AddRange(new object[] {
-            "Derece 1",
-            "Derece 2",
-            "Derece 3"});
+            "Yeşil Alan",
+            "Sarı Alan",
+            "Kırmızı Alan"});
             this.CmbDurum.Location = new System.Drawing.Point(87, 62);
             this.CmbDurum.Margin = new System.Windows.Forms.Padding(2);
             this.CmbDurum.Name = "CmbDurum";
@@ -643,15 +643,6 @@
             this.label6.TabIndex = 44;
             this.label6.Text = "Hasta Doğum Tarihi :";
             // 
-            // txtSifre
-            // 
-            this.txtSifre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtSifre.Location = new System.Drawing.Point(222, 311);
-            this.txtSifre.Margin = new System.Windows.Forms.Padding(2);
-            this.txtSifre.Name = "txtSifre";
-            this.txtSifre.Size = new System.Drawing.Size(189, 26);
-            this.txtSifre.TabIndex = 57;
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -662,6 +653,15 @@
             this.label5.Size = new System.Drawing.Size(66, 23);
             this.label5.TabIndex = 48;
             this.label5.Text = "Şifre : ";
+            // 
+            // txtSifre
+            // 
+            this.txtSifre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtSifre.Location = new System.Drawing.Point(222, 311);
+            this.txtSifre.Margin = new System.Windows.Forms.Padding(2);
+            this.txtSifre.Name = "txtSifre";
+            this.txtSifre.Size = new System.Drawing.Size(189, 26);
+            this.txtSifre.TabIndex = 57;
             // 
             // SekreterProfilSayfasi
             // 

@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.Configuration;
 using System.Reflection.Emit;
+using SistemAnaliziVeTasarimi2.ADMİN;
 
 
 
@@ -29,7 +30,7 @@ namespace SistemAnaliziVeTasarimi2.Hasta
         {
             //klinik vt si düzenlenip yapılacak!!!!!!!!!!
             SqlCommand c = new SqlCommand("select * from tbl_klinikler where klinik_id < 16 or klinik_id > 18", bag);
-            qq.combo(c, "klinik_id", "klinik_adi", cmbKlinik);
+            helper.combo(c, "klinik_id", "klinik_adi", cmbKlinik);
         }
         void randevu()
         {
@@ -47,16 +48,16 @@ namespace SistemAnaliziVeTasarimi2.Hasta
                     randevu.Parameters.AddWithValue("@kid", cmbKlinik.SelectedValue.ToString());
                     randevu.Parameters.AddWithValue("@did", cmbDoktor.SelectedValue.ToString());
                     randevu.Parameters.AddWithValue("@tarih", dtpTarih.Value.ToShortDateString());
-                    qq.veri_getir(randevu);
-                    while (qq.dr.Read())
+                    helper.veri_getir(randevu);
+                    while (helper.dr.Read())
                     {
                         foreach (Control item in panel2.Controls)
                         {
-                            if (item is Button && item.Text == qq.dr["randevusaat"].ToString())
+                            if (item is Button && item.Text == helper.dr["randevusaat"].ToString())
                             {
                                 item.BackColor = Color.Red;
 
-                                if (txtHastaid.Text == qq.dr["hasta_id"].ToString())
+                                if (txtHastaid.Text == helper.dr["hasta_id"].ToString())
                                 {
                                     MessageBox.Show("Bu tarihte bir randevunuz var lütfen başka tarih seçiniz!");
                                     randevualabilir = false;
@@ -112,7 +113,7 @@ namespace SistemAnaliziVeTasarimi2.Hasta
                 {
                     SqlCommand doktor = new SqlCommand("SELECT tbl_klinikler.klinik_id,tbl_doktor.doktor_id,tbl_doktor.isim FROM tbl_doktor INNER JOIN tbl_klinikler ON tbl_doktor.doktor_klinik_id=tbl_klinikler.klinik_id WHERE tbl_doktor.doktor_klinik_id=@kid", bag);
                     doktor.Parameters.AddWithValue("@kid", cmbKlinik.SelectedValue.ToString());
-                    qq.combo(doktor, "doktor_id", "isim", cmbDoktor);
+                    helper.combo(doktor, "doktor_id", "isim", cmbDoktor);
                 }
             }
             catch

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SistemAnaliziVeTasarimi2.ADMİN;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -57,15 +58,16 @@ namespace SistemAnaliziVeTasarimi2.Doktor
                 guncelle.Parameters.AddWithValue("@TC", txtTC.Text);
                 guncelle.Parameters.AddWithValue("@prm1", txtTel.Text);
                 guncelle.Parameters.AddWithValue("@prm2", txtEmail.Text);
+                guncelle.Parameters.AddWithValue("@prm4", CmbDoktorBrans.SelectedIndex);
                 if (txtYeniSifre.Text != "")
                 {
-                    guncelle.Parameters.AddWithValue("@prm3", txtYeniSifre.Text);
+                    guncelle.Parameters.AddWithValue("@prm3", helper.MD5sifre(txtYeniSifre.Text));
                 }
                 else
                 {
-                    guncelle.Parameters.AddWithValue("@prm3", txtEskiSifre.Text);
+                    guncelle.Parameters.AddWithValue("@prm3", helper.MD5sifre(txtEskiSifre.Text));
                 }
-                guncelle.Parameters.AddWithValue("@prm4", CmbDoktorBrans.SelectedIndex);
+                
                 guncelle.ExecuteNonQuery();
                 bag.Close();
                 MessageBox.Show("Kullanıcı Bilgileri Güncellendi,Lütfen Tekrar Giriş Yapınız.");

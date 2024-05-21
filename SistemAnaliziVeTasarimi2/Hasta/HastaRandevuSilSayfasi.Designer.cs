@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HastaRandevuSilSayfasi));
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.btnRandevuiptal = new System.Windows.Forms.Button();
             this.randevularım = new System.Windows.Forms.Label();
@@ -56,6 +57,7 @@
             // randevularım
             // 
             this.randevularım.AutoSize = true;
+            this.randevularım.BackColor = System.Drawing.Color.Transparent;
             this.randevularım.Location = new System.Drawing.Point(357, 22);
             this.randevularım.Name = "randevularım";
             this.randevularım.Size = new System.Drawing.Size(72, 13);
@@ -66,6 +68,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(784, 461);
             this.Controls.Add(this.randevularım);
             this.Controls.Add(this.btnRandevuiptal);

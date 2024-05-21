@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SistemAnaliziVeTasarimi2.ADMİN;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -72,18 +73,18 @@ namespace SistemAnaliziVeTasarimi2.Doktor
         }
         void klinkgetir()
         {
-            SqlCommand c = new SqlCommand("select * from tbl_klinikler where klinik_id < 14 or klinik_id > 18", baglanti);
-            qq.combo(c, "klinik_id", "klinik_adi", comboBox3);
+            SqlCommand c = new SqlCommand("select * from tbl_klinikler where klinik_id < 16 or klinik_id > 18", baglanti);
+            helper.combo(c, "klinik_id", "klinik_adi", comboBox3);
         }
         void ilac()
         {
             SqlCommand a = new SqlCommand("select * from tbl_ilaclar", baglanti);
-            qq.combo(a, "ilac_id", "ilac_adi", comboBox4);
+            helper.combo(a, "ilac_id", "ilac_adi", comboBox4);
         }
         void klinikgetir2()
         {
-            SqlCommand c = new SqlCommand("select * from tbl_klinikler where klinik_id < 14 or klinik_id > 18", baglanti);
-            qq.combo(c, "klinik_id", "klinik_adi", comboBox2);
+            SqlCommand c = new SqlCommand("select * from tbl_klinikler where klinik_id < 16 or klinik_id > 18", baglanti);
+            helper.combo(c, "klinik_id", "klinik_adi", comboBox2);
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -137,13 +138,13 @@ namespace SistemAnaliziVeTasarimi2.Doktor
                 comboBox4.SelectedIndex = 0;
                 listBox1.Items.Clear();
 
-                if (baglanti.State == ConnectionState.Open)
-                    baglanti.Close();
-                baglanti.Open();
-                SqlCommand vezne = new SqlCommand("insert into tbl_vezne(hasta_id)values(@id) ", baglanti);
-                vezne.Parameters.AddWithValue("@id", textBox1.Text);
-                vezne.ExecuteNonQuery();
-                baglanti.Close();
+                //if (baglanti.State == ConnectionState.Open)
+                //    baglanti.Close();
+                //baglanti.Open();
+                //SqlCommand vezne = new SqlCommand("insert into tbl_vezne(hasta_id)values(@id) ", baglanti);
+                //vezne.Parameters.AddWithValue("@id", textBox1.Text);
+                //vezne.ExecuteNonQuery();
+                //baglanti.Close();
 
             }
             catch
@@ -254,7 +255,7 @@ namespace SistemAnaliziVeTasarimi2.Doktor
                     baglanti.Open();
                     SqlCommand komutdoktor = new SqlCommand("SELECT tbl_klinikler.klinik_id,tbl_doktor.doktor_id,tbl_doktor.isim FROM tbl_doktor INNER JOIN tbl_klinikler ON tbl_doktor.doktor_klinik_id=tbl_klinikler.klinik_id WHERE tbl_doktor.doktor_klinik_id=@kid", baglanti);
                     komutdoktor.Parameters.AddWithValue("@kid", comboBox3.SelectedValue.ToString());
-                    qq.combo(komutdoktor, "doktor_id", "isim", comboBox5);
+                    helper.combo(komutdoktor, "doktor_id", "isim", comboBox5);
 
                     baglanti.Close();
                 }
@@ -363,7 +364,7 @@ namespace SistemAnaliziVeTasarimi2.Doktor
                     baglanti.Open();
                     SqlCommand komutdoktor = new SqlCommand("SELECT tbl_klinikler.klinik_id,tbl_doktor.doktor_id,tbl_doktor.isim FROM tbl_doktor INNER JOIN tbl_klinikler ON tbl_doktor.doktor_klinik_id=tbl_klinikler.klinik_id WHERE tbl_doktor.doktor_klinik_id=@kid", baglanti);
                     komutdoktor.Parameters.AddWithValue("@kid", comboBox2.SelectedValue.ToString());
-                    qq.combo(komutdoktor, "doktor_id", "isim", comboBox1);
+                    helper.combo(komutdoktor, "doktor_id", "isim", comboBox1);
 
                     baglanti.Close();
                 }

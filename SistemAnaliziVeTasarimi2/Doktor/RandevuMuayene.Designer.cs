@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RandevuMuayene));
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
@@ -62,15 +63,11 @@
             this.label6 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.button6 = new System.Windows.Forms.Button();
             this.panel5.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // button5
@@ -99,7 +96,7 @@
             // 
             // panel5
             // 
-            this.panel5.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.panel5.BackColor = System.Drawing.Color.Transparent;
             this.panel5.Controls.Add(this.maskedTextBox5);
             this.panel5.Controls.Add(this.label16);
             this.panel5.Controls.Add(this.maskedTextBox2);
@@ -107,7 +104,7 @@
             this.panel5.Location = new System.Drawing.Point(3, 360);
             this.panel5.Margin = new System.Windows.Forms.Padding(2);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(340, 76);
+            this.panel5.Size = new System.Drawing.Size(386, 76);
             this.panel5.TabIndex = 124;
             // 
             // maskedTextBox5
@@ -117,7 +114,7 @@
             this.maskedTextBox5.Mask = "00000000000";
             this.maskedTextBox5.Name = "maskedTextBox5";
             this.maskedTextBox5.ReadOnly = true;
-            this.maskedTextBox5.Size = new System.Drawing.Size(92, 20);
+            this.maskedTextBox5.Size = new System.Drawing.Size(155, 20);
             this.maskedTextBox5.TabIndex = 109;
             // 
             // label16
@@ -138,7 +135,7 @@
             this.maskedTextBox2.Mask = "00000000000";
             this.maskedTextBox2.Name = "maskedTextBox2";
             this.maskedTextBox2.ReadOnly = true;
-            this.maskedTextBox2.Size = new System.Drawing.Size(92, 20);
+            this.maskedTextBox2.Size = new System.Drawing.Size(155, 20);
             this.maskedTextBox2.TabIndex = 105;
             // 
             // label12
@@ -154,6 +151,7 @@
             // 
             // panel3
             // 
+            this.panel3.BackColor = System.Drawing.Color.Transparent;
             this.panel3.Controls.Add(this.label19);
             this.panel3.Controls.Add(this.maskedTextBox7);
             this.panel3.Controls.Add(this.label18);
@@ -187,7 +185,7 @@
             this.maskedTextBox7.Mask = "00000000000";
             this.maskedTextBox7.Name = "maskedTextBox7";
             this.maskedTextBox7.ReadOnly = true;
-            this.maskedTextBox7.Size = new System.Drawing.Size(40, 20);
+            this.maskedTextBox7.Size = new System.Drawing.Size(59, 20);
             this.maskedTextBox7.TabIndex = 119;
             // 
             // label18
@@ -256,6 +254,7 @@
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.Controls.Add(this.label21);
             this.panel1.Controls.Add(this.label20);
             this.panel1.Controls.Add(this.label15);
@@ -276,7 +275,7 @@
             this.panel1.Location = new System.Drawing.Point(3, 74);
             this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(340, 282);
+            this.panel1.Size = new System.Drawing.Size(386, 282);
             this.panel1.TabIndex = 121;
             // 
             // label21
@@ -329,7 +328,7 @@
             this.maskedTextBox4.Mask = "00000000000";
             this.maskedTextBox4.Name = "maskedTextBox4";
             this.maskedTextBox4.ReadOnly = true;
-            this.maskedTextBox4.Size = new System.Drawing.Size(40, 20);
+            this.maskedTextBox4.Size = new System.Drawing.Size(92, 20);
             this.maskedTextBox4.TabIndex = 115;
             // 
             // maskedTextBox1
@@ -455,38 +454,18 @@
             this.textBox1.Size = new System.Drawing.Size(92, 20);
             this.textBox1.TabIndex = 105;
             // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.DarkTurquoise;
-            this.panel2.Controls.Add(this.pictureBox1);
-            this.panel2.Controls.Add(this.label1);
-            this.panel2.Location = new System.Drawing.Point(-38, -2);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(930, 72);
-            this.panel2.TabIndex = 120;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(43, 2);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(75, 72);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 5;
-            this.pictureBox1.TabStop = false;
-            // 
             // label1
             // 
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label1.Location = new System.Drawing.Point(362, 20);
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(302, 9);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(269, 33);
             this.label1.TabIndex = 6;
-            this.label1.Text = "Muayene";
+            this.label1.Text = "Muayene Ekranı";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // button6
             // 
@@ -505,14 +484,15 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightCyan;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(892, 490);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.panel2);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "RandevuMuayene";
             this.Text = "Randevu Muayene";
@@ -523,8 +503,6 @@
             this.panel3.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -562,8 +540,6 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Label label15;

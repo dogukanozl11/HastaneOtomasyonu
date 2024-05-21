@@ -68,40 +68,44 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label4.Location = new System.Drawing.Point(73, 311);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(100, 24);
+            this.label4.Size = new System.Drawing.Size(112, 24);
             this.label4.TabIndex = 19;
             this.label4.Text = "Yeni Şifre :";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label3.Location = new System.Drawing.Point(73, 190);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(115, 24);
+            this.label3.Size = new System.Drawing.Size(126, 24);
             this.label3.TabIndex = 20;
             this.label3.Text = "Onay Kodu :";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label2.Location = new System.Drawing.Point(73, 118);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(82, 24);
+            this.label2.Size = new System.Drawing.Size(90, 24);
             this.label2.TabIndex = 21;
             this.label2.Text = "E-MAİL :";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label1.Location = new System.Drawing.Point(73, 54);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(139, 24);
+            this.label1.Size = new System.Drawing.Size(155, 24);
             this.label1.TabIndex = 22;
             this.label1.Text = "T.C Kimlik No : ";
             // 
@@ -143,6 +147,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(405, 450);
             this.Controls.Add(this.btnGuncelle);
             this.Controls.Add(this.btnOnayKoduAl);

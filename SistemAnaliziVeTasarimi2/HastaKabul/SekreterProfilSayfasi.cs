@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SistemAnaliziVeTasarimi2.ADMİN;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -50,17 +51,17 @@ namespace SistemAnaliziVeTasarimi2.Sekreter
         void klinkgetir()
         {
             SqlCommand c = new SqlCommand("select * from tbl_klinikler where klinik_id < 14 or klinik_id > 18", bag);
-            qq.combo(c, "klinik_id", "klinik_adi", cmbMuayeneKlinik);
+            helper.combo(c, "klinik_id", "klinik_adi", cmbMuayeneKlinik);
         }
         void doktorgetir()
         {
             SqlCommand acil = new SqlCommand("select * from tbl_doktor", bag);
-            qq.combo(acil, "doktor_id", "isim", cmbDoktor);
+            helper.combo(acil, "doktor_id", "isim", cmbDoktor);
         }
         void acilklinik()
         {
             SqlCommand acilKlinik = new SqlCommand("select * from tbl_klinikler where klinik_id > '15' ", bag);
-            qq.combo(acilKlinik, "klinik_id", "klinik_adi", cmbAcilKlinik);
+            helper.combo(acilKlinik, "klinik_id", "klinik_adi", cmbAcilKlinik);
         }
         void id()
         {
@@ -188,11 +189,11 @@ namespace SistemAnaliziVeTasarimi2.Sekreter
                 {
                     bag.Open();
                     SqlCommand acil = new SqlCommand("insert into tbl_acil(acil_doktorid,aciklama,derece,acil_klinikid,acil_hastaid) values (@p1,@p2,@p3,@p4,@p5)", bag);
-                    acil.Parameters.AddWithValue("@p1", SqlDbType.Int).Value = Convert.ToInt32(cmbDoktor.Text);
-                    acil.Parameters.AddWithValue("@p2", SqlDbType.NVarChar).Value = richTextBoxŞikayet.Text;
-                    acil.Parameters.AddWithValue("@p3", SqlDbType.NVarChar).Value = CmbDurum.Text;
-                    acil.Parameters.AddWithValue("@p4", SqlDbType.Int).Value = cmbAcilKlinik.Text;
-                    acil.Parameters.AddWithValue("@p5", SqlDbType.Int).Value = txtHastaID.Text;
+                    acil.Parameters.AddWithValue("@p1", cmbDoktor.SelectedValue.ToString());
+                    acil.Parameters.AddWithValue("@p2", richTextBoxŞikayet.Text);
+                    acil.Parameters.AddWithValue("@p3", CmbDurum.Text);
+                    acil.Parameters.AddWithValue("@p4", cmbAcilKlinik.SelectedValue.ToString());
+                    acil.Parameters.AddWithValue("@p5", txtHastaID.Text);
                     acil.ExecuteNonQuery();
                     bag.Close();
                     MessageBox.Show("Acil Hasta Kaydı Başarıyla Tamamlandı");
@@ -242,7 +243,7 @@ namespace SistemAnaliziVeTasarimi2.Sekreter
                     bag.Open();
                     SqlCommand komut = new SqlCommand("select tbl_klinikler.klinik_id,tbl_doktor.doktor_id,tbl_doktor.isim from tbl_doktor INNER JOIN tbl_klinikler on tbl_doktor.doktor_klinik_id=tbl_klinikler.klinik_id where tbl_doktor.doktor_klinik_id=@kid", bag);
                     komut.Parameters.AddWithValue("@kid", cmbMuayeneKlinik.SelectedValue.ToString());
-                    qq.combo(komut, "doktor_id", "isim", cmbMuayeneDoktor);
+                    helper.combo(komut, "doktor_id", "isim", cmbMuayeneDoktor);
 
                     bag.Close();
                 }
@@ -264,7 +265,7 @@ namespace SistemAnaliziVeTasarimi2.Sekreter
                     bag.Open();
                     SqlCommand komut = new SqlCommand("select tbl_klinikler.klinik_id,tbl_doktor.doktor_id,tbl_doktor.isim from tbl_doktor INNER JOIN tbl_klinikler ON tbl_doktor.doktor_klinik_id=tbl_klinikler.klinik_id where tbl_doktor.doktor_klinik_id=@kid and doktor_klinik_id > 15", bag);
                     komut.Parameters.AddWithValue("@kid", cmbAcilKlinik.SelectedValue.ToString());
-                    qq.combo(komut, "doktor_id", "isim", cmbDoktor);
+                    helper.combo(komut, "doktor_id", "isim", cmbDoktor);
 
                     bag.Close();
                 }

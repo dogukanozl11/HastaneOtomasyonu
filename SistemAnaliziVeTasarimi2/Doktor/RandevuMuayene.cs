@@ -11,6 +11,7 @@ using System.Data.SqlClient;
 using System.Configuration;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using System.Reflection.Emit;
+using SistemAnaliziVeTasarimi2.ADMİN;
 
 namespace SistemAnaliziVeTasarimi2.Doktor
 {
@@ -125,7 +126,7 @@ namespace SistemAnaliziVeTasarimi2.Doktor
                     baglanti.Close();
                 baglanti.Open();
                 SqlCommand testler = new SqlCommand("select * from tbl_testler ", baglanti);
-                qq.combo(testler, "test_id", "test_adi", comboBox1);
+                helper.combo(testler, "test_id", "test_adi", comboBox1);
             }
             catch
             {

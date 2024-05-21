@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LaboratuvarSayfasi));
             this.bntCıkıs = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
@@ -58,7 +59,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label1.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label1.Location = new System.Drawing.Point(238, 1);
+            this.label1.Location = new System.Drawing.Point(304, 1);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(174, 49);
@@ -70,20 +71,20 @@
             this.button2.BackColor = System.Drawing.Color.Transparent;
             this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button2.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button2.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button2.Location = new System.Drawing.Point(4, 150);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(80, 42);
+            this.button2.Size = new System.Drawing.Size(100, 57);
             this.button2.TabIndex = 68;
             this.button2.Text = "İstenilen Testler";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Location = new System.Drawing.Point(89, 74);
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox2.Location = new System.Drawing.Point(119, 74);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(642, 302);
@@ -105,15 +106,16 @@
             // 
             // panel2
             // 
+            this.panel2.BackColor = System.Drawing.Color.Transparent;
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.textBox1);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.button1);
             this.panel2.Controls.Add(this.dataGridView1);
-            this.panel2.Location = new System.Drawing.Point(92, 76);
+            this.panel2.Location = new System.Drawing.Point(119, 74);
             this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(639, 300);
+            this.panel2.Size = new System.Drawing.Size(642, 302);
             this.panel2.TabIndex = 14;
             this.panel2.Visible = false;
             // 
@@ -149,7 +151,7 @@
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.Azure;
+            this.button1.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.button1.Location = new System.Drawing.Point(542, 233);
             this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
@@ -164,6 +166,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightCyan;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(783, 387);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button2);

@@ -130,7 +130,7 @@ namespace SistemAnaliziVeTasarimi2.Doktor
 
                 if (rowsAffected > 0)
                 {
-                    MessageBox.Show("Randevu kaydı silindi.");
+                    
 
                     // Yeni formu aç
                     kontrolMuayene = 2;

@@ -1,4 +1,5 @@
-﻿using SistemAnaliziVeTasarimi2.Doktor;
+﻿using SistemAnaliziVeTasarimi2.ADMİN;
+using SistemAnaliziVeTasarimi2.Doktor;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -45,7 +46,7 @@ namespace SistemAnaliziVeTasarimi2.Hasta
         void doktor()
         {
             SqlCommand a = new SqlCommand("select * from tbl_doktor", baglanti);
-            qq.combo(a, "doktor_id", "isim", comboBox1);
+            helper.combo(a, "doktor_id", "isim", comboBox1);
         }
 
         private void dataGridView1_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)

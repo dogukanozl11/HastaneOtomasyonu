@@ -80,7 +80,7 @@
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.Azure;
+            this.button1.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.button1.Location = new System.Drawing.Point(832, 278);
             this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
@@ -93,6 +93,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Location = new System.Drawing.Point(778, 9);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
@@ -121,6 +122,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label2.Location = new System.Drawing.Point(287, 302);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
@@ -145,6 +147,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Location = new System.Drawing.Point(218, 261);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
@@ -156,6 +159,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Location = new System.Drawing.Point(100, 24);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
@@ -176,6 +180,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label5.Location = new System.Drawing.Point(1, 65);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
@@ -196,7 +201,7 @@
             // 
             // button2
             // 
-            this.button2.BackColor = System.Drawing.Color.Azure;
+            this.button2.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.button2.Location = new System.Drawing.Point(4, 117);
             this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
@@ -209,6 +214,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label6.Location = new System.Drawing.Point(99, 8);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
@@ -220,6 +226,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label7.Location = new System.Drawing.Point(182, 8);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
@@ -231,6 +238,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label8.Location = new System.Drawing.Point(790, 41);
             this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
@@ -242,6 +250,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label9.Location = new System.Drawing.Point(880, 41);
             this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
@@ -253,6 +262,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
+            this.label10.BackColor = System.Drawing.Color.Transparent;
             this.label10.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label10.Location = new System.Drawing.Point(891, 124);
             this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
@@ -264,6 +274,7 @@
             // label11
             // 
             this.label11.AutoSize = true;
+            this.label11.BackColor = System.Drawing.Color.Transparent;
             this.label11.Location = new System.Drawing.Point(173, 261);
             this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label11.Name = "label11";
@@ -274,7 +285,7 @@
             // 
             // button3
             // 
-            this.button3.BackColor = System.Drawing.Color.Azure;
+            this.button3.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.button3.Enabled = false;
             this.button3.Location = new System.Drawing.Point(352, 258);
             this.button3.Margin = new System.Windows.Forms.Padding(2);
@@ -287,7 +298,7 @@
             // 
             // button4
             // 
-            this.button4.BackColor = System.Drawing.Color.Azure;
+            this.button4.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.button4.Location = new System.Drawing.Point(874, 244);
             this.button4.Margin = new System.Windows.Forms.Padding(2);
             this.button4.Name = "button4";
@@ -324,7 +335,7 @@
             // 
             // btnOnizleme
             // 
-            this.btnOnizleme.BackColor = System.Drawing.Color.Azure;
+            this.btnOnizleme.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnOnizleme.Location = new System.Drawing.Point(690, 278);
             this.btnOnizleme.Margin = new System.Windows.Forms.Padding(2);
             this.btnOnizleme.Name = "btnOnizleme";
@@ -339,6 +350,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightCyan;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(989, 328);
             this.Controls.Add(this.btnOnizleme);
             this.Controls.Add(this.btnCıkıs);
