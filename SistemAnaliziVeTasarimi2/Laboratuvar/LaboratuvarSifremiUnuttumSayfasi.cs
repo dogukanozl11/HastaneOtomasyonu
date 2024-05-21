@@ -68,7 +68,7 @@ namespace SistemAnaliziVeTasarimi2.Laboratuvar
             {
                 txtYeniSifre.Text = helper.MD5sifre(txtYeniSifre.Text);
                 bag.Open();
-                SqlCommand komut = new SqlCommand("update tbl_labpersonel set TcNo='" + txtTC.Text + "',sifre='" + txtYeniSifre.Text + "' where TcNo='" + txtTC.Text + "'", bag);
+                SqlCommand komut = new SqlCommand("update tbl_labpersonel set labp_TcNo='" + txtTC.Text + "',labp_sifre='" + txtYeniSifre.Text + "' where labp_TcNo='" + txtTC.Text + "'", bag);
                 komut.ExecuteNonQuery();
                 MessageBox.Show("Şifre Güncellendi...");
                 

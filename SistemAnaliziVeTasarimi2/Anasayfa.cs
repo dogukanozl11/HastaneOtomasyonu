@@ -10,6 +10,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -173,7 +174,7 @@ namespace SistemAnaliziVeTasarimi2
             string sql = "Select * from tbl_labpersonel where labp_TcNo=@prm1 and labp_sifre=@prm2";
             SqlDataAdapter da = new SqlDataAdapter(sql, bag);
             da.SelectCommand.Parameters.AddWithValue("@prm1", txtLabPTC.Text);
-            da.SelectCommand.Parameters.AddWithValue("@prm2", (txtLabPSifre.Text));
+            da.SelectCommand.Parameters.AddWithValue("@prm2", helper.MD5sifre(txtLabPSifre.Text));
             DataTable dt = new DataTable();
             da.Fill(dt);
             if (txtLabPTC.Text == "" || txtLabPSifre.Text == "")

@@ -60,5 +60,6 @@ namespace SistemAnaliziVeTasarimi2.ADMİN
             dr = komut.ExecuteReader();
             bag.Close();
         }
+
     }
 }
