@@ -226,6 +226,11 @@ namespace SistemAnaliziVeTasarimi2
             hkos.Show();
         }
 
+        private void GirisPaneli_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
         private void Anasayfa_Load(object sender, EventArgs e)
         {
             txtAdminSifre.PasswordChar = '*';
@@ -233,11 +238,11 @@ namespace SistemAnaliziVeTasarimi2
             txtHastakabulSifre.PasswordChar = '*';
             txtLabPSifre.PasswordChar = '*';
             txtHastaSifre.PasswordChar = '*';
-            DoktorGroupBox.BackColor = Color.AliceBlue;
-            AdmingroupBox.BackColor = Color.AliceBlue;
-            hastaGroupBox.BackColor = Color.AliceBlue;
-            HastaKabulGroupBox.BackColor = Color.AliceBlue;
-            LaboratuvargroupBox.BackColor = Color.AliceBlue;
+            //DoktorGroupBox.BackColor = Color.AliceBlue;
+            //AdmingroupBox.BackColor = Color.AliceBlue;
+            //hastaGroupBox.BackColor = Color.AliceBlue;
+            //HastaKabulGroupBox.BackColor = Color.AliceBlue;
+            //LaboratuvargroupBox.BackColor = Color.AliceBlue;
             txthastaTC.MaxLength = 11;
 
         }

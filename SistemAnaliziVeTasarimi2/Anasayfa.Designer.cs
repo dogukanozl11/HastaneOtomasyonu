@@ -33,7 +33,6 @@
             this.BtnDoktorGiris = new System.Windows.Forms.Button();
             this.BtnSekreterGiris = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.btnLab = new System.Windows.Forms.Button();
             this.btnHastaKayıtol = new System.Windows.Forms.Button();
             this.btniletisim = new System.Windows.Forms.Button();
@@ -83,13 +82,15 @@
             // 
             // BtnHastaGiris
             // 
-            this.BtnHastaGiris.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.BtnHastaGiris.BackColor = System.Drawing.Color.Transparent;
             this.BtnHastaGiris.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.BtnHastaGiris.ForeColor = System.Drawing.SystemColors.Window;
-            this.BtnHastaGiris.Location = new System.Drawing.Point(13, 259);
+            this.BtnHastaGiris.ForeColor = System.Drawing.Color.Black;
+            this.BtnHastaGiris.Image = ((System.Drawing.Image)(resources.GetObject("BtnHastaGiris.Image")));
+            this.BtnHastaGiris.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnHastaGiris.Location = new System.Drawing.Point(40, 271);
             this.BtnHastaGiris.Margin = new System.Windows.Forms.Padding(4);
             this.BtnHastaGiris.Name = "BtnHastaGiris";
-            this.BtnHastaGiris.Size = new System.Drawing.Size(112, 40);
+            this.BtnHastaGiris.Size = new System.Drawing.Size(150, 40);
             this.BtnHastaGiris.TabIndex = 0;
             this.BtnHastaGiris.Text = "Hasta Girişi";
             this.BtnHastaGiris.UseVisualStyleBackColor = false;
@@ -97,13 +98,15 @@
             // 
             // BtnDoktorGiris
             // 
-            this.BtnDoktorGiris.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.BtnDoktorGiris.BackColor = System.Drawing.Color.Transparent;
             this.BtnDoktorGiris.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.BtnDoktorGiris.ForeColor = System.Drawing.SystemColors.Window;
-            this.BtnDoktorGiris.Location = new System.Drawing.Point(13, 163);
+            this.BtnDoktorGiris.ForeColor = System.Drawing.Color.Black;
+            this.BtnDoktorGiris.Image = ((System.Drawing.Image)(resources.GetObject("BtnDoktorGiris.Image")));
+            this.BtnDoktorGiris.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnDoktorGiris.Location = new System.Drawing.Point(40, 175);
             this.BtnDoktorGiris.Margin = new System.Windows.Forms.Padding(4);
             this.BtnDoktorGiris.Name = "BtnDoktorGiris";
-            this.BtnDoktorGiris.Size = new System.Drawing.Size(112, 40);
+            this.BtnDoktorGiris.Size = new System.Drawing.Size(150, 40);
             this.BtnDoktorGiris.TabIndex = 0;
             this.BtnDoktorGiris.Text = "Doktor Girişi";
             this.BtnDoktorGiris.UseVisualStyleBackColor = false;
@@ -111,13 +114,15 @@
             // 
             // BtnSekreterGiris
             // 
-            this.BtnSekreterGiris.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.BtnSekreterGiris.BackColor = System.Drawing.Color.Transparent;
             this.BtnSekreterGiris.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.BtnSekreterGiris.ForeColor = System.Drawing.SystemColors.Window;
-            this.BtnSekreterGiris.Location = new System.Drawing.Point(13, 211);
+            this.BtnSekreterGiris.ForeColor = System.Drawing.Color.Black;
+            this.BtnSekreterGiris.Image = ((System.Drawing.Image)(resources.GetObject("BtnSekreterGiris.Image")));
+            this.BtnSekreterGiris.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnSekreterGiris.Location = new System.Drawing.Point(40, 223);
             this.BtnSekreterGiris.Margin = new System.Windows.Forms.Padding(4);
             this.BtnSekreterGiris.Name = "BtnSekreterGiris";
-            this.BtnSekreterGiris.Size = new System.Drawing.Size(112, 40);
+            this.BtnSekreterGiris.Size = new System.Drawing.Size(150, 40);
             this.BtnSekreterGiris.TabIndex = 0;
             this.BtnSekreterGiris.Text = "Hasta Kabul";
             this.BtnSekreterGiris.UseVisualStyleBackColor = false;
@@ -128,34 +133,24 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 41F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(187, 9);
+            this.label1.Location = new System.Drawing.Point(186, 27);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(564, 62);
             this.label1.TabIndex = 1;
             this.label1.Text = "SİSTEM HASTANESİ";
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Times New Roman", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label2.Location = new System.Drawing.Point(377, 71);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(168, 38);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "PORTALI";
-            // 
             // btnLab
             // 
-            this.btnLab.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnLab.BackColor = System.Drawing.Color.Transparent;
             this.btnLab.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnLab.ForeColor = System.Drawing.SystemColors.Window;
-            this.btnLab.Location = new System.Drawing.Point(13, 307);
+            this.btnLab.ForeColor = System.Drawing.Color.Black;
+            this.btnLab.Image = ((System.Drawing.Image)(resources.GetObject("btnLab.Image")));
+            this.btnLab.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnLab.Location = new System.Drawing.Point(40, 319);
             this.btnLab.Margin = new System.Windows.Forms.Padding(4);
             this.btnLab.Name = "btnLab";
-            this.btnLab.Size = new System.Drawing.Size(112, 40);
+            this.btnLab.Size = new System.Drawing.Size(150, 40);
             this.btnLab.TabIndex = 3;
             this.btnLab.Text = "Laboratuvar";
             this.btnLab.UseVisualStyleBackColor = false;
@@ -163,27 +158,31 @@
             // 
             // btnHastaKayıtol
             // 
-            this.btnHastaKayıtol.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnHastaKayıtol.BackColor = System.Drawing.Color.Transparent;
             this.btnHastaKayıtol.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnHastaKayıtol.ForeColor = System.Drawing.SystemColors.Window;
-            this.btnHastaKayıtol.Location = new System.Drawing.Point(13, 355);
+            this.btnHastaKayıtol.ForeColor = System.Drawing.Color.Black;
+            this.btnHastaKayıtol.Image = ((System.Drawing.Image)(resources.GetObject("btnHastaKayıtol.Image")));
+            this.btnHastaKayıtol.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnHastaKayıtol.Location = new System.Drawing.Point(40, 367);
             this.btnHastaKayıtol.Margin = new System.Windows.Forms.Padding(4);
             this.btnHastaKayıtol.Name = "btnHastaKayıtol";
-            this.btnHastaKayıtol.Size = new System.Drawing.Size(112, 40);
+            this.btnHastaKayıtol.Size = new System.Drawing.Size(150, 40);
             this.btnHastaKayıtol.TabIndex = 4;
-            this.btnHastaKayıtol.Text = "Kaydol";
+            this.btnHastaKayıtol.Text = "Kayıt Ol";
             this.btnHastaKayıtol.UseVisualStyleBackColor = false;
             this.btnHastaKayıtol.Click += new System.EventHandler(this.btnHastaKayıtol_Click);
             // 
             // btniletisim
             // 
-            this.btniletisim.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btniletisim.BackColor = System.Drawing.Color.Transparent;
             this.btniletisim.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btniletisim.ForeColor = System.Drawing.SystemColors.Window;
-            this.btniletisim.Location = new System.Drawing.Point(13, 403);
+            this.btniletisim.ForeColor = System.Drawing.Color.Black;
+            this.btniletisim.Image = ((System.Drawing.Image)(resources.GetObject("btniletisim.Image")));
+            this.btniletisim.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btniletisim.Location = new System.Drawing.Point(40, 415);
             this.btniletisim.Margin = new System.Windows.Forms.Padding(4);
             this.btniletisim.Name = "btniletisim";
-            this.btniletisim.Size = new System.Drawing.Size(112, 40);
+            this.btniletisim.Size = new System.Drawing.Size(150, 40);
             this.btniletisim.TabIndex = 5;
             this.btniletisim.Text = "İletişim";
             this.btniletisim.UseVisualStyleBackColor = false;
@@ -192,15 +191,16 @@
             // GirisPaneli
             // 
             this.GirisPaneli.BackColor = System.Drawing.Color.Transparent;
-            this.GirisPaneli.Controls.Add(this.LaboratuvargroupBox);
             this.GirisPaneli.Controls.Add(this.HastaKabulGroupBox);
-            this.GirisPaneli.Controls.Add(this.DoktorGroupBox);
-            this.GirisPaneli.Controls.Add(this.hastaGroupBox);
+            this.GirisPaneli.Controls.Add(this.LaboratuvargroupBox);
             this.GirisPaneli.Controls.Add(this.AdmingroupBox);
-            this.GirisPaneli.Location = new System.Drawing.Point(187, 117);
+            this.GirisPaneli.Controls.Add(this.hastaGroupBox);
+            this.GirisPaneli.Controls.Add(this.DoktorGroupBox);
+            this.GirisPaneli.Location = new System.Drawing.Point(197, 112);
             this.GirisPaneli.Name = "GirisPaneli";
-            this.GirisPaneli.Size = new System.Drawing.Size(552, 366);
+            this.GirisPaneli.Size = new System.Drawing.Size(537, 367);
             this.GirisPaneli.TabIndex = 6;
+            this.GirisPaneli.Paint += new System.Windows.Forms.PaintEventHandler(this.GirisPaneli_Paint);
             // 
             // LaboratuvargroupBox
             // 
@@ -211,7 +211,7 @@
             this.LaboratuvargroupBox.Controls.Add(this.txtLabPTC);
             this.LaboratuvargroupBox.Controls.Add(this.btnLabSifremiUnuttum);
             this.LaboratuvargroupBox.Controls.Add(this.btnLabPGiris);
-            this.LaboratuvargroupBox.Location = new System.Drawing.Point(132, 26);
+            this.LaboratuvargroupBox.Location = new System.Drawing.Point(134, 17);
             this.LaboratuvargroupBox.Margin = new System.Windows.Forms.Padding(2);
             this.LaboratuvargroupBox.Name = "LaboratuvargroupBox";
             this.LaboratuvargroupBox.Padding = new System.Windows.Forms.Padding(2);
@@ -225,28 +225,28 @@
             // 
             this.label11.AutoSize = true;
             this.label11.BackColor = System.Drawing.Color.Transparent;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label11.Location = new System.Drawing.Point(19, 111);
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label11.Location = new System.Drawing.Point(20, 104);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(57, 25);
+            this.label11.Size = new System.Drawing.Size(59, 20);
             this.label11.TabIndex = 5;
-            this.label11.Text = "Şifre ";
+            this.label11.Text = "Şifre : ";
             // 
             // label12
             // 
             this.label12.AutoSize = true;
             this.label12.BackColor = System.Drawing.Color.Transparent;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label12.Location = new System.Drawing.Point(19, 30);
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label12.Location = new System.Drawing.Point(20, 46);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(132, 25);
+            this.label12.Size = new System.Drawing.Size(121, 20);
             this.label12.TabIndex = 6;
-            this.label12.Text = "T.C Kimlik No";
+            this.label12.Text = "T.C Kimlik No :";
             // 
             // txtLabPSifre
             // 
             this.txtLabPSifre.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtLabPSifre.Location = new System.Drawing.Point(24, 150);
+            this.txtLabPSifre.Location = new System.Drawing.Point(24, 127);
             this.txtLabPSifre.Name = "txtLabPSifre";
             this.txtLabPSifre.Size = new System.Drawing.Size(240, 27);
             this.txtLabPSifre.TabIndex = 7;
@@ -261,12 +261,16 @@
             // 
             // btnLabSifremiUnuttum
             // 
-            this.btnLabSifremiUnuttum.BackColor = System.Drawing.Color.Red;
-            this.btnLabSifremiUnuttum.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnLabSifremiUnuttum.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnLabSifremiUnuttum.Location = new System.Drawing.Point(24, 259);
+            this.btnLabSifremiUnuttum.BackColor = System.Drawing.Color.Transparent;
+            this.btnLabSifremiUnuttum.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnLabSifremiUnuttum.FlatAppearance.BorderSize = 0;
+            this.btnLabSifremiUnuttum.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLabSifremiUnuttum.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
+                | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnLabSifremiUnuttum.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnLabSifremiUnuttum.Location = new System.Drawing.Point(121, 254);
             this.btnLabSifremiUnuttum.Name = "btnLabSifremiUnuttum";
-            this.btnLabSifremiUnuttum.Size = new System.Drawing.Size(240, 60);
+            this.btnLabSifremiUnuttum.Size = new System.Drawing.Size(143, 35);
             this.btnLabSifremiUnuttum.TabIndex = 15;
             this.btnLabSifremiUnuttum.Text = "Şifremi Unuttum";
             this.btnLabSifremiUnuttum.UseVisualStyleBackColor = false;
@@ -274,9 +278,11 @@
             // 
             // btnLabPGiris
             // 
-            this.btnLabPGiris.BackColor = System.Drawing.Color.LawnGreen;
-            this.btnLabPGiris.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnLabPGiris.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnLabPGiris.BackColor = System.Drawing.Color.MediumAquamarine;
+            this.btnLabPGiris.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnLabPGiris.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLabPGiris.Font = new System.Drawing.Font("Bookman Old Style", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnLabPGiris.ForeColor = System.Drawing.Color.Black;
             this.btnLabPGiris.Location = new System.Drawing.Point(24, 193);
             this.btnLabPGiris.Name = "btnLabPGiris";
             this.btnLabPGiris.Size = new System.Drawing.Size(240, 60);
@@ -293,7 +299,7 @@
             this.HastaKabulGroupBox.Controls.Add(this.txtHastakabulSifre);
             this.HastaKabulGroupBox.Controls.Add(this.txthastakabultc);
             this.HastaKabulGroupBox.Controls.Add(this.BtnHastaKabulGiris);
-            this.HastaKabulGroupBox.Location = new System.Drawing.Point(132, 26);
+            this.HastaKabulGroupBox.Location = new System.Drawing.Point(134, 17);
             this.HastaKabulGroupBox.Margin = new System.Windows.Forms.Padding(2);
             this.HastaKabulGroupBox.Name = "HastaKabulGroupBox";
             this.HastaKabulGroupBox.Padding = new System.Windows.Forms.Padding(2);
@@ -305,12 +311,15 @@
             // 
             // btnHastaKabulSifremiUnuttum
             // 
-            this.btnHastaKabulSifremiUnuttum.BackColor = System.Drawing.Color.Red;
-            this.btnHastaKabulSifremiUnuttum.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnHastaKabulSifremiUnuttum.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnHastaKabulSifremiUnuttum.Location = new System.Drawing.Point(24, 259);
+            this.btnHastaKabulSifremiUnuttum.BackColor = System.Drawing.Color.Transparent;
+            this.btnHastaKabulSifremiUnuttum.FlatAppearance.BorderSize = 0;
+            this.btnHastaKabulSifremiUnuttum.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHastaKabulSifremiUnuttum.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
+                | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnHastaKabulSifremiUnuttum.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnHastaKabulSifremiUnuttum.Location = new System.Drawing.Point(121, 259);
             this.btnHastaKabulSifremiUnuttum.Name = "btnHastaKabulSifremiUnuttum";
-            this.btnHastaKabulSifremiUnuttum.Size = new System.Drawing.Size(240, 60);
+            this.btnHastaKabulSifremiUnuttum.Size = new System.Drawing.Size(143, 35);
             this.btnHastaKabulSifremiUnuttum.TabIndex = 16;
             this.btnHastaKabulSifremiUnuttum.Text = "Şifremi Unuttum";
             this.btnHastaKabulSifremiUnuttum.UseVisualStyleBackColor = false;
@@ -319,27 +328,27 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label5.Location = new System.Drawing.Point(19, 111);
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label5.Location = new System.Drawing.Point(20, 107);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(52, 25);
+            this.label5.Size = new System.Drawing.Size(54, 20);
             this.label5.TabIndex = 5;
-            this.label5.Text = "Şifre";
+            this.label5.Text = "Şifre :";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label6.Location = new System.Drawing.Point(19, 30);
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label6.Location = new System.Drawing.Point(20, 46);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(132, 25);
+            this.label6.Size = new System.Drawing.Size(121, 20);
             this.label6.TabIndex = 6;
-            this.label6.Text = "T.C Kimlik No";
+            this.label6.Text = "T.C Kimlik No :";
             // 
             // txtHastakabulSifre
             // 
             this.txtHastakabulSifre.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtHastakabulSifre.Location = new System.Drawing.Point(24, 150);
+            this.txtHastakabulSifre.Location = new System.Drawing.Point(24, 127);
             this.txtHastakabulSifre.Name = "txtHastakabulSifre";
             this.txtHastakabulSifre.Size = new System.Drawing.Size(240, 27);
             this.txtHastakabulSifre.TabIndex = 7;
@@ -354,9 +363,10 @@
             // 
             // BtnHastaKabulGiris
             // 
-            this.BtnHastaKabulGiris.BackColor = System.Drawing.Color.LawnGreen;
-            this.BtnHastaKabulGiris.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.BtnHastaKabulGiris.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.BtnHastaKabulGiris.BackColor = System.Drawing.Color.MediumAquamarine;
+            this.BtnHastaKabulGiris.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.BtnHastaKabulGiris.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnHastaKabulGiris.Font = new System.Drawing.Font("Bookman Old Style", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.BtnHastaKabulGiris.Location = new System.Drawing.Point(24, 193);
             this.BtnHastaKabulGiris.Name = "BtnHastaKabulGiris";
             this.BtnHastaKabulGiris.Size = new System.Drawing.Size(240, 60);
@@ -373,7 +383,7 @@
             this.DoktorGroupBox.Controls.Add(this.txtSifre);
             this.DoktorGroupBox.Controls.Add(this.txtTC);
             this.DoktorGroupBox.Controls.Add(this.btnDoktorGirisYap);
-            this.DoktorGroupBox.Location = new System.Drawing.Point(132, 26);
+            this.DoktorGroupBox.Location = new System.Drawing.Point(134, 17);
             this.DoktorGroupBox.Margin = new System.Windows.Forms.Padding(2);
             this.DoktorGroupBox.Name = "DoktorGroupBox";
             this.DoktorGroupBox.Padding = new System.Windows.Forms.Padding(2);
@@ -385,12 +395,15 @@
             // 
             // btnDoktorSifremiUnuttum
             // 
-            this.btnDoktorSifremiUnuttum.BackColor = System.Drawing.Color.Red;
-            this.btnDoktorSifremiUnuttum.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnDoktorSifremiUnuttum.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnDoktorSifremiUnuttum.Location = new System.Drawing.Point(24, 259);
+            this.btnDoktorSifremiUnuttum.BackColor = System.Drawing.Color.Transparent;
+            this.btnDoktorSifremiUnuttum.FlatAppearance.BorderSize = 0;
+            this.btnDoktorSifremiUnuttum.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDoktorSifremiUnuttum.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
+                | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnDoktorSifremiUnuttum.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnDoktorSifremiUnuttum.Location = new System.Drawing.Point(121, 259);
             this.btnDoktorSifremiUnuttum.Name = "btnDoktorSifremiUnuttum";
-            this.btnDoktorSifremiUnuttum.Size = new System.Drawing.Size(240, 60);
+            this.btnDoktorSifremiUnuttum.Size = new System.Drawing.Size(143, 35);
             this.btnDoktorSifremiUnuttum.TabIndex = 16;
             this.btnDoktorSifremiUnuttum.Text = "Şifremi Unuttum";
             this.btnDoktorSifremiUnuttum.UseVisualStyleBackColor = false;
@@ -399,27 +412,27 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label3.Location = new System.Drawing.Point(19, 111);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label3.Location = new System.Drawing.Point(20, 107);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(52, 25);
+            this.label3.Size = new System.Drawing.Size(54, 20);
             this.label3.TabIndex = 5;
-            this.label3.Text = "Şifre";
+            this.label3.Text = "Şifre :";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label4.Location = new System.Drawing.Point(19, 30);
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label4.Location = new System.Drawing.Point(20, 46);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(132, 25);
+            this.label4.Size = new System.Drawing.Size(126, 20);
             this.label4.TabIndex = 6;
-            this.label4.Text = "T.C Kimlik No";
+            this.label4.Text = "T.C Kimlik No : ";
             // 
             // txtSifre
             // 
             this.txtSifre.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtSifre.Location = new System.Drawing.Point(24, 150);
+            this.txtSifre.Location = new System.Drawing.Point(24, 127);
             this.txtSifre.Name = "txtSifre";
             this.txtSifre.Size = new System.Drawing.Size(240, 27);
             this.txtSifre.TabIndex = 7;
@@ -434,9 +447,10 @@
             // 
             // btnDoktorGirisYap
             // 
-            this.btnDoktorGirisYap.BackColor = System.Drawing.Color.LawnGreen;
-            this.btnDoktorGirisYap.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnDoktorGirisYap.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnDoktorGirisYap.BackColor = System.Drawing.Color.MediumAquamarine;
+            this.btnDoktorGirisYap.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnDoktorGirisYap.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDoktorGirisYap.Font = new System.Drawing.Font("Bookman Old Style", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnDoktorGirisYap.Location = new System.Drawing.Point(24, 193);
             this.btnDoktorGirisYap.Name = "btnDoktorGirisYap";
             this.btnDoktorGirisYap.Size = new System.Drawing.Size(240, 60);
@@ -453,7 +467,7 @@
             this.hastaGroupBox.Controls.Add(this.txtHastaSifre);
             this.hastaGroupBox.Controls.Add(this.txthastaTC);
             this.hastaGroupBox.Controls.Add(this.hastagirisbtn);
-            this.hastaGroupBox.Location = new System.Drawing.Point(132, 26);
+            this.hastaGroupBox.Location = new System.Drawing.Point(134, 17);
             this.hastaGroupBox.Margin = new System.Windows.Forms.Padding(2);
             this.hastaGroupBox.Name = "hastaGroupBox";
             this.hastaGroupBox.Padding = new System.Windows.Forms.Padding(2);
@@ -465,12 +479,15 @@
             // 
             // btnHastaSifremiUnuttum
             // 
-            this.btnHastaSifremiUnuttum.BackColor = System.Drawing.Color.Red;
-            this.btnHastaSifremiUnuttum.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnHastaSifremiUnuttum.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnHastaSifremiUnuttum.Location = new System.Drawing.Point(24, 259);
+            this.btnHastaSifremiUnuttum.BackColor = System.Drawing.Color.Transparent;
+            this.btnHastaSifremiUnuttum.FlatAppearance.BorderSize = 0;
+            this.btnHastaSifremiUnuttum.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHastaSifremiUnuttum.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
+                | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnHastaSifremiUnuttum.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnHastaSifremiUnuttum.Location = new System.Drawing.Point(121, 259);
             this.btnHastaSifremiUnuttum.Name = "btnHastaSifremiUnuttum";
-            this.btnHastaSifremiUnuttum.Size = new System.Drawing.Size(240, 60);
+            this.btnHastaSifremiUnuttum.Size = new System.Drawing.Size(143, 35);
             this.btnHastaSifremiUnuttum.TabIndex = 16;
             this.btnHastaSifremiUnuttum.Text = "Şifremi Unuttum";
             this.btnHastaSifremiUnuttum.UseVisualStyleBackColor = false;
@@ -479,27 +496,27 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label7.Location = new System.Drawing.Point(19, 111);
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label7.Location = new System.Drawing.Point(20, 108);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(52, 25);
+            this.label7.Size = new System.Drawing.Size(54, 20);
             this.label7.TabIndex = 5;
-            this.label7.Text = "Şifre";
+            this.label7.Text = "Şifre :";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label8.Location = new System.Drawing.Point(19, 30);
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label8.Location = new System.Drawing.Point(19, 46);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(132, 25);
+            this.label8.Size = new System.Drawing.Size(121, 20);
             this.label8.TabIndex = 6;
-            this.label8.Text = "T.C Kimlik No";
+            this.label8.Text = "T.C Kimlik No :";
             // 
             // txtHastaSifre
             // 
             this.txtHastaSifre.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtHastaSifre.Location = new System.Drawing.Point(24, 150);
+            this.txtHastaSifre.Location = new System.Drawing.Point(24, 131);
             this.txtHastaSifre.Name = "txtHastaSifre";
             this.txtHastaSifre.Size = new System.Drawing.Size(240, 27);
             this.txtHastaSifre.TabIndex = 7;
@@ -514,9 +531,10 @@
             // 
             // hastagirisbtn
             // 
-            this.hastagirisbtn.BackColor = System.Drawing.Color.LawnGreen;
-            this.hastagirisbtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.hastagirisbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.hastagirisbtn.BackColor = System.Drawing.Color.MediumAquamarine;
+            this.hastagirisbtn.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.hastagirisbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.hastagirisbtn.Font = new System.Drawing.Font("Bookman Old Style", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.hastagirisbtn.Location = new System.Drawing.Point(24, 193);
             this.hastagirisbtn.Name = "hastagirisbtn";
             this.hastagirisbtn.Size = new System.Drawing.Size(240, 60);
@@ -532,7 +550,7 @@
             this.AdmingroupBox.Controls.Add(this.txtAdminSifre);
             this.AdmingroupBox.Controls.Add(this.txtAdminID);
             this.AdmingroupBox.Controls.Add(this.btnAdminGiris);
-            this.AdmingroupBox.Location = new System.Drawing.Point(132, 26);
+            this.AdmingroupBox.Location = new System.Drawing.Point(134, 17);
             this.AdmingroupBox.Margin = new System.Windows.Forms.Padding(2);
             this.AdmingroupBox.Name = "AdmingroupBox";
             this.AdmingroupBox.Padding = new System.Windows.Forms.Padding(2);
@@ -545,44 +563,45 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label9.Location = new System.Drawing.Point(19, 111);
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label9.Location = new System.Drawing.Point(20, 108);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(57, 25);
+            this.label9.Size = new System.Drawing.Size(59, 20);
             this.label9.TabIndex = 5;
-            this.label9.Text = "Şifre ";
+            this.label9.Text = "Şifre : ";
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label10.Location = new System.Drawing.Point(19, 30);
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label10.Location = new System.Drawing.Point(20, 46);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(114, 25);
+            this.label10.Size = new System.Drawing.Size(109, 20);
             this.label10.TabIndex = 6;
-            this.label10.Text = "Kullanıcı ID ";
+            this.label10.Text = "Kullanıcı ID : ";
             // 
             // txtAdminSifre
             // 
             this.txtAdminSifre.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtAdminSifre.Location = new System.Drawing.Point(24, 150);
+            this.txtAdminSifre.Location = new System.Drawing.Point(24, 133);
             this.txtAdminSifre.Name = "txtAdminSifre";
             this.txtAdminSifre.Size = new System.Drawing.Size(240, 27);
             this.txtAdminSifre.TabIndex = 7;
             // 
             // txtAdminID
             // 
-            this.txtAdminID.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtAdminID.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtAdminID.Location = new System.Drawing.Point(24, 69);
             this.txtAdminID.Name = "txtAdminID";
-            this.txtAdminID.Size = new System.Drawing.Size(240, 27);
+            this.txtAdminID.Size = new System.Drawing.Size(240, 29);
             this.txtAdminID.TabIndex = 4;
             // 
             // btnAdminGiris
             // 
-            this.btnAdminGiris.BackColor = System.Drawing.Color.LawnGreen;
-            this.btnAdminGiris.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnAdminGiris.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnAdminGiris.BackColor = System.Drawing.Color.MediumAquamarine;
+            this.btnAdminGiris.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnAdminGiris.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAdminGiris.Font = new System.Drawing.Font("Bookman Old Style", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnAdminGiris.Location = new System.Drawing.Point(24, 193);
             this.btnAdminGiris.Name = "btnAdminGiris";
             this.btnAdminGiris.Size = new System.Drawing.Size(240, 60);
@@ -593,15 +612,18 @@
             // 
             // btnAdmin
             // 
-            this.btnAdmin.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnAdmin.BackColor = System.Drawing.Color.Transparent;
             this.btnAdmin.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnAdmin.ForeColor = System.Drawing.SystemColors.Window;
-            this.btnAdmin.Location = new System.Drawing.Point(13, 117);
+            this.btnAdmin.ForeColor = System.Drawing.Color.Black;
+            this.btnAdmin.Image = ((System.Drawing.Image)(resources.GetObject("btnAdmin.Image")));
+            this.btnAdmin.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAdmin.Location = new System.Drawing.Point(40, 129);
             this.btnAdmin.Margin = new System.Windows.Forms.Padding(4);
             this.btnAdmin.Name = "btnAdmin";
-            this.btnAdmin.Size = new System.Drawing.Size(112, 40);
+            this.btnAdmin.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.btnAdmin.Size = new System.Drawing.Size(150, 40);
             this.btnAdmin.TabIndex = 7;
-            this.btnAdmin.Text = "Admin Girişi";
+            this.btnAdmin.Text = "  Admin Girişi";
             this.btnAdmin.UseVisualStyleBackColor = false;
             this.btnAdmin.Click += new System.EventHandler(this.btnAdmin_Click);
             // 
@@ -609,16 +631,16 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(884, 561);
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(984, 561);
             this.Controls.Add(this.BtnDoktorGiris);
             this.Controls.Add(this.btnAdmin);
             this.Controls.Add(this.GirisPaneli);
             this.Controls.Add(this.btniletisim);
             this.Controls.Add(this.btnHastaKayıtol);
             this.Controls.Add(this.btnLab);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.BtnSekreterGiris);
             this.Controls.Add(this.BtnHastaGiris);
@@ -653,7 +675,6 @@
         private System.Windows.Forms.Button BtnDoktorGiris;
         private System.Windows.Forms.Button BtnSekreterGiris;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnLab;
         private System.Windows.Forms.Button btnHastaKayıtol;
         private System.Windows.Forms.Button btniletisim;
@@ -676,12 +697,6 @@
         private System.Windows.Forms.TextBox txtHastaSifre;
         private System.Windows.Forms.TextBox txthastaTC;
         private System.Windows.Forms.Button hastagirisbtn;
-        private System.Windows.Forms.GroupBox AdmingroupBox;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox txtAdminSifre;
-        private System.Windows.Forms.TextBox txtAdminID;
-        private System.Windows.Forms.Button btnAdminGiris;
         private System.Windows.Forms.Button btnAdmin;
         private System.Windows.Forms.GroupBox LaboratuvargroupBox;
         private System.Windows.Forms.Label label11;
@@ -693,6 +708,12 @@
         private System.Windows.Forms.Button btnDoktorSifremiUnuttum;
         private System.Windows.Forms.Button btnHastaSifremiUnuttum;
         private System.Windows.Forms.Button btnHastaKabulSifremiUnuttum;
+        private System.Windows.Forms.GroupBox AdmingroupBox;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.TextBox txtAdminSifre;
+        private System.Windows.Forms.TextBox txtAdminID;
+        private System.Windows.Forms.Button btnAdminGiris;
     }
 }
 

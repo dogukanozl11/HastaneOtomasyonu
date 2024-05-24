@@ -93,6 +93,8 @@ namespace SistemAnaliziVeTasarimi2.Sekreter
         {
             try
             {
+                groupBoxAcil.Visible = false;
+                groupBoxPol.Visible = false;
                 klinkgetir();
 
                 acilklinik();
@@ -108,7 +110,9 @@ namespace SistemAnaliziVeTasarimi2.Sekreter
             if (true)
             {
                 groupBoxAcil.Enabled = true;
+                groupBoxAcil.Visible = true;
                 groupBoxPol.Enabled = false;
+                groupBoxPol.Visible = false;
             }
             else
             {
@@ -122,7 +126,9 @@ namespace SistemAnaliziVeTasarimi2.Sekreter
             if (true)
             {
                 groupBoxAcil.Enabled = false;
+                groupBoxAcil.Visible = false;
                 groupBoxPol.Enabled = true;
+                groupBoxPol.Visible = true;
             }
             else
             {
@@ -311,7 +317,5 @@ namespace SistemAnaliziVeTasarimi2.Sekreter
                 MessageBox.Show("Lütfen Hasta Girişi Yapınız!!");
             }
         }
-
-
     }
 }
