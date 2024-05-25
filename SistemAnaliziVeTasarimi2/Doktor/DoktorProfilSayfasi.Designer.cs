@@ -140,7 +140,7 @@
             this.btnRandevuSil.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnRandevuSil.Image = ((System.Drawing.Image)(resources.GetObject("btnRandevuSil.Image")));
             this.btnRandevuSil.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnRandevuSil.Location = new System.Drawing.Point(676, 409);
+            this.btnRandevuSil.Location = new System.Drawing.Point(612, 386);
             this.btnRandevuSil.Name = "btnRandevuSil";
             this.btnRandevuSil.Size = new System.Drawing.Size(120, 100);
             this.btnRandevuSil.TabIndex = 73;

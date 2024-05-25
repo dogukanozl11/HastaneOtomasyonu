@@ -148,7 +148,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(405, 450);
+            this.ClientSize = new System.Drawing.Size(398, 450);
             this.Controls.Add(this.btnGuncelle);
             this.Controls.Add(this.btnOnayKoduAl);
             this.Controls.Add(this.label4);

@@ -9,6 +9,7 @@ using System.Reflection.Emit;
 using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web.UI.WebControls;
 using System.Windows.Forms;
 
 namespace SistemAnaliziVeTasarimi2.Doktor
@@ -45,6 +46,7 @@ namespace SistemAnaliziVeTasarimi2.Doktor
         {
             try
             {
+                
                 lblTc.Text = Anasayfa.dtc;
                 bag.Open();
                 string sql = "select * from tbl_doktor where TcNo=@prm1";
@@ -93,6 +95,7 @@ namespace SistemAnaliziVeTasarimi2.Doktor
             }
 
         }
+       
         #region YanButtonlar
         private void btnKullanici_Click(object sender, EventArgs e)
         {

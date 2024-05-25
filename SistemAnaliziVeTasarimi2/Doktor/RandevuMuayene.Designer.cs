@@ -161,10 +161,10 @@
             this.panel3.Controls.Add(this.button1);
             this.panel3.Controls.Add(this.label9);
             this.panel3.Enabled = false;
-            this.panel3.Location = new System.Drawing.Point(393, 80);
+            this.panel3.Location = new System.Drawing.Point(393, 74);
             this.panel3.Margin = new System.Windows.Forms.Padding(2);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(448, 385);
+            this.panel3.Size = new System.Drawing.Size(448, 362);
             this.panel3.TabIndex = 122;
             // 
             // label19
@@ -485,7 +485,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightCyan;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(892, 490);
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(984, 561);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button5);

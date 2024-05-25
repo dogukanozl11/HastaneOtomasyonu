@@ -22,11 +22,10 @@ namespace SistemAnaliziVeTasarimi2.Doktor
 
         private void btnDoktorKayıtYap_Click(object sender, EventArgs e)
         {
-            string sql = "INSERT INTO tbl_doktor(isim,soyisim,tcNo,yaş,cinsiyet,telno,eMail,sifre,doktor_klinik_id) VALUES (@doktorİsim,@doktorSoyİsim,@doktorTCNo,@doktorYas,@doktorCinsiyet,@doktorTelefon,@doktorMail,@doktorSifre,@doktorBrans)";
+            string sql = "INSERT INTO tbl_doktor(isim,tcNo,yaş,cinsiyet,telno,eMail,sifre,doktor_klinik_id) VALUES (@doktorİsim,@doktorTCNo,@doktorYas,@doktorCinsiyet,@doktorTelefon,@doktorMail,@doktorSifre,@doktorBrans)";
             SqlCommand komut = new SqlCommand(sql, bag);
 
-            komut.Parameters.AddWithValue("@doktorİsim", txtDoktorİsim.Text);
-            komut.Parameters.AddWithValue("@doktorSoyİsim", txtDoktorSoyisim.Text);
+            komut.Parameters.AddWithValue("@doktorİsim", txtDoktorİsim.Text); 
             komut.Parameters.AddWithValue("@doktorTCNo", txtDoktorTC.Text);
             komut.Parameters.AddWithValue("@doktorYas", maskedTextBoxYas.Text);
             komut.Parameters.AddWithValue("@doktorCinsiyet", CmbDoktorCinsiyet.Text);
