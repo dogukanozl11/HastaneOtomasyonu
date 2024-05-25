@@ -73,7 +73,7 @@
             // button5
             // 
             this.button5.BackColor = System.Drawing.Color.Azure;
-            this.button5.Location = new System.Drawing.Point(133, 440);
+            this.button5.Location = new System.Drawing.Point(215, 435);
             this.button5.Margin = new System.Windows.Forms.Padding(2);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(80, 35);
@@ -85,7 +85,7 @@
             // button4
             // 
             this.button4.BackColor = System.Drawing.Color.Azure;
-            this.button4.Location = new System.Drawing.Point(11, 440);
+            this.button4.Location = new System.Drawing.Point(93, 435);
             this.button4.Margin = new System.Windows.Forms.Padding(2);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(76, 35);
@@ -101,7 +101,7 @@
             this.panel5.Controls.Add(this.label16);
             this.panel5.Controls.Add(this.maskedTextBox2);
             this.panel5.Controls.Add(this.label12);
-            this.panel5.Location = new System.Drawing.Point(3, 360);
+            this.panel5.Location = new System.Drawing.Point(85, 355);
             this.panel5.Margin = new System.Windows.Forms.Padding(2);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(386, 76);
@@ -161,7 +161,7 @@
             this.panel3.Controls.Add(this.button1);
             this.panel3.Controls.Add(this.label9);
             this.panel3.Enabled = false;
-            this.panel3.Location = new System.Drawing.Point(393, 74);
+            this.panel3.Location = new System.Drawing.Point(475, 69);
             this.panel3.Margin = new System.Windows.Forms.Padding(2);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(448, 362);
@@ -272,7 +272,7 @@
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.textBox2);
             this.panel1.Controls.Add(this.textBox1);
-            this.panel1.Location = new System.Drawing.Point(3, 74);
+            this.panel1.Location = new System.Drawing.Point(85, 69);
             this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(386, 282);
@@ -457,12 +457,12 @@
             // label1
             // 
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label1.Font = new System.Drawing.Font("Bookman Old Style", 24F);
             this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(302, 9);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(269, 33);
+            this.label1.Size = new System.Drawing.Size(437, 46);
             this.label1.TabIndex = 6;
             this.label1.Text = "Muayene Ekranı";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -470,7 +470,7 @@
             // button6
             // 
             this.button6.BackColor = System.Drawing.Color.Azure;
-            this.button6.Location = new System.Drawing.Point(263, 440);
+            this.button6.Location = new System.Drawing.Point(345, 435);
             this.button6.Margin = new System.Windows.Forms.Padding(2);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(80, 35);

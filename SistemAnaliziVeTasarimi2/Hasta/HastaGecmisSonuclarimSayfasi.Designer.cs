@@ -56,11 +56,11 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label1.Location = new System.Drawing.Point(240, 9);
+            this.label1.Font = new System.Drawing.Font("Bookman Old Style", 24F);
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label1.Location = new System.Drawing.Point(219, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(296, 31);
+            this.label1.Size = new System.Drawing.Size(395, 39);
             this.label1.TabIndex = 2;
             this.label1.Text = "Geçmiş Tahlil Sonuçları";
             // 
@@ -69,6 +69,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(816, 334);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView1);

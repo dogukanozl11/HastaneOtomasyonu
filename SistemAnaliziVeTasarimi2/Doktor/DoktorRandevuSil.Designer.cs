@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DoktorRandevuSil));
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.btniptal = new System.Windows.Forms.Button();
@@ -37,7 +38,7 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(11, 11);
+            this.dataGridView1.Location = new System.Drawing.Point(28, 11);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
@@ -55,19 +56,22 @@
             // 
             // btniptal
             // 
+            this.btniptal.BackColor = System.Drawing.Color.MediumAquamarine;
+            this.btniptal.Font = new System.Drawing.Font("Bookman Old Style", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btniptal.Location = new System.Drawing.Point(333, 206);
             this.btniptal.Name = "btniptal";
-            this.btniptal.Size = new System.Drawing.Size(122, 39);
+            this.btniptal.Size = new System.Drawing.Size(222, 50);
             this.btniptal.TabIndex = 5;
             this.btniptal.Text = "RANDEVU İPTAL";
-            this.btniptal.UseVisualStyleBackColor = true;
+            this.btniptal.UseVisualStyleBackColor = false;
             this.btniptal.Click += new System.EventHandler(this.btniptal_Click);
             // 
             // DoktorRandevuSil
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(848, 251);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.ClientSize = new System.Drawing.Size(884, 261);
             this.Controls.Add(this.btniptal);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView1);
