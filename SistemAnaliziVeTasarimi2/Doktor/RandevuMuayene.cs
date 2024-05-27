@@ -220,7 +220,7 @@ namespace SistemAnaliziVeTasarimi2.Doktor
 
                 panel3.Enabled = true;
                 
-                button5.Enabled = false;
+                
 
                 baglanti.Open();
                 SqlCommand tahlil2 = new SqlCommand("select * from tbl_tahliller", baglanti);
@@ -236,12 +236,6 @@ namespace SistemAnaliziVeTasarimi2.Doktor
                 MessageBox.Show("Hata!! Lütfen daha sonra tekrar deneyniz.");
             }
 
-        }
-
-        private void button5_Click(object sender, EventArgs e)
-        {
-            panel3.Enabled = false;
-            
         }
 
         private void button2_Click(object sender, EventArgs e)

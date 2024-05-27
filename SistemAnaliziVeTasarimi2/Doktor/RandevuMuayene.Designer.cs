@@ -29,8 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RandevuMuayene));
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.btnTest = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
             this.maskedTextBox5 = new System.Windows.Forms.MaskedTextBox();
             this.label16 = new System.Windows.Forms.Label();
@@ -40,10 +39,10 @@
             this.label19 = new System.Windows.Forms.Label();
             this.maskedTextBox7 = new System.Windows.Forms.MaskedTextBox();
             this.label18 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnBitti = new System.Windows.Forms.Button();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.listBox1 = new System.Windows.Forms.ListBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnTestEkle = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label21 = new System.Windows.Forms.Label();
@@ -64,35 +63,26 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.button6 = new System.Windows.Forms.Button();
+            this.btnYatisVer = new System.Windows.Forms.Button();
             this.panel5.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // button5
+            // btnTest
             // 
-            this.button5.BackColor = System.Drawing.Color.Azure;
-            this.button5.Location = new System.Drawing.Point(215, 435);
-            this.button5.Margin = new System.Windows.Forms.Padding(2);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(80, 35);
-            this.button5.TabIndex = 126;
-            this.button5.Text = "Tanı Koy";
-            this.button5.UseVisualStyleBackColor = false;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
-            // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.Color.Azure;
-            this.button4.Location = new System.Drawing.Point(93, 435);
-            this.button4.Margin = new System.Windows.Forms.Padding(2);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(76, 35);
-            this.button4.TabIndex = 125;
-            this.button4.Text = "Test İste";
-            this.button4.UseVisualStyleBackColor = false;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.btnTest.BackColor = System.Drawing.Color.Azure;
+            this.btnTest.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnTest.Image = ((System.Drawing.Image)(resources.GetObject("btnTest.Image")));
+            this.btnTest.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTest.Location = new System.Drawing.Point(93, 435);
+            this.btnTest.Margin = new System.Windows.Forms.Padding(2);
+            this.btnTest.Name = "btnTest";
+            this.btnTest.Size = new System.Drawing.Size(150, 50);
+            this.btnTest.TabIndex = 125;
+            this.btnTest.Text = "Test İste";
+            this.btnTest.UseVisualStyleBackColor = false;
+            this.btnTest.Click += new System.EventHandler(this.button4_Click);
             // 
             // panel5
             // 
@@ -155,10 +145,10 @@
             this.panel3.Controls.Add(this.label19);
             this.panel3.Controls.Add(this.maskedTextBox7);
             this.panel3.Controls.Add(this.label18);
-            this.panel3.Controls.Add(this.button3);
+            this.panel3.Controls.Add(this.btnBitti);
             this.panel3.Controls.Add(this.comboBox1);
             this.panel3.Controls.Add(this.listBox1);
-            this.panel3.Controls.Add(this.button1);
+            this.panel3.Controls.Add(this.btnTestEkle);
             this.panel3.Controls.Add(this.label9);
             this.panel3.Enabled = false;
             this.panel3.Location = new System.Drawing.Point(475, 69);
@@ -199,17 +189,17 @@
             this.label18.TabIndex = 118;
             this.label18.Text = "İstenilen Testler";
             // 
-            // button3
+            // btnBitti
             // 
-            this.button3.BackColor = System.Drawing.Color.Azure;
-            this.button3.Location = new System.Drawing.Point(153, 262);
-            this.button3.Margin = new System.Windows.Forms.Padding(2);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(111, 50);
-            this.button3.TabIndex = 7;
-            this.button3.Text = "Bitti";
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.btnBitti.BackColor = System.Drawing.Color.Azure;
+            this.btnBitti.Location = new System.Drawing.Point(153, 262);
+            this.btnBitti.Margin = new System.Windows.Forms.Padding(2);
+            this.btnBitti.Name = "btnBitti";
+            this.btnBitti.Size = new System.Drawing.Size(111, 50);
+            this.btnBitti.TabIndex = 7;
+            this.btnBitti.Text = "Bitti";
+            this.btnBitti.UseVisualStyleBackColor = false;
+            this.btnBitti.Click += new System.EventHandler(this.button3_Click);
             // 
             // comboBox1
             // 
@@ -229,17 +219,17 @@
             this.listBox1.Size = new System.Drawing.Size(186, 173);
             this.listBox1.TabIndex = 3;
             // 
-            // button1
+            // btnTestEkle
             // 
-            this.button1.BackColor = System.Drawing.Color.Azure;
-            this.button1.Location = new System.Drawing.Point(56, 81);
-            this.button1.Margin = new System.Windows.Forms.Padding(2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(99, 35);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Test Ekle";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnTestEkle.BackColor = System.Drawing.Color.Azure;
+            this.btnTestEkle.Location = new System.Drawing.Point(56, 81);
+            this.btnTestEkle.Margin = new System.Windows.Forms.Padding(2);
+            this.btnTestEkle.Name = "btnTestEkle";
+            this.btnTestEkle.Size = new System.Drawing.Size(99, 35);
+            this.btnTestEkle.TabIndex = 2;
+            this.btnTestEkle.Text = "Test Ekle";
+            this.btnTestEkle.UseVisualStyleBackColor = false;
+            this.btnTestEkle.Click += new System.EventHandler(this.button1_Click);
             // 
             // label9
             // 
@@ -467,17 +457,21 @@
             this.label1.Text = "Muayene Ekranı";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // button6
+            // btnYatisVer
             // 
-            this.button6.BackColor = System.Drawing.Color.Azure;
-            this.button6.Location = new System.Drawing.Point(345, 435);
-            this.button6.Margin = new System.Windows.Forms.Padding(2);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(80, 35);
-            this.button6.TabIndex = 127;
-            this.button6.Text = "Yatış Ver";
-            this.button6.UseVisualStyleBackColor = false;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
+            this.btnYatisVer.BackColor = System.Drawing.Color.Azure;
+            this.btnYatisVer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnYatisVer.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnYatisVer.Image = ((System.Drawing.Image)(resources.GetObject("btnYatisVer.Image")));
+            this.btnYatisVer.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnYatisVer.Location = new System.Drawing.Point(322, 435);
+            this.btnYatisVer.Margin = new System.Windows.Forms.Padding(2);
+            this.btnYatisVer.Name = "btnYatisVer";
+            this.btnYatisVer.Size = new System.Drawing.Size(150, 50);
+            this.btnYatisVer.TabIndex = 127;
+            this.btnYatisVer.Text = "Yatış Ver";
+            this.btnYatisVer.UseVisualStyleBackColor = false;
+            this.btnYatisVer.Click += new System.EventHandler(this.button6_Click);
             // 
             // RandevuMuayene
             // 
@@ -488,9 +482,8 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(984, 561);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
+            this.Controls.Add(this.btnYatisVer);
+            this.Controls.Add(this.btnTest);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
@@ -509,9 +502,7 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btnTest;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.MaskedTextBox maskedTextBox5;
         private System.Windows.Forms.Label label16;
@@ -521,10 +512,10 @@
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.MaskedTextBox maskedTextBox7;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnBitti;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.ListBox listBox1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnTestEkle;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label17;
@@ -542,7 +533,7 @@
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button btnYatisVer;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label21;
