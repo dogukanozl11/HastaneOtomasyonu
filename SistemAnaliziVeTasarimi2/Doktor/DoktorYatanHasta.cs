@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SistemAnaliziVeTasarimi2.ADMİN;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -9,7 +10,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
-
+//Verileri Ekle butonuna basınca değil Bitti butonuna basınca toplu olarak veritabanına gönderme işlemi yapılacak.
+//Seçenek Yatan hasta ID ye göre veri tabanında boş yerlere ekleme yapıcak her seferinde farklı kayıt oluşturmıyacak.
 namespace SistemAnaliziVeTasarimi2.Doktor
 {
     public partial class DoktorYatanHasta : Form
@@ -30,6 +32,30 @@ namespace SistemAnaliziVeTasarimi2.Doktor
         //    qq.combo(c, "klinik_id", "klinik_adi", comboBox5);
 
         //}
+        void klinkgetir()
+        {
+            SqlCommand c = new SqlCommand("select * from tbl_klinikler where klinik_id < 14 or klinik_id > 18", bag);
+            helper.combo(c, "klinik_id", "klinik_adi", comboBox5);
+
+        }
+        void a()
+        {
+            SqlCommand c = new SqlCommand("select * from tbl_ameliyat", bag);
+            helper.combo(c, "ameliyat_id", "ameliyat_adi", comboBox1);
+
+        }
+        void b()
+        {
+            SqlCommand c = new SqlCommand("select * from tbl_serum", bag);
+            helper.combo(c, "serum_id", "serum_adi", comboBox2);
+
+        }
+        void c()
+        {
+            SqlCommand c = new SqlCommand("select * from tbl_ilaclar", bag);
+            helper.combo(c, "ilac_id", "ilac_adi", comboBox3);
+
+        }
 
         private void DoktorYatanHasta_Load(object sender, EventArgs e)
         {
@@ -45,10 +71,14 @@ namespace SistemAnaliziVeTasarimi2.Doktor
                 da.Fill(dt);
                 dataGridView1.DataSource = dt;
                 bag.Close();
+                klinkgetir();
+                a();
+                b();
+                c();
             }
-            catch (Exception )
+            catch
             {
-
+                MessageBox.Show("Hata! Lütfen daha sonra tekrar deneyiniz");
 
             }
         }
@@ -72,6 +102,117 @@ namespace SistemAnaliziVeTasarimi2.Doktor
             maskedTextBoxDogumTarihi.Text = hstDT.ToString();
             maskedTextBoxKlinikID.Text = hstKlinikID.ToString();
             id = Convert.ToInt32(maskedTextBoxHastasID.Text);
+        }
+
+        private void btnBitti_Click(object sender, EventArgs e)
+        {
+            comboBox1.Text = "";
+            listBox1.Items.Clear();
+            comboBox2.Text = "";
+            listBox2.Items.Clear();
+            comboBox3.Text = "";
+            listBox3.Items.Clear();
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            if (maskedTextBoxHastasID.Text != "" && comboBox1.SelectedIndex != 0)
+            {
+                try
+                {
+                    bag.Open();
+                    string sql = "insert into tbl_tedavi(ameliyat_id,tedavi_hasta_id)values(@p1,@p2)";
+                    SqlCommand cmd = new SqlCommand(sql, bag);
+                    cmd.Parameters.AddWithValue("@p2", maskedTextBoxKlinikID.Text);
+                    cmd.Parameters.AddWithValue("@p1", comboBox1.SelectedValue);
+                    cmd.ExecuteNonQuery();
+                    bag.Close();
+                    listBox1.Items.Add(comboBox1.Text);
+                }
+                catch
+                {
+                    MessageBox.Show("Hata!! Lütfen daha sonra tekrar deneyniz.");
+                }
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (maskedTextBoxHastasID.Text != "" && comboBox2.SelectedIndex != 0)
+            {
+                try
+                {
+                    bag.Open();
+                    string sql = "insert into tbl_tedavi(serum_id,tedavi_hasta_id)values(@p1,@p2)";
+                    SqlCommand cmd = new SqlCommand(sql, bag);
+                    cmd.Parameters.AddWithValue("@p2", maskedTextBoxKlinikID.Text);
+                    cmd.Parameters.AddWithValue("@p1", comboBox2.SelectedValue);
+                    cmd.ExecuteNonQuery();
+                    bag.Close();
+                    listBox2.Items.Add(comboBox2.Text);
+                }
+                catch
+                {
+                    MessageBox.Show("Hata!! Lütfen daha sonra tekrar deneyniz.");
+                }
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (maskedTextBoxHastasID.Text != "" && comboBox3.SelectedIndex != 0)
+            {
+                try
+                {
+                    bag.Open();
+                    string sql = "insert into tbl_tedavi(tedavi_ilac_id,tedavi_hasta_id)values(@p1,@p2)";
+                    SqlCommand cmd = new SqlCommand(sql, bag);
+                    cmd.Parameters.AddWithValue("@p2", maskedTextBoxKlinikID.Text);
+                    cmd.Parameters.AddWithValue("@p1", comboBox3.SelectedValue);
+                    cmd.ExecuteNonQuery();
+                    bag.Close();
+                    listBox3.Items.Add(comboBox3.Text);
+                }
+                catch
+                {
+                    MessageBox.Show("Hata!! Lütfen daha sonra tekrar deneyniz.");
+                }
+            }
+        }
+
+        private void btnNakilGonder_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (comboBox5.SelectedIndex != 0 && maskedTextBoxHastasID.Text != "")
+                {
+                    bag.Open();
+                    string sql = "update tbl_yatan set yatan_hasta_id=@id,yatan_doktor_id=@did,yatan_klinik_id=@kid ";
+                    SqlCommand cmd = new SqlCommand(sql,bag);
+                    cmd.Parameters.AddWithValue("id",maskedTextBoxHastasID.Text);
+                    cmd.Parameters.AddWithValue("id",comboBox4.Text);
+                    cmd.Parameters.AddWithValue("id",comboBox5.Text);
+                    cmd.ExecuteNonQuery();
+                    bag.Close();
+                    MessageBox.Show("Hasta Başarıyla Nakil Edildi.");
+                    this.Close();
+                }
+                else
+                {
+                    MessageBox.Show("Eksik Alanları Doldurunuz");
+                }
+            }
+            catch 
+            {
+                MessageBox.Show("Hata!! Daha Sonra Tekrar Deneyiniz");
+            }
+            
+        }
+
+        private void btnTaburcuEt_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
