@@ -192,6 +192,7 @@
             // btnBitti
             // 
             this.btnBitti.BackColor = System.Drawing.Color.Azure;
+            this.btnBitti.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnBitti.Location = new System.Drawing.Point(153, 262);
             this.btnBitti.Margin = new System.Windows.Forms.Padding(2);
             this.btnBitti.Name = "btnBitti";
@@ -222,6 +223,7 @@
             // btnTestEkle
             // 
             this.btnTestEkle.BackColor = System.Drawing.Color.Azure;
+            this.btnTestEkle.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnTestEkle.Location = new System.Drawing.Point(56, 81);
             this.btnTestEkle.Margin = new System.Windows.Forms.Padding(2);
             this.btnTestEkle.Name = "btnTestEkle";
