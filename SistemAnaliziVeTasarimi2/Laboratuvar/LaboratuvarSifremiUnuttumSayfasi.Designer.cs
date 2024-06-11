@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LaboratuvarSifremiUnuttumSayfasi));
+            this.doktorSifrebelirleme = new System.Windows.Forms.Label();
             this.btnGuncelle = new System.Windows.Forms.Button();
             this.btnOnayKoduAl = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
@@ -41,27 +42,38 @@
             this.txtTC = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
+            // doktorSifrebelirleme
+            // 
+            this.doktorSifrebelirleme.AutoSize = true;
+            this.doktorSifrebelirleme.BackColor = System.Drawing.Color.Transparent;
+            this.doktorSifrebelirleme.Font = new System.Drawing.Font("Bookman Old Style", 24F);
+            this.doktorSifrebelirleme.Location = new System.Drawing.Point(168, 113);
+            this.doktorSifrebelirleme.Name = "doktorSifrebelirleme";
+            this.doktorSifrebelirleme.Size = new System.Drawing.Size(614, 39);
+            this.doktorSifrebelirleme.TabIndex = 54;
+            this.doktorSifrebelirleme.Text = "LABORATUVAR ŞİFRE GÜNCELLEME";
+            // 
             // btnGuncelle
             // 
-            this.btnGuncelle.BackColor = System.Drawing.Color.LawnGreen;
-            this.btnGuncelle.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnGuncelle.Location = new System.Drawing.Point(77, 371);
+            this.btnGuncelle.BackColor = System.Drawing.Color.MediumAquamarine;
+            this.btnGuncelle.Font = new System.Drawing.Font("Bookman Old Style", 12F);
+            this.btnGuncelle.Location = new System.Drawing.Point(659, 300);
             this.btnGuncelle.Name = "btnGuncelle";
-            this.btnGuncelle.Size = new System.Drawing.Size(238, 45);
-            this.btnGuncelle.TabIndex = 21;
-            this.btnGuncelle.Text = "Güncelle";
+            this.btnGuncelle.Size = new System.Drawing.Size(222, 50);
+            this.btnGuncelle.TabIndex = 52;
+            this.btnGuncelle.Text = "GÜNCELLE";
             this.btnGuncelle.UseVisualStyleBackColor = false;
             this.btnGuncelle.Click += new System.EventHandler(this.btnGuncelle_Click);
             // 
             // btnOnayKoduAl
             // 
-            this.btnOnayKoduAl.BackColor = System.Drawing.Color.Yellow;
-            this.btnOnayKoduAl.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnOnayKoduAl.Location = new System.Drawing.Point(163, 250);
+            this.btnOnayKoduAl.BackColor = System.Drawing.Color.MediumAquamarine;
+            this.btnOnayKoduAl.Font = new System.Drawing.Font("Bookman Old Style", 12F);
+            this.btnOnayKoduAl.Location = new System.Drawing.Point(249, 300);
             this.btnOnayKoduAl.Name = "btnOnayKoduAl";
-            this.btnOnayKoduAl.Size = new System.Drawing.Size(150, 45);
-            this.btnOnayKoduAl.TabIndex = 22;
-            this.btnOnayKoduAl.Text = "Onay Kodu Al";
+            this.btnOnayKoduAl.Size = new System.Drawing.Size(222, 50);
+            this.btnOnayKoduAl.TabIndex = 53;
+            this.btnOnayKoduAl.Text = "ONAY KODU AL";
             this.btnOnayKoduAl.UseVisualStyleBackColor = false;
             this.btnOnayKoduAl.Click += new System.EventHandler(this.btnOnayKoduAl_Click);
             // 
@@ -69,86 +81,88 @@
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label4.Location = new System.Drawing.Point(72, 311);
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
+            this.label4.Location = new System.Drawing.Point(499, 260);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(112, 24);
-            this.label4.TabIndex = 17;
+            this.label4.Size = new System.Drawing.Size(118, 25);
+            this.label4.TabIndex = 48;
             this.label4.Text = "Yeni Şifre :";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label3.Location = new System.Drawing.Point(73, 190);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
+            this.label3.Location = new System.Drawing.Point(499, 220);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(126, 24);
-            this.label3.TabIndex = 18;
+            this.label3.Size = new System.Drawing.Size(131, 25);
+            this.label3.TabIndex = 49;
             this.label3.Text = "Onay Kodu :";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label2.Location = new System.Drawing.Point(73, 118);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
+            this.label2.Location = new System.Drawing.Point(79, 260);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(90, 24);
-            this.label2.TabIndex = 19;
-            this.label2.Text = "E-MAİL :";
+            this.label2.Size = new System.Drawing.Size(90, 25);
+            this.label2.TabIndex = 50;
+            this.label2.Text = "E-mail : ";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(73, 54);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
+            this.label1.Location = new System.Drawing.Point(79, 220);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(155, 24);
-            this.label1.TabIndex = 20;
+            this.label1.Size = new System.Drawing.Size(160, 25);
+            this.label1.TabIndex = 51;
             this.label1.Text = "T.C Kimlik No : ";
             // 
             // txtYeniSifre
             // 
             this.txtYeniSifre.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtYeniSifre.Location = new System.Drawing.Point(77, 338);
+            this.txtYeniSifre.Location = new System.Drawing.Point(659, 260);
             this.txtYeniSifre.Name = "txtYeniSifre";
             this.txtYeniSifre.PasswordChar = '*';
-            this.txtYeniSifre.Size = new System.Drawing.Size(238, 27);
-            this.txtYeniSifre.TabIndex = 13;
+            this.txtYeniSifre.Size = new System.Drawing.Size(222, 27);
+            this.txtYeniSifre.TabIndex = 44;
             // 
             // txtOnayKodu
             // 
             this.txtOnayKodu.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtOnayKodu.Location = new System.Drawing.Point(77, 217);
+            this.txtOnayKodu.Location = new System.Drawing.Point(659, 220);
             this.txtOnayKodu.Name = "txtOnayKodu";
-            this.txtOnayKodu.Size = new System.Drawing.Size(238, 27);
-            this.txtOnayKodu.TabIndex = 14;
+            this.txtOnayKodu.Size = new System.Drawing.Size(222, 27);
+            this.txtOnayKodu.TabIndex = 45;
             // 
             // txtEmail
             // 
             this.txtEmail.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtEmail.Location = new System.Drawing.Point(77, 145);
+            this.txtEmail.Location = new System.Drawing.Point(249, 260);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(238, 27);
-            this.txtEmail.TabIndex = 15;
+            this.txtEmail.Size = new System.Drawing.Size(222, 27);
+            this.txtEmail.TabIndex = 46;
             // 
             // txtTC
             // 
             this.txtTC.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtTC.Location = new System.Drawing.Point(77, 81);
+            this.txtTC.Location = new System.Drawing.Point(249, 220);
             this.txtTC.Name = "txtTC";
-            this.txtTC.Size = new System.Drawing.Size(238, 27);
-            this.txtTC.TabIndex = 16;
+            this.txtTC.Size = new System.Drawing.Size(222, 27);
+            this.txtTC.TabIndex = 47;
             // 
             // LaboratuvarSifremiUnuttumSayfasi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(405, 450);
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(984, 561);
+            this.Controls.Add(this.doktorSifrebelirleme);
             this.Controls.Add(this.btnGuncelle);
             this.Controls.Add(this.btnOnayKoduAl);
             this.Controls.Add(this.label4);
@@ -169,6 +183,7 @@
 
         #endregion
 
+        private System.Windows.Forms.Label doktorSifrebelirleme;
         private System.Windows.Forms.Button btnGuncelle;
         private System.Windows.Forms.Button btnOnayKoduAl;
         private System.Windows.Forms.Label label4;

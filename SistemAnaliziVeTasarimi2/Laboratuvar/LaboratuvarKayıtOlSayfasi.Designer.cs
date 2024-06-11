@@ -52,7 +52,7 @@
             // 
             this.btnLabPKayıtYap.BackColor = System.Drawing.Color.LawnGreen;
             this.btnLabPKayıtYap.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnLabPKayıtYap.Location = new System.Drawing.Point(151, 667);
+            this.btnLabPKayıtYap.Location = new System.Drawing.Point(511, 302);
             this.btnLabPKayıtYap.Name = "btnLabPKayıtYap";
             this.btnLabPKayıtYap.Size = new System.Drawing.Size(246, 65);
             this.btnLabPKayıtYap.TabIndex = 26;
@@ -73,7 +73,7 @@
             // txtLabPTel
             // 
             this.txtLabPTel.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtLabPTel.Location = new System.Drawing.Point(151, 469);
+            this.txtLabPTel.Location = new System.Drawing.Point(511, 104);
             this.txtLabPTel.Mask = "(999) 000-0000";
             this.txtLabPTel.Name = "txtLabPTel";
             this.txtLabPTel.Size = new System.Drawing.Size(246, 27);
@@ -84,7 +84,7 @@
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label7.Location = new System.Drawing.Point(155, 579);
+            this.label7.Location = new System.Drawing.Point(515, 214);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(76, 25);
             this.label7.TabIndex = 18;
@@ -95,7 +95,7 @@
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label8.Location = new System.Drawing.Point(155, 441);
+            this.label8.Location = new System.Drawing.Point(515, 76);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(137, 25);
             this.label8.TabIndex = 17;
@@ -106,7 +106,7 @@
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label6.Location = new System.Drawing.Point(155, 510);
+            this.label6.Location = new System.Drawing.Point(515, 145);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(87, 25);
             this.label6.TabIndex = 19;
@@ -182,7 +182,7 @@
             // txtLabPSifre
             // 
             this.txtLabPSifre.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtLabPSifre.Location = new System.Drawing.Point(151, 607);
+            this.txtLabPSifre.Location = new System.Drawing.Point(511, 242);
             this.txtLabPSifre.Name = "txtLabPSifre";
             this.txtLabPSifre.Size = new System.Drawing.Size(246, 27);
             this.txtLabPSifre.TabIndex = 25;
@@ -190,7 +190,7 @@
             // txtLabPMail
             // 
             this.txtLabPMail.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtLabPMail.Location = new System.Drawing.Point(151, 538);
+            this.txtLabPMail.Location = new System.Drawing.Point(511, 173);
             this.txtLabPMail.Name = "txtLabPMail";
             this.txtLabPMail.Size = new System.Drawing.Size(246, 27);
             this.txtLabPMail.TabIndex = 24;
@@ -224,9 +224,10 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(584, 761);
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(984, 561);
             this.Controls.Add(this.btnLabPKayıtYap);
             this.Controls.Add(this.txtLabPYaş);
             this.Controls.Add(this.txtLabPTel);

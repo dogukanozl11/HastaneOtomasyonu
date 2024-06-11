@@ -327,7 +327,7 @@
             this.btnTahlilSonuçları.Name = "btnTahlilSonuçları";
             this.btnTahlilSonuçları.Size = new System.Drawing.Size(120, 100);
             this.btnTahlilSonuçları.TabIndex = 106;
-            this.btnTahlilSonuçları.Text = "Tahlil Sonuçları";
+            this.btnTahlilSonuçları.Text = "Randevu Al";
             this.btnTahlilSonuçları.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnTahlilSonuçları.UseVisualStyleBackColor = false;
             this.btnTahlilSonuçları.Click += new System.EventHandler(this.btnRandevuAl_Click);
