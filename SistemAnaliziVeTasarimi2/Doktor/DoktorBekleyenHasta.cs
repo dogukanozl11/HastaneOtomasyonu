@@ -42,7 +42,7 @@ namespace SistemAnaliziVeTasarimi2.Doktor
                 hastaid = textBox1.Text;
                 textBox1.Text = hastaid;
                 kontrolMuayene = 1;
-                muayene yeni = new muayene();
+                RandevuMuayene yeni = new RandevuMuayene();
 
                 yeni.Show();
             }

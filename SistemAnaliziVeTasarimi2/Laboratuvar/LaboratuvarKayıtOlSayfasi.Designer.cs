@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LaboratuvarKayıtOlSayfasi));
-            this.btnLabPKayıtYap = new System.Windows.Forms.Button();
+            this.label10 = new System.Windows.Forms.Label();
             this.txtLabPYaş = new System.Windows.Forms.MaskedTextBox();
             this.txtLabPTel = new System.Windows.Forms.MaskedTextBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -46,125 +46,125 @@
             this.txtLabPTC = new System.Windows.Forms.TextBox();
             this.txtLabPSoyisim = new System.Windows.Forms.TextBox();
             this.txtLabPİsim = new System.Windows.Forms.TextBox();
+            this.btnLabPKayıtYap = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // btnLabPKayıtYap
+            // label10
             // 
-            this.btnLabPKayıtYap.BackColor = System.Drawing.Color.LawnGreen;
-            this.btnLabPKayıtYap.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnLabPKayıtYap.Location = new System.Drawing.Point(511, 302);
-            this.btnLabPKayıtYap.Name = "btnLabPKayıtYap";
-            this.btnLabPKayıtYap.Size = new System.Drawing.Size(246, 65);
-            this.btnLabPKayıtYap.TabIndex = 26;
-            this.btnLabPKayıtYap.Text = "Kayıt Yap";
-            this.btnLabPKayıtYap.UseVisualStyleBackColor = false;
-            this.btnLabPKayıtYap.Click += new System.EventHandler(this.btnLabPKayıtYap_Click);
+            this.label10.AutoSize = true;
+            this.label10.BackColor = System.Drawing.Color.Transparent;
+            this.label10.Font = new System.Drawing.Font("Bookman Old Style", 24F);
+            this.label10.Location = new System.Drawing.Point(209, 47);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(613, 39);
+            this.label10.TabIndex = 63;
+            this.label10.Text = "LABORATUVAR PERSONEL KAYIT OL";
             // 
             // txtLabPYaş
             // 
             this.txtLabPYaş.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtLabPYaş.Location = new System.Drawing.Point(151, 323);
+            this.txtLabPYaş.Location = new System.Drawing.Point(255, 284);
             this.txtLabPYaş.Mask = "00/00/0000";
             this.txtLabPYaş.Name = "txtLabPYaş";
-            this.txtLabPYaş.Size = new System.Drawing.Size(246, 27);
-            this.txtLabPYaş.TabIndex = 23;
+            this.txtLabPYaş.Size = new System.Drawing.Size(222, 27);
+            this.txtLabPYaş.TabIndex = 59;
             this.txtLabPYaş.ValidatingType = typeof(System.DateTime);
             // 
             // txtLabPTel
             // 
             this.txtLabPTel.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtLabPTel.Location = new System.Drawing.Point(511, 104);
+            this.txtLabPTel.Location = new System.Drawing.Point(665, 204);
             this.txtLabPTel.Mask = "(999) 000-0000";
             this.txtLabPTel.Name = "txtLabPTel";
-            this.txtLabPTel.Size = new System.Drawing.Size(246, 27);
-            this.txtLabPTel.TabIndex = 22;
+            this.txtLabPTel.Size = new System.Drawing.Size(222, 27);
+            this.txtLabPTel.TabIndex = 58;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label7.Location = new System.Drawing.Point(515, 214);
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
+            this.label7.Location = new System.Drawing.Point(505, 284);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(76, 25);
-            this.label7.TabIndex = 18;
+            this.label7.Size = new System.Drawing.Size(74, 25);
+            this.label7.TabIndex = 56;
             this.label7.Text = "Şifre : ";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label8.Location = new System.Drawing.Point(515, 76);
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
+            this.label8.Location = new System.Drawing.Point(505, 204);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(137, 25);
-            this.label8.TabIndex = 17;
+            this.label8.Size = new System.Drawing.Size(135, 25);
+            this.label8.TabIndex = 55;
             this.label8.Text = "Telefon No : ";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label6.Location = new System.Drawing.Point(515, 145);
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
+            this.label6.Location = new System.Drawing.Point(505, 244);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(87, 25);
-            this.label6.TabIndex = 19;
+            this.label6.Size = new System.Drawing.Size(85, 25);
+            this.label6.TabIndex = 54;
             this.label6.Text = "E-Mail :";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label5.Location = new System.Drawing.Point(155, 365);
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
+            this.label5.Location = new System.Drawing.Point(505, 166);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(109, 25);
-            this.label5.TabIndex = 15;
+            this.label5.Size = new System.Drawing.Size(107, 25);
+            this.label5.TabIndex = 53;
             this.label5.Text = "Cinsiyet : ";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label4.Location = new System.Drawing.Point(155, 295);
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
+            this.label4.Location = new System.Drawing.Point(75, 284);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(144, 25);
-            this.label4.TabIndex = 14;
-            this.label4.Text = "GG/AA/YYYY";
+            this.label4.Size = new System.Drawing.Size(152, 25);
+            this.label4.TabIndex = 52;
+            this.label4.Text = "Doğum Tarihi :";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label3.Location = new System.Drawing.Point(155, 223);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
+            this.label3.Location = new System.Drawing.Point(75, 244);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(158, 25);
-            this.label3.TabIndex = 16;
+            this.label3.Size = new System.Drawing.Size(154, 25);
+            this.label3.TabIndex = 57;
             this.label3.Text = "T.C Kimlik No :";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label2.Location = new System.Drawing.Point(155, 150);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
+            this.label2.Location = new System.Drawing.Point(75, 204);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(101, 25);
-            this.label2.TabIndex = 12;
+            this.label2.Size = new System.Drawing.Size(99, 25);
+            this.label2.TabIndex = 51;
             this.label2.Text = "Soyisim :";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(155, 66);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
+            this.label1.Location = new System.Drawing.Point(75, 164);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(64, 25);
-            this.label1.TabIndex = 11;
+            this.label1.Size = new System.Drawing.Size(62, 25);
+            this.label1.TabIndex = 50;
             this.label1.Text = "İsim :";
             // 
             // CmbLabPCinsiyet
@@ -174,51 +174,65 @@
             this.CmbLabPCinsiyet.Items.AddRange(new object[] {
             "ERKEK",
             "KADIN"});
-            this.CmbLabPCinsiyet.Location = new System.Drawing.Point(151, 402);
+            this.CmbLabPCinsiyet.Location = new System.Drawing.Point(665, 162);
             this.CmbLabPCinsiyet.Name = "CmbLabPCinsiyet";
-            this.CmbLabPCinsiyet.Size = new System.Drawing.Size(246, 27);
-            this.CmbLabPCinsiyet.TabIndex = 21;
+            this.CmbLabPCinsiyet.Size = new System.Drawing.Size(222, 27);
+            this.CmbLabPCinsiyet.TabIndex = 49;
             // 
             // txtLabPSifre
             // 
             this.txtLabPSifre.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtLabPSifre.Location = new System.Drawing.Point(511, 242);
+            this.txtLabPSifre.Location = new System.Drawing.Point(665, 284);
             this.txtLabPSifre.Name = "txtLabPSifre";
-            this.txtLabPSifre.Size = new System.Drawing.Size(246, 27);
-            this.txtLabPSifre.TabIndex = 25;
+            this.txtLabPSifre.Size = new System.Drawing.Size(222, 27);
+            this.txtLabPSifre.TabIndex = 47;
             // 
             // txtLabPMail
             // 
             this.txtLabPMail.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtLabPMail.Location = new System.Drawing.Point(511, 173);
+            this.txtLabPMail.Location = new System.Drawing.Point(665, 244);
             this.txtLabPMail.Name = "txtLabPMail";
-            this.txtLabPMail.Size = new System.Drawing.Size(246, 27);
-            this.txtLabPMail.TabIndex = 24;
+            this.txtLabPMail.Size = new System.Drawing.Size(222, 27);
+            this.txtLabPMail.TabIndex = 46;
             // 
             // txtLabPTC
             // 
             this.txtLabPTC.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtLabPTC.Location = new System.Drawing.Point(151, 251);
+            this.txtLabPTC.Location = new System.Drawing.Point(255, 244);
             this.txtLabPTC.MaxLength = 11;
             this.txtLabPTC.Name = "txtLabPTC";
-            this.txtLabPTC.Size = new System.Drawing.Size(246, 27);
-            this.txtLabPTC.TabIndex = 20;
+            this.txtLabPTC.Size = new System.Drawing.Size(222, 27);
+            this.txtLabPTC.TabIndex = 45;
             // 
             // txtLabPSoyisim
             // 
             this.txtLabPSoyisim.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtLabPSoyisim.Location = new System.Drawing.Point(151, 178);
+            this.txtLabPSoyisim.Location = new System.Drawing.Point(255, 204);
             this.txtLabPSoyisim.Name = "txtLabPSoyisim";
-            this.txtLabPSoyisim.Size = new System.Drawing.Size(246, 27);
-            this.txtLabPSoyisim.TabIndex = 13;
+            this.txtLabPSoyisim.Size = new System.Drawing.Size(222, 27);
+            this.txtLabPSoyisim.TabIndex = 48;
             // 
             // txtLabPİsim
             // 
             this.txtLabPİsim.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtLabPİsim.Location = new System.Drawing.Point(151, 94);
+            this.txtLabPİsim.Location = new System.Drawing.Point(255, 164);
             this.txtLabPİsim.Name = "txtLabPİsim";
-            this.txtLabPİsim.Size = new System.Drawing.Size(246, 27);
-            this.txtLabPİsim.TabIndex = 10;
+            this.txtLabPİsim.Size = new System.Drawing.Size(222, 27);
+            this.txtLabPİsim.TabIndex = 44;
+            // 
+            // btnLabPKayıtYap
+            // 
+            this.btnLabPKayıtYap.BackColor = System.Drawing.Color.MediumAquamarine;
+            this.btnLabPKayıtYap.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnLabPKayıtYap.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLabPKayıtYap.Font = new System.Drawing.Font("Bookman Old Style", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnLabPKayıtYap.Location = new System.Drawing.Point(637, 398);
+            this.btnLabPKayıtYap.Name = "btnLabPKayıtYap";
+            this.btnLabPKayıtYap.Size = new System.Drawing.Size(246, 65);
+            this.btnLabPKayıtYap.TabIndex = 64;
+            this.btnLabPKayıtYap.Text = "Kayıt Yap";
+            this.btnLabPKayıtYap.UseVisualStyleBackColor = false;
+            this.btnLabPKayıtYap.Click += new System.EventHandler(this.btnLabPKayıtYap_Click);
             // 
             // LaboratuvarKayıtOlSayfasi
             // 
@@ -229,6 +243,7 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(984, 561);
             this.Controls.Add(this.btnLabPKayıtYap);
+            this.Controls.Add(this.label10);
             this.Controls.Add(this.txtLabPYaş);
             this.Controls.Add(this.txtLabPTel);
             this.Controls.Add(this.label7);
@@ -254,7 +269,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Button btnLabPKayıtYap;
+        private System.Windows.Forms.Label label10;
         private System.Windows.Forms.MaskedTextBox txtLabPYaş;
         private System.Windows.Forms.MaskedTextBox txtLabPTel;
         private System.Windows.Forms.Label label7;
@@ -271,5 +286,6 @@
         private System.Windows.Forms.TextBox txtLabPTC;
         private System.Windows.Forms.TextBox txtLabPSoyisim;
         private System.Windows.Forms.TextBox txtLabPİsim;
+        private System.Windows.Forms.Button btnLabPKayıtYap;
     }
 }
