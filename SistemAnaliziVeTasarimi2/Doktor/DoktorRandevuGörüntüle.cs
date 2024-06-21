@@ -28,11 +28,15 @@ namespace SistemAnaliziVeTasarimi2.Doktor
 
         private void DoktorRandevuGörüntüle_Load(object sender, EventArgs e)
         {
+            Bilgigetir();
+        }
+        public void Bilgigetir()
+        {
             label1.Text = Anasayfa.dtc;
 
-           try
-           {
-              
+            try
+            {
+
                 bag.Open();
                 SqlCommand görüntüle = new SqlCommand("Select tbl_randevular.randevuid,tbl_klinikler.klinik_adi,tbl_randevular.randevutarih,tbl_randevular.randevusaat,tbl_hasta.hasta_id,tbl_hasta.TcNo,tbl_hasta.isim,tbl_hasta.soyisim from tbl_randevular INNER JOIN tbl_hasta on tbl_randevular.randevuhastaid=tbl_hasta.TcNo INNER JOIN tbl_klinikler ON tbl_randevular.randevu_klinik_id=tbl_klinikler.klinik_id INNER JOIN tbl_doktor ON tbl_randevular.randevu_doktor_id=tbl_doktor.doktor_id where tbl_doktor.TcNo=@TC", bag);
                 görüntüle.Parameters.AddWithValue("@TC", label1.Text);
@@ -146,6 +150,29 @@ namespace SistemAnaliziVeTasarimi2.Doktor
             {
                 MessageBox.Show("Hata!! Daha Sonra Tekrar Deneyiniz\n" + ex.Message);
             }
+        }
+
+        private void btnRandevuSil_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                bag.Open();
+                SqlCommand sil = new SqlCommand("delete from tbl_randevular where randevuid=@id", bag);
+                sil.Parameters.AddWithValue("@id", dataGridView1.CurrentRow.Cells[0].Value.ToString());
+                sil.ExecuteNonQuery();
+                bag.Close();
+
+                MessageBox.Show("Seçili Hasta Randevusu Başarıyla Silindi.");
+
+                Bilgigetir();
+
+            }
+            catch
+            {
+
+                MessageBox.Show("Hata!! Lüten daha sonra tekrar deneyin.");
+            }
+            
         }
     }
 }

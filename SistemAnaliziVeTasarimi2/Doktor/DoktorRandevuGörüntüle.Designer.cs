@@ -34,6 +34,7 @@
             this.btnHastaSeç = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.btnRandevuSil = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -62,7 +63,7 @@
             // 
             this.btnHastaSeç.BackColor = System.Drawing.Color.MediumAquamarine;
             this.btnHastaSeç.Font = new System.Drawing.Font("Bookman Old Style", 15F);
-            this.btnHastaSeç.Location = new System.Drawing.Point(728, 448);
+            this.btnHastaSeç.Location = new System.Drawing.Point(728, 450);
             this.btnHastaSeç.Margin = new System.Windows.Forms.Padding(2);
             this.btnHastaSeç.Name = "btnHastaSeç";
             this.btnHastaSeç.Size = new System.Drawing.Size(222, 50);
@@ -94,6 +95,19 @@
             this.label2.TabIndex = 9;
             this.label2.Text = "Hasta ID : ";
             // 
+            // btnRandevuSil
+            // 
+            this.btnRandevuSil.BackColor = System.Drawing.Color.MediumAquamarine;
+            this.btnRandevuSil.Font = new System.Drawing.Font("Bookman Old Style", 15F);
+            this.btnRandevuSil.Location = new System.Drawing.Point(500, 450);
+            this.btnRandevuSil.Margin = new System.Windows.Forms.Padding(2);
+            this.btnRandevuSil.Name = "btnRandevuSil";
+            this.btnRandevuSil.Size = new System.Drawing.Size(222, 50);
+            this.btnRandevuSil.TabIndex = 11;
+            this.btnRandevuSil.Text = "Randevu Sil";
+            this.btnRandevuSil.UseVisualStyleBackColor = false;
+            this.btnRandevuSil.Click += new System.EventHandler(this.btnRandevuSil_Click);
+            // 
             // DoktorRandevuGörüntüle
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -101,6 +115,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(984, 561);
+            this.Controls.Add(this.btnRandevuSil);
             this.Controls.Add(this.btnHastaSeç);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label2);
@@ -125,5 +140,6 @@
         private System.Windows.Forms.Button btnHastaSeç;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button btnRandevuSil;
     }
 }

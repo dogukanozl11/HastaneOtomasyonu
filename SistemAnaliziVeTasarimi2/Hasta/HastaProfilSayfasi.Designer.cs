@@ -39,12 +39,12 @@
             this.label2 = new System.Windows.Forms.Label();
             this.lblIDXX = new System.Windows.Forms.Label();
             this.btnKullanici = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.btnTahlilSonuçları = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.btnYatanHasta = new System.Windows.Forms.Button();
-            this.btnAcil = new System.Windows.Forms.Button();
+            this.btnRandevularım = new System.Windows.Forms.Button();
+            this.btnRandevuAl = new System.Windows.Forms.Button();
+            this.btnRecetelerim = new System.Windows.Forms.Button();
+            this.btnGecmis = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
+            this.btnRandevuSil = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblSoyisim
@@ -177,92 +177,74 @@
             this.btnKullanici.UseVisualStyleBackColor = false;
             this.btnKullanici.Click += new System.EventHandler(this.btnHastaBilgileri_Click);
             // 
-            // button1
+            // btnRandevularım
             // 
-            this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button1.ForeColor = System.Drawing.Color.Black;
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.Location = new System.Drawing.Point(350, 170);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(120, 100);
-            this.button1.TabIndex = 105;
-            this.button1.Text = "Randevularım";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.btnRandevularım_Click);
+            this.btnRandevularım.BackColor = System.Drawing.Color.Transparent;
+            this.btnRandevularım.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnRandevularım.FlatAppearance.BorderSize = 0;
+            this.btnRandevularım.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRandevularım.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnRandevularım.ForeColor = System.Drawing.Color.Black;
+            this.btnRandevularım.Image = ((System.Drawing.Image)(resources.GetObject("btnRandevularım.Image")));
+            this.btnRandevularım.Location = new System.Drawing.Point(350, 170);
+            this.btnRandevularım.Name = "btnRandevularım";
+            this.btnRandevularım.Size = new System.Drawing.Size(120, 100);
+            this.btnRandevularım.TabIndex = 105;
+            this.btnRandevularım.Text = "Randevularım";
+            this.btnRandevularım.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnRandevularım.UseVisualStyleBackColor = false;
+            this.btnRandevularım.Click += new System.EventHandler(this.btnRandevularım_Click);
             // 
-            // btnTahlilSonuçları
+            // btnRandevuAl
             // 
-            this.btnTahlilSonuçları.BackColor = System.Drawing.Color.Transparent;
-            this.btnTahlilSonuçları.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnTahlilSonuçları.FlatAppearance.BorderSize = 0;
-            this.btnTahlilSonuçları.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTahlilSonuçları.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnTahlilSonuçları.Image = ((System.Drawing.Image)(resources.GetObject("btnTahlilSonuçları.Image")));
-            this.btnTahlilSonuçları.Location = new System.Drawing.Point(200, 170);
-            this.btnTahlilSonuçları.Name = "btnTahlilSonuçları";
-            this.btnTahlilSonuçları.Size = new System.Drawing.Size(120, 100);
-            this.btnTahlilSonuçları.TabIndex = 106;
-            this.btnTahlilSonuçları.Text = "Randevu Al";
-            this.btnTahlilSonuçları.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnTahlilSonuçları.UseVisualStyleBackColor = false;
-            this.btnTahlilSonuçları.Click += new System.EventHandler(this.btnRandevuAl_Click);
+            this.btnRandevuAl.BackColor = System.Drawing.Color.Transparent;
+            this.btnRandevuAl.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnRandevuAl.FlatAppearance.BorderSize = 0;
+            this.btnRandevuAl.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRandevuAl.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnRandevuAl.Image = ((System.Drawing.Image)(resources.GetObject("btnRandevuAl.Image")));
+            this.btnRandevuAl.Location = new System.Drawing.Point(200, 170);
+            this.btnRandevuAl.Name = "btnRandevuAl";
+            this.btnRandevuAl.Size = new System.Drawing.Size(120, 100);
+            this.btnRandevuAl.TabIndex = 106;
+            this.btnRandevuAl.Text = "Randevu Al";
+            this.btnRandevuAl.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnRandevuAl.UseVisualStyleBackColor = false;
+            this.btnRandevuAl.Click += new System.EventHandler(this.btnRandevuAl_Click);
             // 
-            // button2
+            // btnRecetelerim
             // 
-            this.button2.BackColor = System.Drawing.Color.Transparent;
-            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button2.Location = new System.Drawing.Point(50, 300);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(120, 100);
-            this.button2.TabIndex = 107;
-            this.button2.Text = "Randevu Sil";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Visible = false;
-            this.button2.Click += new System.EventHandler(this.BtnRandevuSil_Click);
+            this.btnRecetelerim.BackColor = System.Drawing.Color.Transparent;
+            this.btnRecetelerim.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnRecetelerim.FlatAppearance.BorderSize = 0;
+            this.btnRecetelerim.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRecetelerim.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnRecetelerim.Image = ((System.Drawing.Image)(resources.GetObject("btnRecetelerim.Image")));
+            this.btnRecetelerim.Location = new System.Drawing.Point(200, 300);
+            this.btnRecetelerim.Name = "btnRecetelerim";
+            this.btnRecetelerim.Size = new System.Drawing.Size(120, 100);
+            this.btnRecetelerim.TabIndex = 108;
+            this.btnRecetelerim.Text = "Reçetelerim";
+            this.btnRecetelerim.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnRecetelerim.UseVisualStyleBackColor = false;
+            this.btnRecetelerim.Click += new System.EventHandler(this.BtnRecetelerim_Click);
             // 
-            // btnYatanHasta
+            // btnGecmis
             // 
-            this.btnYatanHasta.BackColor = System.Drawing.Color.Transparent;
-            this.btnYatanHasta.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnYatanHasta.FlatAppearance.BorderSize = 0;
-            this.btnYatanHasta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnYatanHasta.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnYatanHasta.Image = ((System.Drawing.Image)(resources.GetObject("btnYatanHasta.Image")));
-            this.btnYatanHasta.Location = new System.Drawing.Point(200, 300);
-            this.btnYatanHasta.Name = "btnYatanHasta";
-            this.btnYatanHasta.Size = new System.Drawing.Size(120, 100);
-            this.btnYatanHasta.TabIndex = 108;
-            this.btnYatanHasta.Text = "Reçetelerim";
-            this.btnYatanHasta.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnYatanHasta.UseVisualStyleBackColor = false;
-            this.btnYatanHasta.Click += new System.EventHandler(this.BtnRecetelerim_Click);
-            // 
-            // btnAcil
-            // 
-            this.btnAcil.BackColor = System.Drawing.Color.Transparent;
-            this.btnAcil.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAcil.FlatAppearance.BorderSize = 0;
-            this.btnAcil.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAcil.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnAcil.Image = ((System.Drawing.Image)(resources.GetObject("btnAcil.Image")));
-            this.btnAcil.Location = new System.Drawing.Point(350, 300);
-            this.btnAcil.Name = "btnAcil";
-            this.btnAcil.Size = new System.Drawing.Size(120, 100);
-            this.btnAcil.TabIndex = 109;
-            this.btnAcil.Text = "Geçmiş Sonuçlar";
-            this.btnAcil.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnAcil.UseVisualStyleBackColor = false;
-            this.btnAcil.Click += new System.EventHandler(this.btnGeçmisSonuc_Click);
+            this.btnGecmis.BackColor = System.Drawing.Color.Transparent;
+            this.btnGecmis.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnGecmis.FlatAppearance.BorderSize = 0;
+            this.btnGecmis.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGecmis.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnGecmis.Image = ((System.Drawing.Image)(resources.GetObject("btnGecmis.Image")));
+            this.btnGecmis.Location = new System.Drawing.Point(350, 300);
+            this.btnGecmis.Name = "btnGecmis";
+            this.btnGecmis.Size = new System.Drawing.Size(120, 100);
+            this.btnGecmis.TabIndex = 109;
+            this.btnGecmis.Text = "Geçmiş Sonuçlar";
+            this.btnGecmis.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnGecmis.UseVisualStyleBackColor = false;
+            this.btnGecmis.Click += new System.EventHandler(this.btnGeçmisSonuc_Click);
             // 
             // button3
             // 
@@ -281,6 +263,24 @@
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.btnGERİ_Click);
             // 
+            // btnRandevuSil
+            // 
+            this.btnRandevuSil.BackColor = System.Drawing.Color.Transparent;
+            this.btnRandevuSil.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnRandevuSil.FlatAppearance.BorderSize = 0;
+            this.btnRandevuSil.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRandevuSil.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnRandevuSil.Image = ((System.Drawing.Image)(resources.GetObject("btnRandevuSil.Image")));
+            this.btnRandevuSil.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnRandevuSil.Location = new System.Drawing.Point(50, 300);
+            this.btnRandevuSil.Name = "btnRandevuSil";
+            this.btnRandevuSil.Size = new System.Drawing.Size(120, 100);
+            this.btnRandevuSil.TabIndex = 111;
+            this.btnRandevuSil.Text = "Randevu Sil";
+            this.btnRandevuSil.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnRandevuSil.UseVisualStyleBackColor = false;
+            this.btnRandevuSil.Click += new System.EventHandler(this.BtnRandevuSil_Click);
+            // 
             // HastaProfilSayfasi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -289,12 +289,12 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(984, 561);
+            this.Controls.Add(this.btnRandevuSil);
             this.Controls.Add(this.button3);
-            this.Controls.Add(this.btnAcil);
-            this.Controls.Add(this.btnYatanHasta);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.btnTahlilSonuçları);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnGecmis);
+            this.Controls.Add(this.btnRecetelerim);
+            this.Controls.Add(this.btnRandevuAl);
+            this.Controls.Add(this.btnRandevularım);
             this.Controls.Add(this.btnKullanici);
             this.Controls.Add(this.lblIDXX);
             this.Controls.Add(this.lblSoyisim);
@@ -326,11 +326,11 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lblIDXX;
         private System.Windows.Forms.Button btnKullanici;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button btnTahlilSonuçları;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button btnYatanHasta;
-        private System.Windows.Forms.Button btnAcil;
+        private System.Windows.Forms.Button btnRandevularım;
+        private System.Windows.Forms.Button btnRandevuAl;
+        private System.Windows.Forms.Button btnRecetelerim;
+        private System.Windows.Forms.Button btnGecmis;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnRandevuSil;
     }
 }

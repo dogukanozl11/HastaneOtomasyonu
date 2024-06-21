@@ -34,7 +34,6 @@
             this.btnAcil = new System.Windows.Forms.Button();
             this.btnTahlilSonuçları = new System.Windows.Forms.Button();
             this.btnBekleyenHasta = new System.Windows.Forms.Button();
-            this.btnRandevuSil = new System.Windows.Forms.Button();
             this.btnRandevularım = new System.Windows.Forms.Button();
             this.btnKullanici = new System.Windows.Forms.Button();
             this.lblKlinik = new System.Windows.Forms.Label();
@@ -131,24 +130,6 @@
             this.btnBekleyenHasta.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnBekleyenHasta.UseVisualStyleBackColor = false;
             this.btnBekleyenHasta.Click += new System.EventHandler(this.btnBekleyenHasta_Click);
-            // 
-            // btnRandevuSil
-            // 
-            this.btnRandevuSil.BackColor = System.Drawing.Color.Transparent;
-            this.btnRandevuSil.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnRandevuSil.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRandevuSil.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnRandevuSil.Image = ((System.Drawing.Image)(resources.GetObject("btnRandevuSil.Image")));
-            this.btnRandevuSil.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnRandevuSil.Location = new System.Drawing.Point(612, 386);
-            this.btnRandevuSil.Name = "btnRandevuSil";
-            this.btnRandevuSil.Size = new System.Drawing.Size(120, 100);
-            this.btnRandevuSil.TabIndex = 73;
-            this.btnRandevuSil.Text = "Randevu Sil";
-            this.btnRandevuSil.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnRandevuSil.UseVisualStyleBackColor = false;
-            this.btnRandevuSil.Visible = false;
-            this.btnRandevuSil.Click += new System.EventHandler(this.btnRandevuSil_Click);
             // 
             // btnRandevularım
             // 
@@ -305,7 +286,6 @@
             this.Controls.Add(this.btnAcil);
             this.Controls.Add(this.btnTahlilSonuçları);
             this.Controls.Add(this.btnBekleyenHasta);
-            this.Controls.Add(this.btnRandevuSil);
             this.Controls.Add(this.btnRandevularım);
             this.Controls.Add(this.btnKullanici);
             this.Controls.Add(this.btnGERİ);
@@ -327,7 +307,6 @@
         private System.Windows.Forms.Button btnAcil;
         private System.Windows.Forms.Button btnTahlilSonuçları;
         private System.Windows.Forms.Button btnBekleyenHasta;
-        private System.Windows.Forms.Button btnRandevuSil;
         private System.Windows.Forms.Button btnRandevularım;
         private System.Windows.Forms.Button btnKullanici;
         private System.Windows.Forms.Label lblKlinik;

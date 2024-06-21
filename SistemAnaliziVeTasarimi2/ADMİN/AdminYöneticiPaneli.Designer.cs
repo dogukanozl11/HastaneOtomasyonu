@@ -37,9 +37,9 @@
             // btnSekreterKayit
             // 
             this.btnSekreterKayit.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnSekreterKayit.Location = new System.Drawing.Point(527, 158);
+            this.btnSekreterKayit.Location = new System.Drawing.Point(585, 198);
             this.btnSekreterKayit.Name = "btnSekreterKayit";
-            this.btnSekreterKayit.Size = new System.Drawing.Size(204, 113);
+            this.btnSekreterKayit.Size = new System.Drawing.Size(179, 87);
             this.btnSekreterKayit.TabIndex = 0;
             this.btnSekreterKayit.Text = "Sekreter Kayıt";
             this.btnSekreterKayit.UseVisualStyleBackColor = true;
@@ -48,9 +48,9 @@
             // btnDoktorKayit
             // 
             this.btnDoktorKayit.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnDoktorKayit.Location = new System.Drawing.Point(22, 158);
+            this.btnDoktorKayit.Location = new System.Drawing.Point(80, 198);
             this.btnDoktorKayit.Name = "btnDoktorKayit";
-            this.btnDoktorKayit.Size = new System.Drawing.Size(204, 113);
+            this.btnDoktorKayit.Size = new System.Drawing.Size(179, 87);
             this.btnDoktorKayit.TabIndex = 1;
             this.btnDoktorKayit.Text = "Doktro Kayıt";
             this.btnDoktorKayit.UseVisualStyleBackColor = true;
@@ -59,9 +59,9 @@
             // btnLabPKayit
             // 
             this.btnLabPKayit.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnLabPKayit.Location = new System.Drawing.Point(271, 158);
+            this.btnLabPKayit.Location = new System.Drawing.Point(329, 198);
             this.btnLabPKayit.Name = "btnLabPKayit";
-            this.btnLabPKayit.Size = new System.Drawing.Size(204, 113);
+            this.btnLabPKayit.Size = new System.Drawing.Size(179, 87);
             this.btnLabPKayit.TabIndex = 2;
             this.btnLabPKayit.Text = "Laboratuvar Personel Kayıt";
             this.btnLabPKayit.UseVisualStyleBackColor = true;
@@ -71,7 +71,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(761, 305);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(984, 561);
             this.Controls.Add(this.btnLabPKayit);
             this.Controls.Add(this.btnDoktorKayit);
             this.Controls.Add(this.btnSekreterKayit);
