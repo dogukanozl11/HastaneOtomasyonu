@@ -189,12 +189,6 @@
     <Compile Include="Doktor\DoktorYatanHasta.Designer.cs">
       <DependentUpon>DoktorYatanHasta.cs</DependentUpon>
     </Compile>
-    <Compile Include="Doktor\muayene.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Doktor\muayene.Designer.cs">
-      <DependentUpon>muayene.cs</DependentUpon>
-    </Compile>
     <Compile Include="Doktor\RandevuMuayene.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -337,9 +331,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Doktor\DoktorYatanHasta.resx">
       <DependentUpon>DoktorYatanHasta.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Doktor\muayene.resx">
-      <DependentUpon>muayene.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Doktor\RandevuMuayene.resx">
       <DependentUpon>RandevuMuayene.cs</DependentUpon>

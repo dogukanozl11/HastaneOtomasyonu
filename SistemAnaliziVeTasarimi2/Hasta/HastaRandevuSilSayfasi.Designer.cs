@@ -38,15 +38,15 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 52);
+            this.dataGridView1.Location = new System.Drawing.Point(81, 127);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(765, 277);
             this.dataGridView1.TabIndex = 0;
             // 
             // btnRandevuiptal
             // 
-            this.btnRandevuiptal.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnRandevuiptal.Location = new System.Drawing.Point(300, 346);
+            this.btnRandevuiptal.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnRandevuiptal.Location = new System.Drawing.Point(369, 421);
             this.btnRandevuiptal.Name = "btnRandevuiptal";
             this.btnRandevuiptal.Size = new System.Drawing.Size(200, 50);
             this.btnRandevuiptal.TabIndex = 1;
@@ -58,18 +58,20 @@
             // 
             this.randevularım.AutoSize = true;
             this.randevularım.BackColor = System.Drawing.Color.Transparent;
-            this.randevularım.Location = new System.Drawing.Point(357, 22);
+            this.randevularım.Font = new System.Drawing.Font("Bookman Old Style", 24F);
+            this.randevularım.Location = new System.Drawing.Point(362, 66);
             this.randevularım.Name = "randevularım";
-            this.randevularım.Size = new System.Drawing.Size(72, 13);
+            this.randevularım.Size = new System.Drawing.Size(245, 39);
             this.randevularım.TabIndex = 2;
-            this.randevularım.Text = "Randevularım";
+            this.randevularım.Text = "RANDEVULAR";
             // 
             // HastaRandevuSilSayfasi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(784, 461);
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(984, 561);
             this.Controls.Add(this.randevularım);
             this.Controls.Add(this.btnRandevuiptal);
             this.Controls.Add(this.dataGridView1);

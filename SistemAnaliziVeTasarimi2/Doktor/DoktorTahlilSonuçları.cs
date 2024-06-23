@@ -555,5 +555,10 @@ namespace SistemAnaliziVeTasarimi2.Doktor
                 MessageBox.Show("Hata!! lütfen daha sonra tekrar deneyiniz");
             }
         }
+
+        private void panel5_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

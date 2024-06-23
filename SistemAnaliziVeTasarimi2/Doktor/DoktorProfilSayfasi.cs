@@ -82,7 +82,6 @@ namespace SistemAnaliziVeTasarimi2.Doktor
                 if (LBLKlinikid.Text == "16" || LBLKlinikid.Text == "17" || LBLKlinikid.Text == "18")
                 {
                     btnRandevularım.Enabled = false;
-                    btnRandevuSil.Enabled = false;
                     btnBekleyenHasta.Enabled = false;
                 }
                 else

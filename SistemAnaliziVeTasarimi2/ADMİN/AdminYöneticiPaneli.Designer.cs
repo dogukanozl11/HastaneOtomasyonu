@@ -37,7 +37,7 @@
             // btnSekreterKayit
             // 
             this.btnSekreterKayit.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnSekreterKayit.Location = new System.Drawing.Point(585, 198);
+            this.btnSekreterKayit.Location = new System.Drawing.Point(616, 445);
             this.btnSekreterKayit.Name = "btnSekreterKayit";
             this.btnSekreterKayit.Size = new System.Drawing.Size(179, 87);
             this.btnSekreterKayit.TabIndex = 0;
@@ -48,7 +48,7 @@
             // btnDoktorKayit
             // 
             this.btnDoktorKayit.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnDoktorKayit.Location = new System.Drawing.Point(80, 198);
+            this.btnDoktorKayit.Location = new System.Drawing.Point(111, 445);
             this.btnDoktorKayit.Name = "btnDoktorKayit";
             this.btnDoktorKayit.Size = new System.Drawing.Size(179, 87);
             this.btnDoktorKayit.TabIndex = 1;
@@ -59,7 +59,7 @@
             // btnLabPKayit
             // 
             this.btnLabPKayit.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnLabPKayit.Location = new System.Drawing.Point(329, 198);
+            this.btnLabPKayit.Location = new System.Drawing.Point(360, 445);
             this.btnLabPKayit.Name = "btnLabPKayit";
             this.btnLabPKayit.Size = new System.Drawing.Size(179, 87);
             this.btnLabPKayit.TabIndex = 2;
