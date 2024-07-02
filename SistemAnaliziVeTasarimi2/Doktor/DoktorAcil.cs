@@ -63,7 +63,7 @@ namespace SistemAnaliziVeTasarimi2.Doktor
                 }
                 bag.Close();
                 textBox1.Text = hastaid;
-                muayene muayeneekranı = new muayene();
+                RandevuMuayene muayeneekranı = new RandevuMuayene();
                 muayeneekranı.Show();
             }
             catch 

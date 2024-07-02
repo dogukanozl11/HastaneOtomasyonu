@@ -39,5 +39,13 @@ namespace SistemAnaliziVeTasarimi2.ADMİN
             LaboratuvarKayıtOlSayfasi lkos = new LaboratuvarKayıtOlSayfasi();
             lkos.Show();
         }
+
+        private void AdminYöneticiPaneli_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'sistemHastanesiDataSet.PersonelListesi' table. You can move, or remove it, as needed.
+            this.personelListesiTableAdapter.Fill(this.sistemHastanesiDataSet.PersonelListesi);
+
+            this.reportViewer1.RefreshReport();
+        }
     }
 }
